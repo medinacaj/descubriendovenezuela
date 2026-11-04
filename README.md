@@ -2,6 +2,12 @@
 
 Demo local funcional de exploración turística y administración editorial. **No es un inventario real de establecimientos ni está publicada.** Los cuatro ejemplos están marcados DEMO y no tienen coordenadas, precios, fotografías ni reseñas inventadas. El paisaje y las tarjetas son ilustraciones abstractas.
 
+## Catálogo público inicial
+
+La vista de GitHub Pages contiene tres sitios reales: Parque Nacional Canaima, Coro y su Puerto y Ciudad Universitaria de Caracas. Son fichas de identificación documental, con dos catálogos secundarios consultados y referencias oficiales aún pendientes de consulta directa; no se confirman condiciones actuales de visita. Los datos están en [content/places.json](content/places.json) y su procedencia en [content/RESEARCH.md](content/RESEARCH.md).
+
+Regenerar Pages con `npm run build:pages`. La aplicación Next/PostgreSQL mantiene aparte sus datos de demostración: no se han confundido con este catálogo real. Las capturas siguientes corresponden a la demo previa.
+
 ## Vista de la demo
 
 Paleta inspirada en la guacamaya: azul, amarillo dorado, coral y verde tropical.

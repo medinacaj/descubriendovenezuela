@@ -1,0 +1,68 @@
+[
+  {
+    "id": "701",
+    "name": "Parque Nacional Canaima",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "unescoReference": 701,
+    "inscriptionYear": 1994,
+    "description": "Un primer destino para explorar el patrimonio natural venezolano. Los catálogos consultados lo identifican como bien natural inscrito en 1994. Esta ficha reúne su identificación documental; todavía no ofrece itinerarios ni condiciones de acceso.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "primaryUrl": "https://whc.unesco.org/en/list/701/",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
+      "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "658",
+    "name": "Coro y su Puerto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "unescoReference": 658,
+    "inscriptionYear": 1993,
+    "description": "Una entrada al patrimonio cultural de Venezuela. Los catálogos consultados registran el conjunto «Coro and its Port» y su inscripción en 1993. Las recomendaciones concretas de visita se incorporarán después de contrastarlas con fuentes locales actuales.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "primaryUrl": "https://whc.unesco.org/en/list/658/",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
+      "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "986",
+    "name": "Ciudad Universitaria de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "unescoReference": 986,
+    "inscriptionYear": 2000,
+    "description": "Un lugar para comenzar a descubrir el patrimonio cultural de Caracas. Los catálogos consultados registran la Ciudad Universitaria de Caracas como bien cultural inscrito en 2000. Esta ficha no confirma visitas guiadas ni apertura de espacios.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "primaryUrl": "https://whc.unesco.org/en/list/986/",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
+      "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  }
+]
