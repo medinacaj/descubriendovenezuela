@@ -1,0 +1,358 @@
+{
+  "research_date": "2026-11-04",
+  "method": "Read actual public GitHub repositories via the inherited enforced network proxy. No blocked-site proxy or mirror bypass. Main repository not edited.",
+  "recommended_records": [
+    {
+      "name": "Porlamar",
+      "suggested_slug": "porlamar",
+      "kind": "locality_destination",
+      "territory_iso": "VE-O",
+      "state": "Nueva Esparta",
+      "description_es": "Porlamar es una ciudad del estado Nueva Esparta, en Venezuela.",
+      "latitude": 10.960376,
+      "longitude": -63.849989,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "Porlamar",
+          "NAME_ES": "Porlamar",
+          "NAMEASCII": "Porlamar",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Nueva Esparta",
+          "FEATURECLA": "Populated place",
+          "WIKIDATAID": "Q953449",
+          "NE_ID": 1159133691
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -63.849989,
+            10.960376
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    },
+    {
+      "name": "Cumaná",
+      "suggested_slug": "cumana-ciudad",
+      "kind": "locality_destination",
+      "territory_iso": "VE-R",
+      "state": "Sucre",
+      "description_es": "Cumaná es la capital del estado Sucre, en Venezuela.",
+      "latitude": 10.449994,
+      "longitude": -64.180021,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "Cumaná",
+          "NAME_ES": "Cumaná",
+          "NAMEASCII": "Cumana",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Sucre",
+          "FEATURECLA": "Admin-1 capital",
+          "WIKIDATAID": "Q319476",
+          "NE_ID": 1159146291
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -64.180021,
+            10.449994
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location",
+        "State capital status"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    },
+    {
+      "name": "Ciudad Bolívar",
+      "suggested_slug": "ciudad-bolivar",
+      "kind": "locality_destination",
+      "territory_iso": "VE-F",
+      "state": "Bolívar",
+      "description_es": "Ciudad Bolívar es la capital del estado Bolívar, en Venezuela.",
+      "latitude": 8.099982,
+      "longitude": -63.600004,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "Ciudad Bolívar",
+          "NAME_ES": "Ciudad Bolívar",
+          "NAMEASCII": "Ciudad Bolivar",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Bolívar",
+          "FEATURECLA": "Admin-1 capital",
+          "WIKIDATAID": "Q26906",
+          "NE_ID": 1159147473
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -63.600004,
+            8.099982
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location",
+        "State capital status"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    },
+    {
+      "name": "Mérida",
+      "suggested_slug": "merida-ciudad",
+      "kind": "locality_destination",
+      "territory_iso": "VE-L",
+      "state": "Mérida",
+      "description_es": "Mérida es la capital del estado Mérida, en Venezuela.",
+      "latitude": 8.56952,
+      "longitude": -71.182522,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "Mérida",
+          "NAME_ES": "Mérida",
+          "NAMEASCII": "Merida",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Mérida",
+          "FEATURECLA": "Admin-1 capital",
+          "WIKIDATAID": "Q23551",
+          "NE_ID": 1159149271
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.182522,
+            8.56952
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location",
+        "State capital status"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    },
+    {
+      "name": "San Cristóbal",
+      "suggested_slug": "san-cristobal",
+      "kind": "locality_destination",
+      "territory_iso": "VE-S",
+      "state": "Táchira",
+      "description_es": "San Cristóbal es la capital del estado Táchira, en Venezuela.",
+      "latitude": 7.770003,
+      "longitude": -72.249967,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "San Cristóbal",
+          "NAME_ES": "San Cristóbal",
+          "NAMEASCII": "San Cristobal",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Táchira",
+          "FEATURECLA": "Admin-1 capital",
+          "WIKIDATAID": "Q820235",
+          "NE_ID": 1159150505
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -72.249967,
+            7.770003
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location",
+        "State capital status"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    },
+    {
+      "name": "Caracas",
+      "suggested_slug": "caracas-ciudad",
+      "kind": "locality_destination",
+      "territory_iso": "VE-A",
+      "state": "Distrito Capital",
+      "description_es": "Caracas es la capital de Venezuela.",
+      "latitude": 10.502944,
+      "longitude": -66.918983,
+      "coordinate_scope": "Generalized city point for a small-scale map, not a street address or visitor facility. Use geometry coordinates; LATITUDE/LONGITUDE attributes can be stale.",
+      "source": {
+        "publisher": "Natural Earth",
+        "repository": "https://github.com/nvkelso/natural-earth-vector",
+        "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+        "path": "geojson/ne_10m_populated_places.geojson",
+        "url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "raw_url": "https://raw.githubusercontent.com/nvkelso/natural-earth-vector/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+        "read_at": "2026-11-04",
+        "exact_evidence": {
+          "NAME": "Caracas",
+          "NAME_ES": "Caracas",
+          "NAMEASCII": "Caracas",
+          "ADM0NAME": "Venezuela",
+          "ADM1NAME": "Distrito Capital",
+          "FEATURECLA": "Admin-0 capital",
+          "WIKIDATAID": "Q1533",
+          "NE_ID": 1159151493
+        },
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -66.918983,
+            10.502944
+          ]
+        }
+      },
+      "supported_claims": [
+        "City name",
+        "Country",
+        "State or capital district",
+        "Generalized map location",
+        "National capital status"
+      ],
+      "not_verified": [
+        "Current visitor access",
+        "Specific attractions, routes, or activities",
+        "Opening times, prices, or contacts",
+        "Any accommodation operator"
+      ]
+    }
+  ],
+  "source_provenance": {
+    "repository": "https://github.com/nvkelso/natural-earth-vector",
+    "commit": "ca96624a56bd078437bca8184e78163e5039ad19",
+    "readme_url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/README.md",
+    "readme_exact_evidence": [
+      "Natural Earth is a public domain map dataset available at 1:10m, 1:50m, and 1:110 million scales.",
+      "Natural Earth was built through a collaboration of many volunteers and is supported by NACIS (North American Cartographic Information Society)"
+    ],
+    "license_url": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+    "license_exact_evidence": [
+      "Everything here is public domain.",
+      "All versions of Natural Earth raster + vector map data found on this website are in the public domain.",
+      "No permission is needed to use Natural Earth. Crediting the authors is unnecessary."
+    ],
+    "scope": "Credible primary map data for city identity/administration/generalized position. This does not establish tourism facilities, individual points of interest, current hotel operations, or visitor services."
+  },
+  "unpublished_accommodation_candidates": [
+    {
+      "name": "Posada Exótica",
+      "repository": "https://github.com/creartstudiodigital/posadaexotica",
+      "commit": "3140f2eaa569ee95707c7fae339c5b121717c389",
+      "evidence_read": "index.html names Posada Exótica, Choroní, Aragua; sector La Loma; branded social accounts; specific Google Maps CID.",
+      "status": "UNPUBLISHED: single developer repository; no independent business existence corroboration or demonstrated official website link."
+    },
+    {
+      "name": "Posada Luz Caraballo",
+      "repository": "https://github.com/matilde-dev2026/posadaLC2026",
+      "commit": "a4c7db7f000890de3456c9e79be10f8ed9913ecd",
+      "evidence_read": "src/routes/index.tsx names Posada Turística Luz Caraballo, Av. 2 Lora 13-80 frente a Plaza Sucre (Milla), Mérida, Instagram handle, Google review link. README says built with Lovable from Google Business/Profile materials.",
+      "status": "UNPUBLISHED: single developer repository; no independent business existence corroboration or demonstrated official website link."
+    },
+    {
+      "name": "San Andrés Confort / San Andrés Beach",
+      "repository": "https://github.com/mcgolemshop-debug/posadas-san-andres",
+      "commit": "d7e32e2cd153cf325ec70204889b79fb455c02eb",
+      "evidence_read": "ESPECIFICACION.md describes a reservations application for two posadas in Chichiriviche.",
+      "status": "UNPUBLISHED: implementation specification alone does not prove operational businesses."
+    }
+  ],
+  "rejected_accommodation_candidates": [
+    {
+      "name": "Bernotti Hotel",
+      "repository": "https://github.com/jt227b/Bernotti-Hotel",
+      "commit": "c73c4a4c53851ebd36bd3b70266da5abb6711b59",
+      "reason": "README is an HTML/CSS hotel project, acknowledges Pexels stock images and Brad Traversy tutorial tips. No independent proof of business existence."
+    },
+    {
+      "name": "Don Elicio",
+      "repository": "https://github.com/torrealbaruben/posada-don-elicio",
+      "commit": "5617da094ba7372ef79558455558c9f491bd9b3a",
+      "reason": "index.html contains only a static interface JPG and title; README only repo name. Insufficient factual evidence."
+    }
+  ]
+}

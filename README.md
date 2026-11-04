@@ -4,9 +4,11 @@ Demo local funcional de exploración turística y administración editorial. **N
 
 ## Catálogo público inicial
 
-La vista de GitHub Pages contiene tres sitios reales: Parque Nacional Canaima, Coro y su Puerto y Ciudad Universitaria de Caracas. Son fichas de identificación documental, con dos catálogos secundarios consultados y referencias oficiales aún pendientes de consulta directa; no se confirman condiciones actuales de visita. Los datos están en [content/places.json](content/places.json) y su procedencia en [content/RESEARCH.md](content/RESEARCH.md).
+La vista de GitHub Pages contiene **nueve lugares documentados**: los tres sitios patrimoniales iniciales y Mérida, Cumaná, Ciudad Bolívar, Porlamar, San Cristóbal y Caracas. Estas seis entradas son localidades, no establecimientos turísticos verificados. Sus imágenes son **mapas de referencia propios con datos abiertos**, identificados como cartografía y atribuidos; no se presentan como fotografías.
 
-Regenerar Pages con `npm run build:pages`. La aplicación Next/PostgreSQL mantiene aparte sus datos de demostración: no se han confundido con este catálogo real. Las capturas de portada y móvil muestran el catálogo actual con la paleta de colores vivos.
+Los datos están en [content/places.json](content/places.json), la procedencia y las limitaciones en [content/RESEARCH.md](content/RESEARCH.md). Las fotografías de destinos y los hospedajes contrastados siguen pendientes: los candidatos sin evidencia suficiente no se publican como negocios reales.
+
+Regenerar mapas con `npm run build:maps`, luego Pages con `npm run build:pages`. `npm run test:pages` verifica imágenes, búsqueda, filtros y fichas en móvil/escritorio. Las capturas de portada y móvil muestran el directorio actual. La aplicación Next/PostgreSQL mantiene aparte sus datos de demostración; no se confunden con este catálogo.
 
 ## Vista de la demo
 

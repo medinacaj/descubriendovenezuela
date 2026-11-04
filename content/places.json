@@ -64,5 +64,209 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "porlamar",
+    "name": "Porlamar",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Porlamar es una ciudad del estado Nueva Esparta, en Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-porlamar.webp",
+        "alt": "Mapa esquemático de Venezuela con Nueva Esparta resaltado como región de Porlamar",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "cumana-ciudad",
+    "name": "Cumaná",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Cumaná es la capital del estado Sucre, en Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-cumana-ciudad.webp",
+        "alt": "Mapa esquemático de Venezuela con Sucre resaltado como región de Cumaná",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "ciudad-bolivar",
+    "name": "Ciudad Bolívar",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Ciudad Bolívar es la capital del estado Bolívar, en Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-ciudad-bolivar.webp",
+        "alt": "Mapa esquemático de Venezuela con Bolívar resaltado como región de Ciudad Bolívar",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "merida-ciudad",
+    "name": "Mérida",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Mérida es la capital del estado Mérida, en Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-merida-ciudad.webp",
+        "alt": "Mapa esquemático de Venezuela con Mérida resaltado como región de Mérida",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "san-cristobal",
+    "name": "San Cristóbal",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Táchira",
+    "description": "San Cristóbal es la capital del estado Táchira, en Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-san-cristobal.webp",
+        "alt": "Mapa esquemático de Venezuela con Táchira resaltado como región de San Cristóbal",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "caracas-ciudad",
+    "name": "Caracas",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Caracas es la capital de Venezuela. Esta ficha sitúa la localidad dentro del directorio y permite explorar su región. Los atractivos concretos, alojamientos y servicios se incorporarán cuando exista evidencia suficiente; no se atribuyen al lugar negocios ni actividades sin contrastar.",
+    "reviewedAt": "2026-11-04",
+    "verification": "Identificación geográfica revisada en Natural Earth: nombre, país y estado o distrito. Es una localidad, no un establecimiento turístico verificado. Sin comprobación de condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson"
+    ],
+    "sourceLabels": [
+      "Natural Earth · catálogo de localidades (versión documentada)"
+    ],
+    "primaryUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "map",
+        "src": "media/mapa-caracas-ciudad.webp",
+        "alt": "Mapa esquemático de Venezuela con Distrito Capital resaltado como región de Caracas",
+        "author": "Natural Earth · elaboración Venezuela en el Mapa",
+        "sourceUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson",
+        "license": "Dominio público",
+        "licenseUrl": "https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/LICENSE.md",
+        "changes": "Visualización propia con la región resaltada. Límites generalizados y no oficiales; no es una fotografía ni un mapa de navegación."
+      }
+    ],
+    "demo": false
   }
 ]

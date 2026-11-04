@@ -1,8 +1,10 @@
-# Primer catálogo documental de lugares reales
+# Registro de investigación del directorio
 
 Consulta: 4 de noviembre de 2026. Responsable de compilación: asistente en esta sesión, por solicitud del usuario. No hubo visita de campo ni validación de horarios, accesos, precios o condiciones de seguridad.
 
-## Búsqueda y fuentes realmente leídas
+## Primera carga: tres lugares patrimoniales
+
+### Búsqueda y fuentes realmente leídas
 
 Búsqueda web en GitHub: https://github.com/search?q=world-heritage-sites&type=repositories
 
@@ -17,8 +19,33 @@ Intentos directos a https://whc.unesco.org/en/list/701/ , /658/ y /986/ bloquead
 
 ## Lo que se publica y lo que no
 
-`places.json` es el catálogo versionado de la vista pública GitHub Pages. Tres sitios reales, revisión documental parcial, sin fotos, coordenadas, precios, horarios, contactos ni recomendaciones operativas inventadas. La app Next/PostgreSQL conserva su base local de demostración; no se han importado estos registros como fichas operativamente verificadas.
+`places.json` es el catálogo versionado de la vista pública GitHub Pages. La primera carga tuvo tres sitios patrimoniales, sin fotos, coordenadas, precios, horarios ni contactos inventados. La ampliación descrita abajo añade seis localidades y sus mapas. La app Next/PostgreSQL conserva su base local de demostración; no se han importado estos registros como fichas operativamente verificadas.
 
 La jerarquía administrativa exacta no se inventa: las fichas se ubican solo en Venezuela hasta documentarla. Los marcadores y rutas no se muestran. El antiguo contenido sintético se sustituye en Pages; los fixtures exclusivos de prueba permanecen fuera de este catálogo.
 
 Regenerar la página desde la raíz con `node scripts/build-pages.mjs`. No editar docs/index.html manualmente. La vista pública usa hashes para rutas compatibles con Pages; la búsqueda y los filtros son locales. El panel editorial pertenece a la app con servidor y se explica como no disponible aquí.
+
+
+## Ampliación: seis localidades y seis imágenes cartográficas
+
+Estado actual: **nueve lugares documentados, seis mapas de referencia y ninguna fotografía de destino incorporada**. Se añadieron Mérida, Cumaná, Ciudad Bolívar, Porlamar, San Cristóbal y Caracas, como localidades, no como negocios turísticos o atractivos comprobados.
+
+Fuente primaria cartográfica realmente leída: [Natural Earth, localidades](https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_populated_places.geojson), versión `ca96624a56bd078437bca8184e78163e5039ad19`. Se documentaron nombre, país y entidad de primer nivel. Las descripciones se limitan a esos hechos y a la función de la ficha. No prueban apertura de servicios ni visitas actuales.
+
+[Registro ampliado con evidencia](EXPANSION-RESEARCH.json): campos leídos, versiones, alcance, candidatos de hospedaje no publicados y razones de exclusión. Las webs encontradas en repositorios de desarrolladores no se tomaron como prueba suficiente de negocios operativos; algunos eran ejercicios o maquetas. No se añadieron como posadas verificadas.
+
+### Procedencia de las imágenes
+
+Las seis imágenes de `docs/media/` **son mapas esquemáticos, no fotografías**. Se renderizaron localmente desde [Natural Earth, entidades de primer nivel](https://github.com/nvkelso/natural-earth-vector/blob/ca96624a56bd078437bca8184e78163e5039ad19/geojson/ne_10m_admin_1_states_provinces.geojson). Se resaltó el estado o distrito de cada localidad; no se colocaron marcadores de establecimientos ni puntos exactos de visita. Datos de dominio público: licencia y créditos preservados en [maps/NATURAL-EARTH-LICENSE.md](maps/NATURAL-EARTH-LICENSE.md). Cada ficha y tarjeta enlaza origen y licencia, identifica «Cartografía» y advierte límites generalizados no oficiales. No usar para navegación ni delimitación territorial.
+
+La copia mínima de geometrías usada está en `maps/states.geojson`; los SVG fuente y la tabla de regiones también se conservan. `scripts/build-maps.mjs` genera los WebP locales. Las imágenes no dependen de hotlinks ni de servicios externos.
+
+### Investigación de fotografías y nuevo intento de acceso
+
+Se revisaron repositorios CanaimaGNULinuxArchivo/canaima-desktop-base y canaima-estilo-visual-gnome, el archivo 392781/mint-backgrounds (créditos de fotografías) y elementary/wallpapers (debian/copyright). No se obtuvo una fotografía que combinara identificación verificable de un destino venezolano y permiso de reutilización documentado. Las fotos sin localización comprobable, material de interfaz y fotos ajenas de proyectos sin licencia se descartaron.
+
+Se reintentaron Posadaven, Venezuela Tuya y Wikimedia Commons por solicitud del usuario. El acceso continúa restringido por la política de red; no se presenta como una consulta exitosa a esos sitios. Las fotos de destino y los hospedajes contrastados siguen pendientes; los mapas no se hacen pasar por esas fotografías.
+
+### Reproducción
+
+`npm run build:maps` regenera las imágenes a partir de las fuentes guardadas; `npm run build:pages` valida el catálogo y los archivos, y genera Pages. `npm run test:pages` comprueba imágenes servidas bajo la ruta del proyecto, filtros por categoría/región, búsqueda sin acentos, detalle y licencia en móvil y escritorio. La aplicación Next/PostgreSQL mantiene su catálogo local de demostración separado.
