@@ -1,0 +1,14 @@
+{
+  "config": {
+    "network": {
+      "allowed_domains": [
+        "www.google.com",
+        "google.com",
+        "whc.unesco.org",
+        "www.inparques.gob.ve",
+        "www.venezuelatuya.com",
+        "venezuelatuya.com"
+      ]
+    }
+  }
+}
