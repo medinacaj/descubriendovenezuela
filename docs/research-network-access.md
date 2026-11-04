@@ -7,3 +7,5 @@ Desde los ajustes del entorno, abrir un nuevo chat de configuración para permit
 Dominios iniciales solicitados: www.google.com, google.com, whc.unesco.org, www.inparques.gob.ve, www.venezuelatuya.com y venezuelatuya.com. Las webs oficiales de alojamientos concretos se añadirán según se identifiquen; esta lista no garantiza acceso a todas las fuentes futuras ni elimina posibles restricciones del sitio de destino.
 
 Continuar luego con posadas reales: identificar negocio, contrastar web o canal oficial, documentar fuente/fecha y publicar solo campos corroborados. No copiar fotos, reseñas o tarifas caducadas. No es necesario que el usuario investigue ni seleccione establecimientos.
+
+Fuente solicitada por el usuario: https://posadaven.com/ . Consulta bloqueada por el proxy (CONNECT 403); solicitud de habilitación rechazada con draft_not_editable. Se añadieron posadaven.com y www.posadaven.com a la propuesta, sin afirmar que se aplicó ni extraer datos del sitio.
