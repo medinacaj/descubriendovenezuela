@@ -1,0 +1,4 @@
+{
+  "install_script": "#!/usr/bin/env bash\nset -euo pipefail\ncd /workspace/descubriendovenezuela\nbash scripts/setup-demo.sh\nnpm run build\n",
+  "start_skill": "Usar checkout aislado /workspace/descubriendovenezuela; no crear worktrees salvo petición. Preservar .env y .data, no imprimir secretos. docker compose up -d --wait; npm run db:migrate; npm run build si no existe build; npm run start en puerto 3000. Comprobar GET / y /api/places y mapa /explorar localmente. Leer README y docs/operations.md. Cuenta local en .data/ACCESO.md. No publicar ni contratar servicios. No asumir procesos activos tras restauración. Demo explícitamente sintética; región piloto, catálogo real y funciones de producción pendientes."
+}
