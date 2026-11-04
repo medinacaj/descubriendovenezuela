@@ -1090,54 +1090,172 @@ footer > small {
   }
 }
 
-/* Paleta guacamaya: azul plumaje, amarillo dorado, coral y verde tropical. */
+/* Guacamaya: colores vivos y saturados con superficies de lectura claras. */
 :root {
-  --paper: #fffaf0;
-  --ink: #153952;
-  --muted: #526777;
-  --green: #006b94;
-  --line: #dce3df;
-  --accent: #f2bd32;
+  --paper: #fffdf7;
+  --ink: #12304d;
+  --muted: #4f6377;
+  --green: #0058d9;
+  --line: #dae2ed;
+  --accent: #ffd000;
 }
-.demo-bar { background: #fff0ba; color: #574611; }
-.brand-mark { color: #007fab; }
-.brand-mark span { color: #e64b40; }
-header { border-top: 4px solid #007fab; }
-header nav a:hover, .text-link:hover { color: #ca4139; }
-.hero h1 em { color: #007fa0; }
-.eyebrow { color: #176e75; }
-.eyebrow span { background: #eb5345; }
-.button { background: #007ba5; }
-.button:hover { background: #005c80; }
-.nav-cta { border-color: #007ba5; color: #006b94; }
-.landscape { background: linear-gradient(165deg, #8dd3df 0%, #bce5da 45%, #e4e9ae 100%); }
-.sun { background: #ffd350; box-shadow: 0 0 85px #ffe28b; }
-.mountain.back { background: #52a88e; }
-.mountain.mid { background: #238c78; }
-.mountain.front { background: linear-gradient(145deg, #157b77, #07556b); }
-.landscape:after { background: linear-gradient(0deg, #064b6480, transparent 55%); }
-.vertical-label { color: #164e67; }
-.categories a { background: #edf6f4; border-color: #d6e7e3; }
-.categories a:nth-child(2) { background: #fff0c5; border-color: #f1dda2; }
-.categories a:nth-child(3) { background: #ffebe4; border-color: #f3d8ce; }
-.categories a:nth-child(4) { background: #e4f1fa; border-color: #cfdfef; }
-.categories a:nth-child(5) { background: #e9f2d9; border-color: #d9e6c7; }
-.categories a:hover { border-color: #0083a4; }
-.categories span { color: #007c91; }
-.categories a:nth-child(2) span { color: #9a6d00; }
-.categories a:nth-child(3) span { color: #c34d3d; }
-.categories a:nth-child(4) span { color: #2464a1; }
-.card-art { background: linear-gradient(135deg, #a4d6b7, #168d91); }
-.art-hospedaje { background: linear-gradient(135deg, #ffe491, #d8a62c); }
-.art-gastronomía { background: linear-gradient(135deg, #ffb58c, #d75c50); }
-.art-cultura { background: linear-gradient(135deg, #9fd4f0, #367cba); }
-.card-meta { color: #146978; }
-.card-meta b { color: #8d5e00; }
-.notice { background: #fff1cb; border-left-color: #e7ab24; color: #635019; }
-.manifesto { background: #e5f1ef; border-top: 4px solid #f2bd32; }
-.manifesto > div > span { color: #bd4339; }
-footer { background: #123f58; border-top: 4px solid #e85a45; color: #e4f1f4; }
-footer p, footer .footer-brand span, footer > small { color: #bcd5dc; }
+.demo-bar {
+  background: #ffd000;
+  color: #26334a;
+  font-weight: 600;
+}
+.brand-mark {
+  color: #0058d9;
+}
+.brand-mark span {
+  color: #e62036;
+}
+header {
+  border-top: 5px solid #0058d9;
+}
+header nav a:hover,
+.text-link:hover {
+  color: #d91c32;
+}
+.hero h1 em {
+  color: #d91c32;
+}
+.eyebrow {
+  color: #0058ba;
+}
+.eyebrow span {
+  background: #f22b3c;
+}
+.button {
+  background: #d91c32;
+  color: #fff;
+}
+.button:hover {
+  background: #ad1025;
+}
+.nav-cta {
+  background: #0058d9;
+  border-color: #0058d9;
+  color: #fff;
+}
+.landscape {
+  background: linear-gradient(160deg, #008cff 0%, #00bbdb 55%, #65e6b5 100%);
+}
+.sun {
+  background: #ffdc00;
+  box-shadow: 0 0 65px #ffed6380;
+}
+.mountain.back {
+  background: #00bd71;
+}
+.mountain.mid {
+  background: #008b53;
+}
+.mountain.front {
+  background: linear-gradient(145deg, #006fb9, #003886);
+}
+.landscape:after {
+  background: linear-gradient(0deg, #00266199, transparent 58%);
+}
+.vertical-label {
+  color: #083753;
+  font-weight: 600;
+}
+.categories a {
+  background: #008749;
+  border-color: #008749;
+  color: #fff;
+}
+.categories a:nth-child(2) {
+  background: #ffd000;
+  border-color: #ffd000;
+  color: #26334a;
+}
+.categories a:nth-child(3) {
+  background: #d91c32;
+  border-color: #d91c32;
+  color: #fff;
+}
+.categories a:nth-child(4) {
+  background: #0058d9;
+  border-color: #0058d9;
+  color: #fff;
+}
+.categories a:nth-child(5) {
+  background: #007e8a;
+  border-color: #007e8a;
+  color: #fff;
+}
+.categories a:hover {
+  filter: brightness(0.93);
+}
+.categories span,
+.categories small,
+.categories a:nth-child(3) span,
+.categories a:nth-child(4) span {
+  color: #fff;
+}
+.categories a:nth-child(2) span,
+.categories a:nth-child(2) small {
+  color: #26334a;
+}
+.card-art {
+  background: linear-gradient(135deg, #00bc76, #007747);
+}
+.art-hospedaje {
+  background: linear-gradient(135deg, #ffe000, #ffad00);
+}
+.art-gastronomía {
+  background: linear-gradient(135deg, #ff6638, #db1934);
+}
+.art-cultura {
+  background: linear-gradient(135deg, #169aff, #004cd2);
+}
+.place-card:nth-child(2) .art-cultura {
+  background: linear-gradient(135deg, #ff633a, #db1934);
+}
+.card-art > span {
+  color: #fff;
+  text-shadow: 0 2px 12px #00264b33;
+}
+.card-art small {
+  background: #002e48d9;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+.card-meta {
+  color: #0058ba;
+}
+.card-meta b {
+  color: #975000;
+}
+.notice {
+  background: #fff3bf;
+  border-left-color: #ffc400;
+  color: #574500;
+}
+.manifesto {
+  background: #ffd000;
+  border-top: 5px solid #e62036;
+}
+.manifesto .eyebrow,
+.manifesto p,
+.manifesto b {
+  color: #26334a;
+}
+.manifesto > div > span {
+  color: #b31129;
+}
+footer {
+  background: #0048b3;
+  border-top: 5px solid #e62036;
+  color: #fff;
+}
+footer p,
+footer .footer-brand span,
+footer > small {
+  color: #e3efff;
+}
  [hidden]{display:none!important} .cards{grid-template-columns:repeat(3,minmax(0,1fr))}@media(max-width:650px){.cards{grid-template-columns:1fr}}</style></head><body><div hidden=""><!--$--><!--/$--></div><a class="skip" href="#contenido">Saltar al contenido</a><div class="demo-bar">CATÁLOGO INICIAL · Lugares reales · Revisión documental, sin verificación de campo.</div><header><a class="brand" href="/"><span class="brand-mark">V<span>•</span></span><span>Venezuela<small>EN EL MAPA</small></span></a><nav aria-label="Principal"><a href="/explorar">Explorar</a><a href="/explorar?category=Naturaleza">Destinos</a><a href="/explorar?category=Hospedaje">Hospedaje</a><a href="/explorar?category=Gastronomía">Gastronomía</a></nav><a class="nav-cta" href="/explorar">Descubrir Venezuela <span>↗</span></a></header><main id="contenido"><section class="hero"><div class="hero-copy"><div class="eyebrow"><span></span> TERRITORIO DE HISTORIAS</div><h1>Venezuela tiene<br>mucho por <em>descubrir.</em></h1><p>Del mar a la montaña, del pueblo a su gente.<br>Encuentra ese rincón que todavía no conoces.</p><a class="button" href="/explorar">Explorar el mapa <span aria-hidden="true">↗</span></a><div class="hero-note"><span class="note-line"></span>Un país extraordinario. Una mirada más cercana.</div></div><div class="landscape" role="img" aria-label="Ilustración abstracta de montañas venezolanas, no fotografía de un destino"><div class="sun"></div><div class="mountain back"></div><div class="mountain mid"></div><div class="mountain front"></div><div class="landscape-label"><span>10° N · 66° O — REFERENCIA GRÁFICA</span><b>La aventura empieza<br>con la curiosidad.</b><small>PAISAJE ILUSTRADO</small></div><div class="vertical-label">NATURALEZA · CULTURA · GENTE</div></div></section><section class="section"><div class="section-head"><div><span class="eyebrow">PRIMEROS LUGARES DOCUMENTADOS</span><h2>Patrimonio venezolano por descubrir.</h2></div><a class="text-link" href="#/explorar">Explorar los destinos →</a></div><div class="notice">Primer catálogo real · Identificación contrastada en fuentes secundarias. No hay consulta directa a UNESCO ni verificación de campo. No se confirman horarios, tarifas o condiciones de visita.</div><div class="cards"><a class="place-card" href="#/lugares/701" data-name="Parque Nacional Canaima" data-category="Naturaleza"><div class="card-art art-naturaleza" aria-hidden="true"><span>↟</span><small>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA</small></div><div class="card-body"><div class="card-meta"><span>Naturaleza</span><b>DOCUMENTADO</b></div><h3>Parque Nacional Canaima</h3><p class="location">⌖ Venezuela · Ubicación precisa pendiente</p><div class="card-bottom"><span>Consultar precio</span><b aria-hidden="true">↗</b></div></div></a><a class="place-card" href="#/lugares/658" data-name="Coro y su Puerto" data-category="Cultura"><div class="card-art art-cultura" aria-hidden="true"><span>▥</span><small>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA</small></div><div class="card-body"><div class="card-meta"><span>Cultura</span><b>DOCUMENTADO</b></div><h3>Coro y su Puerto</h3><p class="location">⌖ Venezuela · Ubicación precisa pendiente</p><div class="card-bottom"><span>Consultar precio</span><b aria-hidden="true">↗</b></div></div></a><a class="place-card" href="#/lugares/986" data-name="Ciudad Universitaria de Caracas" data-category="Cultura"><div class="card-art art-cultura" aria-hidden="true"><span>▥</span><small>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA</small></div><div class="card-body"><div class="card-meta"><span>Cultura</span><b>DOCUMENTADO</b></div><h3>Ciudad Universitaria de Caracas</h3><p class="location">⌖ Venezuela · Ubicación precisa pendiente</p><div class="card-bottom"><span>Consultar precio</span><b aria-hidden="true">↗</b></div></div></a></div></section><section class="manifesto"><span class="eyebrow">UN CATÁLOGO QUE CRECE CON EVIDENCIA</span><h2>Cada lugar empieza por una fuente.</h2><p>Incorporamos fichas reales poco a poco, con procedencia visible y textos originales.<br>Las imágenes autorizadas y los detalles prácticos llegarán tras su revisión.</p></section></main><footer><a class="footer-brand" href="/">Venezuela en el Mapa<span>Un país, miles de historias.</span></a><p>Una guía que empieza por la confianza.<br>Información útil, comunidades visibles y lugares por conocer.</p><div><a href="/politica-editorial">Política editorial</a><a href="/privacidad">Privacidad</a><a href="/admin">Acceso editorial</a></div><small>© <!-- -->2026<!-- --> Venezuela en el Mapa · Catálogo inicial, sin publicidad.</small></footer><script>const views={"/":"\u003csection class=\"hero\">\u003cdiv class=\"hero-copy\">\u003cdiv class=\"eyebrow\">\u003cspan>\u003c/span> TERRITORIO DE HISTORIAS\u003c/div>\u003ch1>Venezuela tiene\u003cbr>mucho por \u003cem>descubrir.\u003c/em>\u003c/h1>\u003cp>Del mar a la montaña, del pueblo a su gente.\u003cbr>Encuentra ese rincón que todavía no conoces.\u003c/p>\u003ca class=\"button\" href=\"/explorar\">Explorar el mapa \u003cspan aria-hidden=\"true\">↗\u003c/span>\u003c/a>\u003cdiv class=\"hero-note\">\u003cspan class=\"note-line\">\u003c/span>Un país extraordinario. Una mirada más cercana.\u003c/div>\u003c/div>\u003cdiv class=\"landscape\" role=\"img\" aria-label=\"Ilustración abstracta de montañas venezolanas, no fotografía de un destino\">\u003cdiv class=\"sun\">\u003c/div>\u003cdiv class=\"mountain back\">\u003c/div>\u003cdiv class=\"mountain mid\">\u003c/div>\u003cdiv class=\"mountain front\">\u003c/div>\u003cdiv class=\"landscape-label\">\u003cspan>10° N · 66° O — REFERENCIA GRÁFICA\u003c/span>\u003cb>La aventura empieza\u003cbr>con la curiosidad.\u003c/b>\u003csmall>PAISAJE ILUSTRADO\u003c/small>\u003c/div>\u003cdiv class=\"vertical-label\">NATURALEZA · CULTURA · GENTE\u003c/div>\u003c/div>\u003c/section>\u003csection class=\"section\">\u003cdiv class=\"section-head\">\u003cdiv>\u003cspan class=\"eyebrow\">PRIMEROS LUGARES DOCUMENTADOS\u003c/span>\u003ch2>Patrimonio venezolano por descubrir.\u003c/h2>\u003c/div>\u003ca class=\"text-link\" href=\"#/explorar\">Explorar los destinos →\u003c/a>\u003c/div>\u003cdiv class=\"notice\">Primer catálogo real · Identificación contrastada en fuentes secundarias. No hay consulta directa a UNESCO ni verificación de campo. No se confirman horarios, tarifas o condiciones de visita.\u003c/div>\u003cdiv class=\"cards\">\u003ca class=\"place-card\" href=\"#/lugares/701\" data-name=\"Parque Nacional Canaima\" data-category=\"Naturaleza\">\u003cdiv class=\"card-art art-naturaleza\" aria-hidden=\"true\">\u003cspan>↟\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Naturaleza\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Parque Nacional Canaima\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003ca class=\"place-card\" href=\"#/lugares/658\" data-name=\"Coro y su Puerto\" data-category=\"Cultura\">\u003cdiv class=\"card-art art-cultura\" aria-hidden=\"true\">\u003cspan>▥\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Cultura\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Coro y su Puerto\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003ca class=\"place-card\" href=\"#/lugares/986\" data-name=\"Ciudad Universitaria de Caracas\" data-category=\"Cultura\">\u003cdiv class=\"card-art art-cultura\" aria-hidden=\"true\">\u003cspan>▥\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Cultura\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Ciudad Universitaria de Caracas\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003c/div>\u003c/section>\u003csection class=\"manifesto\">\u003cspan class=\"eyebrow\">UN CATÁLOGO QUE CRECE CON EVIDENCIA\u003c/span>\u003ch2>Cada lugar empieza por una fuente.\u003c/h2>\u003cp>Incorporamos fichas reales poco a poco, con procedencia visible y textos originales.\u003cbr>Las imágenes autorizadas y los detalles prácticos llegarán tras su revisión.\u003c/p>\u003c/section>","/explorar":"\u003csection class=\"section explorer\">\u003cspan class=\"eyebrow\">LUGARES REALES · CATÁLOGO INICIAL\u003c/span>\u003ch1>Encuentra tu próximo lugar\u003c/h1>\u003cdiv class=\"notice\">Primer catálogo real · Identificación contrastada en fuentes secundarias. No hay consulta directa a UNESCO ni verificación de campo. No se confirman horarios, tarifas o condiciones de visita.\u003c/div>\u003cform class=\"filter-bar\" id=\"filters\">\u003cdiv>\u003clabel for=\"q\">Buscar lugar\u003c/label>\u003cinput id=\"q\" name=\"q\" placeholder=\"Canaima, Coro, Caracas…\" maxlength=\"120\">\u003c/div>\u003cdiv>\u003clabel for=\"category\">Categoría\u003c/label>\u003cselect id=\"category\" name=\"category\">\u003coption value=\"\">Todas las categorías\u003c/option>\u003coption>Naturaleza\u003c/option>\u003coption>Cultura\u003c/option>\u003coption>Hospedaje\u003c/option>\u003coption>Gastronomía\u003c/option>\u003coption>Negocios y servicios\u003c/option>\u003c/select>\u003c/div>\u003cbutton class=\"button\">Buscar\u003c/button>\u003ca href=\"#/explorar\" class=\"reset\">Limpiar\u003c/a>\u003c/form>\u003cdiv class=\"results-head\">\u003cb id=\"count\">3 lugares documentados\u003c/b>\u003cspan>Sin posiciones patrocinadas.\u003c/span>\u003c/div>\u003cdiv class=\"cards\" id=\"results\">\u003ca class=\"place-card\" href=\"#/lugares/701\" data-name=\"Parque Nacional Canaima\" data-category=\"Naturaleza\">\u003cdiv class=\"card-art art-naturaleza\" aria-hidden=\"true\">\u003cspan>↟\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Naturaleza\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Parque Nacional Canaima\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003ca class=\"place-card\" href=\"#/lugares/658\" data-name=\"Coro y su Puerto\" data-category=\"Cultura\">\u003cdiv class=\"card-art art-cultura\" aria-hidden=\"true\">\u003cspan>▥\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Cultura\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Coro y su Puerto\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003ca class=\"place-card\" href=\"#/lugares/986\" data-name=\"Ciudad Universitaria de Caracas\" data-category=\"Cultura\">\u003cdiv class=\"card-art art-cultura\" aria-hidden=\"true\">\u003cspan>▥\u003c/span>\u003csmall>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA\u003c/small>\u003c/div>\u003cdiv class=\"card-body\">\u003cdiv class=\"card-meta\">\u003cspan>Cultura\u003c/span>\u003cb>DOCUMENTADO\u003c/b>\u003c/div>\u003ch3>Ciudad Universitaria de Caracas\u003c/h3>\u003cp class=\"location\">⌖ Venezuela · Ubicación precisa pendiente\u003c/p>\u003cdiv class=\"card-bottom\">\u003cspan>Consultar precio\u003c/span>\u003cb aria-hidden=\"true\">↗\u003c/b>\u003c/div>\u003c/div>\u003c/a>\u003c/div>\u003cp id=\"empty\" class=\"empty\" hidden>No encontramos lugares con estos filtros. El catálogo todavía es pequeño.\u003c/p>\u003cp class=\"notice\">Las coordenadas exactas siguen pendientes: no se colocan marcadores ni se calculan rutas sin comprobación.\u003c/p>\u003c/section>","/lugares/701":"\u003carticle class=\"section detail\">\u003ca href=\"#/explorar\" class=\"text-link\">← Volver al explorador\u003c/a>\u003cdiv class=\"detail-grid\">\u003cdiv>\u003cspan class=\"eyebrow\">Naturaleza · DESTINO REAL\u003c/span>\u003ch1>Parque Nacional Canaima\u003c/h1>\u003cp class=\"location\">Venezuela · Referencia UNESCO 701\u003c/p>\u003ch2>Sobre este lugar\u003c/h2>\u003cp class=\"description\">Un primer destino para explorar el patrimonio natural venezolano. Los catálogos consultados lo identifican como bien natural inscrito en 1994. Esta ficha reúne su identificación documental; todavía no ofrece itinerarios ni condiciones de acceso.\u003c/p>\u003cdiv class=\"notice\">Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.\u003c/div>\u003ch2>Antes de organizar la visita\u003c/h2>\u003cp>Horarios, acceso, contacto, tarifas y coordenadas: pendientes de verificación. No se ofrecen reservas, indicaciones de llegada ni garantías de seguridad.\u003c/p>\u003c/div>\u003caside class=\"facts\">\u003cspan class=\"eyebrow\">PROCEDENCIA VISIBLE\u003c/span>\u003ch2>Información documentada\u003c/h2>\u003cdl>\u003cdt>Inscripción patrimonial (dato histórico)\u003c/dt>\u003cdd>1994\u003c/dd>\u003cdt>Precio\u003c/dt>\u003cdd>Consultar precio\u003c/dd>\u003cdt>Consulta de catálogos\u003c/dt>\u003cdd>2026-11-04\u003c/dd>\u003cdt>Fuente secundaria consultada\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country\" target=\"_blank\" rel=\"noopener noreferrer\">Catálogo de Brandon Himpfen →\u003c/a>\u003c/dd>\u003cdt>Contraste secundario\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e\" target=\"_blank\" rel=\"noopener noreferrer\">UWHS · Richard Iannone (auditoría 2014) →\u003c/a>\u003c/dd>\u003cdt>Referencia oficial, no consultada directamente\u003c/dt>\u003cdd>\u003ca href=\"https://whc.unesco.org/en/list/701/\" target=\"_blank\" rel=\"noopener noreferrer\">Ficha UNESCO →\u003c/a>\u003c/dd>\u003c/dl>\u003csmall>La clasificación de esta ficha es documental. No equivale a una certificación operativa actual. Sin fotos de terceros ni coordenadas publicadas.\u003c/small>\u003c/aside>\u003c/div>\u003c/article>","/lugares/658":"\u003carticle class=\"section detail\">\u003ca href=\"#/explorar\" class=\"text-link\">← Volver al explorador\u003c/a>\u003cdiv class=\"detail-grid\">\u003cdiv>\u003cspan class=\"eyebrow\">Cultura · DESTINO REAL\u003c/span>\u003ch1>Coro y su Puerto\u003c/h1>\u003cp class=\"location\">Venezuela · Referencia UNESCO 658\u003c/p>\u003ch2>Sobre este lugar\u003c/h2>\u003cp class=\"description\">Una entrada al patrimonio cultural de Venezuela. Los catálogos consultados registran el conjunto «Coro and its Port» y su inscripción en 1993. Las recomendaciones concretas de visita se incorporarán después de contrastarlas con fuentes locales actuales.\u003c/p>\u003cdiv class=\"notice\">Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.\u003c/div>\u003ch2>Antes de organizar la visita\u003c/h2>\u003cp>Horarios, acceso, contacto, tarifas y coordenadas: pendientes de verificación. No se ofrecen reservas, indicaciones de llegada ni garantías de seguridad.\u003c/p>\u003c/div>\u003caside class=\"facts\">\u003cspan class=\"eyebrow\">PROCEDENCIA VISIBLE\u003c/span>\u003ch2>Información documentada\u003c/h2>\u003cdl>\u003cdt>Inscripción patrimonial (dato histórico)\u003c/dt>\u003cdd>1993\u003c/dd>\u003cdt>Precio\u003c/dt>\u003cdd>Consultar precio\u003c/dd>\u003cdt>Consulta de catálogos\u003c/dt>\u003cdd>2026-11-04\u003c/dd>\u003cdt>Fuente secundaria consultada\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country\" target=\"_blank\" rel=\"noopener noreferrer\">Catálogo de Brandon Himpfen →\u003c/a>\u003c/dd>\u003cdt>Contraste secundario\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e\" target=\"_blank\" rel=\"noopener noreferrer\">UWHS · Richard Iannone (auditoría 2014) →\u003c/a>\u003c/dd>\u003cdt>Referencia oficial, no consultada directamente\u003c/dt>\u003cdd>\u003ca href=\"https://whc.unesco.org/en/list/658/\" target=\"_blank\" rel=\"noopener noreferrer\">Ficha UNESCO →\u003c/a>\u003c/dd>\u003c/dl>\u003csmall>La clasificación de esta ficha es documental. No equivale a una certificación operativa actual. Sin fotos de terceros ni coordenadas publicadas.\u003c/small>\u003c/aside>\u003c/div>\u003c/article>","/lugares/986":"\u003carticle class=\"section detail\">\u003ca href=\"#/explorar\" class=\"text-link\">← Volver al explorador\u003c/a>\u003cdiv class=\"detail-grid\">\u003cdiv>\u003cspan class=\"eyebrow\">Cultura · DESTINO REAL\u003c/span>\u003ch1>Ciudad Universitaria de Caracas\u003c/h1>\u003cp class=\"location\">Venezuela · Referencia UNESCO 986\u003c/p>\u003ch2>Sobre este lugar\u003c/h2>\u003cp class=\"description\">Un lugar para comenzar a descubrir el patrimonio cultural de Caracas. Los catálogos consultados registran la Ciudad Universitaria de Caracas como bien cultural inscrito en 2000. Esta ficha no confirma visitas guiadas ni apertura de espacios.\u003c/p>\u003cdiv class=\"notice\">Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.\u003c/div>\u003ch2>Antes de organizar la visita\u003c/h2>\u003cp>Horarios, acceso, contacto, tarifas y coordenadas: pendientes de verificación. No se ofrecen reservas, indicaciones de llegada ni garantías de seguridad.\u003c/p>\u003c/div>\u003caside class=\"facts\">\u003cspan class=\"eyebrow\">PROCEDENCIA VISIBLE\u003c/span>\u003ch2>Información documentada\u003c/h2>\u003cdl>\u003cdt>Inscripción patrimonial (dato histórico)\u003c/dt>\u003cdd>2000\u003c/dd>\u003cdt>Precio\u003c/dt>\u003cdd>Consultar precio\u003c/dd>\u003cdt>Consulta de catálogos\u003c/dt>\u003cdd>2026-11-04\u003c/dd>\u003cdt>Fuente secundaria consultada\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country\" target=\"_blank\" rel=\"noopener noreferrer\">Catálogo de Brandon Himpfen →\u003c/a>\u003c/dd>\u003cdt>Contraste secundario\u003c/dt>\u003cdd>\u003ca href=\"https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e\" target=\"_blank\" rel=\"noopener noreferrer\">UWHS · Richard Iannone (auditoría 2014) →\u003c/a>\u003c/dd>\u003cdt>Referencia oficial, no consultada directamente\u003c/dt>\u003cdd>\u003ca href=\"https://whc.unesco.org/en/list/986/\" target=\"_blank\" rel=\"noopener noreferrer\">Ficha UNESCO →\u003c/a>\u003c/dd>\u003c/dl>\u003csmall>La clasificación de esta ficha es documental. No equivale a una certificación operativa actual. Sin fotos de terceros ni coordenadas publicadas.\u003c/small>\u003c/aside>\u003c/div>\u003c/article>","/politica-editorial":"\u003carticle class=\"section prose\">\u003ch1>Primero la confianza.\u003c/h1>\u003cp>Este catálogo contiene lugares reales identificados en dos catálogos secundarios. Las páginas originales de UNESCO e Inparques no pudieron consultarse por una restricción de red de esta sesión; no se presenta esa consulta como realizada.\u003c/p>\u003cp>Los nombres, categoría e inscripción histórica se contrastaron. Los textos de las fichas son originales. No se copian fotografías, reseñas ni descripciones ajenas.\u003c/p>\u003cp>No hay datos comprobados de precios, horarios, contacto o coordenadas exactas. Las fichas muestran lo pendiente. No se ofrecen reservas, rutas ni garantías de seguridad. La página no tiene publicidad activa.\u003c/p>\u003cp>Fecha de revisión documental: 4 de noviembre de 2026. Procedencia y versiones: \u003ca href=\"https://github.com/medinacaj/descubriendovenezuela/blob/main/content/RESEARCH.md\">registro de investigación\u003c/a>.\u003c/p>\u003c/article>","/privacidad":"\u003carticle class=\"section prose\">\u003ch1>Privacidad\u003c/h1>\u003cp>Esta página de GitHub Pages no usa cuentas, formularios de contribución, analítica, publicidad ni ubicación del visitante. La búsqueda se ejecuta en tu navegador.\u003c/p>\u003cp>El alojamiento es GitHub Pages y los enlaces a las fuentes abren sitios externos con sus propias políticas. No hay panel administrativo en esta vista pública ni datos personales de propietarios.\u003c/p>\u003c/article>","/admin":"\u003csection class=\"section prose\">\u003ch1>Administración fuera de esta vista pública\u003c/h1>\u003cp>GitHub Pages sirve el catálogo de lectura. La administración con base de datos pertenece a la aplicación con servidor y no se ejecuta aquí.\u003c/p>\u003ca class=\"button\" href=\"#/explorar\">Volver a los destinos\u003c/a>\u003c/section>"};
 function render(){if(location.hash==='#contenido'){document.querySelector('main').setAttribute('tabindex','-1');document.querySelector('main').focus();return;}const raw=location.hash.slice(1)||'/';const url=new URL(raw,'https://catalogo.local');const path=url.pathname;document.querySelector('main').innerHTML=views[path]||'<section class="section"><h1>Ficha no encontrada</h1><a href="#/explorar">Volver al catálogo</a></section>';if(path==='/explorar'){const q=url.searchParams.get('q')||'';const category=url.searchParams.get('category')||'';document.querySelector('#q').value=q;document.querySelector('#category').value=category;let count=0;document.querySelectorAll('.place-card').forEach(c=>{const visible=c.dataset.name.toLocaleLowerCase('es').includes(q.toLocaleLowerCase('es'))&&(!category||c.dataset.category===category);c.hidden=!visible;if(visible)count++;});document.querySelector('#count').textContent=count+' lugares documentados';document.querySelector('#empty').hidden=count>0;}window.scrollTo(0,0);}
 document.addEventListener('click',event=>{const a=event.target.closest('a');if(!a)return;const href=a.getAttribute('href');if(!href||!href.startsWith('/'))return;event.preventDefault();location.hash=href;});

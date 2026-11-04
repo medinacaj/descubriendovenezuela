@@ -1090,51 +1090,169 @@ footer > small {
   }
 }
 
-/* Paleta guacamaya: azul plumaje, amarillo dorado, coral y verde tropical. */
+/* Guacamaya: colores vivos y saturados con superficies de lectura claras. */
 :root {
-  --paper: #fffaf0;
-  --ink: #153952;
-  --muted: #526777;
-  --green: #006b94;
-  --line: #dce3df;
-  --accent: #f2bd32;
+  --paper: #fffdf7;
+  --ink: #12304d;
+  --muted: #4f6377;
+  --green: #0058d9;
+  --line: #dae2ed;
+  --accent: #ffd000;
 }
-.demo-bar { background: #fff0ba; color: #574611; }
-.brand-mark { color: #007fab; }
-.brand-mark span { color: #e64b40; }
-header { border-top: 4px solid #007fab; }
-header nav a:hover, .text-link:hover { color: #ca4139; }
-.hero h1 em { color: #007fa0; }
-.eyebrow { color: #176e75; }
-.eyebrow span { background: #eb5345; }
-.button { background: #007ba5; }
-.button:hover { background: #005c80; }
-.nav-cta { border-color: #007ba5; color: #006b94; }
-.landscape { background: linear-gradient(165deg, #8dd3df 0%, #bce5da 45%, #e4e9ae 100%); }
-.sun { background: #ffd350; box-shadow: 0 0 85px #ffe28b; }
-.mountain.back { background: #52a88e; }
-.mountain.mid { background: #238c78; }
-.mountain.front { background: linear-gradient(145deg, #157b77, #07556b); }
-.landscape:after { background: linear-gradient(0deg, #064b6480, transparent 55%); }
-.vertical-label { color: #164e67; }
-.categories a { background: #edf6f4; border-color: #d6e7e3; }
-.categories a:nth-child(2) { background: #fff0c5; border-color: #f1dda2; }
-.categories a:nth-child(3) { background: #ffebe4; border-color: #f3d8ce; }
-.categories a:nth-child(4) { background: #e4f1fa; border-color: #cfdfef; }
-.categories a:nth-child(5) { background: #e9f2d9; border-color: #d9e6c7; }
-.categories a:hover { border-color: #0083a4; }
-.categories span { color: #007c91; }
-.categories a:nth-child(2) span { color: #9a6d00; }
-.categories a:nth-child(3) span { color: #c34d3d; }
-.categories a:nth-child(4) span { color: #2464a1; }
-.card-art { background: linear-gradient(135deg, #a4d6b7, #168d91); }
-.art-hospedaje { background: linear-gradient(135deg, #ffe491, #d8a62c); }
-.art-gastronomía { background: linear-gradient(135deg, #ffb58c, #d75c50); }
-.art-cultura { background: linear-gradient(135deg, #9fd4f0, #367cba); }
-.card-meta { color: #146978; }
-.card-meta b { color: #8d5e00; }
-.notice { background: #fff1cb; border-left-color: #e7ab24; color: #635019; }
-.manifesto { background: #e5f1ef; border-top: 4px solid #f2bd32; }
-.manifesto > div > span { color: #bd4339; }
-footer { background: #123f58; border-top: 4px solid #e85a45; color: #e4f1f4; }
-footer p, footer .footer-brand span, footer > small { color: #bcd5dc; }
+.demo-bar {
+  background: #ffd000;
+  color: #26334a;
+  font-weight: 600;
+}
+.brand-mark {
+  color: #0058d9;
+}
+.brand-mark span {
+  color: #e62036;
+}
+header {
+  border-top: 5px solid #0058d9;
+}
+header nav a:hover,
+.text-link:hover {
+  color: #d91c32;
+}
+.hero h1 em {
+  color: #d91c32;
+}
+.eyebrow {
+  color: #0058ba;
+}
+.eyebrow span {
+  background: #f22b3c;
+}
+.button {
+  background: #d91c32;
+  color: #fff;
+}
+.button:hover {
+  background: #ad1025;
+}
+.nav-cta {
+  background: #0058d9;
+  border-color: #0058d9;
+  color: #fff;
+}
+.landscape {
+  background: linear-gradient(160deg, #008cff 0%, #00bbdb 55%, #65e6b5 100%);
+}
+.sun {
+  background: #ffdc00;
+  box-shadow: 0 0 65px #ffed6380;
+}
+.mountain.back {
+  background: #00bd71;
+}
+.mountain.mid {
+  background: #008b53;
+}
+.mountain.front {
+  background: linear-gradient(145deg, #006fb9, #003886);
+}
+.landscape:after {
+  background: linear-gradient(0deg, #00266199, transparent 58%);
+}
+.vertical-label {
+  color: #083753;
+  font-weight: 600;
+}
+.categories a {
+  background: #008749;
+  border-color: #008749;
+  color: #fff;
+}
+.categories a:nth-child(2) {
+  background: #ffd000;
+  border-color: #ffd000;
+  color: #26334a;
+}
+.categories a:nth-child(3) {
+  background: #d91c32;
+  border-color: #d91c32;
+  color: #fff;
+}
+.categories a:nth-child(4) {
+  background: #0058d9;
+  border-color: #0058d9;
+  color: #fff;
+}
+.categories a:nth-child(5) {
+  background: #007e8a;
+  border-color: #007e8a;
+  color: #fff;
+}
+.categories a:hover {
+  filter: brightness(0.93);
+}
+.categories span,
+.categories small,
+.categories a:nth-child(3) span,
+.categories a:nth-child(4) span {
+  color: #fff;
+}
+.categories a:nth-child(2) span,
+.categories a:nth-child(2) small {
+  color: #26334a;
+}
+.card-art {
+  background: linear-gradient(135deg, #00bc76, #007747);
+}
+.art-hospedaje {
+  background: linear-gradient(135deg, #ffe000, #ffad00);
+}
+.art-gastronomía {
+  background: linear-gradient(135deg, #ff6638, #db1934);
+}
+.art-cultura {
+  background: linear-gradient(135deg, #169aff, #004cd2);
+}
+.place-card:nth-child(2) .art-cultura {
+  background: linear-gradient(135deg, #ff633a, #db1934);
+}
+.card-art > span {
+  color: #fff;
+  text-shadow: 0 2px 12px #00264b33;
+}
+.card-art small {
+  background: #002e48d9;
+  padding: 3px 6px;
+  border-radius: 3px;
+}
+.card-meta {
+  color: #0058ba;
+}
+.card-meta b {
+  color: #975000;
+}
+.notice {
+  background: #fff3bf;
+  border-left-color: #ffc400;
+  color: #574500;
+}
+.manifesto {
+  background: #ffd000;
+  border-top: 5px solid #e62036;
+}
+.manifesto .eyebrow,
+.manifesto p,
+.manifesto b {
+  color: #26334a;
+}
+.manifesto > div > span {
+  color: #b31129;
+}
+footer {
+  background: #0048b3;
+  border-top: 5px solid #e62036;
+  color: #fff;
+}
+footer p,
+footer .footer-brand span,
+footer > small {
+  color: #e3efff;
+}
