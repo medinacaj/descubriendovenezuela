@@ -1,4 +1,8 @@
-process.loadEnvFile(".env");
+try {
+  process.loadEnvFile(".env");
+} catch (error) {
+  if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+}
 const { pool } = await import("../src/lib/db");
 if (process.env.ALLOW_DEMO_IMPORT !== "yes")
   throw Error(

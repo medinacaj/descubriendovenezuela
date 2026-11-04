@@ -1,0 +1,45 @@
+name: venezuela-demo-deploy
+services:
+  db:
+    image: postgis/postgis:17-3.5
+    environment:
+      POSTGRES_DB: venezuela
+      POSTGRES_USER: venezuela
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?Set a strong generated password}
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U venezuela -d venezuela"]
+      interval: 3s
+      timeout: 3s
+      retries: 30
+  migrate:
+    image: venezuela-demo:local
+    build:
+      context: ..
+    environment:
+      DATABASE_URL: ${DEPLOY_DATABASE_URL:?Set deployment PostgreSQL URL with host db}
+    depends_on:
+      db:
+        condition: service_healthy
+    command: ["npm", "run", "db:migrate"]
+    restart: "no"
+  app:
+    image: venezuela-demo:local
+    environment:
+      DATABASE_URL: ${DEPLOY_DATABASE_URL:?Set deployment PostgreSQL URL with host db}
+      APP_ORIGIN: ${APP_ORIGIN:?Set the exact public HTTPS origin}
+    ports:
+      - "127.0.0.1:${DEMO_PORT:-3100}:3000"
+    depends_on:
+      migrate:
+        condition: service_completed_successfully
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:3000/api/health').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+volumes:
+  postgres_data:

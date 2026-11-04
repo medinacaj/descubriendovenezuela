@@ -1,0 +1,5 @@
+# Copy to a private file outside Git, e.g. .data/deploy.env. Never commit values.
+POSTGRES_PASSWORD=replace-with-a-long-random-hex-password
+DEPLOY_DATABASE_URL=postgresql://venezuela:replace-with-a-long-random-hex-password@db:5432/venezuela
+APP_ORIGIN=https://your-demo-domain.example
+DEMO_PORT=3100

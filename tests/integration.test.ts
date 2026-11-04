@@ -50,6 +50,12 @@ beforeAll(async () => {
 });
 afterAll(() => pool.end());
 describe("persistencia y publicación reales", () => {
+  it("salud confirma esquema y conexión sin revelar datos", async () => {
+    const { GET } = await import("../src/app/api/health/route");
+    const response = await GET();
+    expect(response.status).toBe(200);
+    expect(await response.json()).toEqual({ status: "ready" });
+  });
   it("PostGIS activo", async () =>
     expect(
       (await pool.query("SELECT postgis_version()")).rows[0].postgis_version,

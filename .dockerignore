@@ -1,0 +1,13 @@
+.git
+node_modules
+.next
+.env
+.env.*
+.data
+test-results
+playwright-report
+*.dump
+*.tsbuildinfo
+docs/screenshots
+public/maplibre-gl-*.mjs
+public/maplibre-worker.js

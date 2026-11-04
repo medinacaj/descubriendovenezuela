@@ -1,4 +1,8 @@
-process.loadEnvFile(".env");
+try {
+  process.loadEnvFile(".env");
+} catch (error) {
+  if ((error as NodeJS.ErrnoException).code !== "ENOENT") throw error;
+}
 const { hashPassword } = await import("../src/lib/auth");
 const { pool } = await import("../src/lib/db");
 const email = process.env.ADMIN_EMAIL,
