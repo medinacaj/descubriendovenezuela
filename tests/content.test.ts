@@ -15,22 +15,27 @@ it("directorio ampliado con procedencia y sin datos operativos inventados", () =
 });
 it("imágenes publicadas tienen archivos locales y atribución visible", async () => {
   const photos = places.flatMap((p) => p.photos);
-  expect(photos.length).toBeGreaterThanOrEqual(1);
-  const html = await readFile("docs/index.html", "utf8");
-  for (const photo of photos) {
-    expect((await stat("docs/" + photo.src)).size).toBeGreaterThan(1000);
-    expect(html).toContain(photo.src);
-    expect(html).toContain(photo.author.replaceAll("&", "&amp;"));
-    expect(html).toContain(photo.licenseUrl);
+  expect(photos.length).toBeGreaterThanOrEqual(12);
+  for (const p of places) {
+    const detail = await readFile("docs/lugares/" + p.id + "/index.html", "utf8");
+    for (const photo of p.photos) {
+      expect((await stat("docs/" + photo.src)).size).toBeGreaterThan(1000);
+      expect(detail).toContain(photo.src);
+      expect(detail).toContain(photo.author.replaceAll("&", "&amp;"));
+      expect(detail).toContain(photo.licenseUrl);
+      expect(detail).toContain(photo.sourceUrl.replaceAll("&", "&amp;"));
+    }
   }
 });
 it("Pages incorpora lugares y fuentes, con categoría y búsqueda dinámicas", async () => {
   const html = await readFile("docs/index.html", "utf8");
   for (const p of places) {
-    expect(html).toContain(p.name);
     const detail = await readFile("docs/lugares/" + p.id + "/index.html", "utf8");
+    expect(detail).toContain(p.name);
     expect(detail).toContain(p.sourceUrls[0]);
     expect(detail).toContain("Consultar precio");
   }
+  expect(html).toContain("Descubre Venezuela por estado");
+  expect(html).toContain("Sitios que merecen conocerse");
   expect(html).not.toContain("Paisaje por descubrir · DEMO");
 });
