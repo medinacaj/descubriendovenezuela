@@ -33,8 +33,13 @@ const server = createServer(async (req, res) => {
 });
 await new Promise((r) => server.listen(0, "127.0.0.1", r));
 const origin = "http://127.0.0.1:" + server.address().port + prefix;
+const { access } = await import("node:fs/promises");
+let executablePath = process.env.CHROMIUM_PATH;
+if (!executablePath) {
+  try { await access("/usr/bin/chromium"); executablePath = "/usr/bin/chromium"; } catch {}
+}
 const browser = await chromium.launch({
-  executablePath: process.env.CHROMIUM_PATH || "/usr/bin/chromium",
+  ...(executablePath ? { executablePath } : {}),
   args: ["--no-sandbox"],
 });
 try {
