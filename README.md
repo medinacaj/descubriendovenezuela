@@ -8,7 +8,7 @@ La versión de lanzamiento prepara **fichas con direcciones permanentes, página
 
 La vista de GitHub Pages contiene **29 lugares documentados**: tres sitios reconocidos por UNESCO, seis localidades y 20 atractivos adicionales investigados directamente en fuentes institucionales de Inparques y UNESCO. Los nuevos registros incluyen parques nacionales, monumentos naturales, espacios urbanos, un pueblo y lugares históricos. **Hacienda Chuao y el centro histórico de La Guaira están únicamente en la Lista Indicativa UNESCO**, no están inscritos como Patrimonio Mundial. Las seis imágenes disponibles son mapas de referencia propios, no fotografías de destinos.
 
-Los datos están en [content/places.json](content/places.json), la procedencia general en [content/RESEARCH.md](content/RESEARCH.md) y el [registro con las 20 nuevas fuentes](content/RESEARCH-2026-11-06.md). Las fotografías de destinos y los hospedajes contrastados siguen pendientes: los candidatos sin evidencia suficiente no se publican como negocios reales.
+Los datos están en [content/places.json](content/places.json), la procedencia general en [content/RESEARCH.md](content/RESEARCH.md) y el [registro con las 20 nuevas fuentes](content/RESEARCH-2026-11-06.md). Las fotografías con licencias auditadas se indican y acreditan en cada ficha; las imágenes de otros destinos y los hospedajes contrastados siguen pendientes: los candidatos sin evidencia suficiente no se publican como negocios reales.
 
 Regenerar mapas con `npm run build:maps` y luego generar Pages con `npm run build:pages`. El generador crea fichas permanentes bajo `docs/lugares/`, páginas regionales, `docs/sitemap.xml`, manifiesto y caché. `npm run test:pages` comprueba la vista de catálogo en móvil/escritorio; `tests/site-routes.test.ts` comprueba las páginas estáticas y fuentes. Las capturas de portada y móvil muestran el directorio actual. La aplicación Next/PostgreSQL mantiene aparte sus datos de demostración; no se confunden con este catálogo.
 
@@ -87,3 +87,7 @@ El limitador de login es por cuenta para la demo local; para acceso público se 
 - [Operación, respaldos y costos](docs/operations.md)
 - [API](docs/api.md), [política editorial](docs/editorial-policy.md) y [estado de ejecución](docs/progress.md)
 - [Procedencia cartográfica](public/maps/README.md)
+
+## Fotografías reales con derechos documentados
+
+El manifiesto [content/licensed-photographs.json](content/licensed-photographs.json) identifica 12 fotografías de lugares concretos, autor, archivo de Wikimedia Commons y licencia exacta. Los originales pueden consultarse en cada fuente. Se importan mediante `node scripts/import-licensed-photos.mjs` en un entorno conectado a Internet, se convierten localmente a WebP para optimizar la carga y se conservan en `docs/media`. Las fichas incluyen atribución, licencia y aclaración de la conversión técnica. La fotografía ilustra el lugar en la fecha de la toma; no confirma condiciones actuales de visita.

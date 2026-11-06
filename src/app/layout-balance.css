@@ -244,3 +244,20 @@ footer > small { font-size: 11px; }
   .categories { grid-template-columns: minmax(0, 1fr); }
   .section-head h2 { font-size: 27px; }
 }
+
+/* Fotografía real de cabecera; fuente y licencia visibles sobre la imagen. */
+.photo-hero { position: relative; background: #004870; }
+.photo-hero > img {
+  position: absolute; inset: 0; display: block;
+  width: 100%; height: 100%; object-fit: cover; object-position: center;
+}
+.photo-hero::after { background: linear-gradient(0deg, rgba(5,24,45,.78), rgba(5,24,45,.02) 64%); }
+.photo-hero .landscape-label { color: #fff; z-index: 2; text-shadow: 0 1px 8px rgba(0,0,0,.42); }
+.photo-hero .landscape-label small { display: block; font-size: 11px; letter-spacing: .02em; opacity: 1; }
+.photo-hero .landscape-label a { color: #fff; text-decoration: underline; text-underline-offset: 2px; }
+.photo-hero .vertical-label { color: #fff; text-shadow: 0 1px 5px #1b3041; }
+@media (max-width: 660px) {
+  .photo-hero > img { object-position: center 46%; }
+  .photo-hero .landscape-label small { font-size: 10px; }
+  .photo-hero .landscape-label b { font-size: 23px; }
+}

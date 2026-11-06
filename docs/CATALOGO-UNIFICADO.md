@@ -12,7 +12,7 @@ El comando `npm run catalog:import`, tras `npm run db:migrate`, replica estas fi
 
 El catálogo versionado se edita solo en `content/places.json`: el panel impide modificar fichas con `catalog_id`, evitando divergencia silenciosa. Los demás registros editoriales siguen administrándose desde el panel.
 
-Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Solo se sirven los seis mapas aprobados desde la ruta `/media/` con lista explícita. Las fotos aún requieren documentación legal.
+Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Se sirven seis mapas aprobados y doce fotografías reales de la lista de permitidos `content/licensed-photographs.json`. Cada fotografía identifica autor, licencia Creative Commons, página de origen y conversión técnica a WebP. La fotografía no prueba condiciones de visita actuales.
 
 ## Ejecutar y verificar
 
@@ -41,3 +41,7 @@ GitHub Pages es una publicación estática independiente; no contiene la adminis
 ## Fuera de esta entrega
 
 Siguen pendientes verificación de campo, autorizaciones y fotografías de establecimientos, contactos y horarios, registro público de negocios, moderación multiusuario, rutas, creadores, publicidad, soporte, despliegue financiado y auditorías completas de seguridad y accesibilidad. Ninguno se presenta como disponible.
+
+## Importación de fotografías con licencia
+
+El manifiesto [licensed-photographs.json](../content/licensed-photographs.json) enumera únicamente imágenes de destinos identificados en sus páginas originales de Wikimedia Commons y sus autores/licencias. Ejecutar `node scripts/import-licensed-photos.mjs` desde una máquina con Internet antes de `npm run build:pages`. El script descarga solo los archivos permitidos, valida formato y dimensiones, convierte a WebP y antepone la imagen a los mapas existentes sin eliminar las cartografías. Los binarios se versionan localmente; la web no depende de hotlinks. La atribución de imágenes debe conservarse en todas las visualizaciones y variantes.

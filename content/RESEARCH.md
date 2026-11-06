@@ -61,3 +61,8 @@ Esta consulta no verifica apertura al público, seguridad, accesos, transporte, 
 ## Tercera consulta — 20 lugares reales identificados (6 de noviembre de 2026)
 
 Se añadieron 20 nuevas fichas de parques nacionales, refugios, monumentos, localidades y lugares culturales. Son **29 registros en total**. Las 20 URL institucionales consultadas, los límites de la comprobación y las decisiones de exclusión están en [RESEARCH-2026-11-06.md](RESEARCH-2026-11-06.md). Esta ampliación es investigación documental, no verificación operativa o presencial. Los seis mapas anteriores se mantienen; no se publicaron fotografías sin derecho de reutilización acreditado.
+
+
+## Incorporación de fotografías auténticas con licencia (6 de noviembre de 2026)
+
+La publicación se amplía con **12 fotografías originales de lugares reales** obtenidas de Wikimedia Commons con licencia explícita (CC0, CC BY o CC BY-SA) y autor identificado. Se conservan los enlaces a las 12 páginas de archivo original, sus licencias completas y las modificaciones técnicas en [licensed-photographs.json](licensed-photographs.json). Se generaron versiones WebP locales de máximo 1200 px, conservando el original en Wikimedia Commons y los créditos en las tarjetas/fichas. La foto de Cayo Sombrero sustituye la ilustración abstracta de la portada y muestra enlace a autor y licencia. Estas imágenes se tomaron en fechas distintas, algunas históricas, y **no prueban apariencia, servicio ni seguridad actual**. La cobertura fotográfica todavía no alcanza los 29 registros.
