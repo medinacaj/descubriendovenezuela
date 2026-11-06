@@ -56,3 +56,8 @@ Se reintentaron Posadaven, Venezuela Tuya y Wikimedia Commons por solicitud del 
 Esta revisión complementa y sustituye la limitación de red de la primera consulta del 4 de noviembre. Se leyeron en línea las fichas oficiales del Centro del Patrimonio Mundial de UNESCO: https://whc.unesco.org/en/list/701/ (Canaima), https://whc.unesco.org/en/list/658/ (Coro y su Puerto) y https://whc.unesco.org/en/list/986/ (Ciudad Universitaria de Caracas). Los hechos históricos, la región y las características patrimoniales de estas tres fichas se resumieron con redacción original y ahora incluyen la fuente primaria como primera referencia. No se copiaron imágenes ni descripciones extensas.
 
 Esta consulta no verifica apertura al público, seguridad, accesos, transporte, tarifas ni horarios. No se han obtenido autorizaciones de fotografías, reseñas o contactos comerciales. Se conserva el historial de la primera consulta, que usó dos fuentes secundarias.
+
+
+## Tercera consulta — 20 lugares reales identificados (6 de noviembre de 2026)
+
+Se añadieron 20 nuevas fichas de parques nacionales, refugios, monumentos, localidades y lugares culturales. Son **29 registros en total**. Las 20 URL institucionales consultadas, los límites de la comprobación y las decisiones de exclusión están en [RESEARCH-2026-11-06.md](RESEARCH-2026-11-06.md). Esta ampliación es investigación documental, no verificación operativa o presencial. Los seis mapas anteriores se mantienen; no se publicaron fotografías sin derecho de reutilización acreditado.

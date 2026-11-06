@@ -57,7 +57,7 @@ jobs:
         run: |
           npm run catalog:import
           npm run catalog:import
-          node --env-file=.env --input-type=module -e 'import pg from "pg";const c=new pg.Client({connectionString:process.env.DATABASE_URL});await c.connect();const r=await c.query("select count(*)::int as n from places where catalog_id is not null");if(r.rows[0].n!==9)process.exit(1);await c.end()'
+          node --env-file=.env --input-type=module -e 'import pg from "pg";import {readFileSync} from "node:fs";const expected=JSON.parse(readFileSync("content/places.json","utf8")).length;const c=new pg.Client({connectionString:process.env.DATABASE_URL});await c.connect();const r=await c.query("select count(*)::int as n from places where catalog_id is not null");if(r.rows[0].n!==expected)process.exit(1);await c.end()'
       - name: Production build
         run: npm run build
       - name: Install Chromium

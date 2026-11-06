@@ -5,11 +5,18 @@ import { normaliseCatalogEntry, type CuratedEntry } from "../src/lib/catalog";
 describe("puente del catálogo documental", () => {
   it("normaliza todas las fichas reales y preserva su procedencia", () => {
     const entries = catalog.map(entry => normaliseCatalogEntry(entry as CuratedEntry));
-    expect(entries).toHaveLength(9);
+    expect(entries).toHaveLength(29);
     expect(new Set(entries.map(p => p.catalogId)).size).toBe(entries.length);
     expect(entries.every(p => p.source.startsWith("https://"))).toBe(true);
     expect(entries.every(p => p.verificationNote.length > 0)).toBe(true);
     expect(entries.find(p => p.name === "Porlamar")?.mediaCredits[0].kind).toBe("map");
+    expect(entries.find(p => p.catalogId === "parque-nacional-morrocoy")?.source).toContain("inparques.gob.ve");
+    for (const id of ["hacienda-chuao", "casco-historico-la-guaira"]) {
+      const item = catalog.find(p => p.id === id);
+      expect(item?.verification).toContain("Lista Indicativa");
+      expect(item?.primaryConsulted).toBe(true);
+    }
+    expect(entries.filter(p => p.mediaCredits.length === 0).length).toBeGreaterThan(15);
   });
   it("rechaza registros demo, sin fuente o de categoría arbitraria", () => {
     const item = catalog[0] as CuratedEntry;

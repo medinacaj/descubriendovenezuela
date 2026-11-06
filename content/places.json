@@ -289,5 +289,476 @@
       }
     ],
     "demo": false
+  },
+  {
+    "id": "parque-nacional-morrocoy",
+    "name": "Parque Nacional Morrocoy",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "La costa de Falcón alberga el Parque Nacional Morrocoy, un conjunto protegido de cayos, canales de manglar, fondos marinos y sectores continentales. Inparques identifica Cayo Sombrero, Cayo Sal y otros islotes dentro de este paisaje caribeño. Esta ficha describe el área protegida, no certifica salidas de lanchas, accesibilidad, permisos ni disponibilidad de servicios.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-sombrero",
+    "name": "Cayo Sombrero",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Cayo Sombrero es un islote del Parque Nacional Morrocoy, en Falcón. La ficha de Inparques sobre Morrocoy lo identifica entre sus atractivos, con playas de arena clara, vegetación costera y aguas del Caribe. Su inclusión como punto de interés no significa que exista transporte habilitado, condiciones aptas para bañarse o instalaciones abiertas en una fecha determinada.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-mochima",
+    "name": "Parque Nacional Mochima",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Mochima es un parque nacional marino-costero que abarca sectores de Sucre y Anzoátegui. Su paisaje combina bahías, playas, islas, manglares y arrecifes. Inparques lo documenta como área protegida y describe su relación con comunidades costeras. Antes de planificar una visita deben confirmarse localmente el acceso a cada sector, los operadores habilitados y las condiciones del mar.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/mochima.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/mochima.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-waraira-repano",
+    "name": "Parque Nacional Waraira Repano (El Ávila)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "La cordillera del Waraira Repano, conocida también como El Ávila, bordea el valle de Caracas y se extiende hacia Miranda y La Guaira. Inparques documenta su vegetación montañosa, sus senderos y su relación histórica con la ciudad. Esta ficha no establece que un sendero, teleférico, restaurante o instalación concreta se encuentre operativo ni recomienda ascensos sin comprobar normas y condiciones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/waraira.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/waraira.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "galipan",
+    "name": "Galipán",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "La Guaira",
+    "locality": "Galipán",
+    "description": "Galipán es una localidad de montaña de la vertiente norte del Waraira Repano, vinculada a la vida agrícola y a la gastronomía local. Inparques la menciona entre los asentamientos conocidos del parque. La ficha permite descubrir el poblado, pero no ofrece como comprobados los horarios de transporte, restaurantes, rutas en vehículos rústicos ni permisos requeridos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/waraira.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/waraira.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-henri-pittier",
+    "name": "Parque Nacional Henri Pittier",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "El Parque Nacional Henri Pittier protege ambientes de la cordillera de la Costa en Aragua y Carabobo, desde bosques montanos hasta sectores cercanos al litoral. Inparques destaca su diversidad de aves y las referencias a Rancho Grande y a las localidades costeras. La documentación geográfica no prueba el estado actual de carreteras, senderos, bahías ni instalaciones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/henri.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/henri.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "bahia-de-cata",
+    "name": "Bahía de Cata",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "locality": "Cata",
+    "description": "La Bahía de Cata es un paisaje costero del estado Aragua identificado por Inparques entre los atractivos del entorno del Parque Nacional Henri Pittier. Se caracteriza por su relación entre la costa caribeña y las montañas cercanas. No se publican datos no comprobados sobre salvavidas, oleaje, estacionamiento, alojamiento ni servicios de playa; deben confirmarse antes de viajar.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20Nacionales/henri.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/henri.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-del-guacharo",
+    "name": "Monumento Natural Cueva del Guácharo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Monagas",
+    "locality": "Caripe",
+    "description": "La Cueva del Guácharo se localiza en el municipio Caripe, estado Monagas. Inparques documenta esta cavidad de origen kárstico, sus formaciones rocosas y la presencia del ave guácharo. El entorno posee una figura de protección nacional. La ficha identifica el atractivo natural sin dar por habilitados circuitos, galerías, horarios de entrada ni visitas guiadas actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Monumentos%20Nacionales/cueva-guacharo.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Monumentos%20Nacionales/cueva-guacharo.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "morros-de-san-juan",
+    "name": "Monumento Natural Arístides Rojas (Morros de San Juan)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Guárico",
+    "locality": "San Juan de los Morros",
+    "description": "Los Morros de San Juan son formaciones rocosas prominentes en las inmediaciones de San Juan de los Morros, estado Guárico, protegidas como Monumento Natural Arístides Rojas. Inparques describe su geología calcárea y su presencia en el paisaje llanero. No se proponen rutas de escalada ni accesos, y cualquier actividad especializada exige confirmar regulaciones y autorizaciones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Monumentos%20Nacionales/morros-sanjuan.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Monumentos%20Nacionales/morros-sanjuan.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cerro-maria-lionza",
+    "name": "Monumento Natural Cerro María Lionza",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Yaracuy",
+    "description": "El Cerro María Lionza es un monumento natural del estado Yaracuy que reúne un entorno de montaña y una importante dimensión cultural y espiritual. Inparques lo presenta como espacio protegido asociado a tradiciones de peregrinación. Su significado debe describirse con respeto a las comunidades practicantes; la ficha no indica caminos, celebraciones vigentes ni lugares de ritual accesibles.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Monumentos%20Nacionales/maria-lionza.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Monumentos%20Nacionales/maria-lionza.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cerro-autana",
+    "name": "Monumento Natural Cerro Autana",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Cerro Autana es una montaña de la región amazónica venezolana protegida como monumento natural y vinculada a la cosmovisión del pueblo Huottöja o Piaroa. Inparques subraya su carácter sagrado y la sensibilidad del entorno. Esta ficha es informativa: no se aportan coordenadas de acceso, itinerarios de expedición, rutas de escalada ni propuestas de ingreso sin autorización.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Monumentos%20Nacionales/cerro-autana.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Monumentos%20Nacionales/cerro-autana.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "teta-de-niquitao",
+    "name": "Monumento Natural Teta de Niquitao-Guirigay",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Trujillo",
+    "locality": "Niquitao",
+    "description": "La Teta de Niquitao-Guirigay es un monumento natural de alta montaña del estado Trujillo, ligado a los paisajes andinos de páramo. Inparques documenta sus cumbres, frailejones y ambientes de altura. El registro sirve para identificar el lugar y su patrimonio natural; no valida rutas de ascenso, permisos, disponibilidad de guías ni condiciones meteorológicas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Monumentos%20Nacionales/teta-niquitao.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Monumentos%20Nacionales/teta-niquitao.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "refugio-cuare",
+    "name": "Refugio de Fauna Silvestre Cuare",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "El Refugio de Fauna Silvestre Cuare se encuentra en Falcón, cerca del Parque Nacional Morrocoy. Inparques lo caracteriza como una zona de humedales, aguas someras y manglares relevante para aves acuáticas y migratorias. Por ser un espacio de conservación, la ficha no facilita rutas hacia zonas sensibles ni presume habilitación de observación, navegación o visitas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Refugios/cuare.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Refugios/cuare.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-francisco-de-miranda",
+    "name": "Parque de Recreación Generalísimo Francisco de Miranda",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "locality": "Caracas",
+    "description": "El Parque de Recreación Generalísimo Francisco de Miranda, también conocido como Parque del Este, es un espacio verde urbano del área metropolitana de Caracas situado en el estado Miranda. Inparques describe sus jardines, lagos y su patrimonio paisajístico. La ficha no asegura que sus atracciones, exhibiciones o instalaciones funcionen actualmente ni ofrece horarios no contrastados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20de%20Recreacion/francisco-de-miranda.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20de%20Recreacion/francisco-de-miranda.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-los-chorros",
+    "name": "Parque de Recreación Los Chorros",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "locality": "Caracas",
+    "description": "El Parque Los Chorros es un espacio recreativo del municipio Sucre, estado Miranda, en las proximidades del Waraira Repano. Inparques describe su vegetación, el cauce del río Tocome y las caídas de agua que caracterizan el lugar. La información documental no sustituye confirmar acceso, mantenimiento, seguridad de pozos o restricciones de uso.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20de%20Recreacion/los-chorros.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20de%20Recreacion/los-chorros.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-ali-primera",
+    "name": "Parque de Recreación Alí Primera",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "locality": "Caracas",
+    "description": "El Parque de Recreación Alí Primera, conocido históricamente como Parque del Oeste, está localizado en el oeste de Caracas. Inparques identifica áreas verdes, infraestructura cultural y espacios para actividades recreativas en el entorno de Catia. No se atribuyen como vigentes eventos, horarios, actividades programadas ni servicios comerciales sin una revisión específica.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20de%20Recreacion/ali-primera.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20de%20Recreacion/ali-primera.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "zoologico-caricuao",
+    "name": "Parque Zoológico de Caricuao",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "locality": "Caracas",
+    "description": "El Parque Zoológico de Caricuao es un recinto y área verde del suroeste de Caracas documentado por Inparques. Su propósito institucional incluye la educación ambiental y la conservación, con espacios de observación y paisajes abiertos. La ficha no afirma qué especies se encuentran hoy exhibidas, ni la disponibilidad de instalaciones, horarios o entradas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Parques%20de%20Recreacion/caricuao.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Parques%20de%20Recreacion/caricuao.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "refugio-tortuga-arrau",
+    "name": "Refugio de Fauna Silvestre Tortuga Arrau",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Apure",
+    "description": "El Refugio de Fauna Silvestre Tortuga Arrau protege sectores del río Orinoco y sus riberas vinculados a la reproducción de la tortuga Arrau. Inparques lo sitúa entre Apure y Bolívar y destaca los bancos de arena estacionales. Se publica exclusivamente su valor ecológico; no se recomiendan visitas a playas de anidación ni el acercamiento a fauna protegida.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/Refugios/tortuga-arrau.html"
+    ],
+    "sourceLabels": [
+      "Inparques · información institucional sobre el lugar o área protegida"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/Refugios/tortuga-arrau.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "hacienda-chuao",
+    "name": "Hacienda Chuao: paisaje cultural del cacao",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "locality": "Chuao",
+    "description": "El paisaje cultural de la Hacienda Chuao, en el estado Aragua, está vinculado históricamente al cultivo del cacao, a la población de Chuao y a tradiciones afrovenezolanas. UNESCO recoge este lugar en la Lista Indicativa de Venezuela desde 2002; NO está inscrito como bien del Patrimonio Mundial. La ficha no da por disponibles visitas a haciendas ni actividades productivas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente UNESCO de la Lista Indicativa consultada en línea el 6 de noviembre de 2026. Se verifica únicamente la identificación histórica y el carácter de candidatura; NO es Patrimonio Mundial inscrito ni hay verificación de campo.",
+    "sourceUrls": [
+      "https://whc.unesco.org/en/tentativelists/1635/"
+    ],
+    "sourceLabels": [
+      "UNESCO · Centro del Patrimonio Mundial · Lista Indicativa"
+    ],
+    "primaryUrl": "https://whc.unesco.org/en/tentativelists/1635/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casco-historico-la-guaira",
+    "name": "Centro histórico de La Guaira",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "La Guaira",
+    "locality": "La Guaira",
+    "description": "El centro histórico de La Guaira se desarrolló alrededor del puerto caribeño que conectó durante siglos a Caracas con las rutas comerciales marítimas. UNESCO recoge su trazado urbano y edificios históricos en la Lista Indicativa de Venezuela, propuesta en 1999; NO equivale a una inscripción en la Lista del Patrimonio Mundial. El estado de conservación y acceso de cada inmueble debe comprobarse.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente UNESCO de la Lista Indicativa consultada en línea el 6 de noviembre de 2026. Se verifica únicamente la identificación histórica y el carácter de candidatura; NO es Patrimonio Mundial inscrito ni hay verificación de campo.",
+    "sourceUrls": [
+      "https://whc.unesco.org/en/tentativelists/1306"
+    ],
+    "sourceLabels": [
+      "UNESCO · Centro del Patrimonio Mundial · Lista Indicativa"
+    ],
+    "primaryUrl": "https://whc.unesco.org/en/tentativelists/1306",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]

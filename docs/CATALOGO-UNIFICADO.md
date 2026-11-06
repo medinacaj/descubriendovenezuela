@@ -1,5 +1,9 @@
 # Catálogo documental compartido — noviembre de 2026
 
+## Inventario real: 29 fichas documentales
+
+Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. La importación y la vista estática usan el mismo `content/places.json`.
+
 ## Fuente única y responsabilidades
 
 `content/places.json` es el catálogo de lugares documentados que también alimenta GitHub Pages. Las fichas sintéticas de la aplicación nunca se fusionan con ese archivo. Cada registro debe cumplir `content/schema.mjs` y mantener su fuente, fecha, alcance documental y atribución de imágenes.
