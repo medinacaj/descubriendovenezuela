@@ -37,6 +37,11 @@ export const placeSchema = z
     openingHoursNote: z.string().trim().max(300).optional(),
     contactAuthorized: z.boolean().optional(),
     contactEvidence: z.string().trim().max(1000).optional(),
+    priceAmount: z.number().finite().nonnegative().nullable().optional(),
+    priceCurrency: z.union([z.literal(""), z.enum(["VES", "USD", "EUR"])]).optional(),
+    priceUnit: z.union([z.literal(""), z.enum(["persona", "noche", "entrada", "servicio"])]).optional(),
+    priceValidUntil: z.union([z.literal(""), z.string().regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)]).nullable().optional(),
+    priceSource: z.union([z.literal(""), https]).optional(),
   })
   .superRefine((p, c) => {
     if (p.published && (!p.source || !p.reviewedAt || p.status !== "verified"))
@@ -46,6 +51,8 @@ export const placeSchema = z
       });
     if (p.contactAuthorized && (!p.contactEvidence || p.contactEvidence.trim().length < 10))
       c.addIssue({ code: "custom", message: "La publicación de contactos exige evidencia de autorización" });
+    if (p.priceAmount !== undefined && p.priceAmount !== null && (!p.priceCurrency || !p.priceUnit || !p.priceValidUntil || !p.priceSource || Number.isNaN(Date.parse(p.priceValidUntil))))
+      c.addIssue({ code: "custom", message: "Una tarifa exige monto, moneda, unidad, vigencia y fuente HTTPS" });
     if ((p.lat === null) !== (p.lon === null))
       c.addIssue({
         code: "custom",

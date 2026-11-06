@@ -83,7 +83,13 @@ export default async function Detail({ params }: Route) {
           <span className="eyebrow">ANTES DE TU VISITA</span>
           <h2>Información de la ficha</h2>
           <dl>
-            <dt>Precio</dt><dd>Consultar precio</dd>
+            <dt>Precio</dt>
+            <dd>{p.priceAmount !== null && p.priceAmount !== undefined && p.priceCurrency && p.priceUnit
+              ? `${p.priceAmount} ${p.priceCurrency} / ${p.priceUnit}`
+              : "Consultar precio"}</dd>
+            {p.priceAmount !== null && p.priceAmount !== undefined && p.priceSource && p.priceValidUntil && <>
+              <dt>Tarifa revisada</dt><dd>Vigente según la fuente hasta {p.priceValidUntil}. <a href={p.priceSource} target="_blank" rel="noopener noreferrer">Ver fuente</a></dd>
+            </>}
             <dt>Revisión</dt><dd>{p.demo ? "Demostración" : p.catalogId ? "Identificación documental" : p.status === "verified" ? "Revisado editorialmente" : "Pendiente de actualización"}</dd>
             <dt>Última revisión</dt><dd>{p.reviewedAt || "Pendiente"}</dd>
             <dt>Fuente</dt><dd>{p.source ? (
