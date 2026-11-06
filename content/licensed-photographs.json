@@ -608,5 +608,65 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pante%C3%B3n_Nacional_-_Caracas.jpg",
     "output": "foto-panteon-nacional-de-venezuela.webp"
+  },
+  {
+    "id": "colonia-tovar",
+    "file": "Colonia Tovar.jpg",
+    "alt": "Panorámica de la población de Colonia Tovar, Aragua",
+    "author": "NoonIcarus",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colonia_Tovar.jpg",
+    "output": "foto-colonia-tovar.webp"
+  },
+  {
+    "id": "iglesia-san-martin-de-tours-colonia-tovar",
+    "file": "Colonia Tovar - Iglesia de la Colonia.JPG",
+    "alt": "Vista de la iglesia de la Colonia Tovar, estado Aragua",
+    "author": "Florangel&ANGELES",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colonia_Tovar_-_Iglesia_de_la_Colonia.JPG",
+    "output": "foto-iglesia-san-martin-de-tours-colonia-tovar.webp"
+  },
+  {
+    "id": "isla-puinare-mochima",
+    "file": "Isla Puinare.JPG",
+    "alt": "Vista de la isla Puinare en la costa del estado Anzoátegui",
+    "author": "Jiberch",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_Puinare.JPG",
+    "output": "foto-isla-puinare-mochima.webp"
+  },
+  {
+    "id": "puente-de-angostura",
+    "file": "Puente Angostura-1.jpg",
+    "alt": "Puente de Angostura sobre el río Orinoco",
+    "author": "Luis Linero",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puente_Angostura-1.jpg",
+    "output": "foto-puente-de-angostura.webp"
+  },
+  {
+    "id": "hato-el-cedral",
+    "file": "Hato El Cedral Llanos de Venezuela 2015-02-06 17.16.38.jpg",
+    "alt": "Paisaje del Hato El Cedral en los Llanos de Apure fotografiado en 2015",
+    "author": "Josefito123",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hato_El_Cedral_Llanos_de_Venezuela_2015-02-06_17.16.38.jpg",
+    "output": "foto-hato-el-cedral.webp"
+  },
+  {
+    "id": "la-victoria-aragua",
+    "file": "Vista aérea de La Victoria. estado Aragua. Venezuela.jpg",
+    "alt": "Vista panorámica de La Victoria, estado Aragua",
+    "author": "Edrasaal",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_La_Victoria._estado_Aragua._Venezuela.jpg",
+    "output": "foto-la-victoria-aragua.webp"
   }
 ]

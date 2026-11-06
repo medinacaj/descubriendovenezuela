@@ -6219,5 +6219,512 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "rio-morichal-largo",
+    "name": "Río Morichal Largo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Curso fluvial del sur de Monagas destacado por el Ministerio de Turismo dentro de la ruta comunitaria denominada Manos de Moriche. Su interés turístico se relaciona con el paisaje de morichales y la interpretación de ecosistemas fluviales, sin que la fuente acredite permisos de navegación o visitas autónomas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Mintur identificó la ruta en agosto de 2025; los permisos ambientales y el estado del servicio deben comprobarse antes de una visita.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "salto-el-chorreron-monagas",
+    "name": "El Chorrerón (Lluvia de Bendiciones)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Caída de agua mencionada en la propuesta de ecoturismo monaguense como El Chorrerón, asociada a la experiencia Lluvia de Bendiciones. Se documenta su denominación y vinculación turística sin atribuir coordenadas, senderos o condiciones de acceso que no constan en la fuente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Nombre identificado por Mintur; acceso, seguridad y rutas no comprobados.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cerro-negro-monagas",
+    "name": "Cerro Negro (Monagas)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Elevación promocionada en la ruta Trono de los Dioses de Monagas. La documentación institucional permite registrar el destino, pero no permite determinar un itinerario de ascenso, dificultad, infraestructura ni restricciones actuales para visitantes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Se documenta la ruta turística asociada, no una ascensión autorizada o segura.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cascada-del-nazareno-monagas",
+    "name": "Cascada del Nazareno",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Cascada presentada por Mintur dentro de una experiencia denominada Velo de Novia, integrada al conjunto de rutas naturales promovidas en Monagas. La ficha evita inventar disponibilidad comercial, accesos habilitados o servicios en el entorno.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. La referencia institucional acredita el nombre del atractivo; no se confirmó operación actual.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "isla-puinare-mochima",
+    "name": "Isla Puinare (Mochima)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Isla del ámbito del Parque Nacional Mochima incluida entre los destinos visitados durante un recorrido institucional por las costas de Anzoátegui. Su identificación geográfica no implica que sea apta para desembarco en todas las temporadas ni que exista transporte regular.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Identificada en recorrido de Mintur en 2025; no se comprobaron traslados ni permisos actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85",
+    "primaryConsulted": true,
+    "region": "Anzoátegui",
+    "locality": "Parque Nacional Mochima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "el-faro-mochima",
+    "name": "El Faro (sector de Mochima)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Sector costero nombrado por el Ministerio de Turismo entre los puntos de visita de las islas y playas de Mochima en Anzoátegui. El alcance documental no permite afirmar instalaciones, horarios, rutas ni servicios operativos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. El nombre figura en el recorrido institucional; la ubicación puntual requiere verificación.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85",
+    "primaryConsulted": true,
+    "region": "Anzoátegui",
+    "locality": "Parque Nacional Mochima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "punta-la-cruz-mochima",
+    "name": "Punta La Cruz (Mochima)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Paraje de costa del Parque Nacional Mochima recogido en el recorrido de turismo de Anzoátegui publicado por Mintur. La ficha registra su existencia como lugar de interés, diferenciándola de la confirmación de acceso público o servicios turísticos vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Referencia institucional de 2025; transporte y condiciones actuales sin verificar.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85",
+    "primaryConsulted": true,
+    "region": "Anzoátegui",
+    "locality": "Parque Nacional Mochima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ciudad-orinoco",
+    "name": "Ciudad Orinoco",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad del eje del Orinoco que conecta con Ciudad Bolívar a través del puente de Angostura. Mintur la identifica en el circuito interregional Encuentro de Dos Ciudades, una iniciativa turística documentada en febrero de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Reconocida en el anuncio institucional; no implica que existan servicios turísticos contratables.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a130cdf3-593e-48ad-ac29-f4a13f9e9c5e"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a130cdf3-593e-48ad-ac29-f4a13f9e9c5e",
+    "primaryConsulted": true,
+    "region": "Anzoátegui",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "colonia-tovar",
+    "name": "Colonia Tovar",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Población de montaña del municipio Tovar, fundada en 1843 por inmigrantes de la región alemana de Baden. Destaca por su arquitectura, tradiciones culinarias y jardines. Fuentes de Mintur y la Fundación Empresas Polar describen su historia e identidad cultural.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Historia y localización descritas en fuentes públicas; no se verificaron comercios, reservas o carreteras actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+      "https://www.mintur.gob.ve/news/9fe86233-36fb-4ec8-ab0f-41114a3aac9d",
+      "https://bibliofep.fundacionempresaspolar.org/dhv/entradas/c/colonia-tovar/"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional",
+      "Mintur · noticia institucional",
+      "Fundación Empresas Polar · Diccionario de Historia de Venezuela"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "Municipio Tovar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "iglesia-san-martin-de-tours-colonia-tovar",
+    "name": "Iglesia San Martín de Tours (Colonia Tovar)",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo histórico citado por Mintur como referente del trazado tradicional de la Colonia Tovar. Forma parte de la identidad arquitectónica y comunitaria del poblado fundado por inmigrantes alemanes, pero sus horarios religiosos y acceso no fueron comprobados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Patrimonio nombrado por Mintur; horarios, visitas y condiciones no verificados.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+      "https://www.mintur.gob.ve/news/9fe86233-36fb-4ec8-ab0f-41114a3aac9d"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional",
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "Colonia Tovar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "jardin-de-las-hortensias-colonia-tovar",
+    "name": "Jardín de las Hortensias (Colonia Tovar)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Espacio de interés paisajístico destacado en la documentación turística de la Colonia Tovar por sus jardines y valor fotográfico. Su inclusión sirve para identificar el atractivo, sin anunciar horarios, propiedad, derechos de ingreso ni actividad comercial.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Mención turística oficial, sin comprobación de su condición operativa.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+      "https://www.mintur.gob.ve/news/9fe86233-36fb-4ec8-ab0f-41114a3aac9d"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional",
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "Colonia Tovar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-natural-pico-codazzi",
+    "name": "Monumento Natural Pico Codazzi",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Área montañosa protegida vinculada al paisaje de la Colonia Tovar. Mintur menciona el Pico Codazzi entre las oportunidades para senderismo, pero esa referencia no demuestra que un acceso o recorrido concreto esté habilitado ni exime de consultar las normas de conservación.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Identificación institucional de la montaña; sin permiso o ruta validada.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+      "https://www.mintur.gob.ve/news/9fe86233-36fb-4ec8-ab0f-41114a3aac9d"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional",
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "Colonia Tovar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-victoria-aragua",
+    "name": "La Victoria (Aragua)",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Ciudad del estado Aragua reconocida por su patrimonio urbano y por el casco histórico que figura entre las candidaturas al Premio Nacional de Turismo 2025. La presente ficha se refiere a la localidad y no confirma el funcionamiento de establecimientos o visitas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Identificación cultural en documento de Mintur; no se ha auditado cada inmueble.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf"
+    ],
+    "sourceLabels": [
+      "Mintur · Premio Nacional de Turismo 2025"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "La Victoria",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "centro-historico-la-victoria",
+    "name": "Centro histórico de La Victoria",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Conjunto urbano de La Victoria incluido como candidatura de destino no tradicional en el Premio Nacional de Turismo 2025. Su valor como zona patrimonial está documentado, aunque no se dispone de una delimitación oficial cartográfica ni de datos operativos actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Candidatura histórica documentada, sin límites patrimoniales ni visitas verificadas.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf"
+    ],
+    "sourceLabels": [
+      "Mintur · Premio Nacional de Turismo 2025"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf",
+    "primaryConsulted": true,
+    "region": "Aragua",
+    "locality": "La Victoria",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-grita-tachira",
+    "name": "La Grita",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad tachirense incluida entre los destinos tradicionales candidatos al Premio Nacional de Turismo 2025. La documentación permite identificar su relevancia cultural regional, sin afirmar datos actualizados de museos, servicios o turismo religioso.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Localidad documentada por Mintur; no se infieren horarios o eventos.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf"
+    ],
+    "sourceLabels": [
+      "Mintur · Premio Nacional de Turismo 2025"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf",
+    "primaryConsulted": true,
+    "region": "Táchira",
+    "locality": "Municipio Jáuregui",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ruta-paramos-magicos-capacho",
+    "name": "Ruta Páramos Mágicos de Capacho",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Circuito de turismo comunitario de Capacho incluido entre las nominaciones de destino tradicional del Premio Nacional de Turismo 2025. La ficha describe una iniciativa cultural y paisajística, no un sendero señalizado de recorrido libre ni una excursión operativa.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. La nominación no equivale a garantía de disponibilidad turística.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf"
+    ],
+    "sourceLabels": [
+      "Mintur · Premio Nacional de Turismo 2025"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf",
+    "primaryConsulted": true,
+    "region": "Táchira",
+    "locality": "Capacho",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-del-fantasma",
+    "name": "Cueva del Fantasma",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Gran formación cavernosa citada entre los lugares poco conocidos del Parque Nacional Canaima, asociada a la región de los tepuyes. Se documenta como referencia geográfica, no como recomendación de ingresar: el entorno remoto y protegido exige información y autorizaciones especializadas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Fuente periodística de 2025; no confirmamos rutas, coordenadas ni seguridad.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario · investigación de destinos 2025"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Parque Nacional Canaima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "piedra-abuela-kueka",
+    "name": "Piedra Abuela Kueka",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Elemento de significado cultural para la comunidad pemón Mapaury, mencionado entre las candidaturas de destinos no tradicionales del Premio Nacional de Turismo 2025. La ficha reconoce su valor simbólico sin ofrecer indicaciones de acceso a un sitio culturalmente sensible.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Referencia cultural oficial; no se presume autorización para visitas o fotografías.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf"
+    ],
+    "sourceLabels": [
+      "Mintur · Premio Nacional de Turismo 2025"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "puente-de-angostura",
+    "name": "Puente de Angostura",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Infraestructura emblemática sobre el río Orinoco que enlaza Ciudad Bolívar y Ciudad Orinoco, destacada por Mintur en febrero de 2026 durante la validación del circuito Encuentro de Dos Ciudades. La ficha no informa condiciones de tráfico o estado vial en tiempo real.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Ubicación interregional y rol turístico referidos por Mintur; condiciones actuales no verificadas.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a130cdf3-593e-48ad-ac29-f4a13f9e9c5e"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a130cdf3-593e-48ad-ac29-f4a13f9e9c5e",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Ciudad Bolívar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "salto-la-vaca-el-pauji",
+    "name": "Salto La Vaca (El Paují)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Cascada del entorno de El Paují mencionada en una investigación periodística sobre destinos venezolanos menos conocidos. La publicación la relaciona con circuitos de naturaleza locales, sin acreditar rutas seguras, acceso libre o permisos vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Fuente periodística secundaria; acceso y condiciones ambientales sin confirmar.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario · investigación de destinos 2025"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "El Paují",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "hato-el-cedral",
+    "name": "Hato El Cedral",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Hato llanero reconocido por sus experiencias de observación de fauna y cultura ganadera. Mintur documentó en diciembre de 2025 una visita institucional y actividades de interpretación de la vida de los llanos. No se confirma que alojamiento, safaris o reservas estén disponibles actualmente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fuente documental revisada el 6 de noviembre de 2026. Visita institucional de 2025; operación turística comercial no comprobada.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a085653e-b012-4f43-ba24-2768b6afe014"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a085653e-b012-4f43-ba24-2768b6afe014",
+    "primaryConsulted": true,
+    "region": "Apure",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]

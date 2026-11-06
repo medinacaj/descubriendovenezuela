@@ -61,7 +61,7 @@ describe("Pages con URLs permanentes",()=>{
    expect(html).toContain("Consultar precio");
   }
  });
- it("176 fichas cuentan con imagen y leyenda de referencia cuando no es del lugar",async()=>{
+ it("todas las fichas cuentan con imagen y leyenda de referencia cuando no es del lugar",async()=>{
    const html=await readFile("docs/explorar/index.html","utf8");
    for(const mode of ["tarjetas","lista","fichas"])expect(html).toContain('data-view-switch="'+mode+'"');
    expect((html.match(/class="card-art"/g)||[])).toHaveLength(0);
