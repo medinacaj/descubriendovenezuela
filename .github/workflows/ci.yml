@@ -60,7 +60,16 @@ jobs:
           node --env-file=.env --input-type=module -e 'import pg from "pg";import {readFileSync} from "node:fs";const expected=JSON.parse(readFileSync("content/places.json","utf8")).length;const c=new pg.Client({connectionString:process.env.DATABASE_URL});await c.connect();const r=await c.query("select count(*)::int as n from places where catalog_id is not null");if(r.rows[0].n!==expected)process.exit(1);await c.end()'
       - name: Production build
         run: npm run build
-      - name: Install Chromium
-        run: npx playwright install --with-deps chromium
+      - name: Preparar navegador para Playwright
+        run: |
+          if command -v google-chrome-stable >/dev/null 2>&1; then
+            echo "CHROMIUM_PATH=$(command -v google-chrome-stable)" >> "$GITHUB_ENV"
+          elif command -v google-chrome >/dev/null 2>&1; then
+            echo "CHROMIUM_PATH=$(command -v google-chrome)" >> "$GITHUB_ENV"
+          elif command -v chromium >/dev/null 2>&1; then
+            echo "CHROMIUM_PATH=$(command -v chromium)" >> "$GITHUB_ENV"
+          else
+            npx playwright install --with-deps chromium
+          fi
       - name: Static site browser checks
         run: npm run test:pages
