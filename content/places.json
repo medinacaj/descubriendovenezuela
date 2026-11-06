@@ -6,12 +6,13 @@
     "country": "Venezuela",
     "unescoReference": 701,
     "inscriptionYear": 1994,
-    "description": "Un primer destino para explorar el patrimonio natural venezolano. Los catálogos consultados lo identifican como bien natural inscrito en 1994. Esta ficha reúne su identificación documental; todavía no ofrece itinerarios ni condiciones de acceso.",
-    "reviewedAt": "2026-11-04",
-    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "description": "El Parque Nacional Canaima se extiende por el sureste venezolano, en el área del escudo guayanés. UNESCO destaca sus extensas formaciones de tepuyes, montañas de cimas tabulares, junto con cascadas y paisajes de gran importancia geológica y biológica. Inscrito como patrimonio natural en 1994, su reconocimiento no confirma rutas, permisos, servicios ni condiciones actuales para visitarlo.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación patrimonial, ubicación general y características históricas contrastadas en la ficha oficial UNESCO consultada en línea el 6 de noviembre de 2026. Sin verificación de campo ni comprobación de apertura, precios, horarios o seguridad.",
     "primaryUrl": "https://whc.unesco.org/en/list/701/",
-    "primaryConsulted": false,
+    "primaryConsulted": true,
     "sourceUrls": [
+      "https://whc.unesco.org/en/list/701/",
       "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
       "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
     ],
@@ -19,7 +20,13 @@
     "lon": null,
     "price": null,
     "photos": [],
-    "demo": false
+    "demo": false,
+    "region": "Bolívar",
+    "sourceLabels": [
+      "UNESCO · Centro del Patrimonio Mundial",
+      "Catálogo secundario histórico · Brandon Himpfen",
+      "UWHS · Richard Iannone (datos históricos)"
+    ]
   },
   {
     "id": "658",
@@ -28,12 +35,13 @@
     "country": "Venezuela",
     "unescoReference": 658,
     "inscriptionYear": 1993,
-    "description": "Una entrada al patrimonio cultural de Venezuela. Los catálogos consultados registran el conjunto «Coro and its Port» y su inscripción en 1993. Las recomendaciones concretas de visita se incorporarán después de contrastarlas con fuentes locales actuales.",
-    "reviewedAt": "2026-11-04",
-    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "description": "Coro y su Puerto reúne el centro histórico de Coro y el puerto de La Vela, en Falcón. Reconocido por UNESCO en 1993, conserva testimonios de técnicas constructivas de tierra en las que se combinan tradiciones locales y aportes mudéjares españoles y neerlandeses. Su valor patrimonial es distinto de la disponibilidad actual de visitas o servicios, que debe consultarse con fuentes locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación patrimonial, ubicación general y características históricas contrastadas en la ficha oficial UNESCO consultada en línea el 6 de noviembre de 2026. Sin verificación de campo ni comprobación de apertura, precios, horarios o seguridad.",
     "primaryUrl": "https://whc.unesco.org/en/list/658/",
-    "primaryConsulted": false,
+    "primaryConsulted": true,
     "sourceUrls": [
+      "https://whc.unesco.org/en/list/658/",
       "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
       "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
     ],
@@ -41,7 +49,13 @@
     "lon": null,
     "price": null,
     "photos": [],
-    "demo": false
+    "demo": false,
+    "region": "Falcón",
+    "sourceLabels": [
+      "UNESCO · Centro del Patrimonio Mundial",
+      "Catálogo secundario histórico · Brandon Himpfen",
+      "UWHS · Richard Iannone (datos históricos)"
+    ]
   },
   {
     "id": "986",
@@ -50,12 +64,13 @@
     "country": "Venezuela",
     "unescoReference": 986,
     "inscriptionYear": 2000,
-    "description": "Un lugar para comenzar a descubrir el patrimonio cultural de Caracas. Los catálogos consultados registran la Ciudad Universitaria de Caracas como bien cultural inscrito en 2000. Esta ficha no confirma visitas guiadas ni apertura de espacios.",
-    "reviewedAt": "2026-11-04",
-    "verification": "Identificación documental contrastada en dos catálogos secundarios; sin visita de campo ni consulta directa a UNESCO.",
+    "description": "La Ciudad Universitaria de Caracas, diseñada por Carlos Raúl Villanueva y desarrollada principalmente entre 1940 y 1960, es un conjunto de arquitectura moderna, arte y espacios universitarios. UNESCO destaca el Aula Magna, las obras de Alexander Calder, la Plaza Cubierta y el Estadio Olímpico. Inscrita en 2000, su ficha patrimonial no acredita condiciones actuales de acceso a instalaciones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación patrimonial, ubicación general y características históricas contrastadas en la ficha oficial UNESCO consultada en línea el 6 de noviembre de 2026. Sin verificación de campo ni comprobación de apertura, precios, horarios o seguridad.",
     "primaryUrl": "https://whc.unesco.org/en/list/986/",
-    "primaryConsulted": false,
+    "primaryConsulted": true,
     "sourceUrls": [
+      "https://whc.unesco.org/en/list/986/",
       "https://github.com/brandonhimpfen/unesco-world-heritage-sites/blob/ce6e2deff0c325b972514b3366d3ee94323c8ee9/country",
       "https://github.com/rich-iannone/UWHS/tree/4b05bf5f2813bcf66a744a9963567bc856c2a33e"
     ],
@@ -63,7 +78,13 @@
     "lon": null,
     "price": null,
     "photos": [],
-    "demo": false
+    "demo": false,
+    "region": "Distrito Capital",
+    "sourceLabels": [
+      "UNESCO · Centro del Patrimonio Mundial",
+      "Catálogo secundario histórico · Brandon Himpfen",
+      "UWHS · Richard Iannone (datos históricos)"
+    ]
   },
   {
     "id": "porlamar",

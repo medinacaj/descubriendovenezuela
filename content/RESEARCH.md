@@ -49,3 +49,10 @@ Se reintentaron Posadaven, Venezuela Tuya y Wikimedia Commons por solicitud del 
 ### Reproducción
 
 `npm run build:maps` regenera las imágenes a partir de las fuentes guardadas; `npm run build:pages` valida el catálogo y los archivos, y genera Pages. `npm run test:pages` comprueba imágenes servidas bajo la ruta del proyecto, filtros por categoría/región, búsqueda sin acentos, detalle y licencia en móvil y escritorio. La aplicación Next/PostgreSQL mantiene su catálogo local de demostración separado.
+
+
+## Segunda consulta — UNESCO directo (6 de noviembre de 2026)
+
+Esta revisión complementa y sustituye la limitación de red de la primera consulta del 4 de noviembre. Se leyeron en línea las fichas oficiales del Centro del Patrimonio Mundial de UNESCO: https://whc.unesco.org/en/list/701/ (Canaima), https://whc.unesco.org/en/list/658/ (Coro y su Puerto) y https://whc.unesco.org/en/list/986/ (Ciudad Universitaria de Caracas). Los hechos históricos, la región y las características patrimoniales de estas tres fichas se resumieron con redacción original y ahora incluyen la fuente primaria como primera referencia. No se copiaron imágenes ni descripciones extensas.
+
+Esta consulta no verifica apertura al público, seguridad, accesos, transporte, tarifas ni horarios. No se han obtenido autorizaciones de fotografías, reseñas o contactos comerciales. Se conserva el historial de la primera consulta, que usó dos fuentes secundarias.

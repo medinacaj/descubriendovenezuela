@@ -1,6 +1,4 @@
-import {readFile,writeFile,mkdir} from "node:fs/promises";
-import {dirname} from "node:path";
-function buildDirectories(places, css, rootHtml) {
+export function buildDirectories(places, css, rootHtml) {
  const base="/descubriendovenezuela/",domain="https://medinacaj.github.io",site=domain+base,out={};
  const h=s=>String(s??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
  const slug=s=>String(s).normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-|-$/g,"");
@@ -53,7 +51,3 @@ function buildDirectories(places, css, rootHtml) {
  out["docs/404.html"]=shell("Página no encontrada","Este lugar o página no se encontró.","404.html",`<section class="section"><h1>Página no encontrada</h1><a href="${base}">Volver al inicio</a></section>`,{noindex:true});
  return out;
 }
-const places=JSON.parse(await readFile("content/places.json","utf8"));
-const css=await readFile("src/app/globals.css","utf8");
-const current=await readFile("docs/index.html","utf8");
-for(const [path,body] of Object.entries(buildDirectories(places,css,current))){await mkdir(dirname(path),{recursive:true});await writeFile(path,body)}

@@ -6,7 +6,7 @@ La versión de lanzamiento prepara **fichas con direcciones permanentes, página
 
 ## Catálogo público inicial
 
-La vista de GitHub Pages contiene **nueve lugares documentados**: los tres sitios patrimoniales iniciales y Mérida, Cumaná, Ciudad Bolívar, Porlamar, San Cristóbal y Caracas. Estas seis entradas son localidades, no establecimientos turísticos verificados. Sus imágenes son **mapas de referencia propios con datos abiertos**, identificados como cartografía y atribuidos; no se presentan como fotografías.
+La vista de GitHub Pages contiene **nueve lugares documentados**: los tres sitios patrimoniales con contraste UNESCO y Mérida, Cumaná, Ciudad Bolívar, Porlamar, San Cristóbal y Caracas. Estas seis entradas son localidades, no establecimientos turísticos verificados. Sus imágenes son **mapas de referencia propios con datos abiertos**, identificados como cartografía y atribuidos; no se presentan como fotografías.
 
 Los datos están en [content/places.json](content/places.json), la procedencia y las limitaciones en [content/RESEARCH.md](content/RESEARCH.md). Las fotografías de destinos y los hospedajes contrastados siguen pendientes: los candidatos sin evidencia suficiente no se publican como negocios reales.
 
