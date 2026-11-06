@@ -42,11 +42,11 @@ export default async function Detail({ params }: Route) {
           {!p.demo && p.catalogId && <div className="notice">
             Ficha documental. No confirma horarios, accesos, calidad, disponibilidad ni visita de campo.
           </div>}
-          {credits.map((credit) => credit.src.startsWith("media/mapa-") && credit.src.endsWith(".webp") ? (
+          {credits.map((credit) => /^media\\/(foto|mapa)-[a-z0-9-]+\\.webp$/.test(credit.src) ? (
             <figure className="detail-photo" key={credit.src}>
               <img src={"/" + credit.src} alt={credit.alt} loading="lazy" width={900} height={600}/>
               <figcaption>
-                {credit.kind === "map" ? "Cartografía" : "Imagen"}: {credit.author}.{" "}
+                {credit.kind === "map" ? "Cartografía" : "Fotografía"}: {credit.author}.{" "}
                 <a href={credit.licenseUrl} rel="noopener noreferrer" target="_blank">{credit.license}</a>.{" "}
                 <a href={credit.sourceUrl} rel="noopener noreferrer" target="_blank">Fuente y atribución</a>.
                 <small>{credit.changes}</small>

@@ -1,13 +1,14 @@
 import { readFile } from "node:fs/promises";
 import { join } from "node:path";
 import { NextResponse } from "next/server";
+import licensedPhotos from "../../../../content/licensed-photographs.json";
 
-// Solo los mapas ya revisados e incluidos en el repositorio. No es un
-// endpoint genérico para archivos aportados por terceros.
+// Lista cerrada de mapas y fotografías auditadas. Sin rutas arbitrarias.
 const allowed = new Set([
   "mapa-caracas-ciudad.webp", "mapa-ciudad-bolivar.webp",
   "mapa-cumana-ciudad.webp", "mapa-merida-ciudad.webp",
   "mapa-porlamar.webp", "mapa-san-cristobal.webp",
+  ...licensedPhotos.map(photo => photo.output),
 ]);
 
 export async function GET(

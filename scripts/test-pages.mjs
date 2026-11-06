@@ -2,6 +2,8 @@ import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
 import { chromium, expect } from "@playwright/test";
 const prefix = "/descubriendovenezuela/";
+const allPlaces = JSON.parse(await readFile("content/places.json", "utf8"));
+const homeImageCount = allPlaces.filter(p => p.photos.length > 0).length;
 const server = createServer(async (req, res) => {
   try {
     const path = new URL(req.url, "http://local").pathname;
@@ -68,7 +70,7 @@ try {
           .locator("img")
           .evaluateAll(
             (imgs) =>
-              imgs.length === 6 &&
+              imgs.length === homeImageCount &&
               imgs.every((i) => i.complete && i.naturalWidth > 0),
           ),
       )

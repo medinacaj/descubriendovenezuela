@@ -5,12 +5,13 @@ const icons: Record<string, string> = {
   Cultura: "▥", "Negocios y servicios": "◇", Localidades: "⌖",
 };
 export function PlaceCard({ place: p }: { place: Place }) {
-  const map = p.mediaCredits?.find(asset => asset.kind === "map" &&
-    asset.src.startsWith("media/mapa-") && asset.src.endsWith(".webp"));
+  const visual = p.mediaCredits?.find(asset => asset.kind === "photograph" &&
+    /^media\\/foto-[a-z0-9-]+\\.webp$/.test(asset.src)) || p.mediaCredits?.find(asset => asset.kind === "map" &&
+    /^media\\/mapa-[a-z0-9-]+\\.webp$/.test(asset.src));
   return (
     <Link href={"/lugares/" + p.id} className="place-card">
-      {map ? <div className="card-photo" data-kind="map">
-        <img src={"/" + map.src} alt={map.alt} loading="lazy" width={900} height={600}/>
+      {visual ? <div className="card-photo" data-kind={visual.kind}>
+        <img src={"/" + visual.src} alt={visual.alt} loading="lazy" width={900} height={600}/>
       </div> : <div className={"card-art art-" + p.category.toLowerCase()} aria-hidden="true">
         <span>{icons[p.category] || "◇"}</span>
         <small>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA</small>
