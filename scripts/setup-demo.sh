@@ -11,4 +11,5 @@ npm ci
 docker compose up -d --wait
 npm run db:migrate
 ALLOW_DEMO_IMPORT=yes npx tsx scripts/demo.ts
+npm run catalog:import
 npx tsx scripts/demo-admin.ts
