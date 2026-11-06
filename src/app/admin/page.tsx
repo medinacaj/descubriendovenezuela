@@ -166,6 +166,36 @@ export default async function Admin({
                 Autorización documentada para publicar estos datos
               </label>
             </fieldset>
+            <fieldset>
+              <legend>Tarifa documentada (opcional)</legend>
+              <p>Sin fuente, unidad y fecha de vigencia no se publicará el precio.</p>
+              <label>Monto
+                <input name="priceAmount" type="number" min={0} step="0.01" defaultValue={p?.priceAmount ?? ""}/>
+              </label>
+              <label>Moneda
+                <select name="priceCurrency" defaultValue={p?.priceCurrency || ""}>
+                  <option value="">Seleccionar</option>
+                  <option value="VES">VES</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                </select>
+              </label>
+              <label>Unidad de cobro
+                <select name="priceUnit" defaultValue={p?.priceUnit || ""}>
+                  <option value="">Seleccionar</option>
+                  <option value="persona">Persona</option>
+                  <option value="noche">Noche</option>
+                  <option value="entrada">Entrada</option>
+                  <option value="servicio">Servicio</option>
+                </select>
+              </label>
+              <label>Vigencia hasta
+                <input name="priceValidUntil" type="date" defaultValue={p?.priceValidUntil || ""}/>
+              </label>
+              <label>Fuente HTTPS de la tarifa
+                <input name="priceSource" type="url" defaultValue={p?.priceSource || ""}/>
+              </label>
+            </fieldset>
             <label>
               Fuente HTTPS
               <input name="source" type="url" defaultValue={p?.source} />
