@@ -25,7 +25,7 @@ export function renderDetailedPlace(p,{h,url,slug,area}){
         <p class="description">${h(p.description)}</p>
         ${gallery}
         <section class="place-documentation" aria-labelledby="documentation-title"><h2 id="documentation-title">¿Qué información se comprobó?</h2>
-          <p>${h(p.verification)}</p>
+          <p><strong>Alcance de la comprobación:</strong> ${h(p.verification)}</p>
           <p class="place-evidence-note">La identificación del destino y la documentación de sus características no equivalen a una visita de campo ni a la confirmación de servicios actuales.</p>
         </section>
         <section class="place-visit" aria-labelledby="visit-title"><h2 id="visit-title">Antes de planificar una visita</h2>
