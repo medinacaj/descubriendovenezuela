@@ -1543,7 +1543,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-laguna-de-la-restinga.webp",
+        "alt": "Laguna de La Restinga en Margarita",
+        "author": "Wilfredor",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laguna_de_la_Restinga.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1911,7 +1922,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-monumento-natural-cerro-santa-ana.webp",
+        "alt": "Cerro Santa Ana de Paraguaná, estado Falcón",
+        "author": "Aramburu Carlos",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_Santa_Ana%2C_Paraguan%C3%A1_en_Venezuela.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2381,7 +2403,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-parguito.webp",
+        "alt": "Playa Parguito, isla de Margarita",
+        "author": "Jorge Moyeja",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Parguito_-_Margarita.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2611,7 +2644,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-medina.webp",
+        "alt": "Playa Medina en el estado Sucre",
+        "author": "Glorimar quiñonez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estado_sucre%2C_playa_medina.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2909,7 +2953,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-pico-bolivar.webp",
+        "alt": "Pico Bolívar en la Sierra Nevada de Mérida",
+        "author": "Odalis ortega",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_Bolivar_Merida_Venezuela.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3944,7 +3999,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-salto-kama-meru.webp",
+        "alt": "Salto Kamá en la Gran Sabana",
+        "author": "Paolo Costa Baldi",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salto_Kama_-_Gran_Sabana.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4013,7 +4079,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-la-gran-sabana.webp",
+        "alt": "Paisaje documentado de la Gran Sabana, estado Bolívar",
+        "author": "Sankirumi",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_gran_Sabana.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
