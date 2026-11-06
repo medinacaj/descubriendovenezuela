@@ -41,6 +41,8 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
   const homeRegions=["Falcón","Bolívar","Anzoátegui","Carabobo","Delta Amacuro","Lara","Zulia","Aragua"].filter(r=>names.includes(r));
   const spotlightIds=["isla-de-plata-mochima","parque-nacional-morrocoy","701","parque-nacional-san-esteban","parque-nacional-yacambu","relampago-del-catatumbo"];
   const spotlight=spotlightIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
+  const independentIds=["santuario-nacional-nuestra-senora-de-coromoto","monumento-virgen-de-la-paz","tobogan-de-la-selva","casa-museo-la-blanquera","playa-chuspa","petroglifos-de-vigirima"];
+  const independent=independentIds.map(id=>places.find(p=>p.id===id)).filter(Boolean);
   const homeSections=`
     <section class="section page-width editorial-states" aria-labelledby="state-home-title">
       <div class="section-head"><div><span class="eyebrow">UN PAÍS, MUCHOS TERRITORIOS</span><h2 id="state-home-title">Descubre Venezuela por estado</h2></div>
@@ -54,6 +56,12 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
       <a class="text-link" href="${url("explorar/")}">Buscar entre los ${places.length} lugares ↗</a></div>
       <p class="catalog-note">Fotografías auténticas con atribución y fichas documentales. Son ejemplos del inventario, no recomendaciones de viaje ni comprobación de apertura.</p>
       <div class="directory-grid editorial-featured-grid">${spotlight.map(card).join("")}</div>
+    </section>
+    <section class="section page-width editorial-independent" aria-labelledby="independent-title">
+      <div class="section-head"><div><span class="eyebrow">INVESTIGACIÓN DOCUMENTAL INDEPENDIENTE</span><h2 id="independent-title">Más allá de los destinos conocidos</h2></div>
+      <a class="text-link" href="${url("explorar/")}">Explorar todo el catálogo ↗</a></div>
+      <p class="catalog-note">Sitios incorporados mediante investigación de fuentes externas. Las fotografías propias y las imágenes referenciales se identifican por separado.</p>
+      <div class="directory-grid editorial-featured-grid">${independent.map(card).join("")}</div>
     </section>
     <section class="editorial-contribute" aria-labelledby="editorial-contribute-title">
       <div class="page-width"><span class="eyebrow">AYÚDANOS A DOCUMENTAR MEJOR</span><h2 id="editorial-contribute-title">Cada estado tiene más historias por descubrir.</h2>
@@ -124,7 +132,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
     </section>`;
     const desc=info.sites.length?`Descubre lugares de ${r}: ${info.sites.slice(0,3).map(p=>p.name).join(", ")}. Fichas y fotografías documentadas cuando existen.`:`Conoce las localidades documentadas de ${r}, Venezuela. Una guía con fuentes en crecimiento.`;
     const eligible=info.sites.length>0;
-    regionPages["docs/"+path+"index.html"]=shell(`Descubre ${r}: lugares y atractivos`,desc,path,body,{socialImage:imageForState(r).photo?.kind==="photograph"?imageForState(r).photo.src:null,noindex:!eligible,structured:eligible?{"@context":"https://schema.org","@type":"CollectionPage","name":"Lugares de "+r,"url":site+path,"mainEntity":{"@type":"ItemList","numberOfItems":info.sites.length,"itemListElement":info.sites.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.name,"url":site+"lugares/"+p.id+"/"}))}}:null});
+    regionPages["docs/"+path+"index.html"]=shell(`Descubre ${r}: lugares y atractivos`,desc,path,body,{socialImage:!imageForState(r).visual?.representative&&imageForState(r).photo?.kind==="photograph"?imageForState(r).photo.src:null,noindex:!eligible,structured:eligible?{"@context":"https://schema.org","@type":"CollectionPage","name":"Lugares de "+r,"url":site+path,"mainEntity":{"@type":"ItemList","numberOfItems":info.sites.length,"itemListElement":info.sites.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.name,"url":site+"lugares/"+p.id+"/"}))}}:null});
     if(eligible)indexableRegionPaths.push(path);
   }
   return {homeSections,statesIndex,regionPages,indexableRegionPaths,names};

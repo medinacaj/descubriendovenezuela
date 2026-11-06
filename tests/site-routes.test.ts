@@ -73,6 +73,18 @@ describe("Pages con URLs permanentes",()=>{
      if(!((p as any).photos?.length))expect(detail).toContain("NO corresponde a");
    }
  });
+ it("SEO estático y hojas de estilo cacheables",async()=>{
+  const home=await readFile("docs/index.html","utf8");
+  const explore=await readFile("docs/explorar/index.html","utf8");
+  expect(home).toContain('href="/descubriendovenezuela/base.css"');
+  expect(home).not.toContain("<style>");
+  expect(explore).toContain('id="show-more"');
+  expect(explore).toContain("batchSize=30");
+  expect(home).toContain("Más allá de los destinos conocidos");
+  expect((await stat("docs/base.css")).size).toBeGreaterThan(10000);
+  const robots=await readFile("docs/robots.txt","utf8");
+  expect(robots).toContain("Sitemap: https://medinacaj.github.io/descubriendovenezuela/sitemap.xml");
+ });
  it("sitemap, páginas regionales y caché",async()=>{
   const map=await readFile("docs/sitemap.xml","utf8");
   for(const p of places)expect(map).toContain(base+"lugares/"+p.id+"/");
@@ -83,6 +95,7 @@ describe("Pages con URLs permanentes",()=>{
   const sw=await readFile("docs/sw.js","utf8");
   expect(sw).toContain("caches.open");
   expect(sw).toContain('BASE+"states.css"');
+  expect(sw).toContain('BASE+"base.css"');
   expect(sw).toContain("Response.error()");
  });
 });

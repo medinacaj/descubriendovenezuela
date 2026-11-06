@@ -299,3 +299,5 @@ footer > small { font-size: 11px; }
 #results[data-view="lista"] .card-photo__badge{font-size:8px;left:5px;top:5px;padding:4px}
 #results[data-view="fichas"]{grid-template-columns:1fr}
 }
+
+.load-more-wrap{display:flex;align-items:center;justify-content:center;gap:16px;flex-direction:column;padding:24px 12px 34px}.load-more-wrap #showing{font-size:13px;color:#53665d;margin:0;text-align:center}.load-more-wrap [hidden]{display:none}@media(max-width:640px){.load-more-wrap .button{width:100%;max-width:360px;justify-content:center}}

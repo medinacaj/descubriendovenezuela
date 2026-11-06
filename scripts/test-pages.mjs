@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
+    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -34,6 +34,7 @@ try {
     const page = await browser.newPage({ viewport: { width, height: 900 } });
     await page.goto(origin);
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
+    await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
     const box = await page.evaluate(() => {
       const hero = document.querySelector(".hero").getBoundingClientRect();
       const card = document.querySelector(".directory-grid .place-card").getBoundingClientRect();
@@ -70,6 +71,9 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");
+    await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
+    await page.getByRole("button",{name:"Mostrar más lugares"}).click();
+    await expect(page.locator("#results .place-card:visible")).toHaveCount(60);
     await page.getByRole("button",{name:"Lista",exact:true}).click();
     await expect(page.locator("#results")).toHaveAttribute("data-view","lista");
     await page.getByRole("button",{name:"Fichas",exact:true}).click();
