@@ -22,7 +22,7 @@ export function PlaceCard({ place: p }: { place: Place }) {
         </div>
         <h3>{p.name}</h3>
         <p className="location">⌖ {p.territory}</p>
-        <div className="card-bottom"><span>Consultar precio</span><b aria-hidden="true">↗</b></div>
+        <div className="card-bottom"><span>{p.priceAmount !== null && p.priceAmount !== undefined && p.priceCurrency && p.priceUnit ? `${p.priceAmount} ${p.priceCurrency} / ${p.priceUnit}` : "Consultar precio"}</span><b aria-hidden="true">↗</b></div>
       </div>
     </Link>
   );
