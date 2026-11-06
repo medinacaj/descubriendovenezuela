@@ -3,7 +3,7 @@ import { readFile } from "node:fs/promises";
 import { chromium, expect } from "@playwright/test";
 const prefix = "/descubriendovenezuela/";
 const allPlaces = JSON.parse(await readFile("content/places.json", "utf8"));
-const homeImageCount = allPlaces.filter(p => p.photos.length > 0).length;
+const stateCount = new Set(allPlaces.map(p => p.region)).size;
 const server = createServer(async (req, res) => {
   try {
     const path = new URL(req.url, "http://local").pathname;
@@ -47,6 +47,28 @@ try {
       throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
     if (box.titleLeft < -1 || box.titleRight > width + 1)
       throw Error("Título fuera del viewport a " + width + "px");
+    await page.goto(origin + "estados/");
+    await expect(page.getByRole("heading", {name:"Estados de Venezuela y Distrito Capital"})).toBeVisible();
+    await expect(page.locator("#state-results .state-tile")).toHaveCount(stateCount);
+    await expect(page.locator('link[href$="states.css"]')).toHaveCount(1);
+    await page.getByLabel("Buscar estado o Distrito Capital").fill("falcon");
+    await expect(page.locator("#state-results .state-tile:visible")).toHaveCount(1);
+    await expect(page.locator("#state-count")).toHaveText("1 territorio documentado");
+    if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Índice de estados desbordado a " + width + "px");
+    await page.locator('#state-results a[href$="/regiones/falcon/"]').click();
+    await expect(page.getByRole("heading", {name:"Falcón", exact:true})).toBeVisible();
+    await expect(page.locator('[data-featured-id="parque-nacional-morrocoy"]')).toBeVisible();
+    await expect(page.locator('.state-feature__media figcaption a')).toHaveCount(2);
+    await expect.poll(() => page.locator(".state-feature__media img").evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
+    if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Ficha de Falcón desbordada a " + width + "px");
+    await page.goto(origin + "regiones/merida/");
+    await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
+    await expect(page.locator('[data-featured-id="merida-ciudad"]')).toHaveCount(1);
+    await expect(page.locator(".state-more-sites")).toHaveCount(0);
+    if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Explorador desbordado a " + width + "px");
