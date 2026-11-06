@@ -42,7 +42,7 @@ export default async function Detail({ params }: Route) {
           {!p.demo && p.catalogId && <div className="notice">
             Ficha documental. No confirma horarios, accesos, calidad, disponibilidad ni visita de campo.
           </div>}
-          {credits.map((credit) => /^media\\/(foto|mapa)-[a-z0-9-]+\\.webp$/.test(credit.src) ? (
+          {credits.map((credit) => ((credit.src.startsWith("media/foto-") || credit.src.startsWith("media/mapa-")) && credit.src.endsWith(".webp")) ? (
             <figure className="detail-photo" key={credit.src}>
               <img src={"/" + credit.src} alt={credit.alt} loading="lazy" width={900} height={600}/>
               <figcaption>
