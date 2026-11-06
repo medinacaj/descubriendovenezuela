@@ -24,7 +24,7 @@ describe("Pages con URLs permanentes",()=>{
   expect(region).not.toContain('data-featured-id="caracas-ciudad"');
   const city=await readFile("docs/regiones/merida/index.html","utf8");
   expect(city).toContain('data-featured-id="parque-nacional-sierra-nevada"');
-  expect(city).not.toContain("og:image");
+  expect(city).toContain("og:image");
   expect(city).toContain("Otros sitios documentados");
   const detail=await readFile("docs/lugares/parque-nacional-morrocoy/index.html","utf8");
   expect(detail).toContain('href="/descubriendovenezuela/regiones/falcon/"');

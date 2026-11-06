@@ -198,5 +198,105 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg",
     "output": "foto-casco-historico-la-guaira.webp"
+  },
+  {
+    "id": "cayo-de-agua",
+    "file": "Cayo de Agua in Los Roques.jpg",
+    "alt": "Cayo de Agua, archipiélago de Los Roques, Venezuela",
+    "author": "Tucanrecords",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_de_Agua_in_Los_Roques.jpg",
+    "output": "foto-cayo-de-agua.webp"
+  },
+  {
+    "id": "playa-el-agua",
+    "file": "Isla de Margarita, playa el Agua.JPG",
+    "alt": "Playa El Agua de la isla de Margarita, Nueva Esparta",
+    "author": "Katepalitava",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_de_Margarita%2C_playa_el_Agua.JPG",
+    "output": "foto-playa-el-agua.webp"
+  },
+  {
+    "id": "playa-el-yaque",
+    "file": "Playa el Yaque, Isla de Margarita.jpg",
+    "alt": "Playa El Yaque en la isla de Margarita, Nueva Esparta",
+    "author": "SharaidG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_el_Yaque%2C_Isla_de_Margarita.jpg",
+    "output": "foto-playa-el-yaque.webp"
+  },
+  {
+    "id": "parque-nacional-medanos-de-coro",
+    "file": "Medanos de Coro.jpg",
+    "alt": "Vista de los médanos de Coro, estado Falcón",
+    "author": "Rjcastillo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medanos_de_Coro.jpg",
+    "output": "foto-parque-nacional-medanos-de-coro.webp"
+  },
+  {
+    "id": "laguna-de-mucubaji",
+    "file": "Mucubaji.jpg",
+    "alt": "Paisaje de la laguna de Mucubají, Mérida",
+    "author": "Venex_jpb",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mucubaji.jpg",
+    "output": "foto-laguna-de-mucubaji.webp"
+  },
+  {
+    "id": "san-cristobal",
+    "file": "San Cristóbal estado Táchira.JPG",
+    "alt": "Paisaje urbano de San Cristóbal en el estado Táchira",
+    "author": "Monicacorrea",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Crist%C3%B3bal_estado_T%C3%A1chira.JPG",
+    "output": "foto-san-cristobal.webp"
+  },
+  {
+    "id": "parque-nacional-archipielago-de-los-roques",
+    "file": "Los Roques.JPG",
+    "alt": "Vista de Isla de las Tortugas, sector Dos Mosquises, Los Roques",
+    "author": "Katepalitava",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Los_Roques.JPG",
+    "output": "foto-parque-nacional-archipielago-de-los-roques.webp"
+  },
+  {
+    "id": "playa-cuyagua",
+    "file": "Playa de Cuyagua 04.jpg",
+    "alt": "Playa Cuyagua en la costa del estado Aragua",
+    "author": "VCusu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_de_Cuyagua_04.jpg",
+    "output": "foto-playa-cuyagua.webp"
+  },
+  {
+    "id": "parque-nacional-sierra-nevada",
+    "file": "Sierra Nevada Merida 1.jpg",
+    "alt": "Picos de Sierra Nevada de Mérida vistos desde Sierra de La Culata",
+    "author": "Adolfo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Merida_1.jpg",
+    "output": "foto-parque-nacional-sierra-nevada.webp"
+  },
+  {
+    "id": "castillo-de-san-carlos-de-borromeo",
+    "file": "Castillo de San Carlos de Borromeo.jpg",
+    "alt": "Castillo San Carlos de Borromeo en Pampatar, Nueva Esparta",
+    "author": "Javier Volcan",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_San_Carlos_de_Borromeo.jpg",
+    "output": "foto-castillo-de-san-carlos-de-borromeo.webp"
   }
 ]
