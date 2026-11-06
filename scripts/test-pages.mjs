@@ -102,7 +102,7 @@ try {
     await page.getByLabel("Buscar lugar").fill("guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.getByLabel("Buscar lugar").fill("");
-    await expect(page.locator("#count")).toHaveText("29 lugares documentados");
+    await expect(page.locator("#count")).toHaveText(allPlaces.length + " lugares documentados");
     await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
     await page.getByLabel("Estado o región").selectOption("Mérida");
     await page.getByLabel("Buscar lugar").fill("merida");

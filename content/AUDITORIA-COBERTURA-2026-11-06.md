@@ -1,4 +1,6 @@
-# Auditoría de cobertura y próximos avances — 6 de noviembre de 2026
+# Auditoría histórica previa a la ampliación — 6 de noviembre de 2026
+
+**Instantánea anterior a la incorporación de los ocho territorios y cinco fotografías adicionales.** Los 29 registros, las 12 fotografías y los ocho estados faltantes que aparecen abajo corresponden al estado anterior del proyecto, no a los totales vigentes. Para los avances y sus fuentes, consultar [la ampliación de cobertura](RESEARCH-COBERTURA-2026-11-06.md) y [créditos fotográficos actualizados](PHOTO-CREDITS.md).
 
 Este informe se deriva del catálogo versionado `content/places.json`; **no** demuestra que una institución o negocio esté abierto. Sirve para priorizar investigación y no inflar artificialmente el número de fichas.
 

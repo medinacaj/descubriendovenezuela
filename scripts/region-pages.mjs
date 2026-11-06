@@ -38,8 +38,9 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
     </article>`;
   };
   const intro=`<p class="catalog-note">Una selección documental de lugares reales, organizada por estados y Distrito Capital. Las fichas no garantizan acceso ni servicios vigentes.</p>`;
-  const homeRegions=["Falcón","Bolívar","Aragua","Sucre","Distrito Capital","Miranda","Monagas","La Guaira"].filter(r=>names.includes(r));
-  const spotlight=scoreIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
+  const homeRegions=["Falcón","Bolívar","Anzoátegui","Carabobo","Delta Amacuro","Lara","Zulia","Aragua"].filter(r=>names.includes(r));
+  const spotlightIds=["isla-de-plata-mochima","parque-nacional-morrocoy","701","parque-nacional-san-esteban","parque-nacional-yacambu","relampago-del-catatumbo"];
+  const spotlight=spotlightIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
   const homeSections=`
     <section class="section page-width editorial-states" aria-labelledby="state-home-title">
       <div class="section-head"><div><span class="eyebrow">UN PAÍS, MUCHOS TERRITORIOS</span><h2 id="state-home-title">Descubre Venezuela por estado</h2></div>
