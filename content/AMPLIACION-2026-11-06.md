@@ -36,3 +36,7 @@ Se incorporaron 20 nuevas fotografías específicas de destinos, además de las 
 No se atribuye una empresa o reserva a un tercero por aparecer en esta guía. La fuente oficial del propio hotel o centro comercial solo respalda su identidad y ubicación general. No se han reutilizado fotografías de portales comerciales, redes sociales ni mapas ajenos sin permiso. Las rutas y pueblos siguen siendo referencias documentales, no itinerarios operativamente comprobados.
 
 **Pendiente:** obtener fotografías propias autorizadas para las 131 fichas que aún usan imagen referencial y fuentes más específicas, investigar operadores locales y posadas individualmente, comprobar accesos, y revisar periódicamente estado actual y enlaces. Otros ejemplos aportados por el usuario quedan candidatos a investigación cuando no sea posible sostenerlos documentalmente de manera suficiente.
+
+## Segunda etapa: investigación independiente
+
+La expansión histórica de 139 fichas se conserva como referencia de la primera etapa. Posteriormente se sumaron **58 fichas investigadas de forma independiente**, totalizando **234**. La nueva investigación y sus fuentes figuran en [`INVESTIGACION-INDEPENDIENTE-2026-11-06.md`](INVESTIGACION-INDEPENDIENTE-2026-11-06.md). El catálogo total dispone actualmente de **52 fotografías reales** y seis mapas; **57 registros tienen medios propios**, mientras **177 siguen con imágenes contextuales claramente identificadas**. Los totales previos de 176/40/131 se refieren a una instantánea histórica, no al estado vigente.

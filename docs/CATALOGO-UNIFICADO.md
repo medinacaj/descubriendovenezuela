@@ -1,6 +1,6 @@
 # Catálogo documental compartido — noviembre de 2026
 
-## Inventario real: 176 fichas documentales (24 territorios)
+## Inventario real: 234 fichas documentales (25 territorios)
 
 Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Se añadieron otras ocho fichas para representar Anzoátegui, Barinas, Carabobo, Cojedes, Delta Amacuro, Lara, Portuguesa y Zulia, con [fuentes en el informe ampliado](../content/RESEARCH-COBERTURA-2026-11-06.md). Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. Las 139 fichas añadidas el 6 de noviembre de 2026 amplían parques, cayos, playas, patrimonio, gastronomía, regiones y negocios identificados en sitios propios. Se incorpora Dependencias Federales y el inventario ahora cubre 25 territorios. Los nueve hospedajes cuentan con referencias directas a sus operadores, sin comprobación independiente de disponibilidad o permisos de imagen. La importación y la vista estática usan el mismo `content/places.json`.
 
@@ -12,7 +12,7 @@ El comando `npm run catalog:import`, tras `npm run db:migrate`, replica estas fi
 
 El catálogo versionado se edita solo en `content/places.json`: el panel impide modificar fichas con `catalog_id`, evitando divergencia silenciosa. Los demás registros editoriales siguen administrándose desde el panel.
 
-Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Se sirven seis mapas aprobados y cuarenta fotografías reales de la lista de permitidos `content/licensed-photographs.json`. Cada fotografía identifica autor, licencia Creative Commons, página de origen y conversión técnica a WebP. La fotografía no prueba condiciones de visita actuales.
+Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Se sirven seis mapas aprobados y cincuenta y dos fotografías reales de la lista de permitidos `content/licensed-photographs.json`. Cada fotografía identifica autor, licencia Creative Commons, página de origen y conversión técnica a WebP. La fotografía no prueba condiciones de visita actuales.
 
 ## Ejecutar y verificar
 
@@ -48,4 +48,8 @@ El manifiesto [licensed-photographs.json](../content/licensed-photographs.json) 
 
 ## Presentación visual (noviembre de 2026)
 
-Todas las fichas y tarjetas muestran un recurso visual. **45 destinos poseen fotografía o mapa propio**; los otros **131 usan temporalmente una fotografía acreditada de otra ubicación**, identificada como referencia y no como imagen del destino. Se han descargado y versionado veinte fotografías adicionales de Wikimedia Commons con autorización Creative Commons individual. El explorador público ofrece vistas **Tarjetas, Lista y Fichas**, conserva el modo en la URL, y mantiene filtros por categoría, territorio y texto. La meta editorial es sustituir cada referencia por una fotografía específica, verificada y autorizada.
+Todas las fichas y tarjetas muestran un recurso visual. **57 destinos poseen fotografía o mapa propio**; los otros **177 usan temporalmente una fotografía acreditada de otra ubicación**, identificada como referencia y no como imagen del destino. Se han descargado y versionado treinta y dos fotografías adicionales de Wikimedia Commons con autorización Creative Commons individual. El explorador público ofrece vistas **Tarjetas, Lista y Fichas**, conserva el modo en la URL, y mantiene filtros por categoría, territorio y texto. La meta editorial es sustituir cada referencia por una fotografía específica, verificada y autorizada.
+
+## Ampliación y UX verificables
+
+Además de la expansión inicial de 139 lugares, se incorporaron **58 atractivos de investigación independiente** publicados en [`content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md`](../content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md). El catálogo actual tiene **234 fichas**, 52 fotografías reales y seis mapas, con **57 medios propios y 177 imágenes referenciales explícitas**. El explorador muestra inicialmente 30 tarjetas, permite cargar más lotes, tiene tres vistas visuales y comparte `docs/base.css`. La carpeta del proyecto no controla `robots.txt` de la raíz del dominio GitHub Pages. Los requisitos completos de WCAG 2.2 AA, Core Web Vitals y seguridad productiva requieren pruebas adicionales.
