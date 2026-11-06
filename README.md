@@ -71,6 +71,7 @@ Las pruebas de integración borran **únicamente** `venezuela_test`. Las pruebas
 - Mapa MapLibre interactivo con cartografía local de dominio público Natural Earth; sin costos ni solicitudes de mosaicos externos. Límites generalizados y no oficiales; no usar para navegación ni delimitación territorial. Sin marcadores hasta contar con ubicaciones autorizadas.
 - Fichas públicas; borradores ocultos; precio desconocido explícito; coordenadas sensibles ocultas.
 - Login editorial, sesiones en PostgreSQL, crear/editar/publicar/retirar y auditoría transaccional.
+- Campos opcionales para direcciones, horarios, web, teléfono y WhatsApp: la proyección pública los oculta sin autorización registrada.
 - Fuente HTTPS, fecha y estado verificado obligatorios para publicar. Etiqueta de demo independiente.
 - Estado vacío distinto de fallo del catálogo; diseño responsive y navegación por teclado.
 

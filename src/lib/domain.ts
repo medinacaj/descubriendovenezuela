@@ -30,6 +30,13 @@ export const placeSchema = z
     lat: z.number().min(-90).max(90).nullable(),
     lon: z.number().min(-180).max(180).nullable(),
     demo: z.boolean().default(false),
+    streetAddress: z.string().trim().max(300).optional(),
+    contactPhone: z.string().trim().max(40).regex(/^[+0-9() .-]*$/).optional(),
+    whatsappPhone: z.string().trim().regex(/^([+]?[0-9]{7,15})?$/).optional(),
+    website: z.union([z.literal(""), https]).optional(),
+    openingHoursNote: z.string().trim().max(300).optional(),
+    contactAuthorized: z.boolean().optional(),
+    contactEvidence: z.string().trim().max(1000).optional(),
   })
   .superRefine((p, c) => {
     if (p.published && (!p.source || !p.reviewedAt || p.status !== "verified"))
@@ -37,6 +44,8 @@ export const placeSchema = z
         code: "custom",
         message: "Publicar exige fuente, fecha de revisión y estado verificado",
       });
+    if (p.contactAuthorized && (!p.contactEvidence || p.contactEvidence.trim().length < 10))
+      c.addIssue({ code: "custom", message: "La publicación de contactos exige evidencia de autorización" });
     if ((p.lat === null) !== (p.lon === null))
       c.addIssue({
         code: "custom",

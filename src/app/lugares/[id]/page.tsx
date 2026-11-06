@@ -59,6 +59,19 @@ export default async function Detail({ params }: Route) {
             <h2>Alcance de la documentación</h2>
             <p>{p.verificationNote}</p>
           </>}
+          {p.contactAuthorized && (p.contactPhone || p.whatsappPhone || p.website || p.openingHoursNote || p.streetAddress) && (
+            <section aria-label="Contacto e información comercial">
+              <h2>Información proporcionada con autorización</h2>
+              <dl>
+                {p.streetAddress && <><dt>Dirección</dt><dd>{p.streetAddress}</dd></>}
+                {p.contactPhone && <><dt>Teléfono</dt><dd><a href={"tel:" + p.contactPhone}>{p.contactPhone}</a></dd></>}
+                {p.whatsappPhone && <><dt>WhatsApp</dt><dd><a href={"https://wa.me/" + p.whatsappPhone.replace(/[^0-9]/g, "")} rel="noopener noreferrer" target="_blank">Contactar por WhatsApp ↗</a></dd></>}
+                {p.website && <><dt>Sitio web</dt><dd><a href={p.website} target="_blank" rel="noopener noreferrer">Visitar sitio oficial ↗</a></dd></>}
+                {p.openingHoursNote && <><dt>Horario informado</dt><dd>{p.openingHoursNote}</dd></>}
+              </dl>
+              <small>Datos comunicados con autorización. Confirma su vigencia antes de visitar o contactar.</small>
+            </section>
+          )}
           <h2>Ubicación</h2>
           <p>{p.sensitive
             ? "Ubicación exacta no publicada. No se ofrecen indicaciones de llegada."

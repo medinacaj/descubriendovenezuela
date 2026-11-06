@@ -13,6 +13,11 @@ export default function Privacy() {
         desde el panel.
       </p>
       <p>
+        El panel editorial admite información comercial y datos de contacto. Permanecen
+        ocultos al visitante hasta que el editor registra autorización de publicación.
+        La constancia de autorización se conserva solo en la base administrativa.
+      </p>
+      <p>
         No introduzcas datos personales reales en esta demostración. Antes de
         una publicación pública deben definirse responsable, canal de derechos,
         retención, eliminación y respaldo externo.

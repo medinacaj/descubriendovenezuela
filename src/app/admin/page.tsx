@@ -118,10 +118,10 @@ export default async function Admin({
                 defaultValue={p?.territoryId || ""}
               >
                 <option value="" disabled>
-                  Selecciona una localidad
+                  Selecciona una región o localidad
                 </option>
                 {ts
-                  .filter((t) => t.kind === "locality")
+                  .filter((t) => t.kind === "locality" || t.kind === "region")
                   .map((t) => (
                     <option value={t.id} key={t.id}>
                       {t.name}
@@ -140,6 +140,32 @@ export default async function Admin({
                 defaultValue={p?.description}
               />
             </label>
+            <fieldset>
+              <legend>Información comercial opcional</legend>
+              <p>El contacto se mantiene privado hasta registrar la autorización de publicación.</p>
+              <label>Dirección o referencia de acceso
+                <input name="streetAddress" maxLength={300} defaultValue={p?.streetAddress || ""}/>
+              </label>
+              <label>Teléfono de contacto
+                <input name="contactPhone" type="tel" maxLength={40} defaultValue={p?.contactPhone || ""}/>
+              </label>
+              <label>WhatsApp (prefijo internacional, solo dígitos)
+                <input name="whatsappPhone" type="tel" placeholder="+58..." defaultValue={p?.whatsappPhone || ""}/>
+              </label>
+              <label>Sitio web HTTPS
+                <input name="website" type="url" defaultValue={p?.website || ""}/>
+              </label>
+              <label>Horario comunicado por el titular
+                <textarea name="openingHoursNote" rows={2} maxLength={300} defaultValue={p?.openingHoursNote || ""}/>
+              </label>
+              <label>Evidencia de autorización de publicación (documentar fuente, responsable y fecha)
+                <textarea name="contactEvidence" rows={2} maxLength={1000} defaultValue={p?.contactEvidence || ""}/>
+              </label>
+              <label className="check">
+                <input type="checkbox" name="contactAuthorized" defaultChecked={p?.contactAuthorized}/>
+                Autorización documentada para publicar estos datos
+              </label>
+            </fieldset>
             <label>
               Fuente HTTPS
               <input name="source" type="url" defaultValue={p?.source} />

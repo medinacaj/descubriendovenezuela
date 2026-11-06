@@ -23,6 +23,7 @@ beforeAll(async () => {
   await pool.query(await readFile("db/migrations/001_core.sql", "utf8"));
   await pool.query(await readFile("db/migrations/002_catalog_bridge.sql", "utf8"));
   await pool.query(await readFile("db/migrations/002_documented_catalog.sql", "utf8"));
+  await pool.query(await readFile("db/migrations/003_business_contacts.sql", "utf8"));
   await pool.query(
     "TRUNCATE change_log,sessions,login_attempts,admin_users,places,territories RESTART IDENTITY CASCADE",
   );
@@ -111,6 +112,43 @@ describe("persistencia y publicación reales", () => {
   });
   it("paginación fraccionaria se normaliza", async () => {
     expect((await searchPlaces({ page: 1.1 })).page).toBe(1);
+  });
+  it("oculta contactos sin autorización y publica únicamente los consentidos", async () => {
+    const businessId = await savePlace({
+      ...input,
+      name: "Negocio sintético para prueba",
+      category: "Negocios y servicios",
+      published: true,
+      contactPhone: "+58 212 1234567",
+      whatsappPhone: "+584121234567",
+      website: "https://example.org/",
+      openingHoursNote: "Consultar antes de visitar",
+      streetAddress: "Dirección de prueba",
+      contactAuthorized: false,
+    }, actor);
+    const hidden = await getPlace(businessId);
+    expect(hidden?.contactPhone).toBeNull();
+    expect(hidden?.website).toBeNull();
+    expect(hidden?.streetAddress).toBeNull();
+    expect(hidden?.openingHoursNote).toBeNull();
+    expect((await getPlace(businessId, true))?.contactPhone).toBe("+58 212 1234567");
+    await expect(savePlace({
+      ...input, contactAuthorized: true, contactEvidence: "", name: "Sin autorización",
+    }, actor, businessId)).rejects.toThrow();
+    await savePlace({
+      ...input, name: "Negocio sintético para prueba",
+      category: "Negocios y servicios", published: true,
+      contactPhone: "+58 212 1234567",
+      whatsappPhone: "+584121234567", website: "https://example.org/",
+      openingHoursNote: "Consultar antes de visitar",
+      streetAddress: "Dirección de prueba",
+      contactAuthorized: true,
+      contactEvidence: "Consentimiento documental interno registrado en prueba",
+    }, actor, businessId);
+    const visible = await getPlace(businessId);
+    expect(visible?.contactPhone).toBe("+58 212 1234567");
+    expect(visible?.website).toBe("https://example.org/");
+    expect(JSON.stringify(visible)).not.toContain("Consentimiento documental interno");
   });
   it("retirar oculta la ficha y conserva auditoría", async () => {
     await savePlace(input, actor, id);

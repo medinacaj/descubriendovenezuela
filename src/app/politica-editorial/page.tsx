@@ -19,6 +19,11 @@ export default function Policy() {
         consentimiento y moderación.
       </p>
       <p>
+        Los teléfonos, direcciones, sitios web y horarios comerciales requieren
+        autorización documental del titular antes de aparecer públicamente.
+        La información comunicada no garantiza que el negocio esté abierto.
+      </p>
+      <p>
         El acceso básico será gratuito. La revisión editorial no garantiza
         disponibilidad, seguridad o condiciones de viaje. La información crítica
         debe contrastarse con su fuente antes de una visita.
