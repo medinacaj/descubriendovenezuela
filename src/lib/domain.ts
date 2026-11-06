@@ -50,7 +50,8 @@ export type Place = PlaceInput & {
   region: string;
   updatedAt: string;
   catalogId?: string | null;
-  verificationNote?: string;
+  verificationNote?: string | null;
+  mediaCredits?: Array<{ kind: string; src: string; alt: string; author: string; license: string; licenseUrl: string; sourceUrl: string; changes: string }>;
 };
 export function validatePlace(p: unknown) {
   return placeSchema.parse(p);
