@@ -6333,7 +6333,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isla-puinare-mochima.webp",
+        "alt": "Vista de la isla Puinare en la costa del estado Anzoátegui",
+        "author": "Jiberch",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_Puinare.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6432,7 +6443,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-colonia-tovar.webp",
+        "alt": "Panorámica de la población de Colonia Tovar, Aragua",
+        "author": "NoonIcarus",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colonia_Tovar.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6458,7 +6480,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-iglesia-san-martin-de-tours-colonia-tovar.webp",
+        "alt": "Vista de la iglesia de la Colonia Tovar, estado Aragua",
+        "author": "Florangel&ANGELES",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Colonia_Tovar_-_Iglesia_de_la_Colonia.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6534,7 +6567,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-la-victoria-aragua.webp",
+        "alt": "Vista panorámica de La Victoria, estado Aragua",
+        "author": "Edrasaal",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_La_Victoria._estado_Aragua._Venezuela.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6677,7 +6721,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-puente-de-angostura.webp",
+        "alt": "Puente de Angostura sobre el río Orinoco",
+        "author": "Luis Linero",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puente_Angostura-1.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6724,7 +6779,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-hato-el-cedral.webp",
+        "alt": "Paisaje del Hato El Cedral en los Llanos de Apure fotografiado en 2015",
+        "author": "Josefito123",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hato_El_Cedral_Llanos_de_Venezuela_2015-02-06_17.16.38.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   }
 ]
