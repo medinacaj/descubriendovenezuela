@@ -1,0 +1,48 @@
+name: Incorporar cinco fotografías de los nuevos territorios
+on:
+  push:
+    branches: [feat/ocho-territorios-y-fotos-reales-20261106]
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  importar:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - name: Instalar dependencias
+        run: npm ci
+      - name: Importar exclusivamente nuevas fotos con atribución
+        run: node scripts/import-licensed-photos.mjs --only-missing
+      - name: Regenerar 37 fichas y 24 páginas territoriales
+        run: npm run build:pages
+      - name: Comprobar nuevos destinos y fotografías locales
+        run: |
+          test -s docs/estados/index.html
+          test -s docs/regiones/anzoategui/index.html
+          test -s docs/regiones/delta-amacuro/index.html
+          test -s docs/regiones/zulia/index.html
+          test -s docs/media/foto-isla-de-plata-mochima.webp
+          test -s docs/media/foto-parque-nacional-san-esteban.webp
+          test -s docs/media/foto-parque-nacional-yacambu.webp
+          test -s docs/media/foto-reserva-biosfera-delta-orinoco.webp
+          test -s docs/media/foto-relampago-del-catatumbo.webp
+          grep -q 'Relámpago del Catatumbo' docs/regiones/zulia/index.html
+          grep -q '24 territorios' docs/estados/index.html
+      - name: Versionar fotografías y páginas regeneradas
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/places.json docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "assets: incorporar cinco fotos licenciadas y publicar 24 territorios"
+            git push origin HEAD:feat/ocho-territorios-y-fotos-reales-20261106
+          fi
