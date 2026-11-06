@@ -5,7 +5,7 @@ import { normaliseCatalogEntry, type CuratedEntry } from "../src/lib/catalog";
 describe("puente del catálogo documental", () => {
   it("normaliza todas las fichas reales y preserva su procedencia", () => {
     const entries = catalog.map(entry => normaliseCatalogEntry(entry as CuratedEntry));
-    expect(entries).toHaveLength(176);
+    expect(entries).toHaveLength(catalog.length);
     expect(new Set(entries.map(p => p.catalogId)).size).toBe(entries.length);
     expect(entries.every(p => p.source.startsWith("https://"))).toBe(true);
     expect(entries.every(p => p.verificationNote.length > 0)).toBe(true);
