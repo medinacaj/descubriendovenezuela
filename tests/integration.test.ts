@@ -24,6 +24,7 @@ beforeAll(async () => {
   await pool.query(await readFile("db/migrations/002_catalog_bridge.sql", "utf8"));
   await pool.query(await readFile("db/migrations/002_documented_catalog.sql", "utf8"));
   await pool.query(await readFile("db/migrations/003_business_contacts.sql", "utf8"));
+  await pool.query(await readFile("db/migrations/004_verified_prices.sql", "utf8"));
   await pool.query(
     "TRUNCATE change_log,sessions,login_attempts,admin_users,places,territories RESTART IDENTITY CASCADE",
   );
@@ -149,6 +150,30 @@ describe("persistencia y publicación reales", () => {
     expect(visible?.contactPhone).toBe("+58 212 1234567");
     expect(visible?.website).toBe("https://example.org/");
     expect(JSON.stringify(visible)).not.toContain("Consentimiento documental interno");
+  });
+  it("solo presenta precios con fuente y vigencia válidas", async () => {
+    const details = {
+      priceAmount: 25,
+      priceCurrency: "USD" as const,
+      priceUnit: "entrada" as const,
+      priceValidUntil: "2099-12-31",
+      priceSource: "https://example.org/tarifa-oficial",
+    };
+    const priceId = await savePlace({
+      ...input, name: "Entrada sintética documentada", published: true, ...details,
+    }, actor);
+    expect((await getPlace(priceId))?.priceAmount).toBe(25);
+    expect((await getPlace(priceId))?.priceSource).toBe(details.priceSource);
+    await savePlace({
+      ...input, name: "Entrada sintética documentada", published: true,
+      ...details, priceValidUntil: "2020-01-01",
+    }, actor, priceId);
+    expect((await getPlace(priceId))?.priceAmount).toBeNull();
+    expect((await getPlace(priceId))?.priceSource).toBeNull();
+    expect((await getPlace(priceId, true))?.priceAmount).toBe(25);
+    await expect(savePlace({
+      ...input, name: "Sin fuente de tarifa", ...details, priceSource: "",
+    }, actor)).rejects.toThrow();
   });
   it("retirar oculta la ficha y conserva auditoría", async () => {
     await savePlace(input, actor, id);
