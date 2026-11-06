@@ -123,7 +123,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
     </section>`;
     const desc=info.sites.length?`Descubre lugares de ${r}: ${info.sites.slice(0,3).map(p=>p.name).join(", ")}. Fichas y fotografías documentadas cuando existen.`:`Conoce las localidades documentadas de ${r}, Venezuela. Una guía con fuentes en crecimiento.`;
     const eligible=info.sites.length>0;
-    regionPages["docs/"+path+"index.html"]=shell(`Descubre ${r}: lugares y atractivos`,desc,path,body,{noindex:!eligible,structured:eligible?{"@context":"https://schema.org","@type":"CollectionPage","name":"Lugares de "+r,"url":site+path,"mainEntity":{"@type":"ItemList","numberOfItems":info.sites.length,"itemListElement":info.sites.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.name,"url":site+"lugares/"+p.id+"/"}))}}:null});
+    regionPages["docs/"+path+"index.html"]=shell(`Descubre ${r}: lugares y atractivos`,desc,path,body,{socialImage:imageForState(r).photo?.kind==="photograph"?imageForState(r).photo.src:null,noindex:!eligible,structured:eligible?{"@context":"https://schema.org","@type":"CollectionPage","name":"Lugares de "+r,"url":site+path,"mainEntity":{"@type":"ItemList","numberOfItems":info.sites.length,"itemListElement":info.sites.map((p,i)=>({"@type":"ListItem","position":i+1,"name":p.name,"url":site+"lugares/"+p.id+"/"}))}}:null});
     if(eligible)indexableRegionPaths.push(path);
   }
   return {homeSections,statesIndex,regionPages,indexableRegionPaths,names};

@@ -18,10 +18,13 @@ describe("Pages con URLs permanentes",()=>{
   const region=await readFile("docs/regiones/falcon/index.html","utf8");
   expect(region).toContain('data-featured-id="parque-nacional-morrocoy"');
   expect(region).toContain("Otros sitios documentados");
+  expect(region).toContain("og:image");
+  expect(region).toContain("foto-parque-nacional-morrocoy.webp");
   expect(region).toContain('href="/descubriendovenezuela/lugares/cayo-sombrero/"');
   expect(region).not.toContain('data-featured-id="caracas-ciudad"');
   const city=await readFile("docs/regiones/merida/index.html","utf8");
   expect(city).toContain("Localidad documentada");
+  expect(city).not.toContain("og:image");
   expect(city).not.toContain("Otros sitios documentados");
   const detail=await readFile("docs/lugares/parque-nacional-morrocoy/index.html","utf8");
   expect(detail).toContain('href="/descubriendovenezuela/regiones/falcon/"');
