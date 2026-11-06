@@ -1,6 +1,6 @@
 import { pool } from "./db";
 import { Place, PlaceInput, publicPlace, validatePlace } from "./domain";
-const projection = `p.id,p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.catalog_id AS "catalogId",p.verification_note AS "verificationNote",p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
+const projection = `p.id,p.catalog_id AS "catalogId",p.verification_note AS "verificationNote",p.media_credits AS "mediaCredits",p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.catalog_id AS "catalogId",p.verification_note AS "verificationNote",p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
 const join = `FROM places p JOIN territories t ON t.id=p.territory_id LEFT JOIN territories r ON r.id=t.parent_id`;
 export async function territories() {
   return (
