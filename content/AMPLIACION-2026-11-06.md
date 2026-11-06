@@ -14,7 +14,7 @@
 | Negocios y servicios | 9 |
 | Gastronomía | 4 |
 
-Se incorporaron 10 nuevas fotografías específicas de destinos, además de las 20 anteriores; el catálogo ahora tiene **30 fotografías reales** y seis mapas auditados. Las 141 fichas sin imagen propia muestran una fotografía referencial de otro destino, claramente rotulada. En la tanda de 139 nuevas fichas, 129 todavía requieren fotografía del lugar exacto. Una identificación documental **no es verificación de apertura, permisos, rutas, seguridad, horarios, servicios, precios ni disponibilidad**. No hay reservas ni publicidad activa.
+Se incorporaron 20 nuevas fotografías específicas de destinos, además de las 20 anteriores; el catálogo ahora tiene **40 fotografías reales** y seis mapas auditados. Las 131 fichas sin imagen propia muestran una fotografía referencial de otro destino, claramente rotulada. En la tanda de 139 nuevas fichas, 119 todavía requieren fotografía del lugar exacto. Una identificación documental **no es verificación de apertura, permisos, rutas, seguridad, horarios, servicios, precios ni disponibilidad**. No hay reservas ni publicidad activa.
 
 ## Procedencia
 
@@ -35,4 +35,4 @@ Se incorporaron 10 nuevas fotografías específicas de destinos, además de las 
 
 No se atribuye una empresa o reserva a un tercero por aparecer en esta guía. La fuente oficial del propio hotel o centro comercial solo respalda su identidad y ubicación general. No se han reutilizado fotografías de portales comerciales, redes sociales ni mapas ajenos sin permiso. Las rutas y pueblos siguen siendo referencias documentales, no itinerarios operativamente comprobados.
 
-**Pendiente:** obtener fotografías propias autorizadas para las 141 fichas que aún usan imagen referencial y fuentes más específicas, investigar operadores locales y posadas individualmente, comprobar accesos, y revisar periódicamente estado actual y enlaces. Otros ejemplos aportados por el usuario quedan candidatos a investigación cuando no sea posible sostenerlos documentalmente de manera suficiente.
+**Pendiente:** obtener fotografías propias autorizadas para las 131 fichas que aún usan imagen referencial y fuentes más específicas, investigar operadores locales y posadas individualmente, comprobar accesos, y revisar periódicamente estado actual y enlaces. Otros ejemplos aportados por el usuario quedan candidatos a investigación cuando no sea posible sostenerlos documentalmente de manera suficiente.

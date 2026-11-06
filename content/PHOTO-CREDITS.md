@@ -1,6 +1,6 @@
 # Fotografías reales utilizadas — procedencia y licencias
 
-Se versionaron copias técnicas WebP de **30 fotografías** procedentes de Wikimedia Commons, con archivo exacto, autor y licencia. Son imágenes genuinas y no recreaciones por IA. Se conservan los requisitos de atribución, enlace al original y, cuando corresponde, compartir igual. La compresión/conversión técnica se describe en las fichas. **Una fotografía histórica no demuestra que un sitio sea visitable en la actualidad**. La imagen del Delta del Orinoco ilustra el entorno geográfico, sin probar la ubicación dentro de los límites precisos de la reserva de biosfera; la foto de La Guaira es contexto urbano de 2007, no verificación del conjunto patrimonial.
+Se versionaron copias técnicas WebP de **40 fotografías** procedentes de Wikimedia Commons, con archivo exacto, autor y licencia. Son imágenes genuinas y no recreaciones por IA. Se conservan los requisitos de atribución, enlace al original y, cuando corresponde, compartir igual. La compresión/conversión técnica se describe en las fichas. **Una fotografía histórica no demuestra que un sitio sea visitable en la actualidad**. La imagen del Delta del Orinoco ilustra el entorno geográfico, sin probar la ubicación dentro de los límites precisos de la reserva de biosfera; la foto de La Guaira es contexto urbano de 2007, no verificación del conjunto patrimonial.
 
 | Ficha | Archivo y fuente | Autor | Licencia |
 |---|---|---|---|
@@ -35,6 +35,17 @@ Se versionaron copias técnicas WebP de **30 fotografías** procedentes de Wikim
 | playa-cuyagua | [Playa de Cuyagua 04.jpg](https://commons.wikimedia.org/wiki/File:Playa_de_Cuyagua_04.jpg) | VCusu | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | parque-nacional-sierra-nevada | [Sierra Nevada Merida 1.jpg](https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Merida_1.jpg) | Adolfo | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | castillo-de-san-carlos-de-borromeo | [Castillo de San Carlos de Borromeo.jpg](https://commons.wikimedia.org/wiki/File:Castillo_de_San_Carlos_de_Borromeo.jpg) | Javier Volcan | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+
+| pico-bolivar | [Pico Bolivar Merida Venezuela.jpg](https://commons.wikimedia.org/wiki/File:Pico_Bolivar_Merida_Venezuela.jpg) | Odalis ortega | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| la-gran-sabana | [La gran Sabana.jpg](https://commons.wikimedia.org/wiki/File:La_gran_Sabana.jpg) | Sankirumi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| playa-medina | [Estado sucre, playa medina.JPG](https://commons.wikimedia.org/wiki/File:Estado_sucre%2C_playa_medina.JPG) | Glorimar quiñonez | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| salto-kama-meru | [Salto Kama - Gran Sabana.jpg](https://commons.wikimedia.org/wiki/File:Salto_Kama_-_Gran_Sabana.jpg) | Paolo Costa Baldi | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| parque-nacional-laguna-de-la-restinga | [Laguna de la Restinga.jpg](https://commons.wikimedia.org/wiki/File:Laguna_de_la_Restinga.jpg) | Wilfredor | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| playa-parguito | [Playa Parguito - Margarita.jpg](https://commons.wikimedia.org/wiki/File:Playa_Parguito_-_Margarita.jpg) | Jorge Moyeja | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| monumento-natural-cerro-santa-ana | [Cerro Santa Ana, Paraguaná en Venezuela.jpg](https://commons.wikimedia.org/wiki/File:Cerro_Santa_Ana%2C_Paraguan%C3%A1_en_Venezuela.jpg) | Aramburu Carlos | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| quebrada-de-jaspe | [Quebrada de jaspe Gran sabana.jpg](https://commons.wikimedia.org/wiki/File:Quebrada_de_jaspe_Gran_sabana.jpg) | Edd2609 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| cayo-muerto | [Cayo Muerto.JPG](https://commons.wikimedia.org/wiki/File:Cayo_Muerto.JPG) | Luisanni | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| monumento-natural-tetas-de-maria-guevara | [Munumento "las tetas de maria guevara".jpg](https://commons.wikimedia.org/wiki/File:Munumento_%22las_tetas_de_maria_guevara%22.jpg) | Maria e. villegas | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
 **Coberturas ilustrativas:** en las fichas que aún no tienen fotografía del lugar se reutiliza temporalmente una fotografía real de otro destino con la atribución y la nota visible «imagen referencial; no corresponde a este lugar». No debe confundirse con evidencia visual del destino solicitado.
 
