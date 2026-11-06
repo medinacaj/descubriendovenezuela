@@ -7,3 +7,7 @@ No importar directorios ni imágenes indiscriminadamente. Registrar autor, licen
 No divulgar coordenadas sensibles. Guardar ubicación solo con justificación; si se protege, API y páginas omiten coordenadas. Domicilios particulares requieren consentimiento. No incluir coordenadas en texto libre que deba ser privado: la revisión humana debe eliminar esa información antes de publicar.
 
 Un editor local puede crear, revisar, publicar y retirar fichas; cada cambio conserva auditoría con actor y antes/después. Roles separados, doble revisión, reportes públicos y canal legal requieren desarrollo previo a publicación pública. Las correcciones de esta demo se realizan en el panel; no hay formulario ciudadano operativo.
+
+## Contactos comerciales
+
+Los campos de dirección, teléfono, WhatsApp, web y horario son opcionales. El panel conserva la evidencia de autorización en la base privada; los datos solo aparecen públicamente cuando la casilla de autorización está activa. Verificar la titularidad y consentimiento es responsabilidad editorial, no una función automatizada. No ingresar contactos personales de terceros sin permiso. La autorización puede revocarse retirando esa casilla y guardando la ficha; la proyección pública deja de entregar contactos.
