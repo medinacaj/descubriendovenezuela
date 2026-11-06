@@ -35,11 +35,17 @@ describe("Pages con URLs permanentes",()=>{
   expect(map).not.toContain(base+"regiones/merida/");
   expect((await stat("docs/states.css")).size).toBeGreaterThan(5000);
  });
- it("home indexable con enlaces a todas las fichas",async()=>{
+ it("home y estados indexables y enlaces regionales a todas las fichas",async()=>{
   const html=await readFile("docs/index.html","utf8");
   expect(html).toContain('rel="canonical" href="'+base+'"');
   expect(html).toContain("index,follow");
-  for(const p of places)expect(html).toContain("/descubriendovenezuela/lugares/"+p.id+"/");
+  const states=await readFile("docs/estados/index.html","utf8");
+  expect(states).toContain('rel="canonical" href="'+base+'estados/"');
+  for(const p of places) {
+    const regional=await readFile("docs/regiones/"+slug(p.region!)+"/index.html","utf8");
+    expect(regional).toContain("/descubriendovenezuela/lugares/"+p.id+"/");
+    expect(states).toContain("/descubriendovenezuela/regiones/"+slug(p.region!)+"/");
+  }
  });
  it("cada ficha enlaza fuentes sin precios inventados",async()=>{
   for(const p of places){
