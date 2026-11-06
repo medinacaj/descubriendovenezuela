@@ -4261,7 +4261,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cascada-del-vino.webp",
+        "alt": "Cascada del Vino del Parque Nacional Dinira, Lara",
+        "author": "David A. Arroyo C.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_del_Vino.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4618,7 +4629,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-tobogan-de-la-selva.webp",
+        "alt": "Tobogán natural de roca en Amazonas",
+        "author": "Shishoxisrax",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tobogan_de_la_selva_amazonas.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4882,7 +4904,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-lomas-de-cubiro.webp",
+        "alt": "Paisaje del camino hacia las Lomas de Cubiro, Lara",
+        "author": "Maria.chuello",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cubiro%2C_Estado_Lara%2C_Venezuela.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4978,7 +5011,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-catedral-metropolitana-barquisimeto.webp",
+        "alt": "Catedral Metropolitana de Barquisimeto, Lara",
+        "author": "reindertot",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catedral_de_Barquisimeto.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5170,7 +5214,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-santuario-nacional-nuestra-senora-de-coromoto.webp",
+        "alt": "Santuario Nacional Nuestra Señora de Coromoto cerca de Guanare, Portuguesa",
+        "author": "Alice Riobueno",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santuario_Nacional_Nuestra_Se%C3%B1ora_de_Coromoto_-_Guanare%2C_Edo_Portuguesa.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5410,7 +5465,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isnotu.webp",
+        "alt": "Estatua de José Gregorio Hernández en el lugar de su antigua casa en Isnotú, Trujillo",
+        "author": "Rjcastillo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dr._Jos%C3%A9_Gregorio_Hern%C3%A1ndez.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5434,7 +5500,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-santuario-del-nino-jesus-isnotu.webp",
+        "alt": "Santuario del Niño Jesús en Isnotú, Trujillo",
+        "author": "Rjcastillo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santuario_del_Ni%C3%B1o_Jesus_I.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5482,7 +5559,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-monumento-virgen-de-la-paz.webp",
+        "alt": "Monumento a la Virgen de la Paz en Trujillo",
+        "author": "Carlos Arevalo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Virgen_de_la_Paz_Trujillo.JPG",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5578,7 +5666,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-iglesia-san-francisco-caracas.webp",
+        "alt": "Iglesia de San Francisco y su fachada en Caracas",
+        "author": "Cristóbal Alvarado Minic",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco_Caracas.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5626,7 +5725,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-historico-san-felipe-el-fuerte.webp",
+        "alt": "Parque histórico y arqueológico San Felipe El Fuerte, Yaracuy",
+        "author": "Geliersanta",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Felipe_El_Fuerte.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5746,7 +5856,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-osma.webp",
+        "alt": "Paisaje de playa en Osma, estado La Guaira",
+        "author": "Luis Jaimes",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:02_-_Playa_Edo._Vargas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5842,7 +5963,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-los-caracas.webp",
+        "alt": "Pescadores en la costa de Los Caracas en La Guaira",
+        "author": "Enzo861",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atardecer_en_Los_Caracas.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
