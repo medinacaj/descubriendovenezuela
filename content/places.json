@@ -4596,5 +4596,1397 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "tobogan-de-la-selva",
+    "name": "Tobogán de la Selva",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Formación rocosa natural al sur de Puerto Ayacucho por la que desciende agua hacia una poza. El boletín de Mintur la destaca como paisaje de recreación en el entorno amazónico.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 85 (2018)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Puerto Ayacucho",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pozo-azul-de-calderas",
+    "name": "Pozo Azul de Calderas",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Pozo natural cercano a Altamira de Calderas, en el piedemonte barinés. Mintur lo describe por el color intenso del agua y la vegetación que rodea el entorno.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 85 (2018)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf",
+    "primaryConsulted": true,
+    "region": "Barinas",
+    "locality": "Altamira de Calderas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "piedra-de-la-virgen-gran-sabana",
+    "name": "Piedra de la Virgen (Sierra de Lema)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Formación rocosa reconocible en la entrada al sector de la Sierra de Lema del Parque Nacional Canaima. Está reseñada por Mintur como hito paisajístico.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 85 (2018)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/Qu3yIpEBBwwMwrPJ1K2IgaZU75hqCTZ4tFiKuPht.pdf",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Sierra de Lema",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cascadas-de-manakachi",
+    "name": "Cascadas de Manakachi",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Conjunto de saltos y pozas en el sector oriental de la Gran Sabana, descrito en el boletín turístico de Mintur de 2019 como destino natural de la zona.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 130 (2019)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Gran Sabana",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-de-la-exotica-flora-tropical",
+    "name": "Parque de la Exótica Flora Tropical",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Espacio botánico de vegetación tropical y especies ornamentales situado en las proximidades de San Felipe. Mintur lo reseñó como atractivo de naturaleza y recorridos guiados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 130 (2019)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf",
+    "primaryConsulted": true,
+    "region": "Yaracuy",
+    "locality": "San Felipe",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-ecoturistico-aguas-calientes-azulita",
+    "name": "Parque Ecoturístico Aguas Calientes de La Azulita",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Balneario fluvial de la localidad de La Azulita, referido por el Ministerio de Turismo en 2019. Su nombre tradicional no confirma la temperatura actual del agua.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 130 (2019)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/d7FxE1SzGvRNXehYZw6DOvmKq2etygYscDQl5Qj3.pdf",
+    "primaryConsulted": true,
+    "region": "Mérida",
+    "locality": "La Azulita",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cumbres-del-palenque",
+    "name": "Cumbres del Palenque",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Zona de cumbres y miradores rurales en el entorno de Buena Vista, al suroeste de Barquisimeto, incluida en la guía de atractivos públicos de LaraTurismo.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://laraturismo.com/sitios/index.html"
+    ],
+    "sourceLabels": [
+      "LaraTurismo, guía de sitios de interés del estado Lara"
+    ],
+    "primaryUrl": "https://laraturismo.com/sitios/index.html",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Buena Vista",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "petroglifos-de-tumaque",
+    "name": "Petroglifos de Tumaque",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Conjunto de manifestaciones rupestres citado por la guía LaraTurismo en el municipio Crespo. Por su valor arqueológico, no se publican coordenadas de acceso no autorizadas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://laraturismo.com/sitios/index.html"
+    ],
+    "sourceLabels": [
+      "LaraTurismo, guía de sitios de interés del estado Lara"
+    ],
+    "primaryUrl": "https://laraturismo.com/sitios/index.html",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Duaca",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-el-indio-duaca",
+    "name": "Cueva El Indio de Duaca",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Cueva natural reseñada en LaraTurismo en las cercanías de Duaca por la vía Los Caracoles, en un entorno que requiere verificar condiciones de acceso.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://laraturismo.com/sitios/index.html"
+    ],
+    "sourceLabels": [
+      "LaraTurismo, guía de sitios de interés del estado Lara"
+    ],
+    "primaryUrl": "https://laraturismo.com/sitios/index.html",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Duaca",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-poma-rosa",
+    "name": "Cueva Poma Rosa (San Pedro)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Cavidad conocida también como Cueva El Cementerio, situada junto a la localidad de San Pedro. LaraTurismo documenta su nombre y referencia territorial.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://laraturismo.com/sitios/index.html"
+    ],
+    "sourceLabels": [
+      "LaraTurismo, guía de sitios de interés del estado Lara"
+    ],
+    "primaryUrl": "https://laraturismo.com/sitios/index.html",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "San Pedro",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "represa-dos-cerritos",
+    "name": "Embalse Dos Cerritos",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Embalse Félix de los Ríos, conocido como Dos Cerritos, a pocos kilómetros de El Tocuyo. Es reseñado en una guía de sitios de interés del estado Lara.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://laraturismo.com/sitios/index.html"
+    ],
+    "sourceLabels": [
+      "LaraTurismo, guía de sitios de interés del estado Lara"
+    ],
+    "primaryUrl": "https://laraturismo.com/sitios/index.html",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "El Tocuyo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "lomas-de-cubiro",
+    "name": "Lomas de Cubiro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Paisaje montañoso de clima fresco al sur de Barquisimeto, difundido por Mintur por sus miradores, gastronomía tradicional y entorno rural.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7"
+    ],
+    "sourceLabels": [
+      "Mintur, rutas y atractivos de Lomas de Cubiro (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Cubiro",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-de-los-carraos",
+    "name": "Cueva de los Carraos",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Cavidad natural del entorno de Cubiro mencionada por Mintur entre las posibilidades de excursión de esa localidad de montaña.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7"
+    ],
+    "sourceLabels": [
+      "Mintur, rutas y atractivos de Lomas de Cubiro (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Cubiro",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cerro-la-bandera-cubiro",
+    "name": "Cerro La Bandera de Cubiro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Elevación y sector de senderos del paisaje de Cubiro. Mintur la menciona como una de las rutas ofrecidas en el entorno de las lomas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7"
+    ],
+    "sourceLabels": [
+      "Mintur, rutas y atractivos de Lomas de Cubiro (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Cubiro",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "laguna-el-blanquito",
+    "name": "Laguna El Blanquito",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Laguna identificada por Mintur en el entorno del Parque Nacional Yacambú, mencionada entre las alternativas naturales próximas al corredor de Cubiro.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7"
+    ],
+    "sourceLabels": [
+      "Mintur, rutas y atractivos de Lomas de Cubiro (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f67f7ef-2a7b-4f30-a908-080e941943b7",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Parque Nacional Yacambú",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "catedral-metropolitana-barquisimeto",
+    "name": "Catedral Metropolitana de Barquisimeto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo emblemático de Barquisimeto reconocido por la Cámara de Turismo y Cultura de Lara como uno de los atractivos culturales del estado.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://camaradeturismodelara.com/"
+    ],
+    "sourceLabels": [
+      "Cámara de Turismo y Cultura del Estado Lara"
+    ],
+    "primaryUrl": "https://camaradeturismodelara.com/",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Barquisimeto",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "basilica-santa-rosa-barquisimeto",
+    "name": "Basílica de Santa Rosa (Divina Pastora)",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo y referente devocional de Santa Rosa de Barquisimeto, incluido en la selección de sitios de interés de la Cámara de Turismo y Cultura de Lara.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://camaradeturismodelara.com/"
+    ],
+    "sourceLabels": [
+      "Cámara de Turismo y Cultura del Estado Lara"
+    ],
+    "primaryUrl": "https://camaradeturismodelara.com/",
+    "primaryConsulted": true,
+    "region": "Lara",
+    "locality": "Santa Rosa",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "petroglifos-de-vigirima",
+    "name": "Petroglifos de Vigirima",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Manifestaciones rupestres del entorno de Vigirima, Carabobo, identificadas por El Diario entre los destinos patrimoniales menos conocidos de Venezuela.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Carabobo",
+    "locality": "Vigirima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cuevas-del-zumbador",
+    "name": "Cuevas del Zumbador",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Sistema de cuevas en Falcón mencionado en la investigación periodística de El Diario sobre atractivos de interés espeleológico y natural.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Sierra de San Luis",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-el-supi",
+    "name": "Playa El Supí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa del litoral de Paraguaná reseñada por El Diario como uno de los destinos menos difundidos del estado Falcón.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Península de Paraguaná",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "san-pedro-del-rio",
+    "name": "San Pedro del Río",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Poblado de arquitectura tradicional y recorrido cultural del estado Táchira, señalado por El Diario como destino de turismo de pueblo.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Táchira",
+    "locality": "San Pedro del Río",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cienaga-de-los-olivitos",
+    "name": "Ciénaga de Los Olivitos",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Zona de humedales y observación de fauna del estado Zulia, reseñada entre los destinos naturales poco conocidos del país.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Costa oriental del Lago de Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "el-pauji-gran-sabana",
+    "name": "El Paují",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Pequeño poblado de la Gran Sabana referido por El Diario como base comunitaria para conocer paisajes de tepuyes y pozos cercanos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/"
+    ],
+    "sourceLabels": [
+      "El Diario, diez destinos poco conocidos de Venezuela (2025)"
+    ],
+    "primaryUrl": "https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Gran Sabana",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "santuario-nacional-nuestra-senora-de-coromoto",
+    "name": "Santuario Nacional de Nuestra Señora de Coromoto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Santuario situado cerca de Guanare y asociado a la devoción nacional de Nuestra Señora de Coromoto. La guía de Portuguesa describe su arquitectura y función de peregrinación.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/portuguesa"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Portuguesa"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/portuguesa",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Guanare",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "guanare-centro-historico",
+    "name": "Centro histórico de Guanare",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Conjunto urbano de la capital de Portuguesa donde se articulan la plaza principal, la basílica catedral y espacios culturales, descrito en la guía regional.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/portuguesa"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Portuguesa"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/portuguesa",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Guanare",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "basilica-catedral-coromoto-guanare",
+    "name": "Basílica Catedral de Nuestra Señora de Coromoto (Guanare)",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo catedralicio de Guanare, distinto del Santuario Nacional ubicado fuera del núcleo central, destacado en la documentación patrimonial venezolana.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Guanare",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "iglesia-nuestra-senora-del-pilar-araure",
+    "name": "Iglesia Nuestra Señora del Pilar de Araure",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo de tradición colonial asociado al centro histórico de Araure, destacado en las guías de patrimonio y turismo del estado Portuguesa.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/portuguesa"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Portuguesa"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/portuguesa",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Araure",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-la-espiga-acarigua",
+    "name": "Monumento La Espiga",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Monumento urbano de Acarigua relacionado con la identidad agrícola de las ciudades gemelas Acarigua y Araure, referido en la guía regional.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/portuguesa"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Portuguesa"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/portuguesa",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Acarigua",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "jacuzzis-de-la-lucia",
+    "name": "Pozas naturales de La Lucía",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Tramo fluvial con pozas naturales entre rocas en la zona de La Lucía, municipio Araure, reseñado en 2026 por prensa regional.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://elaragueno.com.ve/los-jacuzzis-de-la-lucia-son-el-secreto-de-portuguesa/"
+    ],
+    "sourceLabels": [
+      "El Aragueño, Jacuzzis de La Lucía en Portuguesa (2026)"
+    ],
+    "primaryUrl": "https://elaragueno.com.ve/los-jacuzzis-de-la-lucia-son-el-secreto-de-portuguesa/",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "La Lucía",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-museo-la-blanquera",
+    "name": "Casa-Museo La Blanquera",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Casa colonial y espacio museístico de San Carlos vinculado a la historia regional, mencionado en la guía de Cojedes y en boletines turísticos de Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/cojedes"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Cojedes"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/cojedes",
+    "primaryConsulted": true,
+    "region": "Cojedes",
+    "locality": "San Carlos",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "balneario-boca-toma",
+    "name": "Balneario Boca Toma",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Balneario de aguas fluviales en el entorno de San Carlos, reconocido por la guía de Cojedes como espacio natural de interés turístico.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/cojedes"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Cojedes"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/cojedes",
+    "primaryConsulted": true,
+    "region": "Cojedes",
+    "locality": "San Carlos",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "arco-de-taguanes",
+    "name": "Arco de Taguanes",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Monumento conmemorativo situado cerca de Tinaquillo y asociado a la batalla de Taguanes de 1813, descrito en la guía turística regional.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/cojedes"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Cojedes"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/cojedes",
+    "primaryConsulted": true,
+    "region": "Cojedes",
+    "locality": "Tinaquillo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "catedral-inmaculada-concepcion-san-carlos",
+    "name": "Catedral de la Inmaculada Concepción de San Carlos",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo catedralicio del centro de San Carlos incluido entre los principales hitos patrimoniales de la capital de Cojedes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://mrsvenezuela.com/estado/cojedes"
+    ],
+    "sourceLabels": [
+      "Mrs Venezuela, guía regional de Cojedes"
+    ],
+    "primaryUrl": "https://mrsvenezuela.com/estado/cojedes",
+    "primaryConsulted": true,
+    "region": "Cojedes",
+    "locality": "San Carlos",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "isnotu",
+    "name": "Isnotú",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad de Trujillo ligada al nacimiento y la memoria de José Gregorio Hernández, documentada por Mintur en sus recorridos patrimoniales de 2025.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9"
+    ],
+    "sourceLabels": [
+      "Mintur, patrimonio religioso de Isnotú (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Isnotú",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "santuario-del-nino-jesus-isnotu",
+    "name": "Santuario del Niño Jesús de Isnotú",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Santuario y conjunto devocional de Isnotú mencionado por Mintur entre los espacios de turismo religioso del estado Trujillo.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9"
+    ],
+    "sourceLabels": [
+      "Mintur, patrimonio religioso de Isnotú (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Isnotú",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "santuario-dulce-nombre-de-jesus-escunque",
+    "name": "Santuario Dulce Nombre de Jesús de Escuque",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo del municipio Escuque incluido en la ruta religiosa documentada por el Ministerio de Turismo en noviembre de 2025.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a0576aea-cb5d-4dac-a9fc-41e1e507da26"
+    ],
+    "sourceLabels": [
+      "Mintur, ruta religiosa del estado Trujillo (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a0576aea-cb5d-4dac-a9fc-41e1e507da26",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Escuque",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-virgen-de-la-paz",
+    "name": "Monumento a la Virgen de la Paz",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Escultura monumental de la Virgen de la Paz en el entorno de la ciudad de Trujillo. Su localización y representación constan en registros gráficos de Wikimedia Commons.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Trujillo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-trapiche-de-los-clavos",
+    "name": "Museo Trapiche de los Clavos",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Espacio museístico y patrimonial de Trujillo reconocido en el boletín de patrimonio turístico de Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Trujillo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-de-la-estrella-valencia",
+    "name": "Casa de la Estrella de Valencia",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Edificación patrimonial y referente de la historia de Valencia, registrada en el boletín de patrimonio cultural de Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Carabobo",
+    "locality": "Valencia",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "meseta-de-la-galera",
+    "name": "Monumento Natural Meseta de La Galera",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Área natural protegida en el estado Mérida mencionada en el boletín de patrimonio venezolano de Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Mérida",
+    "locality": "Tovar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "iglesia-san-francisco-caracas",
+    "name": "Iglesia de San Francisco (Caracas)",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo histórico de Caracas reconocido como Monumento Histórico Nacional y reseñado en la documentación patrimonial de Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Distrito Capital",
+    "locality": "Caracas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-guipuzcoana-la-guaira",
+    "name": "Casa Guipuzcoana de La Guaira",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Edificación histórica vinculada al pasado colonial de La Guaira, reconocida como inmueble patrimonial en el inventario divulgado por Mintur.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "La Guaira",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-historico-san-felipe-el-fuerte",
+    "name": "Parque Histórico Arqueológico San Felipe El Fuerte",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque histórico y arqueológico de San Felipe asociado a las ruinas del asentamiento colonial, destacado por Mintur como patrimonio cultural.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Yaracuy",
+    "locality": "San Felipe",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-de-los-poetas-barinas",
+    "name": "Casa de los Poetas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Inmueble y espacio de memoria literaria incluido en el boletín de patrimonio cultural del Ministerio de Turismo para el estado Barinas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Barinas",
+    "locality": "Barinas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-a-marisela-apure",
+    "name": "Monumento a Marisela",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Escultura conmemorativa de Marisela, personaje literario de la novela Doña Bárbara, destacada en la documentación cultural turística de Apure.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf"
+    ],
+    "sourceLabels": [
+      "Ministerio de Turismo, boletín ViajANDO N.º 34 (2017)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/documents/viajandos/C9kKDgn4nMPbl49XuuknGh4Ndzo0QUfTF5Ajfh0D.pdf",
+    "primaryConsulted": true,
+    "region": "Apure",
+    "locality": "San Fernando de Apure",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-chuspa",
+    "name": "Playa Chuspa",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa del pueblo de Chuspa, en el litoral oriental de La Guaira, incorporada en los recorridos del Ministerio de Turismo en 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Chuspa",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-todasana",
+    "name": "Playa Todasana",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Tramo de playa en el entorno de Todasana, parte del corredor costero reseñado por Mintur durante sus visitas de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f"
+    ],
+    "sourceLabels": [
+      "Mintur, visita al eje Macuto–Chuspa (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Todasana",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-osma",
+    "name": "Playa Osma",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa y comunidad del litoral oriental de La Guaira incluidas entre las áreas recorridas por el Ministerio de Turismo en 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f"
+    ],
+    "sourceLabels": [
+      "Mintur, visita al eje Macuto–Chuspa (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Osma",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "chichiriviche-de-la-costa",
+    "name": "Chichiriviche de la Costa",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad costera del estado La Guaira documentada en el censo y formación de prestadores turísticos realizado en 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Chichiriviche de la Costa",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "paseo-macuto",
+    "name": "Paseo Macuto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Paseo del litoral de Macuto, descrito por Mintur como punto de encuentro comunitario en su recorrido por la costa de La Guaira en 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f"
+    ],
+    "sourceLabels": [
+      "Mintur, visita al eje Macuto–Chuspa (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a276b8e3-ceea-4e2c-8186-92a23921ad5f",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Macuto",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-camuri-chico",
+    "name": "Playa Camurí Chico",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Balneario del litoral de La Guaira identificado por el Ministerio de Turismo en su recorrido por playas públicas de agosto de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Camurí Chico",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-los-caracas",
+    "name": "Playa Los Caracas",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Sector de playas del litoral guaireño incluido por Mintur en el registro de balnearios y comunidades turísticas de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Los Caracas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-anare",
+    "name": "Playa Anare",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa de la costa de La Guaira incluida en el levantamiento de prestadores y espacios turísticos de Mintur en 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Anare",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-taguao",
+    "name": "Playa Taguao",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa del sector Carayaca identificada en el recorrido público de Mintur de agosto de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Carayaca",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-las-salinas-la-guaira",
+    "name": "Playa Las Salinas",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Sector playero de Carayaca mencionado por Mintur entre los espacios costeros visitados en su levantamiento de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Carayaca",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-el-yate-la-guaira",
+    "name": "Playa El Yate",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Balneario del litoral guaireño documentado por el Ministerio de Turismo en el inventario de playas visitadas en agosto de 2026.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "El Yate",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-caroao",
+    "name": "Playa Caroao",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Tramo costero de Caruao reseñado por Mintur en su recorrido turístico de 2026 junto con playas y comunidades cercanas.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc"
+    ],
+    "sourceLabels": [
+      "Mintur, registro de playas y balnearios de La Guaira (2026)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a272b4ac-4106-4b19-89e9-f2006c0e74dc",
+    "primaryConsulted": true,
+    "region": "La Guaira",
+    "locality": "Caruao",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-santuario-jeronimo-trujillo",
+    "name": "Museo diocesano de Isnotú",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Espacio de interpretación religiosa en Isnotú referido en el levantamiento turístico realizado por Mintur en agosto de 2025.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general verificadas en la fuente editorial o institucional indicada. No se comprobaron presencialmente accesos, permisos, horarios, servicios, transporte, seguridad ni tarifas vigentes.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9"
+    ],
+    "sourceLabels": [
+      "Mintur, patrimonio religioso de Isnotú (2025)"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9fb0b4c7-746b-44f5-a1cd-8c10dc1555c9",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Isnotú",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]
