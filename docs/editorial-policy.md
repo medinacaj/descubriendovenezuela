@@ -11,3 +11,7 @@ Un editor local puede crear, revisar, publicar y retirar fichas; cada cambio con
 ## Contactos comerciales
 
 Los campos de dirección, teléfono, WhatsApp, web y horario son opcionales. El panel conserva la evidencia de autorización en la base privada; los datos solo aparecen públicamente cuando la casilla de autorización está activa. Verificar la titularidad y consentimiento es responsabilidad editorial, no una función automatizada. No ingresar contactos personales de terceros sin permiso. La autorización puede revocarse retirando esa casilla y guardando la ficha; la proyección pública deja de entregar contactos.
+
+## Tarifas documentadas
+
+Los precios son opcionales y exigen monto no negativo, moneda (VES, USD o EUR), unidad, fecha de vigencia y fuente HTTPS. La API y las fichas públicas dejan de mostrar el importe al vencer su fecha: muestran «Consultar precio». No se convierten divisas ni se infieren tarifas a partir de reseñas o precios históricos. Revisar la fuente antes de publicar y actualizar cuando cambien las condiciones.
