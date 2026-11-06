@@ -1,6 +1,21 @@
 import { pool } from "./db";
 import { Place, PlaceInput, publicPlace, validatePlace } from "./domain";
-const projection = `p.id,p.catalog_id AS "catalogId",p.verification_note AS "verificationNote",p.media_credits AS "mediaCredits",p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
+const projection = `p.id,p.catalog_id AS "catalogId",p.verification_note AS "verificationNote",p.media_credits AS "mediaCredits",
+CASE WHEN p.contact_authorized THEN NULLIF(p.street_address,'') ELSE NULL END AS "streetAddress",
+CASE WHEN p.contact_authorized THEN NULLIF(p.contact_phone,'') ELSE NULL END AS "contactPhone",
+CASE WHEN p.contact_authorized THEN NULLIF(p.whatsapp_phone,'') ELSE NULL END AS "whatsappPhone",
+CASE WHEN p.contact_authorized THEN NULLIF(p.website,'') ELSE NULL END AS "website",
+CASE WHEN p.contact_authorized THEN NULLIF(p.opening_hours_note,'') ELSE NULL END AS "openingHoursNote",
+p.contact_authorized AS "contactAuthorized",p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
+const adminProjection = projection
+  .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.street_address,'') ELSE NULL END", "p.street_address")
+  .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.contact_phone,'') ELSE NULL END", "p.contact_phone")
+  .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.whatsapp_phone,'') ELSE NULL END", "p.whatsapp_phone")
+  .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.website,'') ELSE NULL END", "p.website")
+  .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.opening_hours_note,'') ELSE NULL END", "p.opening_hours_note")
+  .replace("CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END", "ST_Y(p.location)")
+  .replace("CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END", "ST_X(p.location)")
+  + ',p.contact_evidence AS "contactEvidence"';
 const join = `FROM places p JOIN territories t ON t.id=p.territory_id LEFT JOIN territories r ON r.id=t.parent_id`;
 export async function territories() {
   return (
@@ -33,7 +48,7 @@ export async function getPlace(id: string, admin = false) {
   if (!/^[0-9a-f-]{36}$/i.test(id)) return null;
   const row = (
     await pool.query(
-      `SELECT ${admin ? projection.replace("CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END", "ST_Y(p.location)").replace("CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END", "ST_X(p.location)") : projection} ${join} WHERE p.id=$1 ${admin ? "" : "AND p.published=true"}`,
+      `SELECT ${admin ? adminProjection : projection} ${join} WHERE p.id=$1 ${admin ? "" : "AND p.published=true"}`,
       [id],
     )
   ).rows[0] as Place;
@@ -67,14 +82,21 @@ export async function savePlace(input: PlaceInput, actor: string, id?: string) {
       p.lon,
       p.lat,
       p.demo,
+      p.streetAddress || "",
+      p.contactPhone || "",
+      p.whatsappPhone || "",
+      p.website || "",
+      p.openingHoursNote || "",
+      p.contactAuthorized === true,
+      p.contactEvidence || "",
     ];
     const fields =
-      "name,category,territory_id,description,source,reviewed_at,status,published,sensitive,location,demo";
+      "name,category,territory_id,description,source,reviewed_at,status,published,sensitive,location,demo,street_address,contact_phone,whatsapp_phone,website,opening_hours_note,contact_authorized,contact_evidence";
     const expr =
-      "$1,$2,$3,$4,$5,$6,$7,$8,$9,CASE WHEN $10::float8 IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint($10,$11),4326) END,$12";
+      "$1,$2,$3,$4,$5,$6,$7,$8,$9,CASE WHEN $10::float8 IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint($10,$11),4326) END,$12,$13,$14,$15,$16,$17,$18,$19";
     const result = id
       ? await client.query(
-          `UPDATE places SET (${fields})=(${expr}),updated_at=now() WHERE id=$13 RETURNING *`,
+          `UPDATE places SET (${fields})=(${expr}),updated_at=now() WHERE id=$20 RETURNING *`,
           [...values, id],
         )
       : await client.query(
