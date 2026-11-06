@@ -54,6 +54,9 @@ describe("Pages con URLs permanentes",()=>{
    const html=await readFile(file,"utf8");
    expect(html).toContain(p.sourceUrls[0]);
    expect(html).toContain("Alcance de la comprobación");
+   expect(html).toContain('class="place-intro"');
+   expect(html).toContain("Antes de planificar una visita");
+   expect(html).toContain("Fuentes utilizadas");
    expect(html).toContain(base+"lugares/"+p.id+"/");
    expect(html).toContain("Consultar precio");
   }
@@ -65,6 +68,9 @@ describe("Pages con URLs permanentes",()=>{
    expect((await stat("docs/regiones/"+slug(region)+"/index.html")).size).toBeGreaterThan(1000);
   }
   expect((await readFile("docs/manifest.webmanifest","utf8"))).toContain("/descubriendovenezuela/");
-  expect((await readFile("docs/sw.js","utf8"))).toContain("caches.open");
+  const sw=await readFile("docs/sw.js","utf8");
+  expect(sw).toContain("caches.open");
+  expect(sw).toContain('BASE+"states.css"');
+  expect(sw).toContain("Response.error()");
  });
 });

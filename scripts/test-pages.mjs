@@ -99,6 +99,10 @@ try {
       .toBe(true);
     await page.locator('a.button[href$="/explorar/"]').first().click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
+    await page.getByLabel("Buscar lugar").fill("guacharo");
+    await expect(page.locator("#count")).toHaveText("1 lugar documentado");
+    await page.getByLabel("Buscar lugar").fill("");
+    await expect(page.locator("#count")).toHaveText("29 lugares documentados");
     await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
     await page.getByLabel("Estado o región").selectOption("Mérida");
     await page.getByLabel("Buscar lugar").fill("merida");
@@ -106,8 +110,10 @@ try {
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.locator('a[href$="/lugares/merida-ciudad/"]').click();
     await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
-    await expect(page.getByText("Cartografía:", {exact:false})).toBeVisible();
-    await expect(page.locator(".detail-photo img")).toHaveJSProperty("naturalWidth",900);
+    await expect(page.getByText("Cartografía de referencia:", {exact:false})).toBeVisible();
+    await expect(page.locator(".place-cover img")).toHaveJSProperty("naturalWidth",900);
+    await expect(page.locator(".place-intro h1")).toBeVisible();
+    await expect(page.locator(".place-facts")).toBeVisible();
     await expect(page.getByRole("link", {name:"Dominio público",exact:true})).toBeVisible();
     await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",/lugares\/merida-ciudad\/$/);
     if (
