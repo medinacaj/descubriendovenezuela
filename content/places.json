@@ -1180,5 +1180,2259 @@
       }
     ],
     "demo": false
+  },
+  {
+    "id": "parque-nacional-sierra-nevada",
+    "name": "Parque Nacional Sierra Nevada",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Conserva ambientes de alta montaña andina y paisajes de páramo asociados al macizo de Mérida. Esta ficha describe un parque nacional de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-medanos-de-coro",
+    "name": "Parque Nacional Médanos de Coro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Protege un paisaje de dunas de arena característico del entorno de Coro. Esta ficha describe un parque nacional de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-archipielago-de-los-roques",
+    "name": "Parque Nacional Archipiélago de Los Roques",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Protege un archipiélago caribeño de cayos, arrecifes y ambientes marinos. Esta ficha describe un parque nacional de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-cinaruco-capanaparo-santos-luzardo",
+    "name": "Parque Nacional Cinaruco-Capanaparo (Santos Luzardo)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Apure",
+    "description": "Abarca extensas sabanas y ambientes de los ríos Cinaruco y Capanaparo. Esta ficha describe un parque nacional de Apure, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-peninsula-de-paria",
+    "name": "Parque Nacional Península de Paria",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Resguarda sectores montañosos y bosques húmedos de la península de Paria. Esta ficha describe un parque nacional de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-dinira",
+    "name": "Parque Nacional Dinira",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Área montañosa andina que se extiende hacia Trujillo y Portuguesa y alberga nacientes de ríos. Esta ficha describe un parque nacional de Lara, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-aguaro-guariquito",
+    "name": "Parque Nacional Aguaro-Guariquito",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Guárico",
+    "description": "Comprende sabanas, morichales y paisajes fluviales de los llanos venezolanos. Esta ficha describe un parque nacional de Guárico, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-jaua-sarisarinama",
+    "name": "Parque Nacional Jaua-Sarisariñama",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Reúne tepuyes de la Guayana venezolana, con ecosistemas frágiles y acceso restringido. Esta ficha describe un parque nacional de Bolívar, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-terepaima",
+    "name": "Parque Nacional Terepaima",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Protege bosques montanos en el límite entre Lara y Portuguesa. Esta ficha describe un parque nacional de Lara, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-cerro-saroche",
+    "name": "Parque Nacional Cerro Saroche",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Resguarda ecosistemas secos y semiáridos en el centro-occidente venezolano. Esta ficha describe un parque nacional de Lara, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-guatopo",
+    "name": "Parque Nacional Guatopo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Conserva bosques húmedos y cuencas montañosas próximas al área central del país. Esta ficha describe un parque nacional de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-yurubi",
+    "name": "Parque Nacional Yurubí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Yaracuy",
+    "description": "Protege zonas boscosas y nacientes vinculadas a la cordillera costera. Esta ficha describe un parque nacional de Yaracuy, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-sierra-de-la-culata",
+    "name": "Parque Nacional Sierra de La Culata",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Protege páramos, valles y montañas de la cordillera de Mérida. Esta ficha describe un parque nacional de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-laguna-de-la-restinga",
+    "name": "Parque Nacional Laguna de La Restinga",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Abarca una laguna costera y ecosistemas de manglar en la isla de Margarita. Esta ficha describe un parque nacional de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-laguna-de-tacarigua",
+    "name": "Parque Nacional Laguna de Tacarigua",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Conserva una laguna litoral con manglares y espacios asociados a aves acuáticas. Esta ficha describe un parque nacional de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-cerro-el-copey",
+    "name": "Parque Nacional Cerro El Copey",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Protege paisajes de montaña e importantes ecosistemas insulares de Margarita. Esta ficha describe un parque nacional de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-el-tama",
+    "name": "Parque Nacional El Tamá",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Táchira",
+    "description": "Área montañosa fronteriza con ecosistemas andinos. Esta ficha describe un parque nacional de Táchira, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-sierra-de-perija",
+    "name": "Parque Nacional Sierra de Perijá",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Protege parte de la serranía de Perijá y sus ecosistemas de montaña. Esta ficha describe un parque nacional de Zulia, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-sierra-de-san-luis",
+    "name": "Parque Nacional Sierra de San Luis",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Conserva bosques y cuencas de la sierra falconiana. Esta ficha describe un parque nacional de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-chorro-el-indio",
+    "name": "Parque Nacional Chorro El Indio",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Táchira",
+    "description": "Protege ecosistemas montañosos en las cercanías de San Cristóbal. Esta ficha describe un parque nacional de Táchira, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-yapacana",
+    "name": "Parque Nacional Yapacana",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Protege paisajes asociados al cerro Yapacana y ecosistemas amazónicos sensibles. Esta ficha describe un parque nacional de Amazonas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-duida-marahuaca",
+    "name": "Parque Nacional Duida-Marahuaca",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Comprende macizos de tepuyes y diversidad de ambientes de la Amazonía venezolana. Esta ficha describe un parque nacional de Amazonas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-parima-tapirapeco",
+    "name": "Parque Nacional Parima-Tapirapecó",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Extensa área protegida amazónica asociada a cabeceras de la cuenca del Orinoco. Esta ficha describe un parque nacional de Amazonas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-sierra-la-neblina",
+    "name": "Parque Nacional Sierra La Neblina",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Resguarda serranías amazónicas de alta sensibilidad ambiental. Esta ficha describe un parque nacional de Amazonas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-cueva-de-la-quebrada-del-toro",
+    "name": "Parque Nacional Cueva de la Quebrada del Toro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Conserva paisajes de relieve kárstico y sistemas cavernarios. Esta ficha describe un parque nacional de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-turuepano",
+    "name": "Parque Nacional Turuépano",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Protege humedales, caños y bosques inundables en la península de Paria. Esta ficha describe un parque nacional de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-macarao",
+    "name": "Parque Nacional Macarao",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Protege áreas boscosas montañosas próximas a Caracas y los Altos Mirandinos. Esta ficha describe un parque nacional de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-el-guacharo",
+    "name": "Parque Nacional El Guácharo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Monagas",
+    "description": "Protege bosques y paisajes del macizo de Caripe, junto a la conocida cueva. Esta ficha describe un parque nacional de Monagas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-cienagas-del-catatumbo",
+    "name": "Parque Nacional Ciénagas del Catatumbo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Resguarda humedales y ambientes palustres asociados a la cuenca del Catatumbo. Esta ficha describe un parque nacional de Zulia, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-natural-cerro-santa-ana",
+    "name": "Monumento Natural Cerro Santa Ana",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Elevación emblemática de Paraguaná que alberga ambientes ecológicos diferenciados. Esta ficha describe un monumento natural de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-natural-tetas-de-maria-guevara",
+    "name": "Monumento Natural Tetas de María Guevara",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Conjunto de relieves característicos situado en el entorno de Margarita. Esta ficha describe un monumento natural de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-natural-piedra-del-cocuy",
+    "name": "Monumento Natural Piedra del Cocuy",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Amazonas",
+    "description": "Gran formación rocosa de interés geomorfológico en el extremo sur de Venezuela. Esta ficha describe un monumento natural de Amazonas, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "monumento-natural-cueva-alfredo-jahn",
+    "name": "Monumento Natural Cueva Alfredo Jahn",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Sistema cavernario conocido también como cueva de Alfredo Jahn, en la región central. Esta ficha describe un monumento natural de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.inparques.gob.ve/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.inparques.gob.ve/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-de-agua",
+    "name": "Cayo de Agua",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Cayo del archipiélago de Los Roques conocido por su arena blanca y un estrecho istmo. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-francisqui",
+    "name": "Cayo Francisquí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Conjunto de cayos cercanos a Gran Roque, con ambientes costeros y arrecifes. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-madrisqui",
+    "name": "Cayo Madrisquí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Islote próximo al Gran Roque, en el archipiélago de Los Roques. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-crasqui",
+    "name": "Cayo Crasquí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Cayo del archipiélago de Los Roques mencionado en los recorridos tradicionales. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "el-gran-roque",
+    "name": "El Gran Roque",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Isla y poblado principal del archipiélago de Los Roques. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-carenero",
+    "name": "Cayo Carenero",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Cayo del archipiélago de Los Roques asociado a paisajes de arrecife y aguas someras. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-rasqui",
+    "name": "Cayo Rasquí",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Dependencias Federales",
+    "description": "Uno de los cayos del archipiélago, con ecosistemas marinos de especial protección. Esta ficha describe un cayo o isla de Dependencias Federales, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/losroques/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/losroques/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-muerto",
+    "name": "Cayo Muerto",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Cayo del entorno de Chichiriviche, dentro del sistema costero de Morrocoy. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-sal",
+    "name": "Cayo Sal",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Pequeño cayo cercano a Chichiriviche conocido dentro del circuito de Morrocoy. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-peraza",
+    "name": "Cayo Peraza",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Cayo próximo a Chichiriviche que forma parte del paisaje marino de Morrocoy. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-pelon",
+    "name": "Cayo Pelón",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Pequeño cayo de Morrocoy, referenciado entre los destinos costeros de Chichiriviche. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "los-juanes-morrocoy",
+    "name": "Los Juanes (Morrocoy)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Zona marina del Parque Nacional Morrocoy vinculada a los recorridos entre cayos. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cayo-tucupido",
+    "name": "Cayo Tucupido",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Cayo localizado dentro del ámbito costero del Parque Nacional Morrocoy. Esta ficha describe un cayo o playa de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/morrocoy/chichiriviche.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-el-yaque",
+    "name": "Playa El Yaque",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa del sur de Margarita conocida históricamente por su relación con el windsurf. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-el-agua",
+    "name": "Playa El Agua",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Extensa playa de la costa noreste de la isla de Margarita. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-parguito",
+    "name": "Playa Parguito",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa de Margarita vinculada al surf y a los paisajes de la costa norte. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-punta-arenas",
+    "name": "Playa Punta Arenas",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa situada en el extremo occidental de la península de Macanao. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-guacuco",
+    "name": "Playa Guacuco",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa en el entorno de Pampatar, al sureste de Margarita. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-zaragoza",
+    "name": "Playa Zaragoza",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa de la costa norte de Margarita, cercana a Pedro González. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-manzanillo",
+    "name": "Playa Manzanillo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa y localidad costera del norte de la isla de Margarita. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-el-tirano",
+    "name": "Playa El Tirano",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa en el sector El Tirano, al noreste de Margarita. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-la-punta-isla-de-coche",
+    "name": "Playa La Punta (Isla de Coche)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa de la isla de Coche conocida por sus paisajes de costa. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "isla-de-coche",
+    "name": "Isla de Coche",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Isla del estado Nueva Esparta con localidades pesqueras y playas. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "isla-de-cubagua",
+    "name": "Isla de Cubagua",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Isla del estado Nueva Esparta vinculada a la historia colonial temprana. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-puerto-cruz-margarita",
+    "name": "Playa Puerto Cruz (Margarita)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Playa del noroeste de Margarita, en el entorno de Pedro González. Esta ficha describe un playa de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/playas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/playas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-medina",
+    "name": "Playa Medina",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Playa de la península de Paria, enmarcada por vegetación tropical. Esta ficha describe un playa de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-pui-pui",
+    "name": "Playa Pui Pui",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Playa de la costa de Paria, en el estado Sucre. Esta ficha describe un playa de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-querepare",
+    "name": "Playa Querepare",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Playa de la costa de Paria nombrada entre los atractivos del litoral oriental. Esta ficha describe un playa de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-caracolito-paria",
+    "name": "Playa Caracolito (Paria)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Playa de la península de Paria mencionada en documentación regional del sector. Esta ficha describe un playa de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "san-juan-de-las-galdonas",
+    "name": "San Juan de las Galdonas",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Sucre",
+    "description": "Localidad costera de la península de Paria asociada a su litoral. Esta ficha describe un playa de Sucre, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://publications.iadb.org/publications/spanish/document/Aprovechamiento-de-recursos-turisticos-de-Venezuela-para-su-puesta-en-valor-la-Gran-Sabana-y-la-Peninsula-de-Paria.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-cuyagua",
+    "name": "Playa Cuyagua",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Playa del litoral de Aragua, reconocida por su ambiente de oleaje. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-grande-de-choroni",
+    "name": "Playa Grande de Choroní",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Playa de Puerto Colombia, próxima a la localidad de Choroní. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-cepe",
+    "name": "Playa Cepe",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Playa costera de Aragua accesible históricamente desde el sector de Choroní. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-tuja",
+    "name": "Playa Tuja",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Playa del litoral aragüeño vinculada al sistema de bahías de la costa. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-cienaga-de-ocumare",
+    "name": "La Ciénaga de Ocumare",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Ensenada y humedal costero del entorno de Ocumare de la Costa. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-de-chuao",
+    "name": "Playa de Chuao",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Playa cercana al poblado cacaotero de Chuao, en la costa de Aragua. Esta ficha describe un playa de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/centro/costas_de_aragua.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/centro/costas_de_aragua.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "laguna-de-mucubaji",
+    "name": "Laguna de Mucubají",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Laguna altoandina situada en la zona del páramo merideño. Esta ficha describe un sitio natural andino de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://viajacongus.com/venezuela/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://viajacongus.com/venezuela/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pico-bolivar",
+    "name": "Pico Bolívar",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Cumbre de los Andes venezolanos en el macizo de la Sierra Nevada de Mérida. Esta ficha describe un sitio natural andino de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://viajacongus.com/venezuela/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://viajacongus.com/venezuela/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pico-el-aguila",
+    "name": "Pico El Águila",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Paso de alta montaña vinculado a las rutas del páramo de Mérida. Esta ficha describe un sitio natural andino de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://viajacongus.com/venezuela/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://viajacongus.com/venezuela/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "valle-de-los-nevados",
+    "name": "Valle de Los Nevados",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Paisaje de montaña y poblado andino en el entorno de la Sierra Nevada. Esta ficha describe un sitio natural andino de Mérida, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y ubicación general contrastadas con documentación turística, cartográfica o institucional consultada el 6 de noviembre de 2026. No se comprobó en campo el acceso, permisos vigentes, transporte, seguridad, horarios ni condiciones ambientales.",
+    "sourceUrls": [
+      "https://viajacongus.com/venezuela/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia geográfica y turística"
+    ],
+    "primaryUrl": "https://viajacongus.com/venezuela/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "renaissance-caracas-la-castellana-hotel",
+    "name": "Renaissance Caracas La Castellana Hotel",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Hotel de la cadena Marriott ubicado en el sector La Castellana de Caracas. Esta ficha describe un hotel de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.marriott.com/es/destinations/venezuela.mi"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.marriott.com/es/destinations/venezuela.mi",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "jw-marriott-hotel-caracas",
+    "name": "JW Marriott Hotel Caracas",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Hotel de la cadena Marriott ubicado en Caracas. Esta ficha describe un hotel de Distrito Capital, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.marriott.com/es/destinations/venezuela.mi"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.marriott.com/es/destinations/venezuela.mi",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "venezuela-marriott-hotel-playa-grande",
+    "name": "Venezuela Marriott Hotel Playa Grande",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "La Guaira",
+    "description": "Hotel de la cadena Marriott ubicado en Playa Grande, estado La Guaira. Esta ficha describe un hotel de La Guaira, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.marriott.com/es/destinations/venezuela.mi"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.marriott.com/es/destinations/venezuela.mi",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "marriott-maracay-golf-resort",
+    "name": "Marriott Maracay Golf Resort",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Hotel de la cadena Marriott localizado en Maracay. Esta ficha describe un hotel de Aragua, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.marriott.com/es/destinations/venezuela.mi"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.marriott.com/es/destinations/venezuela.mi",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sunsol-isla-caribe",
+    "name": "Sunsol Isla Caribe",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Complejo hotelero del grupo Sunsol situado en el sector El Tirano de Margarita. Esta ficha describe un hotel de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.sunsolhoteles.com/pages/ubicacion.php"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.sunsolhoteles.com/pages/ubicacion.php",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sunsol-punta-blanca",
+    "name": "Sunsol Punta Blanca",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Complejo hotelero del grupo Sunsol localizado en la isla de Coche. Esta ficha describe un hotel de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.sunsolhoteles.com/pages/ubicacion.php"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.sunsolhoteles.com/pages/ubicacion.php",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sunsol-ecoland",
+    "name": "Sunsol Ecoland",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Complejo hotelero de Sunsol ubicado en Playa Puerto Cruz, Margarita. Esta ficha describe un hotel de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.sunsolhoteles.com/pages/ubicacion.php"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.sunsolhoteles.com/pages/ubicacion.php",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sunsol-unik",
+    "name": "Sunsol Unik",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Hotel del grupo Sunsol situado en Pampatar, isla de Margarita. Esta ficha describe un hotel de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://www.sunsolhoteles.com/pages/ubicacion.php"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://www.sunsolhoteles.com/pages/ubicacion.php",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "hotel-humboldt",
+    "name": "Hotel Humboldt",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Hotel situado en la cumbre de Waraira Repano, sobre la ciudad de Caracas. Esta ficha describe un hotel de Distrito Capital, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://hotelhumboldt.net/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://hotelhumboldt.net/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-chacao-caracas",
+    "name": "Sambil Chacao (Caracas)",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Complejo de compras y entretenimiento situado en el municipio Chacao. Esta ficha describe un centro comercial de Miranda, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-la-candelaria",
+    "name": "Sambil La Candelaria",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Centro comercial de Caracas ubicado en la parroquia La Candelaria. Esta ficha describe un centro comercial de Distrito Capital, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-maracaibo",
+    "name": "Sambil Maracaibo",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Complejo de compras y entretenimiento de la zona norte de Maracaibo. Esta ficha describe un centro comercial de Zulia, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-valencia",
+    "name": "Sambil Valencia",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Carabobo",
+    "description": "Centro comercial de la ciudad de Valencia, en el estado Carabobo. Esta ficha describe un centro comercial de Carabobo, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-margarita",
+    "name": "Sambil Margarita",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Centro comercial ubicado en Pampatar, isla de Margarita. Esta ficha describe un centro comercial de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-san-cristobal",
+    "name": "Sambil San Cristóbal",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Táchira",
+    "description": "Centro comercial de San Cristóbal, en los Andes venezolanos. Esta ficha describe un centro comercial de Táchira, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-barquisimeto",
+    "name": "Sambil Barquisimeto",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Complejo comercial ubicado en Barquisimeto, estado Lara. Esta ficha describe un centro comercial de Lara, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "sambil-paraguana",
+    "name": "Sambil Paraguaná",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Centro comercial de la península de Paraguaná, en el estado Falcón. Esta ficha describe un centro comercial de Falcón, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad y ubicación general del establecimiento contrastadas con el sitio web público de su operador el 6 de noviembre de 2026. No se comprobaron de manera independiente la apertura diaria, disponibilidad, tarifas, autorizaciones de fotografías ni condiciones de contratación.",
+    "sourceUrls": [
+      "https://gruposambil.com/es/centros-comerciales/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial del operador"
+    ],
+    "primaryUrl": "https://gruposambil.com/es/centros-comerciales/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-natal-del-libertador-simon-bolivar",
+    "name": "Casa Natal del Libertador Simón Bolívar",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Inmueble patrimonial en el centro de Caracas vinculado a la infancia de Simón Bolívar. Esta ficha describe un museo de Distrito Capital, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://cneh.gob.ve/museo-casa-natal-del-libertador/"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://cneh.gob.ve/museo-casa-natal-del-libertador/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "teatro-baralt",
+    "name": "Teatro Baralt",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Sala teatral patrimonial de Maracaibo vinculada a la historia cultural zuliana. Esta ficha describe un teatro de Zulia, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.teatrobaralt.org/"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.teatrobaralt.org/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pampatar",
+    "name": "Pampatar",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Localidad de Margarita conocida por su litoral, su fortificación y sectores comerciales. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-asuncion",
+    "name": "La Asunción",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Ciudad histórica y capital del estado Nueva Esparta. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "juan-griego",
+    "name": "Juan Griego",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Localidad costera de la isla de Margarita. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "el-valle-del-espiritu-santo",
+    "name": "El Valle del Espíritu Santo",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Localidad de Margarita vinculada a tradiciones religiosas y culturales. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "peninsula-de-macanao",
+    "name": "Península de Macanao",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Territorio occidental de Margarita de paisaje árido y costa caribeña. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pedro-gonzalez",
+    "name": "Pedro González",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Localidad del norte de Margarita próxima a Playa Zaragoza. Esta ficha describe un localidad de Nueva Esparta, Venezuela, con finalidad documental; cualquier acceso, servicio o condición de visita debe confirmarse con responsables locales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y referencia geográfica o histórica contrastadas en fuente documental pública consultada el 6 de noviembre de 2026. Sin comprobación de campo, horarios o condiciones actuales de visita.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]
