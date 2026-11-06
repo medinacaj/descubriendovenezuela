@@ -19,7 +19,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-701.webp",
+        "alt": "Vista aérea del Salto Ángel en el Parque Nacional Canaima, Bolívar",
+        "author": "Rafael Estrella",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salto_Angel_from_above.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false,
     "region": "Bolívar",
     "sourceLabels": [
@@ -48,7 +59,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-658.webp",
+        "alt": "Fachada colonial en el centro histórico de Coro, estado Falcón",
+        "author": "Janethrodri",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_colonial_Coro.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false,
     "region": "Falcón",
     "sourceLabels": [
@@ -77,7 +99,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-986.webp",
+        "alt": "Rampa de acceso al Aula Magna de la Ciudad Universitaria de Caracas",
+        "author": "José Alfaro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rampa_de_acceso_al_Aula_Magna.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false,
     "region": "Distrito Capital",
     "sourceLabels": [
@@ -310,7 +343,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-morrocoy.webp",
+        "alt": "Cayo de aguas turquesas y palmeras en el Parque Nacional Morrocoy, Falcón",
+        "author": "Veronidae",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Morrocoy_2005_015.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -333,7 +377,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cayo-sombrero.webp",
+        "alt": "Palmeras y arena clara en Cayo Sombrero, Parque Nacional Morrocoy",
+        "author": "AndreaC11",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Sombrero.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -356,7 +411,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-mochima.webp",
+        "alt": "Playas del Parque Nacional Mochima en el estado Sucre, fotografía de agosto de 2026",
+        "author": "Warairarepano&Guaicaipuro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playas_de_Mochima%2C_Sucre%2C_Venezuela_2026.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -379,7 +445,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-waraira-repano.webp",
+        "alt": "Vista del Waraira Repano y de Caracas al amanecer",
+        "author": "Oliver J. Bello",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Avila_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -403,7 +480,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-galipan.webp",
+        "alt": "Vista del poblado de Galipán, montaña próxima a Caracas",
+        "author": "Brisa del Mar * Venezuela *",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pueblo_de_Galip%C3%A1n.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -426,7 +514,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-henri-pittier.webp",
+        "alt": "Laderas del Parque Nacional Henri Pittier vistas desde El Castaño, Aragua",
+        "author": "Roberto Galindo Deshays",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henri_Pittier_(Maracay%2C_Venezuela).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -474,7 +573,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cueva-del-guacharo.webp",
+        "alt": "Entrada de la Cueva del Guácharo vista desde el interior, Monagas",
+        "author": "Madeleine Silva P.",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cueva_del_Gu%C3%A1charo%2C_Venezuela.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -498,7 +608,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-morros-de-san-juan.webp",
+        "alt": "Formaciones rocosas de los Morros de San Juan, Guárico",
+        "author": "Carolina Colmenares",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morros_de_San_juan.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -615,7 +736,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-francisco-de-miranda.webp",
+        "alt": "Lago y vegetación del Parque del Este o Francisco de Miranda en Caracas",
+        "author": "Enzo861",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_del_Este_-_Caracas.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
