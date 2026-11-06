@@ -16,7 +16,7 @@ describe("puente del catálogo documental", () => {
       expect(item?.verification).toContain("Lista Indicativa");
       expect(item?.primaryConsulted).toBe(true);
     }
-    expect(entries.filter(p => p.mediaCredits.length === 0).length).toBeGreaterThan(15);
+    expect(entries.filter(p => p.mediaCredits.some(m => m.kind === "photograph")).length).toBe(12);
   });
   it("rechaza registros demo, sin fuente o de categoría arbitraria", () => {
     const item = catalog[0] as CuratedEntry;
@@ -28,6 +28,7 @@ describe("puente del catálogo documental", () => {
     const item = normaliseCatalogEntry(catalog[0] as CuratedEntry);
     expect(item).not.toHaveProperty("lat");
     expect(item).not.toHaveProperty("price");
-    expect(item.mediaCredits).toEqual([]);
+    expect(item.mediaCredits.map(m => m.src)).toEqual(catalog[0].photos.map(m => m.src));
+    expect(item.mediaCredits[0].sourceUrl).toContain("commons.wikimedia.org");
   });
 });
