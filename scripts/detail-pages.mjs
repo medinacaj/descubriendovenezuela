@@ -1,11 +1,13 @@
-export function renderDetailedPlace(p,{h,url,slug,area}){
+export function renderDetailedPlace(p,{h,url,slug,area,visualFor}){
   const media=Array.isArray(p.photos)?p.photos:[];
-  const lead=media.find(m=>m.kind==="photograph")||media[0];
+  const visual=visualFor(p),lead=visual.asset;
   const secondary=media.filter(m=>m!==lead);
-  const photoCopy=lead?.kind==="photograph"?"Fotografía real del lugar":"Cartografía de referencia";
-  const hero=lead?`<figure class="place-cover place-cover--${lead.kind==="map"?"map":"photo"}">
-    <img src="${url(lead.src)}" alt="${h(lead.alt)}" decoding="async" fetchpriority="high" width="1200" height="800">
-    <figcaption><b>${photoCopy}:</b> ${h(lead.author)} · <a href="${h(lead.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(lead.license)}</a> · <a href="${h(lead.sourceUrl)}" target="_blank" rel="noopener noreferrer">Ver archivo original</a>${lead.changes?`<small>${h(lead.changes)}</small>`:""}</figcaption>
+  const photoCopy=visual.representative?"Fotografía de referencia (no del lugar)":lead.kind==="photograph"?"Fotografía real del lugar":"Cartografía de referencia";
+  const visualAlt=visual.representative?"Fotografía de "+visual.sourcePlace.name+" como referencia, no de "+p.name:lead.alt;
+  const referenceInfo=visual.representative?`Imagen de ${h(visual.sourcePlace.name)} (${h(visual.sourcePlace.region)}), NO corresponde a ${h(p.name)} · `:"";
+  const hero=lead?`<figure class="place-cover place-cover--${lead.kind==="map"?"map":"photo"}" data-image-scope="${visual.representative?"referencia":"propia"}">
+    <img src="${url(lead.src)}" alt="${h(visualAlt)}" decoding="async" fetchpriority="high" width="1200" height="800">
+    <figcaption><b>${photoCopy}:</b> ${referenceInfo}${h(lead.author)} · <a href="${h(lead.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(lead.license)}</a> · <a href="${h(lead.sourceUrl)}" target="_blank" rel="noopener noreferrer">Ver archivo original</a>${lead.changes?`<small>${h(lead.changes)}</small>`:""}</figcaption>
   </figure>`:`<div class="place-cover place-cover--pending" role="note"><div><span aria-hidden="true">◎</span><h2>Fotografía pendiente</h2><p>No publicamos imágenes sin procedencia y licencia verificadas. Puedes consultar el lugar a través de las fuentes.</p></div></div>`;
   const gallery=secondary.length?`<section class="place-secondary-gallery"><h2>Más imágenes y referencias gráficas</h2><div class="place-secondary-gallery__grid">${secondary.map(m=>`<figure><img src="${url(m.src)}" alt="${h(m.alt)}" loading="lazy" decoding="async" width="900" height="600"><figcaption>${m.kind==="map"?"Cartografía":"Fotografía"} · ${h(m.author)} · <a href="${h(m.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(m.license)}</a> · <a href="${h(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">Fuente</a></figcaption></figure>`).join("")}</div></section>`:"";
   const sources=p.sourceUrls.map((u,i)=>`<li><a href="${h(u)}" target="_blank" rel="noopener noreferrer">${h(p.sourceLabels?.[i]||"Fuente documental "+(i+1))}</a></li>`).join("");
@@ -40,7 +42,7 @@ export function renderDetailedPlace(p,{h,url,slug,area}){
           <div><dt>Tipo de lugar</dt><dd>${h(p.category)}</dd></div>
           ${p.locality?`<div><dt>Localidad</dt><dd>${h(p.locality)}</dd></div>`:""}
           <div><dt>Última revisión documental</dt><dd><time datetime="${h(p.reviewedAt)}">${h(p.reviewedAt)}</time></dd></div>
-          <div><dt>Imagen del lugar</dt><dd>${lead?.kind==="photograph"?"Fotografía real con licencia":lead?.kind==="map"?"Mapa de referencia identificado":"Sin fotografía autorizada"}</dd></div>
+          <div><dt>Imagen del lugar</dt><dd>${visual.representative?"Fotografía contextual acreditada, no de este destino":lead.kind==="photograph"?"Fotografía real con licencia":"Mapa de referencia identificado"}</dd></div>
           ${p.inscriptionYear?`<div><dt>Año de inscripción patrimonial</dt><dd>${h(p.inscriptionYear)}</dd></div>`:""}
         </dl>
         <h3>Fuentes utilizadas</h3><ul class="sources">${sources}</ul>

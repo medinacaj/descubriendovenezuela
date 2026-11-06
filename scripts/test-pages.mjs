@@ -70,6 +70,12 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");
+    await page.getByRole("button",{name:"Lista",exact:true}).click();
+    await expect(page.locator("#results")).toHaveAttribute("data-view","lista");
+    await page.getByRole("button",{name:"Fichas",exact:true}).click();
+    await expect(page.locator("#results")).toHaveAttribute("data-view","fichas");
+    await page.getByRole("button",{name:"Tarjetas",exact:true}).click();
+    await expect(page.locator("#results")).toHaveAttribute("data-view","tarjetas");
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Explorador desbordado a " + width + "px");
     await page.goto(origin + "lugares/merida-ciudad/");

@@ -61,6 +61,18 @@ describe("Pages con URLs permanentes",()=>{
    expect(html).toContain("Consultar precio");
   }
  });
+ it("176 fichas cuentan con imagen y leyenda de referencia cuando no es del lugar",async()=>{
+   const html=await readFile("docs/explorar/index.html","utf8");
+   for(const mode of ["tarjetas","lista","fichas"])expect(html).toContain('data-view-switch="'+mode+'"');
+   expect((html.match(/class="card-art"/g)||[])).toHaveLength(0);
+   expect((html.match(/class="card-photo"/g)||[]).length).toBe(places.length);
+   for(const p of places){
+     const detail=await readFile("docs/lugares/"+p.id+"/index.html","utf8");
+     expect(detail).toContain('class="place-cover place-cover--');
+     expect(detail).toContain('src="/descubriendovenezuela/media/');
+     if(!((p as any).photos?.length))expect(detail).toContain("NO corresponde a");
+   }
+ });
  it("sitemap, páginas regionales y caché",async()=>{
   const map=await readFile("docs/sitemap.xml","utf8");
   for(const p of places)expect(map).toContain(base+"lugares/"+p.id+"/");

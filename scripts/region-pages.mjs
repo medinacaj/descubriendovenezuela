@@ -1,7 +1,7 @@
-export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
+export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor}) {
   const names=[...new Set(places.map(p=>p.region).filter(Boolean))].sort((a,b)=>a.localeCompare(b,"es"));
   const subset=r=>places.filter(p=>p.region===r);
-  const primary=p=>p?.photos?.find(m=>m.kind==="photograph") || p?.photos?.find(m=>m.kind==="map") || null;
+  const primary=p=>p?visualFor(p).asset:null;
   const hasPhoto=p=>p?.photos?.some(m=>m.kind==="photograph")||false;
   const attractions=list=>list.filter(p=>p.category!=="Localidades");
   const localities=list=>list.filter(p=>p.category==="Localidades");
@@ -18,14 +18,14 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
   };
   const imageForState=r=>{
     const p=subset(r), withPhoto=p.find(x=>x.category!=="Localidades"&&hasPhoto(x))
-        || p.find(hasPhoto) || p.find(x=>primary(x));
-    return p ? {p:withPhoto,photo:primary(withPhoto)} : {p:null,photo:null};
+        || p.find(hasPhoto) || p[0];
+    return p.length?{p:withPhoto,photo:primary(withPhoto),visual:visualFor(withPhoto)}:{p:null,photo:null,visual:null};
   };
   const mediaCredit=m=>m?`<a href="${h(m.sourceUrl)}" target="_blank" rel="noopener noreferrer">Original</a> · <a href="${h(m.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(m.license)}</a>`:"";
   const stateTile=r=>{
     const info=summary(r), cover=imageForState(r), asset=cover.photo;
     const kind=asset?.kind==="photograph"?"photo":asset?.kind==="map"?"map":"empty";
-    const art=asset?`<img src="${url(asset.src)}" alt="${h(asset.alt)}" loading="lazy" decoding="async" width="900" height="600">`
+    const art=asset?`<img src="${url(asset.src)}" alt="${h(cover.visual.representative?"Foto referencial de "+cover.visual.sourcePlace.name+"; no del estado "+r:asset.alt)}" loading="lazy" decoding="async" width="900" height="600">${cover.visual.representative?'<span class="state-image-note">IMAGEN REFERENCIAL</span>':""}`
       :`<span class="state-tile__absence">Sin fotografía verificada</span>`;
     return `<article class="state-tile state-tile--${kind}" data-state-name="${h(r)}">
       <a class="state-tile__main" href="${stateUrl(r)}" aria-label="Explorar ${h(r)}: ${info.sites.length} sitios, ${info.towns.length} localidades">
@@ -34,7 +34,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
           <h3>${h(r)}</h3><p>${info.sites.length} ${info.sites.length===1?"atractivo":"atractivos"} · ${info.towns.length} ${info.towns.length===1?"localidad":"localidades"}</p><b>Descubrir sus lugares <span aria-hidden="true">↗</span></b>
         </div>
       </a>
-      ${asset?`<div class="state-tile__credit">${asset.kind==="map"?"Mapa de":"Foto de"} ${h(cover.p.name)} · ${h(asset.author)} · ${mediaCredit(asset)}</div>`:""}
+      ${asset?`<div class="state-tile__credit">${cover.visual.representative?"Foto referencial de":"Foto de"} ${h(cover.visual.representative?cover.visual.sourcePlace.name:cover.p.name)} · ${h(asset.author)} · ${mediaCredit(asset)}</div>`:""}
     </article>`;
   };
   const intro=`<p class="catalog-note">Una selección documental de lugares reales, organizada por estados y Distrito Capital. Las fichas no garantizan acceso ni servicios vigentes.</p>`;
@@ -78,7 +78,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
   const indexableRegionPaths=[];
   for(const r of names) {
     const info=summary(r), featured=info.featured, otherSites=info.sites.filter(p=>p.id!==featured?.id),
-      otherTowns=info.towns.filter(p=>p.id!==featured?.id), visual=primary(featured);
+      otherTowns=info.towns.filter(p=>p.id!==featured?.id), visual=primary(featured),visualInfo=featured?visualFor(featured):null;
     const path="regiones/"+slug(r)+"/";
     const regionWord=r==="Distrito Capital"?"Distrito Capital":r==="Dependencias Federales"?"Dependencias Federales":"Estado";
     const sentence=`${info.sites.length} ${info.sites.length===1?"sitio de interés":"sitios de interés"} y ${info.towns.length} ${info.towns.length===1?"localidad documentada":"localidades documentadas"}`;
@@ -86,7 +86,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
       ?`Explora una selección de ${info.sites.length} ${info.sites.length===1?"atractivo":"atractivos"} documentados en ${r}, con referencias a sus fuentes y a sus límites de verificación.`
       :`Por ahora disponemos de ${info.towns.length} ${info.towns.length===1?"localidad documentada":"localidades documentadas"} de ${r}. Los atractivos concretos de este territorio siguen pendientes de investigación.`;
     const img=visual
-      ?`<figure class="state-feature__media ${visual.kind==="map"?"state-feature__media--map":""}"><img src="${url(visual.src)}" alt="${h(visual.alt)}" loading="lazy" decoding="async" width="1200" height="750"><figcaption>${visual.kind==="map"?"Cartografía":"Fotografía"} de ${h(featured.name)} · ${h(visual.author)} · ${mediaCredit(visual)}</figcaption></figure>`
+      ?`<figure class="state-feature__media ${visual.kind==="map"?"state-feature__media--map":""}"><img src="${url(visual.src)}" alt="${h(visualInfo.representative?"Imagen referencial de "+visualInfo.sourcePlace.name+"; no del lugar destacado "+featured.name:visual.alt)}" loading="lazy" decoding="async" width="1200" height="750"><figcaption>${visualInfo.representative?"Imagen de referencia de "+h(visualInfo.sourcePlace.name)+"; NO corresponde a "+h(featured.name):(visual.kind==="map"?"Cartografía":"Fotografía")+" de "+h(featured.name)} · ${h(visual.author)} · ${mediaCredit(visual)}</figcaption></figure>`
       :`<div class="state-feature__media state-feature__media--empty" role="note"><span aria-hidden="true">◌</span><p>Fotografía del lugar pendiente de documentación</p></div>`;
     const featuredBlock=featured?`<section id="principal" class="state-main-spotlight" aria-labelledby="featured-state-title">
       <div class="section-head"><div><span class="eyebrow">LUGAR EN PRIMER PLANO</span><h2 id="featured-state-title">${featured.category==="Localidades"?"Localidad documentada":"Un sitio para descubrir"}</h2></div></div>
