@@ -6,8 +6,9 @@ const icons: Record<string, string> = {
 };
 export function PlaceCard({ place: p }: { place: Place }) {
   const visual = p.mediaCredits?.find(asset => asset.kind === "photograph" &&
-    /^media\\/foto-[a-z0-9-]+\\.webp$/.test(asset.src)) || p.mediaCredits?.find(asset => asset.kind === "map" &&
-    /^media\\/mapa-[a-z0-9-]+\\.webp$/.test(asset.src));
+    asset.src.startsWith("media/foto-") && asset.src.endsWith(".webp"))
+    || p.mediaCredits?.find(asset => asset.kind === "map" &&
+    asset.src.startsWith("media/mapa-") && asset.src.endsWith(".webp"));
   return (
     <Link href={"/lugares/" + p.id} className="place-card">
       {visual ? <div className="card-photo" data-kind={visual.kind}>
