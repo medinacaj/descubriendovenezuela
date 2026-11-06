@@ -368,5 +368,35 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_Santa_Ana%2C_Paraguan%C3%A1_en_Venezuela.jpg",
     "output": "foto-monumento-natural-cerro-santa-ana.webp"
+  },
+  {
+    "id": "quebrada-de-jaspe",
+    "file": "Quebrada de jaspe Gran sabana.jpg",
+    "alt": "Quebrada de Jaspe en la Gran Sabana",
+    "author": "Edd2609",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quebrada_de_jaspe_Gran_sabana.jpg",
+    "output": "foto-quebrada-de-jaspe.webp"
+  },
+  {
+    "id": "cayo-muerto",
+    "file": "Cayo Muerto.JPG",
+    "alt": "Cayo Muerto dentro del Parque Nacional Morrocoy",
+    "author": "Luisanni",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Muerto.JPG",
+    "output": "foto-cayo-muerto.webp"
+  },
+  {
+    "id": "monumento-natural-tetas-de-maria-guevara",
+    "file": "Munumento \"las tetas de maria guevara\".jpg",
+    "alt": "Monumento Natural Tetas de María Guevara en Nueva Esparta",
+    "author": "Maria e. villegas",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munumento_%22las_tetas_de_maria_guevara%22.jpg",
+    "output": "foto-monumento-natural-tetas-de-maria-guevara.webp"
   }
 ]
