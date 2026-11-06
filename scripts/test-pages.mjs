@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|layout-balance\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
+    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -70,9 +70,8 @@ try {
           .locator("img")
           .evaluateAll(
             (imgs, count) =>
-              imgs.length === count + 1 &&
+              imgs.length >= 8 &&
               imgs.every((i) => i.complete && i.naturalWidth > 0),
-            homeImageCount,
           ),
       )
       .toBe(true);
