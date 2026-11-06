@@ -8,7 +8,8 @@ export const metadata: Metadata = {
   },
   description:
     "Explora la Venezuela natural, cultural y cotidiana. Demo local de una guía construida con información verificable.",
-  robots: { index: false, follow: false },
+  robots: { index: process.env.SITE_PUBLIC_READY === "true" && process.env.APP_ORIGIN?.startsWith("https://") === true, follow: process.env.SITE_PUBLIC_READY === "true" && process.env.APP_ORIGIN?.startsWith("https://") === true },
+  metadataBase: process.env.APP_ORIGIN?.startsWith("https://") ? new URL(process.env.APP_ORIGIN) : undefined,
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (

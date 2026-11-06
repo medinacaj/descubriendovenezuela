@@ -23,7 +23,7 @@ services:
     depends_on:
       db:
         condition: service_healthy
-    command: ["npm", "run", "db:migrate"]
+    command: ["sh", "-c", "npm run db:migrate && npm run catalog:import"]
     restart: "no"
   app:
     image: venezuela-demo:local

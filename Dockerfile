@@ -22,6 +22,8 @@ COPY --from=build --chown=node:node /app/next.config.ts ./next.config.ts
 COPY --from=build --chown=node:node /app/scripts ./scripts
 COPY --from=build --chown=node:node /app/src/lib ./src/lib
 COPY --from=build --chown=node:node /app/db ./db
+COPY --from=build --chown=node:node /app/content ./content
+COPY --from=build --chown=node:node /app/docs/media ./docs/media
 USER node
 EXPOSE 3000
 CMD ["npm", "run", "start"]

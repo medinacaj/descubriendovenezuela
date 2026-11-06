@@ -82,7 +82,7 @@ export default async function Explorer({
             <b>
               {data.total} {data.total === 1 ? "lugar" : "lugares"}
             </b>
-            <span>Los registros DEMO son ejemplos, no recomendaciones.</span>
+            <span>Los registros DEMO son sintéticos; los documentados indican sus fuentes.</span>
           </div>
           <div className="explorer-grid">
             <div>

@@ -1,6 +1,6 @@
 # Venezuela en el Mapa
 
-Proyecto con **dos modalidades claramente diferenciadas**: un catálogo documental estático para GitHub Pages y una aplicación Next.js/PostgreSQL de administración y exploración. El catálogo tiene nueve entradas sustentadas por fuentes, pero todavía no constituye un inventario real de establecimientos operativos, reservas ni información de campo actualizada. La aplicación conserva un modo DEMO con cuatro registros sintéticos etiquetados y sin datos de viaje inventados.
+Proyecto con **dos modalidades claramente diferenciadas**: un catálogo documental estático para GitHub Pages y una aplicación Next.js/PostgreSQL de administración y exploración. El catálogo tiene nueve entradas sustentadas por fuentes, pero todavía no constituye un inventario real de establecimientos operativos, reservas ni información de campo actualizada. La aplicación conserva cuatro registros sintéticos DEMO claramente etiquetados y permite importar las mismas nueve fichas documentales a PostgreSQL.
 
 La versión de lanzamiento prepara **fichas con direcciones permanentes, páginas regionales, búsqueda, sitemap, etiquetas sociales, caché PWA y formularios públicos de propuestas/correcciones mediante GitHub Issues**. El backend sigue requiriendo alojamiento Node/PostGIS y una validación operacional específica. No se han contratado servicios.
 
@@ -36,7 +36,9 @@ La configuración existente se conserva. La importación demo es explícita, rep
 
 ## Importación documental al servidor
 
-Tras configurar PostgreSQL/PostGIS y ejecutar `npm run db:migrate`, usar `npm run catalog:import` para cargar los registros con evidencia de `content/places.json`. El importador es idempotente, audita entradas nuevas y **no sobrescribe** ediciones anteriores. Las fichas importadas siguen administradas desde el catálogo versionado, no desde el formulario web; se distingue su alcance documental de la comprobación en terreno.
+Tras configurar PostgreSQL/PostGIS y ejecutar `npm run db:migrate`, usar `npm run catalog:import` para cargar los registros con evidencia de `content/places.json`. El importador es idempotente y sincroniza las fichas versionadas sin modificar otras fichas creadas en el panel. Las fichas importadas siguen administradas desde el catálogo versionado, no desde el formulario web; se distingue su alcance documental de la comprobación en terreno.
+
+Para detalles de migración y sincronización ver [Catálogo unificado](docs/CATALOGO-UNIFICADO.md). La instalación local de demostración ejecuta esta importación tras crear sus cuatro ejemplos sintéticos.
 
 ## Sitio estático y navegación real
 
