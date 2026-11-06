@@ -8,11 +8,11 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
+    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|layout-balance\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
-    res.setHeader("Content-Type", name.endsWith(".webp") ? "image/webp" : name.endsWith(".svg") ? "image/svg+xml" : name.endsWith(".js") ? "text/javascript" : name.endsWith(".webmanifest") ? "application/manifest+json" : name.endsWith(".xml") ? "application/xml" : "text/html; charset=utf-8");
+    res.setHeader("Content-Type", name.endsWith(".webp") ? "image/webp" : name.endsWith(".svg") ? "image/svg+xml" : name.endsWith(".css") ? "text/css; charset=utf-8" : name.endsWith(".js") ? "text/javascript" : name.endsWith(".webmanifest") ? "application/manifest+json" : name.endsWith(".xml") ? "application/xml" : "text/html; charset=utf-8");
     res.end(bytes);
   } catch { res.writeHead(404); res.end(); }
 });
@@ -28,6 +28,32 @@ const browser = await chromium.launch({
   args: ["--no-sandbox"],
 });
 try {
+  for (const width of [320, 390, 768, 1024, 1440, 1920]) {
+    const page = await browser.newPage({ viewport: { width, height: 900 } });
+    await page.goto(origin);
+    await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
+    const box = await page.evaluate(() => {
+      const hero = document.querySelector(".hero").getBoundingClientRect();
+      const card = document.querySelector(".directory-grid .place-card").getBoundingClientRect();
+      const title = document.querySelector(".hero h1").getBoundingClientRect();
+      return { scrollWidth: document.documentElement.scrollWidth, heroWidth: hero.width,
+        cardWidth: card.width, titleLeft: title.left, titleRight: title.right };
+    });
+    if (box.scrollWidth > width + 1) throw Error("Portada desbordada a " + width + "px");
+    if (box.heroWidth > 1320) throw Error("Portada demasiado ancha a " + width + "px");
+    if (box.cardWidth < 220 || box.cardWidth > 470)
+      throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
+    if (box.titleLeft < -1 || box.titleRight > width + 1)
+      throw Error("Título fuera del viewport a " + width + "px");
+    await page.goto(origin + "explorar/");
+    if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Explorador desbordado a " + width + "px");
+    await page.goto(origin + "lugares/merida-ciudad/");
+    if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Ficha desbordada a " + width + "px");
+    await page.close();
+    console.log("Proporciones verificadas a " + width + "px");
+  }
   for (const width of [1440, 390]) {
     const page = await browser.newPage({ viewport: { width, height: 900 } });
     const errors = [];
