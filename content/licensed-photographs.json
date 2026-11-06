@@ -298,5 +298,75 @@
     "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_San_Carlos_de_Borromeo.jpg",
     "output": "foto-castillo-de-san-carlos-de-borromeo.webp"
+  },
+  {
+    "id": "pico-bolivar",
+    "file": "Pico Bolivar Merida Venezuela.jpg",
+    "alt": "Pico Bolívar en la Sierra Nevada de Mérida",
+    "author": "Odalis ortega",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_Bolivar_Merida_Venezuela.jpg",
+    "output": "foto-pico-bolivar.webp"
+  },
+  {
+    "id": "la-gran-sabana",
+    "file": "La gran Sabana.jpg",
+    "alt": "Paisaje documentado de la Gran Sabana, estado Bolívar",
+    "author": "Sankirumi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_gran_Sabana.jpg",
+    "output": "foto-la-gran-sabana.webp"
+  },
+  {
+    "id": "playa-medina",
+    "file": "Estado sucre, playa medina.JPG",
+    "alt": "Playa Medina en el estado Sucre",
+    "author": "Glorimar quiñonez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Estado_sucre%2C_playa_medina.JPG",
+    "output": "foto-playa-medina.webp"
+  },
+  {
+    "id": "salto-kama-meru",
+    "file": "Salto Kama - Gran Sabana.jpg",
+    "alt": "Salto Kamá en la Gran Sabana",
+    "author": "Paolo Costa Baldi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salto_Kama_-_Gran_Sabana.jpg",
+    "output": "foto-salto-kama-meru.webp"
+  },
+  {
+    "id": "parque-nacional-laguna-de-la-restinga",
+    "file": "Laguna de la Restinga.jpg",
+    "alt": "Laguna de La Restinga en Margarita",
+    "author": "Wilfredor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laguna_de_la_Restinga.jpg",
+    "output": "foto-parque-nacional-laguna-de-la-restinga.webp"
+  },
+  {
+    "id": "playa-parguito",
+    "file": "Playa Parguito - Margarita.jpg",
+    "alt": "Playa Parguito, isla de Margarita",
+    "author": "Jorge Moyeja",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Parguito_-_Margarita.jpg",
+    "output": "foto-playa-parguito.webp"
+  },
+  {
+    "id": "monumento-natural-cerro-santa-ana",
+    "file": "Cerro Santa Ana, Paraguaná en Venezuela.jpg",
+    "alt": "Cerro Santa Ana de Paraguaná, estado Falcón",
+    "author": "Aramburu Carlos",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_Santa_Ana%2C_Paraguan%C3%A1_en_Venezuela.jpg",
+    "output": "foto-monumento-natural-cerro-santa-ana.webp"
   }
 ]
