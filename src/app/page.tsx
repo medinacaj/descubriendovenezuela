@@ -91,7 +91,7 @@ export default async function Home() {
         <div className="categories">
           {categories.map((c, i) => (
             <Link key={c} href={"/explorar?category=" + encodeURIComponent(c)}>
-              <span>{["↟", "⌂", "◒", "▥", "◇"][i]}</span>
+              <span>{["↟", "⌂", "◒", "▥", "◇", "⌖"][i]}</span>
               <b>{c}</b>
               <small>Explorar ↗</small>
             </Link>
@@ -109,8 +109,9 @@ export default async function Home() {
           </Link>
         </div>
         <div className="notice">
-          Esta es una demostración del producto. Los ejemplos son sintéticos; el
-          inventario real se incorporará con fuentes y autorizaciones.
+          {data?.items.some((p) => p.demo)
+            ? "Las fichas DEMO son sintéticas. Las demás fichas identifican hechos documentados, no servicios actuales comprobados."
+            : "Catálogo documental en construcción: verificar horarios, acceso y disponibilidad antes de viajar."}
         </div>
         <div className="cards">
           {data?.items.slice(0, 4).map((p) => (

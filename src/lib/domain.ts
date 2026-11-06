@@ -9,6 +9,7 @@ export const categories = [
   "Gastronomía",
   "Cultura",
   "Negocios y servicios",
+  "Localidades",
 ] as const;
 export const placeSchema = z
   .object({
@@ -48,6 +49,8 @@ export type Place = PlaceInput & {
   territory: string;
   region: string;
   updatedAt: string;
+  catalogId?: string | null;
+  verificationNote?: string;
 };
 export function validatePlace(p: unknown) {
   return placeSchema.parse(p);
