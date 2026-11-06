@@ -1956,7 +1956,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-monumento-natural-tetas-de-maria-guevara.webp",
+        "alt": "Monumento Natural Tetas de María Guevara en Nueva Esparta",
+        "author": "Maria e. villegas",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munumento_%22las_tetas_de_maria_guevara%22.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2197,7 +2208,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cayo-muerto.webp",
+        "alt": "Cayo Muerto dentro del Parque Nacional Morrocoy",
+        "author": "Luisanni",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Muerto.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3976,7 +3998,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-quebrada-de-jaspe.webp",
+        "alt": "Quebrada de Jaspe en la Gran Sabana",
+        "author": "Edd2609",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Quebrada_de_jaspe_Gran_sabana.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
