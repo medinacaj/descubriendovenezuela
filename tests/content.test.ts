@@ -28,8 +28,9 @@ it("Pages incorpora lugares y fuentes, con categoría y búsqueda dinámicas", a
   const html = await readFile("docs/index.html", "utf8");
   for (const p of places) {
     expect(html).toContain(p.name);
-    expect(html).toContain(p.sourceUrls[0]);
+    const detail = await readFile("docs/lugares/" + p.id + "/index.html", "utf8");
+    expect(detail).toContain(p.sourceUrls[0]);
+    expect(detail).toContain("Consultar precio");
   }
   expect(html).not.toContain("Paisaje por descubrir · DEMO");
-  expect(html).toContain("Consultar precio");
 });

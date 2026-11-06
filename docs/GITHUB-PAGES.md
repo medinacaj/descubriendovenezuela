@@ -1,14 +1,13 @@
-# Activar la vista web en GitHub Pages
+# Sitio estático en GitHub Pages
 
-En el repositorio medinacaj/descubriendovenezuela:
+Repositorio: medinacaj/descubriendovenezuela.
 
-1. Settings → Pages.
-2. Build and deployment → Source: Deploy from a branch.
-3. Branch: main; carpeta: /docs; Save.
-4. Esperar la publicación que indica GitHub y abrir el enlace mostrado por Pages.
+El proyecto genera `docs/index.html`, `docs/explorar/index.html`, `docs/lugares/<id>/index.html`, `docs/regiones/<region>/index.html` y `docs/sitemap.xml` desde `content/places.json`. Las fichas se enlazan sin depender exclusivamente de rutas hash; el explorador original permanece como vista ligera.
 
-Dirección prevista: https://medinacaj.github.io/descubriendovenezuela/
+Configurar GitHub Pages en Settings → Pages → Deploy from a branch → main → /docs. Cada cambio en main ejecutará la publicación de Pages. Verificar la última ejecución de «pages build and deployment» y abrir la URL indicada por GitHub.
 
-`docs/index.html` es una vista navegable autónoma y explícitamente etiquetada como demostración. Permite explorar el diseño, buscar y abrir las fichas DEMO. No ejecuta el panel editorial, PostgreSQL o el mapa de la aplicación con servidor. GitHub Pages sirve archivos estáticos; la aplicación Next.js completa necesita un alojamiento que ejecute Node.js y PostgreSQL/PostGIS.
+URL prevista: https://medinacaj.github.io/descubriendovenezuela/
 
-La API de GitHub devolvió Forbidden al intentar comprobar Pages desde esta sesión. No se afirma que Pages esté activado ni publicado hasta verificar la URL real.
+Comandos: `npm ci`, `npm run build:pages`, `npm run test:pages`. Las nuevas pruebas de rutas se ejecutan también con `npm test`. El flujo de GitHub Actions ejecuta pruebas de aplicación, base y generación; para publicar solo deben integrarse cambios validados.
+
+**Limitaciones:** la vista estática muestra hechos documentados, no confirmación de apertura ni disponibilidad. El panel editorial, PostgreSQL, registro de propietarios, pagos y reservas no funcionan en Pages. No activar anuncios hasta contar con contenido y políticas adecuados.

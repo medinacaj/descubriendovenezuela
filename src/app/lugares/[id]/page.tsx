@@ -28,6 +28,9 @@ export default async function Detail({
           )}
           <h2>Sobre este lugar</h2>
           <p className="description">{p.description}</p>
+          {p.verificationNote && (
+            <div className="notice"><b>Alcance documental:</b> {p.verificationNote}</div>
+          )}
           <h2>Ubicación</h2>
           <p>
             {p.sensitive

@@ -21,6 +21,7 @@ const input = {
 beforeAll(async () => {
   expect(new URL(process.env.DATABASE_URL!).pathname).toBe("/venezuela_test");
   await pool.query(await readFile("db/migrations/001_core.sql", "utf8"));
+  await pool.query(await readFile("db/migrations/002_documented_catalog.sql", "utf8"));
   await pool.query(
     "TRUNCATE change_log,sessions,login_attempts,admin_users,places,territories RESTART IDENTITY CASCADE",
   );
@@ -98,6 +99,14 @@ describe("persistencia y publicación reales", () => {
     await savePlace({ ...p!, name: "Edición conservada" }, actor, id);
     expect((await getPlace(id, true))?.lon).toBe(-66);
     expect((await getPlace(id))?.lat).toBeNull();
+  });
+  it("una ficha importada del catálogo versionado no se sobreescribe desde admin", async () => {
+    await pool.query("UPDATE places SET catalog_id=$1, verification_note=$2 WHERE id=$3", [
+      "catalog-test", "Identificación documental de prueba", id,
+    ]);
+    await expect(savePlace({ ...input, name: "Cambio bloqueado" }, actor, id)).rejects.toThrow("Ficha versionada");
+    expect((await getPlace(id))?.name).not.toBe("Cambio bloqueado");
+    await pool.query("UPDATE places SET catalog_id=NULL, verification_note='' WHERE id=$1", [id]);
   });
   it("paginación fraccionaria se normaliza", async () => {
     expect((await searchPlaces({ page: 1.1 })).page).toBe(1);

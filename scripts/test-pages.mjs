@@ -5,36 +5,26 @@ const prefix = "/descubriendovenezuela/";
 const server = createServer(async (req, res) => {
   try {
     const path = new URL(req.url, "http://local").pathname;
-    const name =
-      path === prefix
-        ? "index.html"
-        : path.startsWith(prefix + "media/")
-          ? path.slice(prefix.length)
-          : null;
-    if (
-      !name ||
-      name.includes("..") ||
-      !/^index\.html$|^media\/[a-z0-9-]+\.webp$/.test(name)
-    ) {
-      res.writeHead(404);
-      res.end();
-      return;
+    if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
+    let name = path.slice(prefix.length);
+    if (!name || name.endsWith("/")) name += "index.html";
+    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|icon\.svg|manifest\.webmanifest|sitemap\.xml)$/.test(name)) {
+      res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
-    res.setHeader(
-      "Content-Type",
-      name.endsWith(".webp") ? "image/webp" : "text/html; charset=utf-8",
-    );
+    res.setHeader("Content-Type", name.endsWith(".webp") ? "image/webp" : name.endsWith(".svg") ? "image/svg+xml" : name.endsWith(".js") ? "text/javascript" : name.endsWith(".webmanifest") ? "application/manifest+json" : name.endsWith(".xml") ? "application/xml" : "text/html; charset=utf-8");
     res.end(bytes);
-  } catch {
-    res.writeHead(404);
-    res.end();
-  }
+  } catch { res.writeHead(404); res.end(); }
 });
 await new Promise((r) => server.listen(0, "127.0.0.1", r));
 const origin = "http://127.0.0.1:" + server.address().port + prefix;
+const { access } = await import("node:fs/promises");
+let executablePath = process.env.CHROMIUM_PATH;
+if (!executablePath) {
+  try { await access("/usr/bin/chromium"); executablePath = "/usr/bin/chromium"; } catch {}
+}
 const browser = await chromium.launch({
-  executablePath: process.env.CHROMIUM_PATH || "/usr/bin/chromium",
+  ...(executablePath ? { executablePath } : {}),
   args: ["--no-sandbox"],
 });
 try {
@@ -57,30 +47,19 @@ try {
           ),
       )
       .toBe(true);
-    await page
-      .getByRole("link", { name: "Explorar el mapa", exact: true })
-      .click();
-    await page
-      .getByLabel("Categoría", { exact: true })
-      .selectOption("Localidades");
+    await page.getByRole("link", { name: "Explorar", exact: true }).click();
+    await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
+    await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
     await page.getByLabel("Estado o región").selectOption("Mérida");
     await page.getByLabel("Buscar lugar").fill("merida");
-    await page.getByRole("button", { name: "Buscar", exact: true }).click();
+    await page.getByRole("button", {name:"Buscar",exact:true}).click();
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
-    await page.locator('a[href="#/lugares/merida-ciudad"]').click();
-    await expect(
-      page.getByRole("heading", { name: "Mérida", exact: true }),
-    ).toBeVisible();
-    await expect(
-      page.getByText("Cartografía:", { exact: false }),
-    ).toBeVisible();
-    await expect(page.locator(".detail-photo img")).toHaveJSProperty(
-      "naturalWidth",
-      900,
-    );
-    await expect(
-      page.getByRole("link", { name: "Dominio público", exact: true }),
-    ).toBeVisible();
+    await page.locator('a[href$="/lugares/merida-ciudad/"]').click();
+    await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
+    await expect(page.getByText("Cartografía:", {exact:false})).toBeVisible();
+    await expect(page.locator(".detail-photo img")).toHaveJSProperty("naturalWidth",900);
+    await expect(page.getByRole("link", {name:"Dominio público",exact:true})).toBeVisible();
+    await expect(page.locator('link[rel="canonical"]')).toHaveAttribute("href",/lugares\/merida-ciudad\/$/);
     if (
       await page.evaluate(
         () => document.documentElement.scrollWidth > innerWidth,

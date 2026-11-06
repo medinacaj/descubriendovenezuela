@@ -1,0 +1,35 @@
+name: Corregir o retirar ficha
+description: Solicitar una revisión por error, privacidad o derechos de autor.
+title: "[Corrección] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        El issue será público. No adjuntes documentos de identidad u otros datos privados.
+  - type: input
+    id: url
+    attributes:
+      label: Enlace a la ficha afectada
+      placeholder: https://medinacaj.github.io/descubriendovenezuela/lugares/...
+    validations:
+      required: true
+  - type: dropdown
+    id: motivo
+    attributes:
+      label: Motivo
+      options:
+        - Información incorrecta
+        - Desactualización
+        - Privacidad o ubicación sensible
+        - Derechos de autor
+        - Duplicado
+        - Solicitud de retirada
+        - Otro
+    validations:
+      required: true
+  - type: textarea
+    id: cambio
+    attributes:
+      label: Explicación y evidencia pública
+    validations:
+      required: true

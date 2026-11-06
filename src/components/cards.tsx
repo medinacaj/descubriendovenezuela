@@ -6,6 +6,7 @@ const icons: Record<string, string> = {
   Gastronomía: "◒",
   Cultura: "▥",
   "Negocios y servicios": "◇",
+  Localidades: "⌖",
 };
 export function PlaceCard({ place: p }: { place: Place }) {
   return (

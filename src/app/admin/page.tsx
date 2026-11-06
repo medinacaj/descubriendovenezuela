@@ -221,11 +221,11 @@ export default async function Admin({
           <h2>Fichas ({data.total})</h2>
           <div className="admin-list">
             {data.items.map((item) => (
-              <Link key={item.id} href={"/admin?edit=" + item.id}>
+              <Link key={item.id} href={item.catalogId ? "https://github.com/medinacaj/descubriendovenezuela/blob/main/content/places.json" : "/admin?edit=" + item.id}>
                 <b>{item.name}</b>
                 <span>
                   {item.published ? "Publicada" : "Borrador"} ·{" "}
-                  {item.demo ? "DEMO" : item.status} <em>Editar ↗</em>
+                  {item.demo ? "DEMO" : item.status} <em>{item.catalogId ? "Ficha versionada ↗" : "Editar ↗"}</em>
                 </span>
               </Link>
             ))}
