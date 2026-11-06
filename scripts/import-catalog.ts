@@ -1,7 +1,8 @@
 /**
  * Importación única del inventario documental compartido con GitHub Pages.
  * Ejecutar tras db:migrate: npm run catalog:import
- * Nunca borra fichas ni actualiza fichas editadas por un editor.
+ * Nunca borra fichas; sincroniza únicamente fichas con catalog_id.
+ * La edición de fichas versionadas se realiza desde content/places.json.
  * La fuente confirma exclusivamente el alcance declarado en verification_note.
  */
 try {
@@ -32,7 +33,7 @@ try {
     )).rows[0].id);
   }
   const regionIds = new Map<string, number>();
-  let inserted = 0, existing = 0;
+  let synced = 0;
   for (const entry of entries) {
     let territoryId = countryId;
     if (entry.region) {
@@ -59,14 +60,21 @@ try {
         catalog_id,name,category,territory_id,description,source,reviewed_at,
         status,published,sensitive,demo,verification_note,media_credits
       ) VALUES ($1,$2,$3,$4,$5,$6,$7,'verified',true,true,false,$8,$9::jsonb)
-      ON CONFLICT (catalog_id) WHERE catalog_id IS NOT NULL DO NOTHING RETURNING id`,
+      ON CONFLICT (catalog_id) WHERE catalog_id IS NOT NULL DO UPDATE SET
+        name=EXCLUDED.name, category=EXCLUDED.category,
+        territory_id=EXCLUDED.territory_id, description=EXCLUDED.description,
+        source=EXCLUDED.source, reviewed_at=EXCLUDED.reviewed_at,
+        verification_note=EXCLUDED.verification_note, media_credits=EXCLUDED.media_credits,
+        updated_at=CASE WHEN places.name IS DISTINCT FROM EXCLUDED.name OR places.description IS DISTINCT FROM EXCLUDED.description OR places.verification_note IS DISTINCT FROM EXCLUDED.verification_note OR places.media_credits IS DISTINCT FROM EXCLUDED.media_credits THEN now() ELSE places.updated_at END
+      RETURNING id`,
       [entry.catalogId,entry.name,entry.category,territoryId,entry.description,
        entry.source,entry.reviewedAt,entry.verificationNote,JSON.stringify(entry.mediaCredits)]
     );
-    if (result.rowCount) inserted++; else existing++;
+    if (!result.rowCount) throw Error("No se pudo sincronizar " + entry.catalogId);
+    synced++;
   }
   await client.query("COMMIT");
-  console.log(`Catálogo documental: ${inserted} nuevos, ${existing} conservados, ${entries.length} totales.`);
+  console.log(`Catálogo documental sincronizado: ${synced} fichas versionadas; no se modificaron fichas editoriales independientes.`);
 } catch (error) {
   await client.query("ROLLBACK");
   throw error;
