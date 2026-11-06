@@ -1,8 +1,8 @@
 # Catálogo documental compartido — noviembre de 2026
 
-## Inventario real: 37 fichas documentales (24 territorios)
+## Inventario real: 176 fichas documentales (24 territorios)
 
-Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Se añadieron otras ocho fichas para representar Anzoátegui, Barinas, Carabobo, Cojedes, Delta Amacuro, Lara, Portuguesa y Zulia, con [fuentes en el informe ampliado](../content/RESEARCH-COBERTURA-2026-11-06.md). Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. La importación y la vista estática usan el mismo `content/places.json`.
+Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Se añadieron otras ocho fichas para representar Anzoátegui, Barinas, Carabobo, Cojedes, Delta Amacuro, Lara, Portuguesa y Zulia, con [fuentes en el informe ampliado](../content/RESEARCH-COBERTURA-2026-11-06.md). Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. Las 139 fichas añadidas el 6 de noviembre de 2026 amplían parques, cayos, playas, patrimonio, gastronomía, regiones y negocios identificados en sitios propios. Se incorpora Dependencias Federales y el inventario ahora cubre 25 territorios. Los nueve hospedajes cuentan con referencias directas a sus operadores, sin comprobación independiente de disponibilidad o permisos de imagen. La importación y la vista estática usan el mismo `content/places.json`.
 
 ## Fuente única y responsabilidades
 

@@ -23,16 +23,16 @@ describe("Pages con URLs permanentes",()=>{
   expect(region).toContain('href="/descubriendovenezuela/lugares/cayo-sombrero/"');
   expect(region).not.toContain('data-featured-id="caracas-ciudad"');
   const city=await readFile("docs/regiones/merida/index.html","utf8");
-  expect(city).toContain("Localidad documentada");
+  expect(city).toContain('data-featured-id="parque-nacional-sierra-nevada"');
   expect(city).not.toContain("og:image");
-  expect(city).not.toContain("Otros sitios documentados");
+  expect(city).toContain("Otros sitios documentados");
   const detail=await readFile("docs/lugares/parque-nacional-morrocoy/index.html","utf8");
   expect(detail).toContain('href="/descubriendovenezuela/regiones/falcon/"');
   expect(detail).toContain("Más lugares en Falcón");
   const map=await readFile("docs/sitemap.xml","utf8");
   expect(map).toContain(base+"estados/");
   expect(map).toContain(base+"regiones/falcon/");
-  expect(map).not.toContain(base+"regiones/merida/");
+  expect(map).toContain(base+"regiones/merida/");
   expect((await stat("docs/states.css")).size).toBeGreaterThan(5000);
  });
  it("home y estados indexables y enlaces regionales a todas las fichas",async()=>{

@@ -65,8 +65,8 @@ try {
       throw Error("Ficha de Falcón desbordada a " + width + "px");
     await page.goto(origin + "regiones/merida/");
     await expect(page.getByRole("heading", {name:"Mérida",level:1,exact:true})).toBeVisible();
-    await expect(page.locator('[data-featured-id="merida-ciudad"]')).toHaveCount(1);
-    await expect(page.locator(".state-more-sites")).toHaveCount(0);
+    await expect(page.locator('[data-featured-id="parque-nacional-sierra-nevada"]')).toHaveCount(1);
+    await expect(page.locator(".state-more-sites")).toHaveCount(1);
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");

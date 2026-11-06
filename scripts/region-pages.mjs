@@ -30,7 +30,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
     return `<article class="state-tile state-tile--${kind}" data-state-name="${h(r)}">
       <a class="state-tile__main" href="${stateUrl(r)}" aria-label="Explorar ${h(r)}: ${info.sites.length} sitios, ${info.towns.length} localidades">
         <div class="state-tile__visual">${art}</div>
-        <div class="state-tile__body"><span>${r==="Distrito Capital"?"DISTRITO CAPITAL":"ESTADO · VENEZUELA"}</span>
+        <div class="state-tile__body"><span>${r==="Distrito Capital"?"DISTRITO CAPITAL":r==="Dependencias Federales"?"TERRITORIO INSULAR · VENEZUELA":"ESTADO · VENEZUELA"}</span>
           <h3>${h(r)}</h3><p>${info.sites.length} ${info.sites.length===1?"atractivo":"atractivos"} · ${info.towns.length} ${info.towns.length===1?"localidad":"localidades"}</p><b>Descubrir sus lugares <span aria-hidden="true">↗</span></b>
         </div>
       </a>
@@ -80,7 +80,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site}) {
     const info=summary(r), featured=info.featured, otherSites=info.sites.filter(p=>p.id!==featured?.id),
       otherTowns=info.towns.filter(p=>p.id!==featured?.id), visual=primary(featured);
     const path="regiones/"+slug(r)+"/";
-    const regionWord=r==="Distrito Capital"?"Distrito Capital":"Estado";
+    const regionWord=r==="Distrito Capital"?"Distrito Capital":r==="Dependencias Federales"?"Dependencias Federales":"Estado";
     const sentence=`${info.sites.length} ${info.sites.length===1?"sitio de interés":"sitios de interés"} y ${info.towns.length} ${info.towns.length===1?"localidad documentada":"localidades documentadas"}`;
     const introduction=info.sites.length
       ?`Explora una selección de ${info.sites.length} ${info.sites.length===1?"atractivo":"atractivos"} documentados en ${r}, con referencias a sus fuentes y a sus límites de verificación.`
