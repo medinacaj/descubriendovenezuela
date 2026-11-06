@@ -99,7 +99,7 @@ try {
       .toBe(true);
     await page.locator('a.button[href$="/explorar/"]').first().click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
-    await page.getByLabel("Buscar lugar").fill("guacharo");
+    await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.getByLabel("Buscar lugar").fill("");
     await expect(page.locator("#count")).toHaveText(allPlaces.length + " lugares documentados");
