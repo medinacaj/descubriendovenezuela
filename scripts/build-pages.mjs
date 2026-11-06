@@ -83,3 +83,6 @@ await writeFile("docs/vista-demo.html", html);
 console.log(
   `Pages: ${places.length} lugares; ${places.reduce((n, p) => n + p.photos.length, 0)} imágenes con licencia.`,
 );
+
+// Generate canonical, crawler-visible pages from the same reviewed source.
+await import("./build-directories.mjs");

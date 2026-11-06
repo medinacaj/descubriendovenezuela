@@ -1,0 +1,17 @@
+{
+  "name": "Venezuela en el Mapa",
+  "short_name": "Venezuela",
+  "lang": "es-VE",
+  "start_url": "/descubriendovenezuela/",
+  "scope": "/descubriendovenezuela/",
+  "display": "standalone",
+  "background_color": "#f9faf7",
+  "theme_color": "#183f35",
+  "icons": [
+    {
+      "src": "/descubriendovenezuela/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}
