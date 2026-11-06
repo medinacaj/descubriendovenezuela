@@ -518,5 +518,95 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:02_-_Playa_Edo._Vargas.jpg",
     "output": "foto-playa-osma.webp"
+  },
+  {
+    "id": "castillo-de-santa-rosa-de-la-asuncion",
+    "file": "Castillo de Santa Rosa.jpg",
+    "alt": "Vista del Castillo de Santa Rosa en La Asunción, Margarita",
+    "author": "Luis Rafael Ortuño Padilla",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_Santa_Rosa.jpg",
+    "output": "foto-castillo-de-santa-rosa-de-la-asuncion.webp"
+  },
+  {
+    "id": "el-gran-roque",
+    "file": "Gran Roque (Los Roques).jpg",
+    "alt": "Vista del Gran Roque desde el norte, archipiélago Los Roques",
+    "author": "Gregor Julien Straube",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_Roque_(Los_Roques).jpg",
+    "output": "foto-el-gran-roque.webp"
+  },
+  {
+    "id": "cerro-maria-lionza",
+    "file": "Cerro Maria lionza.jpg",
+    "alt": "Amanecer en el Cerro María Lionza del estado Yaracuy",
+    "author": "Luisovalles",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_Maria_lionza.jpg",
+    "output": "foto-cerro-maria-lionza.webp"
+  },
+  {
+    "id": "pico-el-aguila",
+    "file": "Pico el aguila.jpg",
+    "alt": "Vista de paisaje altoandino identificada en Commons como Pico El Águila, Mérida",
+    "author": "Fabiola.dejesus.gonzalez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_el_aguila.jpg",
+    "output": "foto-pico-el-aguila.webp"
+  },
+  {
+    "id": "teatro-baralt",
+    "file": "Teatro Baralt en Maracaibo.jpg",
+    "alt": "Fachada exterior del Teatro Baralt en Maracaibo, fotografía de octubre de 2026",
+    "author": "Mgta122001vzla",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Baralt_en_Maracaibo.jpg",
+    "output": "foto-teatro-baralt.webp"
+  },
+  {
+    "id": "la-cienaga-de-ocumare",
+    "file": "La ciénaga.jpg",
+    "alt": "Paisaje de la Ciénaga de Ocumare en el estado Aragua",
+    "author": "Markoxavi",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_ci%C3%A9naga.jpg",
+    "output": "foto-la-cienaga-de-ocumare.webp"
+  },
+  {
+    "id": "plaza-bolivar-de-caracas",
+    "file": "Plaza Bolivar Ciudad de Caracas Venezuela.jpg",
+    "alt": "Imagen de la Plaza Bolívar del centro de Caracas",
+    "author": "QuinteroP",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Bolivar_Ciudad_de_Caracas_Venezuela.jpg",
+    "output": "foto-plaza-bolivar-de-caracas.webp"
+  },
+  {
+    "id": "casa-natal-del-libertador-simon-bolivar",
+    "file": "Casa natal de Simón Bolívar.jpg",
+    "alt": "Casa natal del Libertador Simón Bolívar en el centro de Caracas",
+    "author": "Fhaidel Domínguez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_natal_de_Sim%C3%B3n_Bol%C3%ADvar.jpg",
+    "output": "foto-casa-natal-del-libertador-simon-bolivar.webp"
+  },
+  {
+    "id": "panteon-nacional-de-venezuela",
+    "file": "Panteón Nacional - Caracas.jpg",
+    "alt": "Fachada del Panteón Nacional de Caracas",
+    "author": "SergioBrazn",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pante%C3%B3n_Nacional_-_Caracas.jpg",
+    "output": "foto-panteon-nacional-de-venezuela.webp"
   }
 ]
