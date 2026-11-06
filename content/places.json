@@ -3434,5 +3434,948 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "museo-de-bellas-artes-de-caracas",
+    "name": "Museo de Bellas Artes de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Museo de arte y patrimonio arquitectónico situado en el entorno cultural de Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-de-arte-contemporaneo-de-caracas",
+    "name": "Museo de Arte Contemporáneo de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Museo de arte contemporáneo ubicado en el conjunto de Parque Central, Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "galeria-de-arte-nacional",
+    "name": "Galería de Arte Nacional",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Institución museística dedicada a colecciones de arte venezolano en Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-de-los-ninos-de-caracas",
+    "name": "Museo de los Niños de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Institución cultural y educativa de carácter interactivo en Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-de-arte-colonial-quinta-de-anauco",
+    "name": "Museo de Arte Colonial Quinta de Anauco",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Casa de arquitectura colonial que alberga colecciones patrimoniales de Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-de-la-estampa-y-del-diseno-carlos-cruz-diez",
+    "name": "Museo de la Estampa y del Diseño Carlos Cruz-Diez",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Museo dedicado a la estampa y el diseño, asociado a la obra de Carlos Cruz-Diez. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-bolivariano-de-caracas",
+    "name": "Museo Bolivariano de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Museo del centro histórico de Caracas dedicado al legado histórico de Simón Bolívar. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-del-transporte-guillermo-jose-schael",
+    "name": "Museo del Transporte Guillermo José Schael",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Museo caraqueño dedicado a la historia y evolución de los medios de transporte. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/museos_de_caracas.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-de-ciencias-de-caracas",
+    "name": "Museo de Ciencias de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Institución científica y museística situada en el eje cultural de Bellas Artes. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "complejo-cultural-teresa-carreno",
+    "name": "Complejo Cultural Teresa Carreño",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Complejo de artes escénicas con las salas Ríos Reyna y José Félix Ribas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/caracas/teatro_teresa_carreno.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/caracas/teatro_teresa_carreno.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "panteon-nacional-de-venezuela",
+    "name": "Panteón Nacional de Venezuela",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Conjunto patrimonial de Caracas asociado a la memoria de figuras históricas venezolanas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "plaza-bolivar-de-caracas",
+    "name": "Plaza Bolívar de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Plaza cívica del centro histórico de Caracas, junto a edificios patrimoniales. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-los-caobos",
+    "name": "Parque Los Caobos",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Parque urbano emblemático del eje cultural de Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-ezequiel-zamora-el-calvario",
+    "name": "Parque Ezequiel Zamora (El Calvario)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Parque histórico con jardines y paseos urbanos sobre las colinas de Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "plaza-venezuela",
+    "name": "Plaza Venezuela",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Espacio público destacado en el centro-este de Caracas. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "plaza-o-leary",
+    "name": "Plaza O'Leary",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Distrito Capital",
+    "description": "Plaza del centro de Caracas vinculada al conjunto urbano de El Silencio. La ficha recoge su identificación en Distrito Capital, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://venezuelatuya.com/estados/distrito_capital.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://venezuelatuya.com/estados/distrito_capital.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "quebrada-de-jaspe",
+    "name": "Quebrada de Jaspe",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Corriente de agua que discurre sobre una amplia laja rojiza de jaspe en la Gran Sabana. La ficha recoge su identificación en Bolívar, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.visitvenezuela.travel/destinos/gran-sabana"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.visitvenezuela.travel/destinos/gran-sabana",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "salto-kama-meru",
+    "name": "Salto Kamá-Merú",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Cascada de la Gran Sabana incluida en rutas documentales de paisajes del sector. La ficha recoge su identificación en Bolívar, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.visitvenezuela.travel/destinos/gran-sabana"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.visitvenezuela.travel/destinos/gran-sabana",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "salto-mauraik",
+    "name": "Salto Mauraik",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Caída de agua de la Gran Sabana asociada a recorridos en la región. La ficha recoge su identificación en Bolívar, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.visitvenezuela.travel/destinos/gran-sabana"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.visitvenezuela.travel/destinos/gran-sabana",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "san-francisco-de-yuruani",
+    "name": "San Francisco de Yuruaní",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Comunidad de la Gran Sabana vinculada a la cultura pemón y la ruta hacia el Roraima. La ficha recoge su identificación en Bolívar, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.visitvenezuela.travel/destinos/gran-sabana"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.visitvenezuela.travel/destinos/gran-sabana",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-gran-sabana",
+    "name": "La Gran Sabana",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Bolívar",
+    "description": "Región de sabanas y tepuyes del sureste de Venezuela asociada a numerosos atractivos naturales. La ficha recoge su identificación en Bolívar, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.visitvenezuela.travel/destinos/gran-sabana"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.visitvenezuela.travel/destinos/gran-sabana",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "obelisco-de-barquisimeto",
+    "name": "Obelisco de Barquisimeto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Monumento urbano que constituye una de las referencias arquitectónicas de Barquisimeto. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/barquisimeto.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/barquisimeto.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "flor-de-venezuela",
+    "name": "Flor de Venezuela",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Pabellón arquitectónico de Fruto Vivas instalado en Barquisimeto. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/barquisimeto.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/barquisimeto.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "santa-rosa-de-barquisimeto",
+    "name": "Santa Rosa de Barquisimeto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Poblado tradicional asociado a la devoción de la Divina Pastora. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/barquisimeto.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/barquisimeto.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "manto-de-maria-divina-pastora",
+    "name": "Manto de María Divina Pastora",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Monumento religioso ubicado en el entorno de Barquisimeto. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/barquisimeto.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/barquisimeto.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ruta-artesanal-tintorero-y-quibor",
+    "name": "Ruta artesanal Tintorero y Quíbor",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Ruta de poblaciones artesanales vinculada a textiles y oficios tradicionales larenses. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/barquisimeto.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/barquisimeto.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cascada-del-vino",
+    "name": "Cascada del Vino",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "Caída de agua andina asociada al Parque Nacional Dinira y al occidente venezolano. La ficha recoge su identificación en Lara, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "peninsula-de-paraguana",
+    "name": "Peninsula de Paraguaná",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Falcón",
+    "description": "Península del estado Falcón con paisajes litorales y ecosistemas semiáridos. La ficha recoge su identificación en Falcón, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/occidente/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/occidente/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pueblo-de-choroni",
+    "name": "Pueblo de Choroní",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Localidad costera de arquitectura tradicional del estado Aragua. La ficha recoge su identificación en Aragua, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/centro/choroni.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/centro/choroni.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "puerto-colombia",
+    "name": "Puerto Colombia",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "region": "Aragua",
+    "description": "Poblado costero cercano a Choroní que enlaza con Playa Grande. La ficha recoge su identificación en Aragua, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/centro/choroni.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/centro/choroni.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "mercado-municipal-de-chacao",
+    "name": "Mercado Municipal de Chacao",
+    "category": "Gastronomía",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Mercado tradicional de productos frescos y gastronomía en el municipio Chacao. La ficha recoge su identificación en Miranda, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://mercadomunicipaldechacao.com.ve/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://mercadomunicipaldechacao.com.ve/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-cuadra-gastronomica",
+    "name": "La Cuadra Gastronómica",
+    "category": "Gastronomía",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Zona de gastronomía y comercio ubicada en Los Palos Grandes, Caracas. La ficha recoge su identificación en Miranda, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.elfogoncreativo.com/cada-cena-es-distinta-en-cocina-restaurante/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.elfogoncreativo.com/cada-cena-es-distinta-en-cocina-restaurante/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "centro-historico-de-el-hatillo",
+    "name": "Centro histórico de El Hatillo",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Casco tradicional con arquitectura histórica y actividades comerciales y gastronómicas. La ficha recoge su identificación en Miranda, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://iamvenezuela.org/2017/01/centro-historico-de-el-hatillo/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://iamvenezuela.org/2017/01/centro-historico-de-el-hatillo/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "paseo-el-hatillo",
+    "name": "Paseo El Hatillo",
+    "category": "Negocios y servicios",
+    "country": "Venezuela",
+    "region": "Miranda",
+    "description": "Complejo comercial y gastronómico de la zona de La Lagunita, municipio El Hatillo. La ficha recoge su identificación en Miranda, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://paseoelhatillo.com/gastronomia/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://paseoelhatillo.com/gastronomia/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ruta-de-las-fresas-con-crema-de-la-culata",
+    "name": "Ruta de las fresas con crema de La Culata",
+    "category": "Gastronomía",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Ruta gastronómica de montaña entre paradores del valle de La Culata, Mérida. La ficha recoge su identificación en Mérida, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://apartamentosturisticosmerida.com/plan-viaje-ruta-de-la-culata.html"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://apartamentosturisticosmerida.com/plan-viaje-ruta-de-la-culata.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "paramo-de-la-culata",
+    "name": "Páramo de La Culata",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Mérida",
+    "description": "Paisaje altoandino de Mérida vinculado al valle de La Culata. La ficha recoge su identificación en Mérida, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://apartamentosturisticosmerida.com/plan-viaje-ruta-de-la-culata.html"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://apartamentosturisticosmerida.com/plan-viaje-ruta-de-la-culata.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "palafitos-de-santa-rosa-de-agua",
+    "name": "Palafitos de Santa Rosa de Agua",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Conjunto tradicional de viviendas sobre el agua en el entorno del lago de Maracaibo. La ficha recoge su identificación en Zulia, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://comunidadactivanoticias.com/maracaibo/tranvia-de-maracaibo-realizo-recorrido-turistico-por-los-palafitos-de-santa-rosa-de-agua/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://comunidadactivanoticias.com/maracaibo/tranvia-de-maracaibo-realizo-recorrido-turistico-por-los-palafitos-de-santa-rosa-de-agua/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ruta-de-los-palafitos-de-maracaibo",
+    "name": "Ruta de los Palafitos de Maracaibo",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "Recorrido patrimonial documentado en torno a Santa Rosa de Agua y la ribera lacustre. La ficha recoge su identificación en Zulia, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://comunidadactivanoticias.com/maracaibo/tranvia-de-maracaibo-realizo-recorrido-turistico-por-los-palafitos-de-santa-rosa-de-agua/"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://comunidadactivanoticias.com/maracaibo/tranvia-de-maracaibo-realizo-recorrido-turistico-por-los-palafitos-de-santa-rosa-de-agua/",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "mercado-de-conejeros",
+    "name": "Mercado de Conejeros",
+    "category": "Gastronomía",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Mercado tradicional de Margarita vinculado a comercio local y productos regionales. La ficha recoge su identificación en Nueva Esparta, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "castillo-de-san-carlos-de-borromeo",
+    "name": "Castillo de San Carlos de Borromeo",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Fortaleza histórica en Pampatar, isla de Margarita. La ficha recoge su identificación en Nueva Esparta, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "castillo-de-santa-rosa-de-la-asuncion",
+    "name": "Castillo de Santa Rosa de La Asunción",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "region": "Nueva Esparta",
+    "description": "Fortaleza histórica vinculada a la ciudad de La Asunción, Margarita. La ficha recoge su identificación en Nueva Esparta, Venezuela, sin acreditar servicios, accesos u horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y localización general respaldadas por la fuente documental consultada el 6 de noviembre de 2026. No constituye comprobación presencial ni certifica apertura, precios, autorizaciones, movilidad o seguridad actuales.",
+    "sourceUrls": [
+      "https://www.venezuelatuya.com/margarita/index.htm"
+    ],
+    "sourceLabels": [
+      "Fuente de referencia documental"
+    ],
+    "primaryUrl": "https://www.venezuelatuya.com/margarita/index.htm",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]
