@@ -100,6 +100,14 @@ describe("persistencia y publicación reales", () => {
     expect((await getPlace(id, true))?.lon).toBe(-66);
     expect((await getPlace(id))?.lat).toBeNull();
   });
+  it("una ficha importada del catálogo versionado no se sobreescribe desde admin", async () => {
+    await pool.query("UPDATE places SET catalog_id=$1, verification_note=$2 WHERE id=$3", [
+      "catalog-test", "Identificación documental de prueba", id,
+    ]);
+    await expect(savePlace({ ...input, name: "Cambio bloqueado" }, actor, id)).rejects.toThrow("Ficha versionada");
+    expect((await getPlace(id))?.name).not.toBe("Cambio bloqueado");
+    await pool.query("UPDATE places SET catalog_id=NULL, verification_note='' WHERE id=$1", [id]);
+  });
   it("paginación fraccionaria se normaliza", async () => {
     expect((await searchPlaces({ page: 1.1 })).page).toBe(1);
   });
