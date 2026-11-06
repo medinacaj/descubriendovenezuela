@@ -20,7 +20,7 @@ it("imágenes publicadas tienen archivos locales y atribución visible", async (
   for (const photo of photos) {
     expect((await stat("docs/" + photo.src)).size).toBeGreaterThan(1000);
     expect(html).toContain(photo.src);
-    expect(html).toContain(photo.author);
+    expect(html).toContain(photo.author.replaceAll("&", "&amp;"));
     expect(html).toContain(photo.licenseUrl);
   }
 });
