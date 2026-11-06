@@ -33,23 +33,15 @@ export default async function Home() {
             Un país extraordinario. Una mirada más cercana.
           </div>
         </div>
-        <div
-          className="landscape"
-          role="img"
-          aria-label="Ilustración abstracta de montañas venezolanas, no fotografía de un destino"
-        >
-          <div className="sun" />
-          <div className="mountain back" />
-          <div className="mountain mid" />
-          <div className="mountain front" />
+        <div className="landscape photo-hero">
+          <img src="/media/foto-cayo-sombrero.webp" alt="Playa y palmeras de Cayo Sombrero, Morrocoy"
+            width={1200} height={800} fetchPriority="high" />
           <div className="landscape-label">
-            <span>10° N · 66° O — REFERENCIA GRÁFICA</span>
-            <b>
-              La aventura empieza
-              <br />
-              con la curiosidad.
-            </b>
-            <small>PAISAJE ILUSTRADO</small>
+            <span>CAYO SOMBRERO · FALCÓN</span>
+            <b>La aventura empieza<br />con la curiosidad.</b>
+            <small>Foto: <a href="https://commons.wikimedia.org/wiki/File:Cayo_Sombrero.JPG"
+              target="_blank" rel="noopener noreferrer">AndreaC11</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/"
+              target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small>
           </div>
           <div className="vertical-label">NATURALEZA · CULTURA · GENTE</div>
         </div>

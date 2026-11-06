@@ -70,7 +70,7 @@ try {
           .locator("img")
           .evaluateAll(
             (imgs, count) =>
-              imgs.length === count &&
+              imgs.length === count + 1 &&
               imgs.every((i) => i.complete && i.naturalWidth > 0),
             homeImageCount,
           ),
