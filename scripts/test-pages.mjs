@@ -97,7 +97,7 @@ try {
           ),
       )
       .toBe(true);
-    await page.getByRole("link", { name: "Explorar", exact: true }).click();
+    await page.locator('a.button[href$="/explorar/"]').first().click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
     await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
     await page.getByLabel("Estado o región").selectOption("Mérida");
