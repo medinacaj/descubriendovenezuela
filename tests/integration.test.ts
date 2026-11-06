@@ -21,6 +21,7 @@ const input = {
 beforeAll(async () => {
   expect(new URL(process.env.DATABASE_URL!).pathname).toBe("/venezuela_test");
   await pool.query(await readFile("db/migrations/001_core.sql", "utf8"));
+  await pool.query(await readFile("db/migrations/002_documented_catalog.sql", "utf8"));
   await pool.query(
     "TRUNCATE change_log,sessions,login_attempts,admin_users,places,territories RESTART IDENTITY CASCADE",
   );
