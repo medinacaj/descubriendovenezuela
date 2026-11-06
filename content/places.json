@@ -918,7 +918,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isla-de-plata-mochima.webp",
+        "alt": "Playa de Isla de Plata, sector Anzoátegui del Parque Nacional Mochima, fotografía de 2013",
+        "author": "Dannyberro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Isla_de_Plata.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -969,7 +980,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-san-esteban.webp",
+        "alt": "Entrada al Parque Nacional San Esteban en el sector Loma Linda, Carabobo, fotografía de marzo de 2026",
+        "author": "SunsetRetro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Esteban_Loma_Linda.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1015,7 +1037,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-reserva-biosfera-delta-orinoco.webp",
+        "alt": "Fotografía de una canoa en el Delta del Orinoco; no identifica el punto exacto dentro de la reserva de biosfera",
+        "author": "Katepalitava",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delta_de_Orinoco.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1040,7 +1073,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-yacambu.webp",
+        "alt": "Cascada documentada en el Parque Nacional Yacambú, Lara, fotografía de abril de 2014",
+        "author": "Carmelocastillo7",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_Parque_Yacambu.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1090,7 +1134,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-relampago-del-catatumbo.webp",
+        "alt": "Tormenta eléctrica asociada al Relámpago del Catatumbo, cuenca del lago de Maracaibo, fotografía de 2011",
+        "author": "Raúl Briceño",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   }
 ]
