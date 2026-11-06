@@ -398,5 +398,125 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Munumento_%22las_tetas_de_maria_guevara%22.jpg",
     "output": "foto-monumento-natural-tetas-de-maria-guevara.webp"
+  },
+  {
+    "id": "cascada-del-vino",
+    "file": "Cascada del Vino.jpg",
+    "alt": "Cascada del Vino del Parque Nacional Dinira, Lara",
+    "author": "David A. Arroyo C.",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_del_Vino.jpg",
+    "output": "foto-cascada-del-vino.webp"
+  },
+  {
+    "id": "santuario-nacional-nuestra-senora-de-coromoto",
+    "file": "Santuario Nacional Nuestra Señora de Coromoto - Guanare, Edo Portuguesa.jpg",
+    "alt": "Santuario Nacional Nuestra Señora de Coromoto cerca de Guanare, Portuguesa",
+    "author": "Alice Riobueno",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santuario_Nacional_Nuestra_Se%C3%B1ora_de_Coromoto_-_Guanare%2C_Edo_Portuguesa.jpg",
+    "output": "foto-santuario-nacional-nuestra-senora-de-coromoto.webp"
+  },
+  {
+    "id": "monumento-virgen-de-la-paz",
+    "file": "Virgen de la Paz Trujillo.JPG",
+    "alt": "Monumento a la Virgen de la Paz en Trujillo",
+    "author": "Carlos Arevalo",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Virgen_de_la_Paz_Trujillo.JPG",
+    "output": "foto-monumento-virgen-de-la-paz.webp"
+  },
+  {
+    "id": "isnotu",
+    "file": "Dr. José Gregorio Hernández.jpg",
+    "alt": "Estatua de José Gregorio Hernández en el lugar de su antigua casa en Isnotú, Trujillo",
+    "author": "Rjcastillo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dr._Jos%C3%A9_Gregorio_Hern%C3%A1ndez.jpg",
+    "output": "foto-isnotu.webp"
+  },
+  {
+    "id": "santuario-del-nino-jesus-isnotu",
+    "file": "Santuario del Niño Jesus I.jpg",
+    "alt": "Santuario del Niño Jesús en Isnotú, Trujillo",
+    "author": "Rjcastillo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Santuario_del_Ni%C3%B1o_Jesus_I.jpg",
+    "output": "foto-santuario-del-nino-jesus-isnotu.webp"
+  },
+  {
+    "id": "tobogan-de-la-selva",
+    "file": "Tobogan de la selva amazonas.JPG",
+    "alt": "Tobogán natural de roca en Amazonas",
+    "author": "Shishoxisrax",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tobogan_de_la_selva_amazonas.JPG",
+    "output": "foto-tobogan-de-la-selva.webp"
+  },
+  {
+    "id": "catedral-metropolitana-barquisimeto",
+    "file": "Catedral de Barquisimeto.jpg",
+    "alt": "Catedral Metropolitana de Barquisimeto, Lara",
+    "author": "reindertot",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Catedral_de_Barquisimeto.jpg",
+    "output": "foto-catedral-metropolitana-barquisimeto.webp"
+  },
+  {
+    "id": "parque-historico-san-felipe-el-fuerte",
+    "file": "San Felipe El Fuerte.jpg",
+    "alt": "Parque histórico y arqueológico San Felipe El Fuerte, Yaracuy",
+    "author": "Geliersanta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Felipe_El_Fuerte.jpg",
+    "output": "foto-parque-historico-san-felipe-el-fuerte.webp"
+  },
+  {
+    "id": "iglesia-san-francisco-caracas",
+    "file": "Iglesia de San Francisco Caracas.jpg",
+    "alt": "Iglesia de San Francisco y su fachada en Caracas",
+    "author": "Cristóbal Alvarado Minic",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Iglesia_de_San_Francisco_Caracas.jpg",
+    "output": "foto-iglesia-san-francisco-caracas.webp"
+  },
+  {
+    "id": "lomas-de-cubiro",
+    "file": "Cubiro, Estado Lara, Venezuela.JPG",
+    "alt": "Paisaje del camino hacia las Lomas de Cubiro, Lara",
+    "author": "Maria.chuello",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cubiro%2C_Estado_Lara%2C_Venezuela.JPG",
+    "output": "foto-lomas-de-cubiro.webp"
+  },
+  {
+    "id": "playa-los-caracas",
+    "file": "Atardecer en Los Caracas.JPG",
+    "alt": "Pescadores en la costa de Los Caracas en La Guaira",
+    "author": "Enzo861",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Atardecer_en_Los_Caracas.JPG",
+    "output": "foto-playa-los-caracas.webp"
+  },
+  {
+    "id": "playa-osma",
+    "file": "02 - Playa Edo. Vargas.jpg",
+    "alt": "Paisaje de playa en Osma, estado La Guaira",
+    "author": "Luis Jaimes",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:02_-_Playa_Edo._Vargas.jpg",
+    "output": "foto-playa-osma.webp"
   }
 ]
