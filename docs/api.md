@@ -9,3 +9,5 @@ POST `/api/admin/login`: formulario email/password, sesión HttpOnly SameSite=St
 POST `/api/admin/logout`: revoca sesión. POST `/api/admin/places`: crea o actualiza si incluye id; requiere sesión y Origin autorizado. Campos documentados en formulario y esquema `src/lib/domain.ts`. Validación con Zod y transacción de escritura/auditoría. Sin permisos devuelve 401; origen incorrecto 403; éxito redirige 303. Error de validación vuelve al panel sin guardar.
 
 `/lugares/[id]` devuelve 404 para borradores y IDs inválidos. No hay todavía API de imágenes, geoconsultas por radio, negocios, creadores ni importación pública. No prometer contratos para endpoints inexistentes.
+
+Precios: la proyección de fichas devuelve `priceAmount=null` y `priceSource=null` si la tarifa está vencida o carece de respaldo. El editor puede recuperar el dato histórico para actualizarlo. Los precios no son disponibilidad ni reserva.
