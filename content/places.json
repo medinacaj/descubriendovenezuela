@@ -277,6 +277,16 @@
     "price": null,
     "photos": [
       {
+        "kind": "photograph",
+        "src": "media/foto-san-cristobal.webp",
+        "alt": "Paisaje urbano de San Cristóbal en el estado Táchira",
+        "author": "Monicacorrea",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Crist%C3%B3bal_estado_T%C3%A1chira.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      },
+      {
         "kind": "map",
         "src": "media/mapa-san-cristobal.webp",
         "alt": "Mapa esquemático de Venezuela con Táchira resaltado como región de San Cristóbal",
@@ -1201,7 +1211,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-sierra-nevada.webp",
+        "alt": "Picos de Sierra Nevada de Mérida vistos desde Sierra de La Culata",
+        "author": "Adolfo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Merida_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1224,7 +1245,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-medanos-de-coro.webp",
+        "alt": "Vista de los médanos de Coro, estado Falcón",
+        "author": "Rjcastillo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medanos_de_Coro.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1247,7 +1279,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-archipielago-de-los-roques.webp",
+        "alt": "Vista de Isla de las Tortugas, sector Dos Mosquises, Los Roques",
+        "author": "Katepalitava",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Los_Roques.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1960,7 +2003,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cayo-de-agua.webp",
+        "alt": "Cayo de Agua, archipiélago de Los Roques, Venezuela",
+        "author": "Tucanrecords",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_de_Agua_in_Los_Roques.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2259,7 +2313,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-el-yaque.webp",
+        "alt": "Playa El Yaque en la isla de Margarita, Nueva Esparta",
+        "author": "SharaidG",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_el_Yaque%2C_Isla_de_Margarita.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2282,7 +2347,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-el-agua.webp",
+        "alt": "Playa El Agua de la isla de Margarita, Nueva Esparta",
+        "author": "Katepalitava",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_de_Margarita%2C_playa_el_Agua.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2650,7 +2726,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-cuyagua.webp",
+        "alt": "Playa Cuyagua en la costa del estado Aragua",
+        "author": "VCusu",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_de_Cuyagua_04.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2788,7 +2875,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-laguna-de-mucubaji.webp",
+        "alt": "Paisaje de la laguna de Mucubají, Mérida",
+        "author": "Venex_jpb",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mucubaji.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4352,7 +4450,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-castillo-de-san-carlos-de-borromeo.webp",
+        "alt": "Castillo San Carlos de Borromeo en Pampatar, Nueva Esparta",
+        "author": "Javier Volcan",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_San_Carlos_de_Borromeo.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
