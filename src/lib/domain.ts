@@ -38,9 +38,9 @@ export const placeSchema = z
     contactAuthorized: z.boolean().optional(),
     contactEvidence: z.string().trim().max(1000).optional(),
     priceAmount: z.number().finite().nonnegative().nullable().optional(),
-    priceCurrency: z.enum(["VES", "USD", "EUR"]).optional(),
-    priceUnit: z.enum(["persona", "noche", "entrada", "servicio"]).optional(),
-    priceValidUntil: z.string().regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/).optional(),
+    priceCurrency: z.union([z.literal(""), z.enum(["VES", "USD", "EUR"])]).optional(),
+    priceUnit: z.union([z.literal(""), z.enum(["persona", "noche", "entrada", "servicio"])]).optional(),
+    priceValidUntil: z.union([z.literal(""), z.string().regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)]).nullable().optional(),
     priceSource: z.union([z.literal(""), https]).optional(),
   })
   .superRefine((p, c) => {
