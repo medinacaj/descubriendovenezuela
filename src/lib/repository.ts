@@ -6,8 +6,13 @@ CASE WHEN p.contact_authorized THEN NULLIF(p.contact_phone,'') ELSE NULL END AS 
 CASE WHEN p.contact_authorized THEN NULLIF(p.whatsapp_phone,'') ELSE NULL END AS "whatsappPhone",
 CASE WHEN p.contact_authorized THEN NULLIF(p.website,'') ELSE NULL END AS "website",
 CASE WHEN p.contact_authorized THEN NULLIF(p.opening_hours_note,'') ELSE NULL END AS "openingHoursNote",
-p.contact_authorized AS "contactAuthorized",p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
+p.contact_authorized AS "contactAuthorized",
+CASE WHEN p.price_valid_until >= CURRENT_DATE AND p.price_source LIKE 'https://%' THEN p.price_amount::float8 ELSE NULL END AS "priceAmount",
+p.price_currency AS "priceCurrency",p.price_unit AS "priceUnit",p.price_valid_until::text AS "priceValidUntil",
+CASE WHEN p.price_valid_until >= CURRENT_DATE AND p.price_source LIKE 'https://%' THEN p.price_source ELSE NULL END AS "priceSource",p.name,p.category,p.description,p.source,p.reviewed_at::text AS "reviewedAt",p.status,p.published,p.sensitive,p.demo,p.territory_id AS "territoryId",CASE WHEN p.sensitive THEN NULL ELSE ST_Y(p.location) END AS lat,CASE WHEN p.sensitive THEN NULL ELSE ST_X(p.location) END AS lon,p.updated_at::text AS "updatedAt",t.name AS territory,CASE WHEN t.kind='region' THEN t.name ELSE COALESCE(r.name,t.name) END AS region`;
 const adminProjection = projection
+  .replace("CASE WHEN p.price_valid_until >= CURRENT_DATE AND p.price_source LIKE 'https://%' THEN p.price_amount::float8 ELSE NULL END", "p.price_amount::float8")
+  .replace("CASE WHEN p.price_valid_until >= CURRENT_DATE AND p.price_source LIKE 'https://%' THEN p.price_source ELSE NULL END", "p.price_source")
   .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.street_address,'') ELSE NULL END", "p.street_address")
   .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.contact_phone,'') ELSE NULL END", "p.contact_phone")
   .replace("CASE WHEN p.contact_authorized THEN NULLIF(p.whatsapp_phone,'') ELSE NULL END", "p.whatsapp_phone")
@@ -89,14 +94,19 @@ export async function savePlace(input: PlaceInput, actor: string, id?: string) {
       p.openingHoursNote || "",
       p.contactAuthorized === true,
       p.contactEvidence || "",
+      p.priceAmount ?? null,
+      p.priceCurrency || "",
+      p.priceUnit || "",
+      p.priceValidUntil || null,
+      p.priceSource || "",
     ];
     const fields =
-      "name,category,territory_id,description,source,reviewed_at,status,published,sensitive,location,demo,street_address,contact_phone,whatsapp_phone,website,opening_hours_note,contact_authorized,contact_evidence";
+      "name,category,territory_id,description,source,reviewed_at,status,published,sensitive,location,demo,street_address,contact_phone,whatsapp_phone,website,opening_hours_note,contact_authorized,contact_evidence,price_amount,price_currency,price_unit,price_valid_until,price_source";
     const expr =
-      "$1,$2,$3,$4,$5,$6,$7,$8,$9,CASE WHEN $10::float8 IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint($10,$11),4326) END,$12,$13,$14,$15,$16,$17,$18,$19";
+      "$1,$2,$3,$4,$5,$6,$7,$8,$9,CASE WHEN $10::float8 IS NULL THEN NULL ELSE ST_SetSRID(ST_MakePoint($10,$11),4326) END,$12,$13,$14,$15,$16,$17,$18,$19,$20,$21,$22,$23,$24";
     const result = id
       ? await client.query(
-          `UPDATE places SET (${fields})=(${expr}),updated_at=now() WHERE id=$20 RETURNING *`,
+          `UPDATE places SET (${fields})=(${expr}),updated_at=now() WHERE id=$25 RETURNING *`,
           [...values, id],
         )
       : await client.query(
