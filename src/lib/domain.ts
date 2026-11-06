@@ -32,7 +32,7 @@ export const placeSchema = z
     demo: z.boolean().default(false),
     streetAddress: z.string().trim().max(300).optional(),
     contactPhone: z.string().trim().max(40).regex(/^[+0-9() .-]*$/).optional(),
-    whatsappPhone: z.string().trim().regex(/^\\+?[0-9]{7,15}$|^$/).optional(),
+    whatsappPhone: z.string().trim().regex(/^([+]?[0-9]{7,15})?$/).optional(),
     website: z.union([z.literal(""), https]).optional(),
     openingHoursNote: z.string().trim().max(300).optional(),
     contactAuthorized: z.boolean().optional(),
