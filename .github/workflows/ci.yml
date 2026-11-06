@@ -1,0 +1,66 @@
+name: Validacion continua
+
+on:
+  push:
+    branches: [main, "feat/**"]
+  pull_request:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    services:
+      db:
+        image: postgis/postgis:17-3.5
+        env:
+          POSTGRES_USER: venezuela
+          POSTGRES_PASSWORD: ci-local-only-password
+          POSTGRES_DB: venezuela
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U venezuela -d venezuela"
+          --health-interval 5s --health-timeout 5s --health-retries 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - name: Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - name: Install
+        run: npm ci
+      - name: Prepare isolated database
+        run: |
+          printf '%s\n' \
+            'POSTGRES_PASSWORD=ci-local-only-password' \
+            'DATABASE_URL=postgresql://venezuela:ci-local-only-password@127.0.0.1:5432/venezuela' \
+            'APP_ORIGIN=http://localhost:3000' > .env
+          npm run db:migrate
+          npx tsx scripts/prepare-tests.ts
+      - name: Generate public site
+        run: npm run build:pages
+      - name: Check generated files are committed
+        run: git diff --exit-code -- docs/
+      - name: Typecheck
+        run: npm run typecheck
+      - name: Test application and generated site
+        run: DATABASE_URL=postgresql://venezuela:ci-local-only-password@127.0.0.1:5432/venezuela_test npm test
+      - name: Import sourced catalog twice to prove idempotence
+        run: |
+          npm run catalog:import
+          npm run catalog:import
+          node --env-file=.env --input-type=module -e 'import pg from "pg";const c=new pg.Client({connectionString:process.env.DATABASE_URL});await c.connect();const r=await c.query("select count(*)::int as n from places where catalog_id is not null");if(r.rows[0].n!==9)process.exit(1);await c.end()'
+      - name: Production build
+        run: npm run build
+      - name: Install Chromium
+        run: sudo apt-get update -qq && sudo apt-get install -y chromium
+      - name: Static site browser checks
+        run: npm run test:pages

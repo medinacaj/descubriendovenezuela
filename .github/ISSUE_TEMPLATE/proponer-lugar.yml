@@ -1,0 +1,49 @@
+name: Proponer lugar o negocio
+description: Proponer un destino o negocio real para revisión.
+title: "[Propuesta] "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        No compartas documentos personales, direcciones privadas, teléfonos privados, coordenadas sensibles ni materiales sin autorización.
+        Este issue será público. Ningún registro se publica automáticamente.
+  - type: input
+    id: nombre
+    attributes:
+      label: Nombre del lugar
+      placeholder: Nombre real y verificable
+    validations:
+      required: true
+  - type: dropdown
+    id: categoria
+    attributes:
+      label: Categoría
+      options:
+        - Naturaleza
+        - Cultura
+        - Localidades
+        - Hospedaje
+        - Gastronomía
+        - Negocios y servicios
+    validations:
+      required: true
+  - type: input
+    id: region
+    attributes:
+      label: Estado o localidad
+    validations:
+      required: true
+  - type: textarea
+    id: fuente
+    attributes:
+      label: Fuentes o evidencia autorizada
+      description: URL y explicación de qué información verifica.
+    validations:
+      required: true
+  - type: checkboxes
+    id: privacidad
+    attributes:
+      label: Uso responsable
+      options:
+        - label: No incluyo datos privados ni contenidos sin permiso.
+          required: true
