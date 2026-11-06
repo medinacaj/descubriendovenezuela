@@ -1,6 +1,6 @@
 # Fotografías reales utilizadas — procedencia y licencias
 
-La web utiliza copias técnicas en WebP de 12 fotografías de Wikimedia Commons, identificadas por lugar, archivo, autor y licencia. No son imágenes generadas por IA ni se han tomado de webs comerciales sin permiso. Las licencias permiten reutilización con las condiciones de atribución y, en su caso, compartir igual. La compresión/conversión a WebP figura en cada ficha. **La antigüedad de una imagen no verifica el estado actual de un lugar.**
+Se versionaron copias técnicas WebP de **20 fotografías** procedentes de Wikimedia Commons, con archivo exacto, autor y licencia. Son imágenes genuinas y no recreaciones por IA. Se conservan los requisitos de atribución, enlace al original y, cuando corresponde, compartir igual. La compresión/conversión técnica se describe en las fichas. **Una fotografía histórica no demuestra que un sitio sea visitable en la actualidad**. La imagen del Delta del Orinoco ilustra el entorno geográfico, sin probar la ubicación dentro de los límites precisos de la reserva de biosfera; la foto de La Guaira es contexto urbano de 2007, no verificación del conjunto patrimonial.
 
 | Ficha | Archivo y fuente | Autor | Licencia |
 |---|---|---|---|
@@ -16,5 +16,13 @@ La web utiliza copias técnicas en WebP de 12 fotografías de Wikimedia Commons,
 | parque-francisco-de-miranda | [Parque del Este - Caracas.JPG](https://commons.wikimedia.org/wiki/File:Parque_del_Este_-_Caracas.JPG) | Enzo861 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | galipan | [Pueblo de Galipán.jpg](https://commons.wikimedia.org/wiki/File:Pueblo_de_Galip%C3%A1n.jpg) | Brisa del Mar * Venezuela * | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 | morros-de-san-juan | [Morros de San juan.jpg](https://commons.wikimedia.org/wiki/File:Morros_de_San_juan.jpg) | Carolina Colmenares | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| isla-de-plata-mochima | [Playa Isla de Plata.JPG](https://commons.wikimedia.org/wiki/File:Playa_Isla_de_Plata.JPG) | Dannyberro | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| parque-nacional-san-esteban | [San Esteban Loma Linda.jpg](https://commons.wikimedia.org/wiki/File:San_Esteban_Loma_Linda.jpg) | SunsetRetro | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) |
+| parque-nacional-yacambu | [Cascada Parque Yacambu.JPG](https://commons.wikimedia.org/wiki/File:Cascada_Parque_Yacambu.JPG) | Carmelocastillo7 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| reserva-biosfera-delta-orinoco | [Delta de Orinoco.jpg](https://commons.wikimedia.org/wiki/File:Delta_de_Orinoco.jpg) | Katepalitava | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| relampago-del-catatumbo | [Relámpago del Catatumbo.jpg](https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg) | Raúl Briceño | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| bahia-de-cata | [Bahía de Cata.jpg](https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg) | Kuainabaida | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| cerro-autana | [Kuaymayojo - Monumento natural Cerro Autana.jpg](https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg) | Fernando Flores | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) |
+| casco-historico-la-guaira | [Calle de la Guaira.jpg](https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg) | William A Contreras | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
-Los binarios están en `docs/media/foto-*.webp` y se crean reproduciblemente con `node scripts/import-licensed-photos.mjs`. La fotografía de Cayo Sombrero también figura en la portada, con crédito. Para reutilizar fotografías con licencia `CC BY-SA`, preservar atribución, condiciones de compartir igual y enlace a licencia; el código y la documentación propios de la web se distribuyen por separado.
+Los binarios versionados en `docs/media/foto-*.webp` se descargan y regeneran con `node scripts/import-licensed-photos.mjs --only-missing`, previa revisión individual de los archivos en Commons. El script conserva las fotografías existentes cuya fuente y licencia coincidan con el catálogo y no depende de hotlinks para mostrar las imágenes al público.

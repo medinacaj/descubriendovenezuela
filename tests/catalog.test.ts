@@ -5,10 +5,15 @@ import { normaliseCatalogEntry, type CuratedEntry } from "../src/lib/catalog";
 describe("puente del catálogo documental", () => {
   it("normaliza todas las fichas reales y preserva su procedencia", () => {
     const entries = catalog.map(entry => normaliseCatalogEntry(entry as CuratedEntry));
-    expect(entries).toHaveLength(29);
+    expect(entries).toHaveLength(37);
     expect(new Set(entries.map(p => p.catalogId)).size).toBe(entries.length);
     expect(entries.every(p => p.source.startsWith("https://"))).toBe(true);
     expect(entries.every(p => p.verificationNote.length > 0)).toBe(true);
+    expect(new Set(catalog.map(p => p.region)).size).toBe(24);
+    for (const id of ["isla-de-plata-mochima", "parque-nacional-tapo-caparo", "parque-nacional-san-esteban", "parque-nacional-tirgua", "reserva-biosfera-delta-orinoco", "parque-nacional-yacambu", "parque-nacional-el-guache", "relampago-del-catatumbo"]) {
+      expect(entries.some(p => p.catalogId === id)).toBe(true);
+    }
+    expect(catalog.find(p => p.id === "reserva-biosfera-delta-orinoco")?.verification).toContain("biosfera");
     expect(entries.find(p => p.name === "Porlamar")?.mediaCredits[0].kind).toBe("map");
     expect(entries.find(p => p.catalogId === "parque-nacional-morrocoy")?.source).toContain("inparques.gob.ve");
     for (const id of ["hacienda-chuao", "casco-historico-la-guaira"]) {
@@ -16,7 +21,7 @@ describe("puente del catálogo documental", () => {
       expect(item?.verification).toContain("Lista Indicativa");
       expect(item?.primaryConsulted).toBe(true);
     }
-    expect(entries.filter(p => p.mediaCredits.some(m => m.kind === "photograph")).length).toBe(12);
+    expect(entries.filter(p => p.mediaCredits.some(m => m.kind === "photograph")).length).toBe(20);
   });
   it("rechaza registros demo, sin fuente o de categoría arbitraria", () => {
     const item = catalog[0] as CuratedEntry;

@@ -118,5 +118,85 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Morros_de_San_juan.jpg",
     "output": "foto-morros-de-san-juan.webp"
+  },
+  {
+    "id": "isla-de-plata-mochima",
+    "file": "Playa Isla de Plata.JPG",
+    "alt": "Playa de Isla de Plata, sector Anzoátegui del Parque Nacional Mochima, fotografía de 2013",
+    "author": "Dannyberro",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Isla_de_Plata.JPG",
+    "output": "foto-isla-de-plata-mochima.webp"
+  },
+  {
+    "id": "parque-nacional-san-esteban",
+    "file": "San Esteban Loma Linda.jpg",
+    "alt": "Entrada al Parque Nacional San Esteban en el sector Loma Linda, Carabobo, fotografía de marzo de 2026",
+    "author": "SunsetRetro",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Esteban_Loma_Linda.jpg",
+    "output": "foto-parque-nacional-san-esteban.webp"
+  },
+  {
+    "id": "parque-nacional-yacambu",
+    "file": "Cascada Parque Yacambu.JPG",
+    "alt": "Cascada documentada en el Parque Nacional Yacambú, Lara, fotografía de abril de 2014",
+    "author": "Carmelocastillo7",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_Parque_Yacambu.JPG",
+    "output": "foto-parque-nacional-yacambu.webp"
+  },
+  {
+    "id": "reserva-biosfera-delta-orinoco",
+    "file": "Delta de Orinoco.jpg",
+    "alt": "Fotografía de una canoa en el Delta del Orinoco; no identifica el punto exacto dentro de la reserva de biosfera",
+    "author": "Katepalitava",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delta_de_Orinoco.jpg",
+    "output": "foto-reserva-biosfera-delta-orinoco.webp"
+  },
+  {
+    "id": "relampago-del-catatumbo",
+    "file": "Relámpago del Catatumbo.jpg",
+    "alt": "Tormenta eléctrica asociada al Relámpago del Catatumbo, cuenca del lago de Maracaibo, fotografía de 2011",
+    "author": "Raúl Briceño",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg",
+    "output": "foto-relampago-del-catatumbo.webp"
+  },
+  {
+    "id": "bahia-de-cata",
+    "file": "Bahía de Cata.jpg",
+    "alt": "Fotografía real de la playa Bahía de Cata, municipio Costa de Oro, Aragua; imagen tomada en 2010",
+    "author": "Kuainabaida",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg",
+    "output": "foto-bahia-de-cata.webp"
+  },
+  {
+    "id": "cerro-autana",
+    "file": "Kuaymayojo - Monumento natural Cerro Autana.jpg",
+    "alt": "Vista a distancia del tepuy sagrado Cerro Autana, Amazonas; fotografía de 2014 sin indicaciones de acceso",
+    "author": "Fernando Flores",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg",
+    "output": "foto-cerro-autana.webp"
+  },
+  {
+    "id": "casco-historico-la-guaira",
+    "file": "Calle de la Guaira.jpg",
+    "alt": "Calle de La Guaira con vista al puerto en una fotografía de 2007; imagen de contexto urbano, sin afirmar que represente todos los sectores del centro histórico",
+    "author": "William A Contreras",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg",
+    "output": "foto-casco-historico-la-guaira.webp"
   }
 ]

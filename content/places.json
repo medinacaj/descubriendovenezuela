@@ -549,7 +549,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-bahia-de-cata.webp",
+        "alt": "Fotografía real de la playa Bahía de Cata, municipio Costa de Oro, Aragua; imagen tomada en 2010",
+        "author": "Kuainabaida",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -665,7 +676,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cerro-autana.webp",
+        "alt": "Vista a distancia del tepuy sagrado Cerro Autana, Amazonas; fotografía de 2014 sin indicaciones de acceso",
+        "author": "Fernando Flores",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -890,7 +912,273 @@
     "lat": null,
     "lon": null,
     "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-casco-historico-la-guaira.webp",
+        "alt": "Calle de La Guaira con vista al puerto en una fotografía de 2007; imagen de contexto urbano, sin afirmar que represente todos los sectores del centro histórico",
+        "author": "William A Contreras",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "isla-de-plata-mochima",
+    "name": "Isla de Plata (Mochima)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Anzoátegui",
+    "locality": "Guanta",
+    "description": "Isla de Plata es un islote del sector anzoatiguense del Parque Nacional Mochima, en el entorno costero de Guanta. El archivo geográfico de Wikimedia Commons identifica su ubicación en Anzoátegui y conserva fotografías de sus playas. Un listado de Inparques correspondiente a los carnavales de 2019 la registra como playa del área protegida; esa clasificación histórica no determina la aptitud del agua ni las condiciones de desembarco en 2026. La visita requiere confirmar condiciones marítimas, reglas del parque, transporte habilitado y cualquier permiso exigible.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identidad territorial contrastada en la categoría geográfica de Wikimedia Commons y referencia histórica institucional de Inparques (2019). No se ha comprobado en terreno ni mediante información operativa vigente: seguridad para bañarse, calidad del agua, embarcaciones, acceso, permisos ni tarifas. La mención de aptitud de 2019 no debe reutilizarse como recomendación actual.",
+    "sourceUrls": [
+      "https://commons.wikimedia.org/wiki/Category:Isla_de_Plata_(Mochima)",
+      "https://www.inparques.gob.ve/wp-content/uploads/2019/02/Listado.pdf",
+      "https://inparques.gob.ve/Parques%20Nacionales/mochima.html"
+    ],
+    "sourceLabels": [
+      "Wikimedia Commons · Isla de Plata en Guanta, Anzoátegui",
+      "Inparques · listado de playas de febrero de 2019 (histórico, no vigente)",
+      "Inparques · Parque Nacional Mochima"
+    ],
+    "primaryUrl": "https://commons.wikimedia.org/wiki/Category:Isla_de_Plata_(Mochima)",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isla-de-plata-mochima.webp",
+        "alt": "Playa de Isla de Plata, sector Anzoátegui del Parque Nacional Mochima, fotografía de 2013",
+        "author": "Dannyberro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Isla_de_Plata.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-tapo-caparo",
+    "name": "Parque Nacional Tapo-Caparo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Barinas",
+    "description": "El Parque Nacional Tapo-Caparo protege ambientes andinos y cuencas asociadas a los ríos Uribante y Caparo. Se extiende por sectores de Mérida, Táchira y Barinas, con una porción del territorio en este último estado. La base internacional de Áreas Clave para la Biodiversidad lo documenta como un espacio de bosques húmedos, bosques nublados y vegetación estacional. Se trata de un área de conservación, no de una oferta de senderismo o alojamiento comprobada; antes de cualquier visita se deben consultar las normas de ingreso y restricciones de la autoridad competente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y distribución territorial revisadas en la ficha del Programa Global de Áreas Clave para la Biodiversidad (evaluación de 2015). No hay comprobación de acceso turístico, permisos, accesibilidad física, instalaciones, riesgos de viaje, horarios o precios para el sector de Barinas.",
+    "sourceUrls": [
+      "https://www.keybiodiversityareas.org/en/site/factsheet/14994/site",
+      "https://storymaps.arcgis.com/stories/9230c2b6c2e740ae9a7bb44f0af48747"
+    ],
+    "sourceLabels": [
+      "Key Biodiversity Areas · Parque Nacional Tapo-Caparo",
+      "StoryMaps · reseña geográfica de marzo de 2026"
+    ],
+    "primaryUrl": "https://www.keybiodiversityareas.org/en/site/factsheet/14994/site",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
     "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-san-esteban",
+    "name": "Parque Nacional San Esteban",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Carabobo",
+    "locality": "Puerto Cabello",
+    "description": "El Parque Nacional San Esteban se ubica en el estado Carabobo, entre serranías del litoral y sectores costeros próximos a Puerto Cabello. Sus bosques y cuencas forman parte del sistema de áreas protegidas de la cordillera de la Costa. La ficha de Áreas Clave para la Biodiversidad identifica especies de aves que justifican su valor de conservación. Las autoridades han recordado requisitos para grupos de senderismo, por lo que esta ficha no recomienda ingresar por cuenta propia ni asegura que caminos o sitios recreativos estén habilitados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Existencia y valor de conservación documentados en Key Biodiversity Areas; información sobre recomendaciones de senderismo atribuida a Inparques Carabobo en publicación de 2025. No se han verificado directamente con la autoridad las reglas actualmente aplicables, guardaparques, instalaciones, horarios ni permisos.",
+    "sourceUrls": [
+      "https://www.keybiodiversityareas.org/en/site/factsheet/14933/assessment",
+      "https://noticias24carabobo.com/normas-de-inparques-si-vas-a-hacer-senderismo-en-el-parque-nacional-san-esteban/"
+    ],
+    "sourceLabels": [
+      "Key Biodiversity Areas · Parque Nacional San Esteban",
+      "Noticias24Carabobo · declaraciones de Inparques Carabobo, diciembre de 2025"
+    ],
+    "primaryUrl": "https://www.keybiodiversityareas.org/en/site/factsheet/14933/assessment",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-san-esteban.webp",
+        "alt": "Entrada al Parque Nacional San Esteban en el sector Loma Linda, Carabobo, fotografía de marzo de 2026",
+        "author": "SunsetRetro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Esteban_Loma_Linda.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-tirgua",
+    "name": "Parque Nacional Tirgua (General Manuel Manrique)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Cojedes",
+    "description": "El Parque Nacional Tirgua, también conocido como General Manuel Manrique, está situado en Cojedes y limita con Yaracuy, en la porción occidental de la cordillera de la Costa. La base internacional de Áreas Clave para la Biodiversidad describe montañas de pendientes variables, bosques, palmares y cabeceras de los ríos San Carlos, Cojedes y Acarigua. La ficha presenta su interés ecológico documentado; no implica existencia de rutas públicas señalizadas, servicios turísticos, acceso sin autorización ni condiciones seguras para exploración.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Localización y características ambientales consultadas en la ficha de Key Biodiversity Areas (evaluación de 2008). No se han contrastado en campo las condiciones actuales de conservación, accesos, permisos, rutas, instalaciones ni servicios.",
+    "sourceUrls": [
+      "https://www.keybiodiversityareas.org/en/site/factsheet/14969"
+    ],
+    "sourceLabels": [
+      "Key Biodiversity Areas · Parque Nacional Tirgua (General Manuel Manrique)"
+    ],
+    "primaryUrl": "https://www.keybiodiversityareas.org/en/site/factsheet/14969",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "reserva-biosfera-delta-orinoco",
+    "name": "Reserva de Biosfera Delta del Orinoco",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Delta Amacuro",
+    "description": "La Reserva de Biosfera Delta del Orinoco comprende un extenso paisaje fluvial y marino del estado Delta Amacuro. UNESCO documenta sus caños, manglares, bosques de pantano y ambientes acuáticos, así como su diversidad biológica. Es una designación del Programa sobre el Hombre y la Biosfera (MAB), no una inscripción en la Lista del Patrimonio Mundial. Esta referencia describe un territorio amplio con poblaciones y áreas protegidas; no debe interpretarse como un punto preciso ni como autorización para entrar en espacios comunitarios o zonas de conservación.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y condición de reserva de biosfera contrastadas con la ficha oficial del programa MAB de UNESCO. No se ha verificado oferta turística, accesibilidad fluvial, permisos, acuerdos comunitarios, condiciones de navegación ni servicios locales. No se publican ubicaciones sensibles ni datos de comunidades.",
+    "sourceUrls": [
+      "https://www.unesco.org/en/mab/delta-del-orinoco"
+    ],
+    "sourceLabels": [
+      "UNESCO · Programa sobre el Hombre y la Biosfera: Delta del Orinoco"
+    ],
+    "primaryUrl": "https://www.unesco.org/en/mab/delta-del-orinoco",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-reserva-biosfera-delta-orinoco.webp",
+        "alt": "Fotografía de una canoa en el Delta del Orinoco; no identifica el punto exacto dentro de la reserva de biosfera",
+        "author": "Katepalitava",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Delta_de_Orinoco.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-yacambu",
+    "name": "Parque Nacional Yacambú",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Lara",
+    "description": "El Parque Nacional Yacambú se encuentra en las montañas del estado Lara y protege bosques nublados, laderas y nacientes de agua de la Sierra de Portuguesa. Material compilado por la dependencia de Inparques Lara describe flora de diferentes pisos altitudinales, como orquídeas, helechos arborescentes y especies de árboles de distribución restringida. Se trata de un espacio natural que exige respetar las normas de conservación; una fotografía histórica de sus cascadas no garantiza que los senderos estén abiertos ni que se pueda acampar.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Características botánicas consultadas en documentación histórica de Inparques Lara, complementada con información sobre conservación publicada en 2025. No se han verificado en el sitio el acceso a miradores, senderos, permisos, equipamiento, horarios ni condiciones actuales.",
+    "sourceUrls": [
+      "https://musguito.net.ve/anapro/PN_Yacambu/Y4.html",
+      "https://laprensadelara.com/locales/oso-frontino-parque-nacional-yacambu/"
+    ],
+    "sourceLabels": [
+      "Inparques Lara · recopilación sobre flora del parque (2021)",
+      "La Prensa de Lara · seguimiento ambiental en 2025"
+    ],
+    "primaryUrl": "https://musguito.net.ve/anapro/PN_Yacambu/Y4.html",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-yacambu.webp",
+        "alt": "Cascada documentada en el Parque Nacional Yacambú, Lara, fotografía de abril de 2014",
+        "author": "Carmelocastillo7",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_Parque_Yacambu.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-el-guache",
+    "name": "Parque Nacional El Guache",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Portuguesa",
+    "description": "El Parque Nacional El Guache se encuentra en la zona de piedemonte andino entre Portuguesa y Lara. Distintas fuentes describen bosques montanos y el nacimiento de cursos de agua que alimentan la cuenca del río Portuguesa. El parque es un área de protección ecológica y no un circuito turístico comercial comprobado. Un estudio de ParksWatch de 2004 documentó problemas de conservación; por su antigüedad, ese informe no permite afirmar cuáles son las condiciones de acceso o la infraestructura disponible actualmente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Existencia, localización y rasgos generales contrastados con la revisión de ParksWatch de 2004 y guía territorial pública. La evaluación es histórica y no representa una inspección vigente. No se han confirmado accesos, permisos, instalaciones, niveles de riesgo, guías habilitados, alojamientos ni tarifas.",
+    "sourceUrls": [
+      "https://m.parkswatch.org/parkprofiles/pdf/gcnp_eng.pdf",
+      "https://mrsvenezuela.com/estado/portuguesa"
+    ],
+    "sourceLabels": [
+      "ParksWatch · perfil ambiental histórico del Parque Nacional El Guache (2004)",
+      "Guía territorial de Portuguesa · descripción de El Guache"
+    ],
+    "primaryUrl": "https://m.parkswatch.org/parkprofiles/pdf/gcnp_eng.pdf",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "relampago-del-catatumbo",
+    "name": "Relámpago del Catatumbo",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "region": "Zulia",
+    "description": "El Relámpago del Catatumbo es un fenómeno de tormentas eléctricas recurrentes observado sobre el entorno del río Catatumbo y el lago de Maracaibo, en el estado Zulia. Investigaciones y observaciones de NOAA lo identifican como una zona de elevada actividad de rayos, asociada a condiciones atmosféricas y geográficas particulares. Las tormentas son fenómenos meteorológicos variables: no hay garantía de avistamiento, y no se recomienda acercarse a condiciones eléctricas peligrosas sin evaluar alertas y orientación local. La ficha no ofrece paseos nocturnos ni operadores no comprobados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Fenómeno y área geográfica general documentados con investigación y observaciones satelitales de NOAA. No se ha confirmado un mirador turístico autorizado, disponibilidad de tours, pronóstico de tormenta para fechas concretas, seguridad de navegación ni horarios.",
+    "sourceUrls": [
+      "https://www.star.nesdis.noaa.gov/star/news2012_201206Catatumbo.php",
+      "https://repository.library.noaa.gov/view/noaa/52453"
+    ],
+    "sourceLabels": [
+      "NOAA/NESDIS · observaciones del Relámpago del Catatumbo",
+      "NOAA · estudio sobre focos de actividad eléctrica en el lago de Maracaibo"
+    ],
+    "primaryUrl": "https://www.star.nesdis.noaa.gov/star/news2012_201206Catatumbo.php",
+    "primaryConsulted": true,
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-relampago-del-catatumbo.webp",
+        "alt": "Tormenta eléctrica asociada al Relámpago del Catatumbo, cuenca del lago de Maracaibo, fotografía de 2011",
+        "author": "Raúl Briceño",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   }
 ]

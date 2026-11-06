@@ -45,12 +45,23 @@ for (const item of manifest) {
   const filename = item.file.replaceAll(" ", "_");
   const source = "https://commons.wikimedia.org/wiki/File:" + encodeURIComponent(filename);
   if (item.sourceUrl !== source) throw Error("La fuente no coincide: " + item.id);
+  const dest = "docs/media/" + item.output;
+  if (process.argv.includes("--only-missing")) {
+    const preexisting = await stat(dest).catch(() => null);
+    if (preexisting?.size > 5000) {
+      const existing = place.photos.find(p => p.src === "media/" + item.output && p.kind === "photograph");
+      if (!existing || existing.sourceUrl !== item.sourceUrl || existing.license !== item.license)
+        throw Error("Fotografía existente sin atribución coincidente: " + item.id);
+      console.log("Ya versionada; se conserva sin nueva descarga: " + item.id);
+      continue;
+    }
+  }
   const digest = createHash("md5").update(filename).digest("hex");
   const url = "https://upload.wikimedia.org/wikipedia/commons/" + digest[0] + "/" + digest.slice(0, 2) + "/" + encodeURIComponent(filename);
   const raw = await download(url);
   const meta = await sharp(raw, { limitInputPixels: 50000000 }).metadata();
   if (!meta.width || !meta.height || meta.width < 500 || meta.height < 350) throw Error("Resolución insuficiente: " + item.id);
-  const path = "docs/media/" + item.output;
+  const path = dest;
   await sharp(raw, { limitInputPixels: 50000000 }).rotate()
     .resize({ width: 1200, withoutEnlargement: true })
     .webp({ quality: 80, effort: 4 }).toFile(path);
@@ -64,4 +75,4 @@ for (const item of manifest) {
   console.log(item.id + ": " + meta.width + "x" + meta.height + " → " + size + " bytes, " + item.license);
 }
 await writeFile("content/places.json", JSON.stringify(places, null, 2) + "\n");
-console.log("Fotografías integradas: " + manifest.length + " lugares. Fotos y atribuciones disponibles para GitHub Pages y Next.");
+console.log("Fotografías licenciadas en el manifiesto: " + manifest.length + ". Versionado local disponible para GitHub Pages y Next.");

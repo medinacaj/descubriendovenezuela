@@ -1,8 +1,8 @@
 # Catálogo documental compartido — noviembre de 2026
 
-## Inventario real: 29 fichas documentales
+## Inventario real: 37 fichas documentales (24 territorios)
 
-Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. La importación y la vista estática usan el mismo `content/places.json`.
+Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Se añadieron otras ocho fichas para representar Anzoátegui, Barinas, Carabobo, Cojedes, Delta Amacuro, Lara, Portuguesa y Zulia, con [fuentes en el informe ampliado](../content/RESEARCH-COBERTURA-2026-11-06.md). Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. La importación y la vista estática usan el mismo `content/places.json`.
 
 ## Fuente única y responsabilidades
 
@@ -12,7 +12,7 @@ El comando `npm run catalog:import`, tras `npm run db:migrate`, replica estas fi
 
 El catálogo versionado se edita solo en `content/places.json`: el panel impide modificar fichas con `catalog_id`, evitando divergencia silenciosa. Los demás registros editoriales siguen administrándose desde el panel.
 
-Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Se sirven seis mapas aprobados y doce fotografías reales de la lista de permitidos `content/licensed-photographs.json`. Cada fotografía identifica autor, licencia Creative Commons, página de origen y conversión técnica a WebP. La fotografía no prueba condiciones de visita actuales.
+Las fichas documentales quedan publicadas con el alcance de la verificación claramente visible. **No representan verificación presencial ni disponibilidad actual.** Las coordenadas exactas se mantienen protegidas. Se sirven seis mapas aprobados y veinte fotografías reales de la lista de permitidos `content/licensed-photographs.json`. Cada fotografía identifica autor, licencia Creative Commons, página de origen y conversión técnica a WebP. La fotografía no prueba condiciones de visita actuales.
 
 ## Ejecutar y verificar
 
@@ -44,4 +44,4 @@ Siguen pendientes verificación de campo, autorizaciones y fotografías de estab
 
 ## Importación de fotografías con licencia
 
-El manifiesto [licensed-photographs.json](../content/licensed-photographs.json) enumera únicamente imágenes de destinos identificados en sus páginas originales de Wikimedia Commons y sus autores/licencias. Ejecutar `node scripts/import-licensed-photos.mjs` desde una máquina con Internet antes de `npm run build:pages`. El script descarga solo los archivos permitidos, valida formato y dimensiones, convierte a WebP y antepone la imagen a los mapas existentes sin eliminar las cartografías. Los binarios se versionan localmente; la web no depende de hotlinks. La atribución de imágenes debe conservarse en todas las visualizaciones y variantes.
+El manifiesto [licensed-photographs.json](../content/licensed-photographs.json) enumera únicamente imágenes de destinos identificados en sus páginas originales de Wikimedia Commons y sus autores/licencias. Ejecutar `node scripts/import-licensed-photos.mjs --only-missing` desde una máquina con Internet antes de `npm run build:pages`. El script descarga solo los archivos permitidos, valida formato y dimensiones, convierte a WebP y antepone la imagen a los mapas existentes sin eliminar las cartografías. Los binarios se versionan localmente; la web no depende de hotlinks. La atribución de imágenes debe conservarse en todas las visualizaciones y variantes.
