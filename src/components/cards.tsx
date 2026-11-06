@@ -17,6 +17,7 @@ export function PlaceCard({ place: p }: { place: Place }) {
         <span>{icons[p.category] || "◇"}</span>
         <small>ILUSTRACIÓN · NO ES UNA FOTOGRAFÍA</small>
       </div>}
+      {visual && <small className="card-credit">{visual.kind === "photograph" ? "Fotografía" : "Cartografía"} · {visual.author} · {visual.license}</small>}
       <div className="card-body">
         <div className="card-meta">
           <span>{p.category}</span>
