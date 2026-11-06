@@ -663,7 +663,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cerro-maria-lionza.webp",
+        "alt": "Amanecer en el Cerro María Lionza del estado Yaracuy",
+        "author": "Luisovalles",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_Maria_lionza.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2139,7 +2150,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-el-gran-roque.webp",
+        "alt": "Vista del Gran Roque desde el norte, archipiélago Los Roques",
+        "author": "Gregor Julien Straube",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gran_Roque_(Los_Roques).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2895,7 +2917,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-la-cienaga-de-ocumare.webp",
+        "alt": "Paisaje de la Ciénaga de Ocumare en el estado Aragua",
+        "author": "Markoxavi",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_ci%C3%A9naga.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3009,7 +3042,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-pico-el-aguila.webp",
+        "alt": "Vista de paisaje altoandino identificada en Commons como Pico El Águila, Mérida",
+        "author": "Fabiola.dejesus.gonzalez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pico_el_aguila.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3446,7 +3490,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-casa-natal-del-libertador-simon-bolivar.webp",
+        "alt": "Casa natal del Libertador Simón Bolívar en el centro de Caracas",
+        "author": "Fhaidel Domínguez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_natal_de_Sim%C3%B3n_Bol%C3%ADvar.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3469,7 +3524,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-teatro-baralt.webp",
+        "alt": "Fachada exterior del Teatro Baralt en Maracaibo, fotografía de octubre de 2026",
+        "author": "Mgta122001vzla",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Baralt_en_Maracaibo.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3860,7 +3926,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-panteon-nacional-de-venezuela.webp",
+        "alt": "Fachada del Panteón Nacional de Caracas",
+        "author": "SergioBrazn",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pante%C3%B3n_Nacional_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3883,7 +3960,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-plaza-bolivar-de-caracas.webp",
+        "alt": "Imagen de la Plaza Bolívar del centro de Caracas",
+        "author": "QuinteroP",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Bolivar_Ciudad_de_Caracas_Venezuela.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4605,7 +4693,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-castillo-de-santa-rosa-de-la-asuncion.webp",
+        "alt": "Vista del Castillo de Santa Rosa en La Asunción, Margarita",
+        "author": "Luis Rafael Ortuño Padilla",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Castillo_de_Santa_Rosa.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
