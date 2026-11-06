@@ -168,5 +168,35 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg",
     "output": "foto-relampago-del-catatumbo.webp"
+  },
+  {
+    "id": "bahia-de-cata",
+    "file": "Bahía de Cata.jpg",
+    "alt": "Fotografía real de la playa Bahía de Cata, municipio Costa de Oro, Aragua; imagen tomada en 2010",
+    "author": "Kuainabaida",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg",
+    "output": "foto-bahia-de-cata.webp"
+  },
+  {
+    "id": "cerro-autana",
+    "file": "Kuaymayojo - Monumento natural Cerro Autana.jpg",
+    "alt": "Vista a distancia del tepuy sagrado Cerro Autana, Amazonas; fotografía de 2014 sin indicaciones de acceso",
+    "author": "Fernando Flores",
+    "license": "CC BY-SA 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg",
+    "output": "foto-cerro-autana.webp"
+  },
+  {
+    "id": "casco-historico-la-guaira",
+    "file": "Calle de la Guaira.jpg",
+    "alt": "Calle de La Guaira con vista al puerto en una fotografía de 2007; imagen de contexto urbano, sin afirmar que represente todos los sectores del centro histórico",
+    "author": "William A Contreras",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg",
+    "output": "foto-casco-historico-la-guaira.webp"
   }
 ]

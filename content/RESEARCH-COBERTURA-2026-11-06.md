@@ -15,7 +15,7 @@
 
 ## Fotografías y derechos
 
-Se identificaron cinco archivos de Wikimedia Commons con fuente, autor y licencia individual; la lista exacta está en [licensed-photographs.json](licensed-photographs.json). Se importan a WebP con el script reproducible; **no** se reutilizan fotos comerciales o de redes sociales sin permiso. Las fotografías no son evidencia de disponibilidad actual; la imagen del Delta del Orinoco ilustra su entorno general, no la poligonal exacta de la reserva.
+Se identificaron ocho archivos nuevos de Wikimedia Commons con fuente, autor y licencia individual; la lista exacta está en [licensed-photographs.json](licensed-photographs.json). Se importan a WebP con el script reproducible; **no** se reutilizan fotos comerciales o de redes sociales sin permiso. Las fotografías no son evidencia de disponibilidad actual; la imagen del Delta del Orinoco ilustra su entorno general, no la poligonal exacta de la reserva.
 
 ## Limitaciones de revisión
 
@@ -27,3 +27,7 @@ Se identificaron cinco archivos de Wikimedia Commons con fuente, autor y licenci
 - Los parques transregionales están asignados al territorio de esta tanda a efectos de cobertura, pero la base actual conserva una sola región principal por ficha. Mejorar ese modelo evitará duplicar parques como si fueran sitios diferentes.
 
 La representatividad regional del índice es ahora **nominal (mínimo una ficha)**; no implica cobertura turística profunda de todos los estados.
+
+## Fotografías añadidas a fichas anteriores
+
+Además de las cinco imágenes de territorios incorporados en esta tanda, se obtuvieron tres fotografías reales adicionales de fichas anteriores: [Bahía de Cata](https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg) (Kuainabaida, CC BY-SA 3.0, 2010), [Cerro Autana](https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg) (Fernando Flores, CC BY-SA 2.0, 2014) y [Calle de La Guaira](https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg) (William A Contreras, CC BY-SA 3.0, 2007), esta última como contexto visual urbano sin confirmar un polígono patrimonial específico. No hay evidencia de accesibilidad o estado actual derivada de estas imágenes.

@@ -1,6 +1,6 @@
 # Fotografías reales utilizadas — procedencia y licencias
 
-Se versionaron copias técnicas WebP de **17 fotografías** procedentes de Wikimedia Commons, con archivo exacto, autor y licencia. Son imágenes genuinas y no recreaciones por IA. Se conservan los requisitos de atribución, enlace al original y, cuando corresponde, compartir igual. La compresión/conversión técnica se describe en las fichas. **Una fotografía histórica no demuestra que un sitio sea visitable en la actualidad**. La imagen del Delta del Orinoco ilustra el entorno geográfico, sin probar la ubicación dentro de los límites precisos de la reserva de biosfera.
+Se versionaron copias técnicas WebP de **20 fotografías** procedentes de Wikimedia Commons, con archivo exacto, autor y licencia. Son imágenes genuinas y no recreaciones por IA. Se conservan los requisitos de atribución, enlace al original y, cuando corresponde, compartir igual. La compresión/conversión técnica se describe en las fichas. **Una fotografía histórica no demuestra que un sitio sea visitable en la actualidad**. La imagen del Delta del Orinoco ilustra el entorno geográfico, sin probar la ubicación dentro de los límites precisos de la reserva de biosfera; la foto de La Guaira es contexto urbano de 2007, no verificación del conjunto patrimonial.
 
 | Ficha | Archivo y fuente | Autor | Licencia |
 |---|---|---|---|
@@ -21,5 +21,8 @@ Se versionaron copias técnicas WebP de **17 fotografías** procedentes de Wikim
 | parque-nacional-yacambu | [Cascada Parque Yacambu.JPG](https://commons.wikimedia.org/wiki/File:Cascada_Parque_Yacambu.JPG) | Carmelocastillo7 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | reserva-biosfera-delta-orinoco | [Delta de Orinoco.jpg](https://commons.wikimedia.org/wiki/File:Delta_de_Orinoco.jpg) | Katepalitava | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 | relampago-del-catatumbo | [Relámpago del Catatumbo.jpg](https://commons.wikimedia.org/wiki/File:Rel%C3%A1mpago_del_Catatumbo.jpg) | Raúl Briceño | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| bahia-de-cata | [Bahía de Cata.jpg](https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg) | Kuainabaida | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| cerro-autana | [Kuaymayojo - Monumento natural Cerro Autana.jpg](https://commons.wikimedia.org/wiki/File:Kuaymayojo_-_Monumento_natural_Cerro_Autana.jpg) | Fernando Flores | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) |
+| casco-historico-la-guaira | [Calle de la Guaira.jpg](https://commons.wikimedia.org/wiki/File:Calle_de_la_Guaira.jpg) | William A Contreras | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
 Los binarios versionados en `docs/media/foto-*.webp` se descargan y regeneran con `node scripts/import-licensed-photos.mjs --only-missing`, previa revisión individual de los archivos en Commons. El script conserva las fotografías existentes cuya fuente y licencia coincidan con el catálogo y no depende de hotlinks para mostrar las imágenes al público.

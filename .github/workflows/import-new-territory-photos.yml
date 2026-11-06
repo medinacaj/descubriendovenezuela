@@ -1,4 +1,4 @@
-name: Incorporar cinco fotografías de los nuevos territorios
+name: Incorporar fotografías reales de destinos venezolanos
 on:
   push:
     branches: [feat/ocho-territorios-y-fotos-reales-20261106]
@@ -35,6 +35,9 @@ jobs:
           test -s docs/media/foto-parque-nacional-yacambu.webp
           test -s docs/media/foto-reserva-biosfera-delta-orinoco.webp
           test -s docs/media/foto-relampago-del-catatumbo.webp
+          test -s docs/media/foto-bahia-de-cata.webp
+          test -s docs/media/foto-cerro-autana.webp
+          test -s docs/media/foto-casco-historico-la-guaira.webp
           grep -q 'Relámpago del Catatumbo' docs/regiones/zulia/index.html
           grep -q '24 territorios' docs/estados/index.html
       - name: Versionar fotografías y páginas regeneradas

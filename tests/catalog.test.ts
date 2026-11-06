@@ -21,7 +21,7 @@ describe("puente del catálogo documental", () => {
       expect(item?.verification).toContain("Lista Indicativa");
       expect(item?.primaryConsulted).toBe(true);
     }
-    expect(entries.filter(p => p.mediaCredits.some(m => m.kind === "photograph")).length).toBe(17);
+    expect(entries.filter(p => p.mediaCredits.some(m => m.kind === "photograph")).length).toBe(20);
   });
   it("rechaza registros demo, sin fuente o de categoría arbitraria", () => {
     const item = catalog[0] as CuratedEntry;
