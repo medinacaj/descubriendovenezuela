@@ -36,7 +36,7 @@ export function normaliseCatalogEntry(entry: CuratedEntry) {
     throw Error("Categoría no admitida: " + entry.category);
   if (!entry.sourceUrls.length || !entry.sourceUrls.every(url => url.startsWith("https://")))
     throw Error("Sin fuente HTTPS para " + entry.id);
-  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(entry.reviewedAt) ||
+  if (!/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/.test(entry.reviewedAt) ||
       Number.isNaN(Date.parse(entry.reviewedAt)))
     throw Error("Fecha documental inválida: " + entry.id);
   if (entry.demo !== false) throw Error("No se importan registros demo");
