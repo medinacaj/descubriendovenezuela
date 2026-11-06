@@ -69,9 +69,10 @@ try {
         page
           .locator("img")
           .evaluateAll(
-            (imgs) =>
-              imgs.length === homeImageCount &&
+            (imgs, count) =>
+              imgs.length === count &&
               imgs.every((i) => i.complete && i.naturalWidth > 0),
+            homeImageCount,
           ),
       )
       .toBe(true);
