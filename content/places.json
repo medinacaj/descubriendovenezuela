@@ -339,14 +339,16 @@
     "category": "Naturaleza",
     "country": "Venezuela",
     "region": "Falcón",
-    "description": "La costa de Falcón alberga el Parque Nacional Morrocoy, un conjunto protegido de cayos, canales de manglar, fondos marinos y sectores continentales. Inparques identifica Cayo Sombrero, Cayo Sal y otros islotes dentro de este paisaje caribeño. Esta ficha describe el área protegida, no certifica salidas de lanchas, accesibilidad, permisos ni disponibilidad de servicios.",
+    "description": "La costa de Falcón alberga el Parque Nacional Morrocoy, un conjunto protegido de cayos, canales de manglar, fondos marinos y sectores continentales. Inparques identifica Cayo Sombrero, Cayo Sal y otros islotes dentro de este paisaje caribeño. Esta ficha describe el área protegida, no certifica salidas de lanchas, accesibilidad, permisos ni disponibilidad de servicios. Aviso de movilidad: el 6 de agosto de 2026 Mintur informó que el puente de acceso a Punta Brava seguía cerrado tras las afectaciones del 24 de junio; en ese comunicado señaló que el Parque Nacional permanecía abierto. Esta información histórica no confirma el estado actual del puente. Consulta directamente a las autoridades y operadores antes de desplazarte.",
     "reviewedAt": "2026-11-06",
-    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad.",
+    "verification": "Ficha oficial de Inparques consultada en línea el 6 de noviembre de 2026. Identificación y rasgos generales del lugar contrastados documentalmente; sin inspección presencial ni validación de horarios, tarifas, apertura, accesos, permisos o seguridad. Se añadió aviso fechado con la nota oficial de Mintur del 6 de agosto de 2026; no se ha verificado el estado del puente a 6 de noviembre de 2026.",
     "sourceUrls": [
-      "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html"
+      "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html",
+      "https://www.mintur.gob.ve/news/a2732bec-5585-4710-893b-97f45f0028bf"
     ],
     "sourceLabels": [
-      "Inparques · información institucional sobre el lugar o área protegida"
+      "Inparques · información institucional sobre el lugar o área protegida",
+      "Mintur · comunicado de 6 de agosto de 2026 sobre el acceso a Punta Brava"
     ],
     "primaryUrl": "https://www.inparques.gob.ve/Parques%20Nacionales/morrocoy.html",
     "primaryConsulted": true,
