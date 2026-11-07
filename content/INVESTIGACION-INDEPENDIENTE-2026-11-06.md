@@ -17,3 +17,21 @@ Se investigaron destinos **no proporcionados previamente por el usuario** median
 - Parque Nacional General Cruz Carrillo (Guaramacal) — Trujillo. Fuente: https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales
 
 Los nuevos registros requieren fotografías originales autorizadas: temporalmente utilizan imágenes acreditadas de referencia que **no se presentan como imágenes del lugar**. No se verificaron estado operativo, precios, horarios, permisos, seguridad ni accesibilidad. Isla de Aves es un área de acceso civil controlado, no una oferta turística libre.
+
+## Segunda ampliación: patrimonio y turismo urbano de Zulia, Monagas y Barinas
+
+- **Museo Histórico General Rafael Urdaneta**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Parque General Rafael Urdaneta**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Basílica de Nuestra Señora de Chiquinquirá**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Casa de la Capitulación**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Centro de Arte de Maracaibo Lía Bermúdez**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Plaza Baralt**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e
+- **Parque Zoológico La Guaricha**, Monagas. Fuente de Mintur: https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52
+- **Catedral de Maturín**, Monagas. Fuente de Mintur: https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52
+- **Iglesia de San Simón**, Monagas. Fuente de Mintur: https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52
+- **Casa Aduana de Maturín**, Monagas. Fuente de Mintur: https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52
+- **Embalse Masparro**, Barinas. Fuente de Mintur: https://www.mintur.gob.ve/news/9fac12b3-a1f6-429b-a19d-4cf2a84b4579
+- **Calle Carabobo de Maracaibo**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046
+- **Parque La Marina**, Zulia. Fuente de Mintur: https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046
+
+La mención documental de una ruta histórica no certifica calendario, apertura, seguridad, conservación, horarios, permisos ni disponibilidad de guías. Se requieren fotografías específicas con licencias publicables; hasta entonces las referencias visuales están rotuladas como tales.

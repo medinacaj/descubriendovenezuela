@@ -7583,5 +7583,317 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "museo-historico-general-rafael-urdaneta",
+    "name": "Museo Histórico General Rafael Urdaneta",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Museo vinculado a la figura histórica del general Rafael Urdaneta, citado por Mintur como parte del circuito patrimonial de Maracaibo. La ficha no acredita apertura al público ni horarios vigentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-general-rafael-urdaneta",
+    "name": "Parque General Rafael Urdaneta",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Espacio público histórico de Maracaibo incluido en el recorrido turístico patrimonial descrito por Mintur. Su incorporación documenta su interés urbano, pero no confirma instalaciones disponibles.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "basilica-chiquinquira-maracaibo",
+    "name": "Basílica de Nuestra Señora de Chiquinquirá",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo emblemático de Maracaibo dedicado a Nuestra Señora de Chiquinquirá, citado en la ruta patrimonial Conoce Nuestra Historia. Los horarios litúrgicos y condiciones de visita deben verificarse directamente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-de-la-capitulacion-maracaibo",
+    "name": "Casa de la Capitulación",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Edificación patrimonial de Maracaibo incluida en el circuito histórico descrito por Mintur. Su historia urbana resulta de interés cultural, sin asumir actividades o acceso público actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "centro-de-arte-lia-bermudez",
+    "name": "Centro de Arte de Maracaibo Lía Bermúdez",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Institución cultural de Maracaibo documentada como una de las paradas del circuito turístico de edificios históricos de la ciudad. No se publican exposiciones ni horarios sin comprobación actual.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "plaza-baralt-maracaibo",
+    "name": "Plaza Baralt",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Plaza histórica del centro de Maracaibo mencionada en la ruta turística patrimonial certificada por Mintur. Es un referente urbano, sin afirmar programación de actividades ni condiciones actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a06b2c93-7808-4c59-8818-507922b1d29e",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-zoologico-la-guaricha",
+    "name": "Parque Zoológico La Guaricha",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque de recreación de Maturín citado por Mintur en la propuesta de recorrido Identidad Maturín. Se documenta su existencia y función urbana sin certificar estado de instalaciones ni servicios.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "locality": "Maturín",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "catedral-de-maturin",
+    "name": "Catedral de Maturín",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo principal de Maturín citado por Mintur entre los espacios de la ruta de los Siete Templos. La referencia patrimonial no confirma celebraciones, apertura ni visitas guiadas en la actualidad.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "locality": "Maturín",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "iglesia-san-simon-maturin",
+    "name": "Iglesia de San Simón",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo de Maturín identificado en la ruta de los Siete Templos reseñada por Mintur. No se deduce de esa mención que estén vigentes determinados horarios religiosos o turísticos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "locality": "Maturín",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "casa-aduana-maturin",
+    "name": "Casa Aduana de Maturín",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Edificación señalada por Mintur entre los hitos históricos de la ruta Maturín Histórica. Su uso actual, condiciones de conservación y posibilidades de acceso requieren comprobación específica.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e6a4e65-3a8f-4c86-85e3-3632c3880e52",
+    "primaryConsulted": true,
+    "region": "Monagas",
+    "locality": "Maturín",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "embalse-masparro",
+    "name": "Embalse Masparro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Embalse de Barinas mencionado en 2025 por Mintur como zona de potencial desarrollo turístico. La noticia abordaba un proyecto de inversión en glamping, no la existencia de un establecimiento ya abierto.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9fac12b3-a1f6-429b-a19d-4cf2a84b4579"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9fac12b3-a1f6-429b-a19d-4cf2a84b4579",
+    "primaryConsulted": true,
+    "region": "Barinas",
+    "locality": "Municipio Cruz Paredes",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "calle-carabobo-maracaibo",
+    "name": "Calle Carabobo de Maracaibo",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Corredor del centro histórico de Maracaibo señalado por Mintur como zona de interés turístico y de emprendimientos. Esta ficha no valida el estado comercial de negocios individuales ni horarios actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-la-marina-maracaibo",
+    "name": "Parque La Marina",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque urbano de Maracaibo citado por Mintur como espacio de participación de emprendimientos y actividades recreativas. La cobertura de noviembre de 2025 no equivale a una agenda vigente.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación y rasgos generales tomados de la fuente institucional a través de investigación independiente. No se ha verificado de forma presencial ni confirmado operación actual, horarios, tarifas o accesibilidad.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046"
+    ],
+    "sourceLabels": [
+      "Mintur · fuente institucional sobre patrimonio o rutas turísticas"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/index.php/news/a0612b4c-2c0d-4cd5-8103-76c917aad046",
+    "primaryConsulted": true,
+    "region": "Zulia",
+    "locality": "Maracaibo",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]
