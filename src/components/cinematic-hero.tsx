@@ -70,11 +70,18 @@ export default function CinematicHero() {
         <img key={active.key} src={active.image} alt="" width={1200} height={800}
           fetchPriority={activeIndex === 0 ? "high" : "auto"} />
       </div>
-      <div className="cinematic-hero__timeline" aria-hidden="true">
+      <nav className="cinematic-hero__timeline" aria-label="Seleccionar destino destacado">
         {slides.map((slide, index) => (
-          <span key={slide.key} aria-current={index === activeIndex ? "true" : undefined} />
+          <button
+            type="button"
+            key={slide.key}
+            aria-label={"Mostrar " + slide.name}
+            aria-current={index === activeIndex ? "true" : undefined}
+            aria-pressed={index === activeIndex}
+            onClick={() => setActiveIndex(index)}
+          />
         ))}
-      </div>
+      </nav>
       <div className="cinematic-hero__copy">
         <p className="cinematic-hero__eyebrow">{active.kicker}</p>
         <h1 aria-live="polite">{active.title}<span>{active.secondLine}</span></h1>
