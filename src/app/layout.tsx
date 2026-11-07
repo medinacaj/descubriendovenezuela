@@ -37,7 +37,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <nav aria-label="Principal">
             <Link href="/explorar">Explorar</Link>
             <Link href="/explorar?category=Naturaleza">Destinos</Link>
-            <Link href="/explorar?category=Hospedaje">Hospedaje</Link>
+            <Link href="/posadas">Posadas y familia</Link>
             <Link href="/explorar?category=Gastronomía">Gastronomía</Link>
           </nav>
           <Link className="nav-cta" href="/explorar">
@@ -57,6 +57,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <div>
             <Link href="/politica-editorial">Política editorial</Link>
             <Link href="/privacidad">Privacidad</Link>
+            <Link href="/posadas">Posadas y familia</Link>
             <Link href="/admin">Acceso editorial</Link>
           </div>
           <small>
