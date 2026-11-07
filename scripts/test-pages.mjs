@@ -168,7 +168,7 @@ try {
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.locator('a[href$="/lugares/merida-ciudad/"]').click();
     await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
-    await expect(page.getByText("Cartografía de referencia:", {exact:false})).toBeVisible();
+    await expect(page.getByText("Mapa documental:", {exact:false})).toBeVisible();
     await expect(page.locator(".place-cover img")).toHaveJSProperty("naturalWidth",900);
     await expect(page.locator(".place-intro h1")).toBeVisible();
     await expect(page.locator(".place-facts")).toBeVisible();
