@@ -53,3 +53,15 @@ Todas las fichas y tarjetas muestran un recurso visual. **57 destinos poseen fot
 ## Ampliación y UX verificables
 
 Además de la expansión inicial de 139 lugares, se incorporaron **58 atractivos de investigación independiente** publicados en [`content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md`](../content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md). El catálogo actual tiene **234 fichas**, 52 fotografías reales y seis mapas, con **57 medios propios y 177 imágenes referenciales explícitas**. El explorador muestra inicialmente 30 tarjetas, permite cargar más lotes, tiene tres vistas visuales y comparte `docs/base.css`. La carpeta del proyecto no controla `robots.txt` de la raíz del dominio GitHub Pages. Los requisitos completos de WCAG 2.2 AA, Core Web Vitals y seguridad productiva requieren pruebas adicionales.
+
+## Estado vigente del catálogo y mejoras (6 de noviembre de 2026)
+
+El catálogo público tiene **255 fichas documentales en 25 territorios**. **72 fichas muestran fotografía o mapa del lugar** (67 fotografías reales con autor, fuente y licencia; 5 mapas esquemáticos) y **183 utilizan una fotografía contextual de otro destino, marcada de forma visible**. Esto no equivale a poseer fotografía real del destino en las 255 fichas.
+
+La expansión editorial incorporó **21 sitios investigados de forma independiente en la última revisión**, documentados en [INVESTIGACION-INDEPENDIENTE-2026-11-06.md](../content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md), y 58 de una etapa independiente previa. La cobertura histórica y las fechas de fotos no confirman acceso, horarios, seguridad ni operación comercial actual.
+
+El directorio ofrece vistas **Tarjetas, Lista y Fichas**, filtros y lotes progresivos de 30 resultados. El sitio genera **JavaScript autoalojado**, metadatos SEO, **CSP limitada por meta HTML**, variantes WebP de 480/800 px con `srcset`, y un **mapa SVG navegable de 25 territorios** con base cartográfica aproximada de Natural Earth. No se inventan coordenadas ni rutas.
+
+La integración continua contempla Chromium, Firefox y WebKit, además de una evaluación automatizada axe-core de páginas representativas. **No equivale a certificación WCAG 2.2 AA, cumplimiento legal definitivo ni Core Web Vitals medidos en usuarios reales**.
+
+Para una fotografía autorizada de cada destino aún faltan 183 fichas; para SEO, auditar indexación real de buscadores; para seguridad, validar cabeceras HTTP efectivas y el backend independiente si se despliega. No se requiere contratar servicios de pago para completar el catálogo estático.

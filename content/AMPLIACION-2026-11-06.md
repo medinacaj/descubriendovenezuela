@@ -40,3 +40,15 @@ No se atribuye una empresa o reserva a un tercero por aparecer en esta guía. La
 ## Segunda etapa: investigación independiente
 
 La expansión histórica de 139 fichas se conserva como referencia de la primera etapa. Posteriormente se sumaron **58 fichas investigadas de forma independiente**, totalizando **234**. La nueva investigación y sus fuentes figuran en [`INVESTIGACION-INDEPENDIENTE-2026-11-06.md`](INVESTIGACION-INDEPENDIENTE-2026-11-06.md). El catálogo total dispone actualmente de **52 fotografías reales** y seis mapas; **57 registros tienen medios propios**, mientras **177 siguen con imágenes contextuales claramente identificadas**. Los totales previos de 176/40/131 se refieren a una instantánea histórica, no al estado vigente.
+
+## Estado vigente del catálogo y mejoras (6 de noviembre de 2026)
+
+El catálogo público tiene **255 fichas documentales en 25 territorios**. **72 fichas muestran fotografía o mapa del lugar** (67 fotografías reales con autor, fuente y licencia; 5 mapas esquemáticos) y **183 utilizan una fotografía contextual de otro destino, marcada de forma visible**. Esto no equivale a poseer fotografía real del destino en las 255 fichas.
+
+La expansión editorial incorporó **21 sitios investigados de forma independiente en la última revisión**, documentados en [INVESTIGACION-INDEPENDIENTE-2026-11-06.md](INVESTIGACION-INDEPENDIENTE-2026-11-06.md), y 58 de una etapa independiente previa. La cobertura histórica y las fechas de fotos no confirman acceso, horarios, seguridad ni operación comercial actual.
+
+El directorio ofrece vistas **Tarjetas, Lista y Fichas**, filtros y lotes progresivos de 30 resultados. El sitio genera **JavaScript autoalojado**, metadatos SEO, **CSP limitada por meta HTML**, variantes WebP de 480/800 px con `srcset`, y un **mapa SVG navegable de 25 territorios** con base cartográfica aproximada de Natural Earth. No se inventan coordenadas ni rutas.
+
+La integración continua contempla Chromium, Firefox y WebKit, además de una evaluación automatizada axe-core de páginas representativas. **No equivale a certificación WCAG 2.2 AA, cumplimiento legal definitivo ni Core Web Vitals medidos en usuarios reales**.
+
+Para una fotografía autorizada de cada destino aún faltan 183 fichas; para SEO, auditar indexación real de buscadores; para seguridad, validar cabeceras HTTP efectivas y el backend independiente si se despliega. No se requiere contratar servicios de pago para completar el catálogo estático.

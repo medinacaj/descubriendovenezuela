@@ -1,5 +1,18 @@
 # Venezuela en el Mapa
 
+## Estado vigente del catálogo y mejoras (6 de noviembre de 2026)
+
+El catálogo público tiene **255 fichas documentales en 25 territorios**. **72 fichas muestran fotografía o mapa del lugar** (67 fotografías reales con autor, fuente y licencia; 5 mapas esquemáticos) y **183 utilizan una fotografía contextual de otro destino, marcada de forma visible**. Esto no equivale a poseer fotografía real del destino en las 255 fichas.
+
+La expansión editorial incorporó **21 sitios investigados de forma independiente en la última revisión**, documentados en [INVESTIGACION-INDEPENDIENTE-2026-11-06.md](INVESTIGACION-INDEPENDIENTE-2026-11-06.md), y 58 de una etapa independiente previa. La cobertura histórica y las fechas de fotos no confirman acceso, horarios, seguridad ni operación comercial actual.
+
+El directorio ofrece vistas **Tarjetas, Lista y Fichas**, filtros y lotes progresivos de 30 resultados. El sitio genera **JavaScript autoalojado**, metadatos SEO, **CSP limitada por meta HTML**, variantes WebP de 480/800 px con `srcset`, y un **mapa SVG navegable de 25 territorios** con base cartográfica aproximada de Natural Earth. No se inventan coordenadas ni rutas.
+
+La integración continua contempla Chromium, Firefox y WebKit, además de una evaluación automatizada axe-core de páginas representativas. **No equivale a certificación WCAG 2.2 AA, cumplimiento legal definitivo ni Core Web Vitals medidos en usuarios reales**.
+
+Para una fotografía autorizada de cada destino aún faltan 183 fichas; para SEO, auditar indexación real de buscadores; para seguridad, validar cabeceras HTTP efectivas y el backend independiente si se despliega. No se requiere contratar servicios de pago para completar el catálogo estático.
+
+
 Proyecto con **dos modalidades claramente diferenciadas**: un catálogo documental estático para GitHub Pages y una aplicación Next.js/PostgreSQL de administración y exploración. El catálogo tiene 234 entradas documentales con fuentes identificadas, pero todavía no constituye un inventario completo de establecimientos operativamente verificados, reservas ni información de campo actualizada. La aplicación conserva cuatro registros sintéticos DEMO claramente etiquetados y permite importar las 234 fichas documentales a PostgreSQL.
 
 La versión de lanzamiento prepara **fichas con direcciones permanentes, páginas regionales, búsqueda, sitemap, etiquetas sociales, caché PWA y formularios públicos de propuestas/correcciones mediante GitHub Issues**. El backend sigue requiriendo alojamiento Node/PostGIS y una validación operacional específica. No se han contratado servicios.
