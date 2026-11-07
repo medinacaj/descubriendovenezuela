@@ -1,6 +1,18 @@
 # Venezuela en el Mapa
 
-## Estado vigente verificado · 6 de noviembre de 2026
+## Actualización documental · 7 de noviembre de 2026
+
+El directorio tiene ahora **314 fichas documentales** distribuidas en 25 territorios. Se incorporaron **20 registros** a la investigación: **16 posadas y hospedajes locales**, más **4 espacios culturales aptos para investigar planes familiares**, repartidos en **9 entidades federales**. La categoría Hospedaje pasa a **25 fichas** y Cultura a **80 fichas**. Estas incorporaciones no son reservas disponibles ni certifican actividad operativa.
+
+La guía pública [Posadas y planes para compartir](https://medinacaj.github.io/descubriendovenezuela/posadas/) presenta los alojamientos pequeños junto con el Museo de los Niños de Caracas, La Venezuela de Antier, Los Aleros y La Montaña de los Sueños. Su metodología y las fuentes utilizadas constan en [la investigación del 7 de noviembre](content/INVESTIGACION-POSADAS-Y-FAMILIAS-2026-11-07.md). No se han copiado fotografías de negocios ni guías comerciales: las nuevas fichas siguen sin fotos propias y las imágenes contextuales se identifican expresamente como referenciales.
+
+**Criterio editorial:** el tono de turismo local y familiar es un enfoque independiente, sin afiliación ni presunción de respaldo de Valentina Quintero o su guía. Los establecimientos requieren comprobación directa de horarios, servicios para menores, permisos, seguridad, disponibilidad y tarifas. No se publican contactos comerciales de terceros sin autorización.
+
+### Registro histórico anterior (cifras del 6 de noviembre de 2026)
+
+La sección que sigue describe una etapa anterior del catálogo y conserva sus cifras como referencia histórica; para totales actuales y nuevas incorporaciones prevalece la actualización del 7 de noviembre.
+
+## Estado histórico · 6 de noviembre de 2026
 
 El catálogo público dispone de **268 lugares documentales en 25 territorios**. **77 fichas tienen imagen propia** (72 fotografías reales con licencia y 5 mapas), mientras **191 muestran fotografías de contexto claramente rotuladas como tales**. Hay otros mapas documentales disponibles en el repositorio, pero no se atribuyen a un destino inexistente.
 
