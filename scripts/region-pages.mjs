@@ -41,7 +41,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
   const homeRegions=["Falcón","Bolívar","Anzoátegui","Carabobo","Delta Amacuro","Lara","Zulia","Aragua"].filter(r=>names.includes(r));
   const spotlightIds=["isla-de-plata-mochima","parque-nacional-morrocoy","701","parque-nacional-san-esteban","parque-nacional-yacambu","relampago-del-catatumbo"];
   const spotlight=spotlightIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
-  const independentIds=["santuario-nacional-nuestra-senora-de-coromoto","monumento-virgen-de-la-paz","tobogan-de-la-selva","casa-museo-la-blanquera","playa-chuspa","petroglifos-de-vigirima"];
+  const independentIds=["rio-caribe","carupano","guiria","bocono","la-vela-de-coro","cabo-san-roman"];
   const independent=independentIds.map(id=>places.find(p=>p.id===id)).filter(Boolean);
   const homeSections=`
     <section class="section page-width editorial-states" aria-labelledby="state-home-title">
