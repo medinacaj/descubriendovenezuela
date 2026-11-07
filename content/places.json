@@ -7181,7 +7181,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-rio-caribe.webp",
+        "alt": "Población de Río Caribe vista desde el mirador de Cristo Rey",
+        "author": "Claudionte",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Caribe.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7205,7 +7216,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-carupano.webp",
+        "alt": "Vista panorámica de la ciudad de Carúpano en Sucre",
+        "author": "Eleguagabriel",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carupano_Sucre.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7229,7 +7251,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-guiria.webp",
+        "alt": "Vista del puerto de Güiria en el estado Sucre",
+        "author": "Teknad",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guiria.JPG",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7253,7 +7286,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-bocono.webp",
+        "alt": "Paisaje urbano de Boconó en el estado Trujillo",
+        "author": "Alirio Segovia",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paisaje_de_bocono.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7325,7 +7369,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-la-vela-de-coro.webp",
+        "alt": "Plaza cercana al litoral en La Vela de Coro, Falcón",
+        "author": "(A3R) angelrravelor (A3R)",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_en_La_Vela_de_Coro.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7349,7 +7404,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cabo-san-roman.webp",
+        "alt": "Cabo San Román en la península de Paraguaná, Falcón",
+        "author": "Josequevedo26",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabo_San_Roman.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
