@@ -39,6 +39,8 @@ try {
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="cinematic-hero.css"]')).toHaveCount(1);
+    await expect(page.locator("body")).toHaveCSS("background-color","rgb(8, 25, 35)");
+    await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(241, 247, 250)");
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
     await page.getByRole("button", {name:"Siguiente destino"}).click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("CANAIMA");
