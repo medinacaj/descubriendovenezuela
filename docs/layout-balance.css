@@ -339,3 +339,7 @@ footer > small { font-size: 11px; }
  header nav a:hover,header nav a:focus-visible{background:#e2ede7}
  header .nav-cta{display:none}
 }
+
+/* Contraste WCAG: nota secundaria de portada, verificada por auditoría axe. */
+.hero-note,.hero-note p,.hero-note small{color:#345548;}
+.hero-note .note-line{background:#657b70;}

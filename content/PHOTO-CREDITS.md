@@ -78,3 +78,13 @@
 | arco-de-taguanes | [Taguanes.JPG](https://commons.wikimedia.org/wiki/File:Taguanes.JPG) | Nelsy galvis | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
 Los archivos listados se importan mediante `node scripts/import-licensed-photos.mjs --only-missing` y se optimizan con `npm run images:optimize`. Las tarjetas y fichas muestran créditos e indican si la imagen es propia o una referencia de otro destino. La fotografía no verifica condiciones de acceso o servicios en la actualidad.
+
+## Fotografías adicionales acreditadas · 2026-11-06
+
+| cabo-san-roman | [Cabo San Roman.jpg](https://commons.wikimedia.org/wiki/File:Cabo_San_Roman.jpg) | Josequevedo26 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| la-vela-de-coro | [Plaza en La Vela de Coro.jpg](https://commons.wikimedia.org/wiki/File:Plaza_en_La_Vela_de_Coro.jpg) | (A3R) angelrravelor (A3R) | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
+| carupano | [Carupano Sucre.jpg](https://commons.wikimedia.org/wiki/File:Carupano_Sucre.jpg) | Eleguagabriel | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| rio-caribe | [Río Caribe.jpg](https://commons.wikimedia.org/wiki/File:R%C3%ADo_Caribe.jpg) | Claudionte | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| guiria | [Guiria.JPG](https://commons.wikimedia.org/wiki/File:Guiria.JPG) | Teknad | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
+| bocono | [Paisaje de bocono.JPG](https://commons.wikimedia.org/wiki/File:Paisaje_de_bocono.JPG) | Alirio Segovia | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+

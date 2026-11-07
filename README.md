@@ -124,3 +124,11 @@ Las 52 fotografías se atribuyen individualmente en [content/PHOTO-CREDITS.md](c
 El explorador estático muestra 30 tarjetas en el primer lote y permite mostrar 30 adicionales por acción del usuario, preservando búsqueda por palabra clave, estado, categoría y vistas Tarjetas/Lista/Fichas. La hoja `docs/base.css` es compartida y cacheable para evitar estilos embebidos en centenares de documentos. `docs/robots.txt` incluye el sitemap, **pero GitHub Pages en un subdirectorio de proyecto no puede publicar por sí mismo el robots.txt del dominio raíz**. El rastreo público se apoya además en canonical, sitemap y metas robots; para controlar el dominio completo sería necesario un dominio propio o un alojamiento con acceso a la raíz. No se presenta una validación completa WCAG, Lighthouse, Core Web Vitals, seguridad del backend o marco legal como si estuvieran acreditados.
 
 La guía de aceptación técnica y estados de evidencia está en [`content/AUDITORIA-DE-CALIDAD-2026-11-06.md`](content/AUDITORIA-DE-CALIDAD-2026-11-06.md).
+
+## Estado verificado del catálogo — revisión 6 de noviembre de 2026
+
+- **281 fichas** con enlaces permanentes y fuentes documentales; investigación independiente registrada en `content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md`.
+- **78 fichas con fotografía propia**; **83 con fotografía o mapa**; las restantes **198** muestran fotografía representativa acreditada de otro lugar, claramente señalizada. No representan aún una cobertura fotográfica completa.
+- **78 fotografías en el manifiesto** con autor, fuente y licencia verificables. Las imágenes derivadas WebP se alojan en el repositorio. Se mantiene su procedencia en `content/PHOTO-CREDITS.md`.
+- El sitio estático ofrece exploración por estado y mapa territorial esquemático; no inventa rutas ni precios. El backend con autenticación es un producto de desarrollo separado y **no está habilitado** públicamente en GitHub Pages.
+- La conformidad WCAG 2.2 AA sigue sujeta a auditoría manual complementaria; CI utiliza axe y navegadores Chromium, Firefox y WebKit. No se ha certificado el desempeño LCP, INP, CLS en usuarios reales ni la eficacia jurídica de las políticas.
