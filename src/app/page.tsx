@@ -83,6 +83,24 @@ export default async function Home() {
           <p>Aún no hay lugares publicados.</p>
         ) : null}
       </section>
+      <section className="section family-escapes">
+        <div className="section-head">
+          <div>
+            <span className="eyebrow">POSADAS Y TURISMO DE CERCANÍA</span>
+            <h2>Escapadas para compartir.</h2>
+          </div>
+          <Link className="text-link" href="/posadas">
+            Conocer posadas y planes familiares ↗
+          </Link>
+        </div>
+        <p className="catalog-note">
+          Alojamiento local y propuestas culturales con fuentes. Sin reservas,
+          disponibilidad o servicios actuales certificados.
+        </p>
+        <Link className="button" href="/posadas">
+          Ver la guía de posadas y familias ↗
+        </Link>
+      </section>
       <section className="manifesto">
         <span className="eyebrow">MÁS QUE UN PUNTO EN EL MAPA</span>
         <h2>
