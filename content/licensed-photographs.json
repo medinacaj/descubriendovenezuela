@@ -778,5 +778,35 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paisaje_de_bocono.JPG",
     "output": "foto-bocono.webp"
+  },
+  {
+    "id": "isla-de-coche",
+    "file": "Isla de Coche Venezuela.JPG",
+    "alt": "Vista costera de Isla de Coche, Nueva Esparta",
+    "author": "Esclasans",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_de_Coche_Venezuela.JPG",
+    "output": "foto-isla-de-coche.webp"
+  },
+  {
+    "id": "museo-de-bellas-artes-de-caracas",
+    "file": "Museo de Bellas Artes, Caracas.jpg",
+    "alt": "Fachada del Museo de Bellas Artes de Caracas",
+    "author": "Luchofraga",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_Bellas_Artes%2C_Caracas.jpg",
+    "output": "foto-museo-de-bellas-artes-de-caracas.webp"
+  },
+  {
+    "id": "hotel-humboldt",
+    "file": "Hotel Humboldt.jpg",
+    "alt": "Edificio del Hotel Humboldt en el Waraira Repano, Caracas",
+    "author": "Wilfredor",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Humboldt.jpg",
+    "output": "foto-hotel-humboldt.webp"
   }
 ]
