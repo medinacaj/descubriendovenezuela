@@ -8,12 +8,12 @@ describe("Pages con URLs permanentes",()=>{
  it("jerarquía por estados con protagonismo de atractivos reales",async()=>{
   const home=await readFile("docs/index.html","utf8");
   const index=await readFile("docs/estados/index.html","utf8");
-  expect(home).toContain("Descubre Venezuela por estado");
+  expect(home).toContain("Explora por estado");
   expect(home).toContain('class="cinematic-hero"');
   expect(home).toContain("cinematic-hero.css");
   expect(home).toContain("js/cinematic-hero.js");
   expect(home).toContain("/descubriendovenezuela/estados/");
-  expect(home).toContain("Sitios que merecen conocerse");
+  expect(home).toContain("Destinos destacados");
   expect(index).toContain("Estados de Venezuela y Distrito Capital");
   expect(index).toContain("state-query");
   expect(index).toContain('href="/descubriendovenezuela/regiones/falcon/"');

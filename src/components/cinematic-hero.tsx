@@ -3,17 +3,18 @@
 import { useState } from "react";
 import Link from "next/link";
 
+/* Fotografías ya presentes y acreditadas en el catálogo del proyecto.
+   No se inventan paisajes, accesos, precios ni servicios disponibles. */
 const slides = [
   {
     key: "morrocoy",
     name: "Cayo Sombrero",
-    region: "Falcón · Caribe venezolano",
-    kicker: "Mar, naturaleza y cultura",
-    title: "VENEZUELA",
-    secondLine: "POR DESCUBRIR",
-    description: "Un país de paisajes extraordinarios, historias y rincones por conocer. Explora lugares documentados de cada región.",
+    region: "Falcón · Parque Nacional Morrocoy",
+    kicker: "DESCUBRIENDO VENEZUELA",
+    title: "Venezuela",
+    secondLine: "natural, diversa y auténtica",
+    description: "Playas caribeñas, montañas imponentes, selvas y una cultura llena de historias. Descubre destinos documentados de nuestro país.",
     image: "/media/foto-cayo-sombrero.webp",
-    photoAlt: "Palmeras y arena clara en Cayo Sombrero, Parque Nacional Morrocoy",
     link: "/lugares/cayo-sombrero",
     credit: "AndreaC11",
     creditUrl: "https://commons.wikimedia.org/wiki/File:Cayo_Sombrero.JPG",
@@ -22,14 +23,13 @@ const slides = [
   },
   {
     key: "canaima",
-    name: "Canaima",
-    region: "Bolívar · Gran Sabana",
-    kicker: "Naturaleza monumental",
+    name: "Parque Nacional Canaima",
+    region: "Bolívar · Parque Nacional Canaima",
+    kicker: "NATURALEZA EXTRAORDINARIA",
     title: "CANAIMA",
-    secondLine: "SIN LÍMITES",
-    description: "Tepuyes, cascadas y paisajes que invitan a descubrir el sur de Venezuela a través de sus lugares y sus historias.",
+    secondLine: "paisajes que inspiran",
+    description: "Tepuyes, grandes saltos de agua y una riqueza natural singular. Explora las fichas y sus fuentes documentales.",
     image: "/media/foto-701.webp",
-    photoAlt: "Vista aérea del Salto Ángel en el Parque Nacional Canaima",
     link: "/lugares/701",
     credit: "Rafael Estrella",
     creditUrl: "https://commons.wikimedia.org/wiki/File:Salto_Angel_from_above.jpg",
@@ -37,15 +37,14 @@ const slides = [
     licenseUrl: "https://creativecommons.org/licenses/by/2.0/",
   },
   {
-    key: "los-roques",
+    key: "roques",
     name: "Cayo de Agua",
-    region: "Dependencias Federales · Los Roques",
-    kicker: "Horizontes del Caribe",
+    region: "Dependencias Federales · Archipiélago de Los Roques",
+    kicker: "CARIBE VENEZOLANO",
     title: "LOS ROQUES",
-    secondLine: "POR EXPLORAR",
-    description: "Islas, arena y horizontes azules forman parte de la diversidad de destinos venezolanos reunidos en esta guía.",
+    secondLine: "un paraíso por conocer",
+    description: "Descubre paisajes insulares, arenas claras y mares turquesa a través de imágenes acreditadas y datos con fuentes.",
     image: "/media/foto-cayo-de-agua.webp",
-    photoAlt: "Cayo de Agua, archipiélago de Los Roques",
     link: "/lugares/cayo-de-agua",
     credit: "Tucanrecords",
     creditUrl: "https://commons.wikimedia.org/wiki/File:Cayo_de_Agua_in_Los_Roques.jpg",
@@ -54,15 +53,19 @@ const slides = [
   },
 ] as const;
 
+const shortcuts = [
+  { icon: "☀", label: "Playas", href: "/explorar?q=cayo" },
+  { icon: "△", label: "Montañas", href: "/explorar?q=tepuy" },
+  { icon: "♧", label: "Parques", href: "/explorar?q=parque" },
+  { icon: "⌘", label: "Cultura", href: "/explorar?category=Cultura" },
+  { icon: "◉", label: "Gastronomía", href: "/explorar?category=Gastronomía" },
+] as const;
+
 export default function CinematicHero() {
   const [activeIndex, setActiveIndex] = useState(0);
   const active = slides[activeIndex];
-  const previews = [1, 2].map((offset) => ({
-    index: (activeIndex + offset) % slides.length,
-    slide: slides[(activeIndex + offset) % slides.length],
-  }));
   const move = (direction: number) =>
-    setActiveIndex((index) => (index + direction + slides.length) % slides.length);
+    setActiveIndex(index => (index + direction + slides.length) % slides.length);
 
   return (
     <section className="cinematic-hero" aria-label="Destinos destacados de Venezuela">
@@ -72,14 +75,11 @@ export default function CinematicHero() {
       </div>
       <nav className="cinematic-hero__timeline" aria-label="Seleccionar destino destacado">
         {slides.map((slide, index) => (
-          <button
-            type="button"
-            key={slide.key}
+          <button type="button" key={slide.key}
             aria-label={"Mostrar " + slide.name}
             aria-current={index === activeIndex ? "true" : undefined}
             aria-pressed={index === activeIndex}
-            onClick={() => setActiveIndex(index)}
-          />
+            onClick={() => setActiveIndex(index)} />
         ))}
       </nav>
       <div className="cinematic-hero__copy">
@@ -88,24 +88,21 @@ export default function CinematicHero() {
         <p className="cinematic-hero__description">{active.description}</p>
         <div className="cinematic-hero__actions">
           <Link className="cinematic-hero__primary" href="/explorar">
-            Explorar destinos <span aria-hidden="true">↗</span>
+            Explorar destinos <span aria-hidden="true">→</span>
           </Link>
           <Link className="cinematic-hero__secondary" href={active.link}>
-            Conocer {active.name} ↗
+            Conocer {active.name} <span aria-hidden="true">↗</span>
           </Link>
         </div>
       </div>
-      <div className="cinematic-hero__preview-list" aria-label="Cambiar destino destacado">
-        {previews.map(({ index, slide }) => (
-          <button key={slide.key} className="cinematic-hero__preview"
-            type="button" onClick={() => setActiveIndex(index)}
-            aria-label={"Mostrar " + slide.name}>
-            <img src={slide.image} alt="" width={420} height={660} loading="lazy" />
-            <span className="cinematic-hero__preview-kicker">{slide.region}</span>
-            <span className="cinematic-hero__preview-name">{slide.name}</span>
-          </button>
+      <nav className="cinematic-hero__categories" aria-label="Descubrir por tipo de experiencia">
+        {shortcuts.map(shortcut => (
+          <Link key={shortcut.label} href={shortcut.href} className="cinematic-hero__category">
+            <span aria-hidden="true">{shortcut.icon}</span>
+            <b>{shortcut.label}</b>
+          </Link>
         ))}
-      </div>
+      </nav>
       <div className="cinematic-hero__bottom">
         <div className="cinematic-hero__credit" aria-live="polite">
           Foto: <a href={active.creditUrl} target="_blank" rel="noopener noreferrer">{active.credit}</a>

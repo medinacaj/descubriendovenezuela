@@ -39,13 +39,14 @@ try {
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="cinematic-hero.css"]')).toHaveCount(1);
-    await expect(page.locator("body")).toHaveCSS("background-color","rgb(8, 25, 35)");
-    await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(241, 247, 250)");
+    await expect(page.locator("body")).toHaveCSS("background-color","rgb(255, 248, 241)");
+    await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(16, 39, 70)");
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
     await page.getByRole("button", {name:"Siguiente destino"}).click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("CANAIMA");
     await page.locator('.cinematic-hero__timeline button[data-index="2"]').click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("LOS ROQUES");
+    await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
     await expect(page.locator('.cinematic-hero__timeline button[data-index="2"]')).toHaveAttribute("aria-pressed","true");
     const box = await page.evaluate(() => {
       const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();
@@ -66,8 +67,8 @@ try {
       throw Error("Título fuera del viewport a " + width + "px");
     await page.goto(origin + "mapa/");
     await expect(page.getByRole("heading",{name:"Mapa de Venezuela por estados"})).toBeVisible();
-    await expect(page.locator("body")).toHaveCSS("background-color","rgb(8, 25, 35)");
-    await expect(page.locator(".territory-map__sidebar")).toHaveCSS("background-color","rgb(16, 44, 57)");
+    await expect(page.locator("body")).toHaveCSS("background-color","rgb(255, 248, 241)");
+    await expect(page.locator(".territory-map__sidebar")).toHaveCSS("background-color","rgb(255, 253, 249)");
     await expect(page.locator("svg .map-area")).toHaveCount(stateCount);
     await page.getByLabel("Buscar territorio").fill("merida");
     await expect(page.locator(".map-state-link:visible")).toHaveCount(1);
@@ -75,7 +76,7 @@ try {
     await page.goto(origin + "estados/");
     await expect(page.getByRole("heading", {name:"Estados de Venezuela y Distrito Capital"})).toBeVisible();
     await expect(page.locator("#state-results .state-tile")).toHaveCount(stateCount);
-    await expect(page.locator("#state-results .state-tile").first()).toHaveCSS("background-color","rgb(16, 42, 55)");
+    await expect(page.locator("#state-results .state-tile").first()).toHaveCSS("background-color","rgb(255, 253, 249)");
     await expect(page.locator('link[href$="states.css"]')).toHaveCount(1);
     await page.getByLabel("Buscar estado o Distrito Capital").fill("falcon");
     await expect(page.locator("#state-results .state-tile:visible")).toHaveCount(1);
@@ -85,7 +86,7 @@ try {
     await page.locator('#state-results a[href$="/regiones/falcon/"]').click();
     await expect(page.getByRole("heading", {name:"Falcón", exact:true})).toBeVisible();
     await expect(page.locator('[data-featured-id="parque-nacional-morrocoy"]')).toBeVisible();
-    await expect(page.locator(".state-feature").first()).toHaveCSS("background-color","rgb(16, 42, 55)");
+    await expect(page.locator(".state-feature").first()).toHaveCSS("background-color","rgb(255, 253, 249)");
     await expect(page.locator('.state-feature__media figcaption a')).toHaveCount(2);
     await expect.poll(() => page.locator(".state-feature__media img").evaluate(img => img.complete && img.naturalWidth > 0)).toBe(true);
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
@@ -97,8 +98,8 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");
-    await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(16, 43, 56)");
-    await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-color","rgb(18, 109, 145)");
+    await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(255, 253, 250)");
+    await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-image",/linear-gradient/);
     await page.getByLabel("Imagen").selectOption("propia");
     if(await page.locator("#results .place-card:visible").count() > allPlaces.filter(p=>p.photos?.length).length)throw Error("No se aplicó filtro de fotos propias");
     await page.getByLabel("Imagen").selectOption("");
@@ -114,7 +115,7 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Explorador desbordado a " + width + "px");
     await page.goto(origin + "lugares/merida-ciudad/");
-    await expect(page.locator(".place-facts")).toHaveCSS("background-color","rgb(16, 44, 57)");
+    await expect(page.locator(".place-facts")).toHaveCSS("background-color","rgb(255, 250, 244)");
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha desbordada a " + width + "px");
     await page.close();
@@ -141,6 +142,9 @@ try {
       .toBe(true);
     await page.locator('a.cinematic-hero__primary[href$="/explorar/"]').click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
+    // La navegación llega antes que los scripts diferidos en algunos móviles.
+    // Comprobar que el filtro está inicializado antes de enviar eventos.
+    await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.getByLabel("Buscar lugar").fill("");
