@@ -47,7 +47,8 @@ try {
     });
     if (box.scrollWidth > width + 1) {
       const offenders=await page.evaluate(()=>[...document.querySelectorAll("body *")].map(el=>({tag:el.tagName,cls:typeof el.className==="string"?el.className.slice(0,75):"",text:el.textContent?.slice(0,35),x:Math.round(el.getBoundingClientRect().x),right:Math.round(el.getBoundingClientRect().right),sw:el.scrollWidth,cw:el.clientWidth})).filter(o=>o.right>innerWidth+1||o.x< -1||o.sw>o.cw+5).slice(0,20));
-      throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; "+JSON.stringify(offenders));
+      const cssInfo=await page.evaluate(()=>({margin:getComputedStyle(document.body).margin,heroDisplay:getComputedStyle(document.querySelector(".hero")).display,styleSheets:[...document.styleSheets].map(x=>({href:x.href,disabled:x.disabled,rules:(()=>{try{return x.cssRules.length}catch{return "not available"}})()})),resources:performance.getEntriesByType("resource").filter(x=>x.name.endsWith(".css")).map(x=>({name:x.name,duration:x.duration,size:x.transferSize}))}));
+      throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; CSS "+JSON.stringify(cssInfo)+"; "+JSON.stringify(offenders));
     }
     if (box.heroWidth > 1320) throw Error("Portada demasiado ancha a " + width + "px");
     if (box.cardWidth < 220 || box.cardWidth > 470)
