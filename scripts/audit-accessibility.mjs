@@ -14,7 +14,7 @@ const server=createServer(async(req,res)=>{
   if(!path.startsWith(base)||path.includes("..")){res.writeHead(404);res.end();return;}
   let file=path.slice(base.length);
   if(!file||file.endsWith("/"))file+="index.html";
-  if(!/^(index\.html|(estados|explorar|contribuir|politica-editorial|privacidad)\/index\.html|regiones\/[a-z0-9-]+\/index\.html|lugares\/[a-z0-9-]+\/index\.html|js\/script-[a-z0-9]+-[0-9]+\.js|media\/[a-z0-9-]+\.webp|base\.css|layout-balance\.css|states\.css|sw\.js|icon\.svg|manifest\.webmanifest)$/.test(file)){res.writeHead(404);res.end();return;}
+  if(!/^(index\.html|(estados|explorar|contribuir|politica-editorial|privacidad)\/index\.html|regiones\/[a-z0-9-]+\/index\.html|lugares\/[a-z0-9-]+\/index\.html|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|media\/[a-z0-9-]+\.webp|base\.css|layout-balance\.css|states\.css|cinematic-hero\.css|sw\.js|icon\.svg|manifest\.webmanifest)$/.test(file)){res.writeHead(404);res.end();return;}
   const bytes=await readFile("docs/"+file);
   res.setHeader("Content-Type",file.endsWith(".css")?"text/css":file.endsWith(".js")?"application/javascript":file.endsWith(".webp")?"image/webp":file.endsWith(".svg")?"image/svg+xml":file.endsWith(".webmanifest")?"application/manifest+json":"text/html; charset=utf-8");
   res.end(bytes);
