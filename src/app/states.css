@@ -841,3 +841,58 @@ footer > small {border-color:#8bb6c4;}
   .editorial-states .state-grid--home .state-tile__main {grid-template-columns:115px minmax(0,1fr);}
   .editorial-states .state-grid--home .state-tile__visual {width:115px;}
 }
+
+
+/* Next.js: catálogo dinámico, detalles, edición y páginas informativas.
+   Comparten exactamente los mismos botones, superficies y tipografías. */
+.detail .detail-grid {gap:clamp(23px,4vw,54px);}
+.detail h1,.explorer h1,.admin h1,.login h1 {color:#102746;letter-spacing:-.038em;}
+.detail h2,.detail-grid h2,.facts h2,.empty h2,.map-empty h2 {color:#153554;}
+.detail .description {color:#4e6275;font-size:15px;line-height:1.8;}
+.detail-photo {margin:25px 0 34px;border:1px solid #e9dacb;border-radius:18px;overflow:hidden;background:#fffdf9;}
+.detail-photo img {object-fit:cover;max-height:480px;background:#fff0e0;}
+.detail-photo figcaption {
+  color:#52677a;background:#fff9f2;padding:14px 18px;border-top:1px solid #eadbce;
+}
+.detail-photo figcaption a {color:#a43a1b;}
+.detail .facts {
+  border:1px solid #ead9c9;border-radius:17px;padding:clamp(20px,2.7vw,32px);
+  background:#fffdf9;box-shadow:0 11px 28px #71452812;
+}
+.detail .facts h2 {margin-top:8px;}
+.detail .facts dt {color:#657587;font-size:11px;}
+.detail .facts dd {color:#15334e;font-size:13px;}
+.detail .facts small {border-color:#ebdcd0;color:#657588;}
+.pagination {display:flex;flex-wrap:wrap;}
+.pagination a {
+  min-width:39px;min-height:39px;display:inline-grid;place-items:center;
+  border:1px solid #e9d5c2;border-radius:50%;background:#fffdfa;color:#a23d21;
+}
+.pagination a[aria-current] {background:#e76334;border-color:#d95225;color:#fff;}
+.map-panel {border:1px solid #ead8c8;border-radius:17px;background:#fffaf4;box-shadow:0 14px 29px #75492214;}
+.map-grid,.map-grid span {background-color:#fff2e4;color:#d3622e;}
+.map-empty h2,.map-empty p {color:#304d65;}
+.map-caption {background:#fffaf4;border-color:#ecdfd2;color:#5b6f7c;}
+.empty {border:1px dashed #e6c7af;border-radius:16px;background:#fff7ed;color:#173754;}
+.empty>span {color:#d66b35;}
+.login form,.editor {
+  border:1px solid #ead9c8;border-radius:17px;padding:clamp(20px,2.7vw,30px);
+  background:#fffdf9;box-shadow:0 10px 22px #704b2a0e;
+}
+.login form {gap:17px;}
+.admin-grid {gap:clamp(20px,4vw,50px);}
+.admin-list a {background:#fffdf9;border:1px solid #eadacc;border-radius:12px;transition:background .2s;}
+.admin-list a:hover {background:#fff1e1;}
+.admin-list b {color:#102f4b;}
+.admin-list span {color:#607383;}
+.editor label {color:#30465a;font-weight:700;}
+.editor fieldset {border:1px solid #e6d2c0;border-radius:13px;margin:8px 0;padding:14px 18px;}
+.editor legend {font-size:13px;color:#aa3e1e;font-weight:800;padding:0 6px;}
+.editor .check input {accent-color:#d95d2d;}
+.prose {max-width:1000px;}
+.prose h1 {color:#13324e;}
+.prose p {color:#576c7c;line-height:1.85;}
+@media(max-width:760px){
+  .detail .detail-grid,.admin-grid {grid-template-columns:1fr;gap:22px;}
+  .detail h1,.explorer h1 {font-size:clamp(32px,8vw,46px);}
+}
