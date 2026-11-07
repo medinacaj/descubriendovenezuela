@@ -3,6 +3,7 @@ import Link from "next/link";
 import "./globals.css";
 import "./layout-balance.css";
 import "./states.css";
+import "./cinematic-hero.css";
 export const metadata: Metadata = {
   title: {
     default: "Venezuela en el Mapa — Un país por descubrir",
