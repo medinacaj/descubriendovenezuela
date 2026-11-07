@@ -45,7 +45,10 @@ try {
       return { scrollWidth: document.documentElement.scrollWidth, heroWidth: hero.width,
         cardWidth: card.width, titleLeft: title.left, titleRight: title.right };
     });
-    if (box.scrollWidth > width + 1) throw Error("Portada desbordada a " + width + "px");
+    if (box.scrollWidth > width + 1) {
+      const offenders=await page.evaluate(()=>[...document.querySelectorAll("body *")].map(el=>({tag:el.tagName,cls:typeof el.className==="string"?el.className.slice(0,75):"",text:el.textContent?.slice(0,35),x:Math.round(el.getBoundingClientRect().x),right:Math.round(el.getBoundingClientRect().right),sw:el.scrollWidth,cw:el.clientWidth})).filter(o=>o.right>innerWidth+1||o.x< -1||o.sw>o.cw+5).slice(0,20));
+      throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; "+JSON.stringify(offenders));
+    }
     if (box.heroWidth > 1320) throw Error("Portada demasiado ancha a " + width + "px");
     if (box.cardWidth < 220 || box.cardWidth > 470)
       throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
