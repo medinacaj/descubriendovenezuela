@@ -115,7 +115,7 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Explorador desbordado a " + width + "px");
     await page.goto(origin + "lugares/merida-ciudad/");
-    await expect(page.locator(".place-facts")).toHaveCSS("background-color","rgb(255, 253, 249)");
+    await expect(page.locator(".place-facts")).toHaveCSS("background-color","rgb(255, 250, 244)");
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha desbordada a " + width + "px");
     await page.close();
