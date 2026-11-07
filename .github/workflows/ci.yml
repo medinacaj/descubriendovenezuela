@@ -13,7 +13,7 @@ permissions:
 jobs:
   validar:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 45
     services:
       db:
         image: postgis/postgis:17-3.5
@@ -73,3 +73,14 @@ jobs:
           fi
       - name: Static site browser checks
         run: npm run test:pages
+
+      - name: Instalar motores Firefox y WebKit para pruebas de compatibilidad
+        run: npx playwright install --with-deps firefox webkit
+      - name: Comprobar navegación en Firefox
+        run: BROWSER_ENGINE=firefox npm run test:pages
+      - name: Comprobar navegación en WebKit (motor Safari)
+        run: BROWSER_ENGINE=webkit npm run test:pages
+      - name: Instalar axe-core temporalmente para revisión WCAG
+        run: npm install --no-save --no-package-lock --ignore-scripts axe-core@4.10.3
+      - name: Analizar accesibilidad estática (WCAG 2.2 A/AA)
+        run: node scripts/audit-accessibility.mjs
