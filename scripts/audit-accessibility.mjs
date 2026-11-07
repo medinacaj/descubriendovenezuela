@@ -14,7 +14,7 @@ const server=createServer(async(req,res)=>{
   if(!path.startsWith(base)||path.includes("..")){res.writeHead(404);res.end();return;}
   let file=path.slice(base.length);
   if(!file||file.endsWith("/"))file+="index.html";
-  if(!/^(index\.html|(estados|explorar|contribuir|politica-editorial|privacidad)\/index\.html|regiones\/[a-z0-9-]+\/index\.html|lugares\/[a-z0-9-]+\/index\.html|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|media\/[a-z0-9-]+\.webp|base\.css|layout-balance\.css|states\.css|cinematic-hero\.css|sw\.js|icon\.svg|manifest\.webmanifest)$/.test(file)){res.writeHead(404);res.end();return;}
+  if(!/^(index\.html|(estados|explorar|posadas|contribuir|politica-editorial|privacidad)\/index\.html|regiones\/[a-z0-9-]+\/index\.html|lugares\/[a-z0-9-]+\/index\.html|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|media\/[a-z0-9-]+\.webp|base\.css|layout-balance\.css|states\.css|cinematic-hero\.css|sw\.js|icon\.svg|manifest\.webmanifest)$/.test(file)){res.writeHead(404);res.end();return;}
   const bytes=await readFile("docs/"+file);
   res.setHeader("Content-Type",file.endsWith(".css")?"text/css":file.endsWith(".js")?"application/javascript":file.endsWith(".webp")?"image/webp":file.endsWith(".svg")?"image/svg+xml":file.endsWith(".webmanifest")?"application/manifest+json":"text/html; charset=utf-8");
   res.end(bytes);
@@ -26,7 +26,7 @@ const executablePath=process.env.CHROMIUM_PATH;
 const browser=await chromium.launch({...(executablePath?{executablePath}:{}),args:["--no-sandbox"]});
 let failures=0;
 try{
- const entries=[["portada",""],["explorar","explorar/"],["territorios","estados/"],["región","regiones/falcon/"],["ficha","lugares/colonia-tovar/"],["privacidad","privacidad/"]];
+ const entries=[["portada",""],["explorar","explorar/"],["posadas","posadas/"],["territorios","estados/"],["región","regiones/falcon/"],["ficha","lugares/colonia-tovar/"],["privacidad","privacidad/"]];
  for(const [label,url] of entries){
   const page=await browser.newPage({viewport:{width:390,height:844},bypassCSP:true});
   // La CSP productiva se comprueba por separado; aquí axe necesita inyección temporal.
