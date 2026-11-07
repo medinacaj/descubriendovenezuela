@@ -276,3 +276,9 @@ body:has(.cinematic-hero) .state-tile:hover .state-tile__visual img { transform:
   .cinematic-hero__timeline button,
   .cinematic-hero__timeline button::before {transition:none;}
 }
+
+
+/* La portada completa usa el mismo tema oscuro que las páginas interiores.
+   Evita que las reglas del primer rediseño restituyan el fondo claro. */
+body:has(.cinematic-hero) { background: #081923; color:#f1f7fa; }
+body:has(.cinematic-hero) .editorial-states h2 { color:#f1f7fa; }
