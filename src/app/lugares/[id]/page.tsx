@@ -28,6 +28,10 @@ export default async function Detail({ params }: Route) {
   const p = await getPlace(id);
   if (!p) notFound();
   const credits = Array.isArray(p.mediaCredits) ? p.mediaCredits as Credit[] : [];
+  const hasOwnMedia = credits.some(credit =>
+    (credit.src.startsWith("media/foto-") || credit.src.startsWith("media/mapa-")) &&
+    credit.src.endsWith(".webp"));
+
   return (
     <article className="detail section">
       <Link className="text-link" href="/explorar">← Volver al explorador</Link>
@@ -53,6 +57,14 @@ export default async function Detail({ params }: Route) {
               </figcaption>
             </figure>
           ) : null)}
+          {!hasOwnMedia && <div className="place-cover place-cover--pending" role="note" data-image-scope="pendiente">
+            <div>
+              <span aria-hidden="true">◇</span>
+              <h2>Fotografía del lugar pendiente</h2>
+              <p>Esta ficha no dispone de una imagen auténtica y autorizada del sitio. No mostramos fotografías de otras localidades como si fueran propias.</p>
+              <Link href="/explorar" className="text-link">Consultar otros destinos con imágenes verificadas ↗</Link>
+            </div>
+          </div>}
           <h2>Sobre este lugar</h2>
           <p className="description">{p.description}</p>
           {p.verificationNote && <>
