@@ -1,6 +1,7 @@
 name: Importar fotografías de destinos con licencias comprobadas
 on:
   push:
+    branches: [main]
     paths:
       - "content/licensed-photographs.json"
       - "scripts/build-directories.mjs"

@@ -109,7 +109,11 @@ try {
     await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(255, 253, 250)");
     await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-image",/linear-gradient/);
     await page.getByLabel("Imagen").selectOption("propia");
-    if(await page.locator("#results .place-card:visible").count() > allPlaces.filter(p=>p.photos?.length).length)throw Error("No se aplicó filtro de fotos propias");
+    const withOwnImages = allPlaces.filter(p=>p.photos?.length).length;
+    await expect(page.locator("#count")).toHaveText(withOwnImages + " lugares documentados");
+    await page.getByLabel("Imagen").selectOption("pendiente");
+    const withoutOwnImages = allPlaces.filter(p=>!p.photos?.length).length;
+    await expect(page.locator("#count")).toHaveText(withoutOwnImages + " lugares documentados");
     await page.getByLabel("Imagen").selectOption("");
     await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByRole("button",{name:"Mostrar más lugares"}).click();
@@ -164,7 +168,7 @@ try {
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.locator('a[href$="/lugares/merida-ciudad/"]').click();
     await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
-    await expect(page.getByText("Cartografía de referencia:", {exact:false})).toBeVisible();
+    await expect(page.getByText("Mapa documental:", {exact:false})).toBeVisible();
     await expect(page.locator(".place-cover img")).toHaveJSProperty("naturalWidth",900);
     await expect(page.locator(".place-intro h1")).toBeVisible();
     await expect(page.locator(".place-facts")).toBeVisible();

@@ -87,16 +87,26 @@ describe("Pages con URLs permanentes",()=>{
    expect(html).toContain("Consultar precio");
   }
  });
- it("todas las fichas cuentan con imagen y leyenda de referencia cuando no es del lugar",async()=>{
+ it("cada ficha muestra solo su imagen real, mapa propio o una ausencia explícita",async()=>{
    const html=await readFile("docs/explorar/index.html","utf8");
    for(const mode of ["tarjetas","lista","fichas"])expect(html).toContain('data-view-switch="'+mode+'"');
-   expect((html.match(/class="card-art"/g)||[])).toHaveLength(0);
-   expect((html.match(/class="card-photo"/g)||[]).length).toBe(places.length);
+   expect((html.match(/class="card-photo(?: card-photo--pending)?"/g)||[]).length).toBe(places.length);
+   expect(html).not.toContain('data-image-scope="referencia"');
+   expect(html).toContain('<option value="pendiente">Sin fotografía propia</option>');
    for(const p of places){
      const detail=await readFile("docs/lugares/"+p.id+"/index.html","utf8");
      expect(detail).toContain('class="place-cover place-cover--');
-     expect(detail).toContain('src="/descubriendovenezuela/media/');
-     if(!((p as any).photos?.length))expect(detail).toContain("NO corresponde a");
+     expect(detail).not.toContain('data-image-scope="referencia"');
+     const sources=(p as any).photos as Array<{src:string;kind:string}>;
+     if(sources.length){
+       expect(detail).toContain('data-image-scope="propia"');
+       expect(detail).toContain('src="/descubriendovenezuela/media/'+sources[0].src.split("/").pop());
+     } else {
+       expect(detail).toContain('class="place-cover place-cover--pending"');
+       expect(detail).toContain('Fotografía del lugar pendiente');
+       const hero=detail.match(/<div class="place-cover place-cover--pending"[\s\S]+?<\/div><\/div>/)?.[0]||"";
+       expect(hero).not.toContain('<img');
+     }
    }
  });
  it("mapa SVG con enlaces a los territorios del catálogo",async()=>{

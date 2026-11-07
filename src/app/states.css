@@ -974,3 +974,61 @@ footer > small {border-color:#8bb6c4;}
     font-size:10px;padding:5px 6px;
   }
 }
+
+
+/* SIN FOTOGRAFÍAS AJENAS: tarjeta editorial cuando aún no existe imagen del lugar. */
+.card-photo--pending {
+  position:relative;isolation:isolate;min-height:210px;height:210px;
+  display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-end;
+  gap:5px;overflow:hidden;padding:22px;
+  color:#123854;background:
+    radial-gradient(circle at 80% 24%,#f5a94e 0 31px,#f5a94e00 32px),
+    radial-gradient(ellipse at 6% 89%,#f0cfaa 0%,#f0cfaa00 60%),
+    linear-gradient(135deg,#f9f0e4,#e2eced 70%,#cbe3e5);
+}
+.card-photo--pending::before {
+  content:"";position:absolute;inset:0;pointer-events:none;
+  opacity:.35;background:repeating-linear-gradient(150deg,transparent 0 34px,#799ca1 35px 36px,transparent 37px 70px);
+  mask-image:linear-gradient(90deg,transparent 25%,#000 100%);
+}
+.card-photo--pending::after {display:none;}
+.card-photo__decor {
+  position:absolute;right:25px;top:22px;font:900 74px/1 Georgia,serif;
+  color:#5c8c8e;opacity:.36;z-index:0;
+}
+.card-photo__placeholder-name {
+  position:relative;z-index:1;color:#7b411c;
+  font:800 11px/1.35 "Segoe UI",Arial,sans-serif;
+  letter-spacing:.14em;text-transform:uppercase;
+}
+.card-photo__placeholder-label {
+  position:relative;z-index:1;color:#163b54;
+  font:800 clamp(18px,2vw,25px)/1.2 "Segoe UI",Arial,sans-serif;
+  letter-spacing:-.03em;
+}
+.card-credit--pending {color:#536675;font-weight:600;}
+.card-credit--pending a {color:#a53d1e;text-decoration:underline;text-underline-offset:3px;}
+.place-cover--pending {
+  background:
+    radial-gradient(circle at 79% 27%,#efab5f 0 45px,transparent 46px),
+    linear-gradient(128deg,#fff5e8,#e9f1ec 75%,#dcece9);
+  border:1px solid #ead4bd;color:#173d55;
+  border-radius:17px;min-height:325px;padding:45px 28px;
+}
+.place-cover--pending h2 {color:#163955;font-size:clamp(24px,3vw,37px);}
+.place-cover--pending p {color:#385367;font-size:14px;}
+.place-cover--pending a {display:inline-block;margin-top:15px;color:#9b361c;font-weight:800;text-decoration:underline;text-underline-offset:4px;}
+.state-feature__media--empty {
+  background:linear-gradient(138deg,#fff0da,#d6eeea);
+  color:#234c62;
+}
+.state-feature__media--empty p {color:#2b5266;font-weight:750;}
+/* El explorador permite elegir solo fotos/mapas auténticos o registros pendientes. */
+.filter-bar option[value="pendiente"] {color:#153c54;}
+@media(max-width:620px) {
+  .card-photo--pending {min-height:182px;height:182px;padding:17px;}
+  .card-photo__placeholder-label {font-size:19px;}
+}
+@media(prefers-reduced-motion:reduce) {
+  .card-photo--pending,.card-photo--pending * {transition:none;}
+}

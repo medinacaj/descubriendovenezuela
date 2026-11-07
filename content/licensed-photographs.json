@@ -858,5 +858,25 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casadelacapitulacion.jpg",
     "output": "foto-casa-de-la-capitulacion-maracaibo.webp"
+  },
+  {
+    "id": "pueblo-museo-los-aleros",
+    "file": "Parque Los Aleros paisaje.jpg",
+    "alt": "Vista panorámica de edificaciones históricas en el Parque Los Aleros, estado Mérida",
+    "author": "Alexandrabello",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Los_Aleros_paisaje.jpg",
+    "output": "foto-pueblo-museo-los-aleros.webp"
+  },
+  {
+    "id": "museo-de-los-ninos-caracas",
+    "file": "Museo de los niños CCS.JPG",
+    "alt": "Fachada del Museo de los Niños de Caracas, en el complejo Parque Central",
+    "author": "Guillermo Ramos Flamerich",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_los_ni%C3%B1os_CCS.JPG",
+    "output": "foto-museo-de-los-ninos-caracas.webp"
   }
 ]

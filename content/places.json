@@ -8350,7 +8350,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-museo-de-los-ninos-caracas.webp",
+        "alt": "Fachada del Museo de los Niños de Caracas, en el complejo Parque Central",
+        "author": "Guillermo Ramos Flamerich",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_los_ni%C3%B1os_CCS.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false,
     "region": "Distrito Capital",
     "locality": "Caracas"
@@ -8423,7 +8434,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-pueblo-museo-los-aleros.webp",
+        "alt": "Vista panorámica de edificaciones históricas en el Parque Los Aleros, estado Mérida",
+        "author": "Alexandrabello",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Los_Aleros_paisaje.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false,
     "region": "Mérida",
     "locality": "Cacute"
