@@ -1,5 +1,15 @@
 # Venezuela en el Mapa
 
+## Actualización visual · 7 de noviembre de 2026
+
+**Nueva regla: sin imágenes prestadas de otros destinos.** El catálogo tiene 314 fichas, de las cuales **86** incluyen una fotografía documentada del lugar, **5** un mapa documental y **223** siguen sin imagen propia. En esas 223 fichas se muestra una tarjeta tipográfica «Fotografía pendiente» en lugar de reciclar fotos de sitios cercanos o distintos. El buscador separa las fichas con imagen propia de las pendientes. Este cambio no implica que se hayan obtenido nuevas fotografías.
+
+Para posadas y pequeños negocios se solicitan imágenes autorizadas directamente a los operadores o con licencias compatibles. No se descargarán automáticamente fotos comerciales de redes sociales. La política vigente se documenta en [política editorial](docs/editorial-policy.md).
+
+Las cifras históricas y menciones a fotografías referenciales que aparezcan en secciones anteriores de este README describen etapas previas a esta modificación, **no el comportamiento visual actual**.
+
+
+
 ## Actualización documental · 7 de noviembre de 2026
 
 El directorio tiene ahora **314 fichas documentales** distribuidas en 25 territorios. Se incorporaron **20 registros** a la investigación: **16 posadas y hospedajes locales**, más **4 espacios culturales aptos para investigar planes familiares**, repartidos en **9 entidades federales**. La categoría Hospedaje pasa a **25 fichas** y Cultura a **80 fichas**. Estas incorporaciones no son reservas disponibles ni certifican actividad operativa.
