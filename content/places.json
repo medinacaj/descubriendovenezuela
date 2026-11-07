@@ -2619,7 +2619,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isla-de-coche.webp",
+        "alt": "Vista costera de Isla de Coche, Nueva Esparta",
+        "author": "Esclasans",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Isla_de_Coche_Venezuela.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3283,7 +3294,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-hotel-humboldt.webp",
+        "alt": "Edificio del Hotel Humboldt en el Waraira Repano, Caracas",
+        "author": "Wilfredor",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Humboldt.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3696,7 +3718,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-museo-de-bellas-artes-de-caracas.webp",
+        "alt": "Fachada del Museo de Bellas Artes de Caracas",
+        "author": "Luchofraga",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_Bellas_Artes%2C_Caracas.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
