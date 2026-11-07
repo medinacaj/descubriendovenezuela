@@ -718,5 +718,65 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taguanes.JPG",
     "output": "foto-arco-de-taguanes.webp"
+  },
+  {
+    "id": "cabo-san-roman",
+    "file": "Cabo San Roman.jpg",
+    "alt": "Cabo San Román en la península de Paraguaná, Falcón",
+    "author": "Josequevedo26",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabo_San_Roman.jpg",
+    "output": "foto-cabo-san-roman.webp"
+  },
+  {
+    "id": "la-vela-de-coro",
+    "file": "Plaza en La Vela de Coro.jpg",
+    "alt": "Plaza cercana al litoral en La Vela de Coro, Falcón",
+    "author": "(A3R) angelrravelor (A3R)",
+    "license": "CC BY 2.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_en_La_Vela_de_Coro.jpg",
+    "output": "foto-la-vela-de-coro.webp"
+  },
+  {
+    "id": "carupano",
+    "file": "Carupano Sucre.jpg",
+    "alt": "Vista panorámica de la ciudad de Carúpano en Sucre",
+    "author": "Eleguagabriel",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Carupano_Sucre.jpg",
+    "output": "foto-carupano.webp"
+  },
+  {
+    "id": "rio-caribe",
+    "file": "Río Caribe.jpg",
+    "alt": "Población de Río Caribe vista desde el mirador de Cristo Rey",
+    "author": "Claudionte",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Caribe.jpg",
+    "output": "foto-rio-caribe.webp"
+  },
+  {
+    "id": "guiria",
+    "file": "Guiria.JPG",
+    "alt": "Vista del puerto de Güiria en el estado Sucre",
+    "author": "Teknad",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Guiria.JPG",
+    "output": "foto-guiria.webp"
+  },
+  {
+    "id": "bocono",
+    "file": "Paisaje de bocono.JPG",
+    "alt": "Paisaje urbano de Boconó en el estado Trujillo",
+    "author": "Alirio Segovia",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Paisaje_de_bocono.JPG",
+    "output": "foto-bocono.webp"
   }
 ]
