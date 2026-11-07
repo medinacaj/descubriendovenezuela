@@ -818,5 +818,45 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Bol%C3%ADvar_de_El_Hatillo.JPG",
     "output": "foto-centro-historico-de-el-hatillo.webp"
+  },
+  {
+    "id": "centro-de-arte-lia-bermudez",
+    "file": "Art Center Maracaibo Lia Bermudez.jpg",
+    "alt": "Fachada del Centro de Arte Lía Bermúdez en Maracaibo",
+    "author": "Wilfredor",
+    "license": "CC0 1.0",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Art_Center_Maracaibo_Lia_Bermudez.jpg",
+    "output": "foto-centro-de-arte-lia-bermudez.webp"
+  },
+  {
+    "id": "plaza-baralt-maracaibo",
+    "file": "Plaza Baralt Maracaibo.jpg",
+    "alt": "Plaza Baralt en el centro histórico de Maracaibo",
+    "author": "Miguelperez.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Baralt_Maracaibo.jpg",
+    "output": "foto-plaza-baralt-maracaibo.webp"
+  },
+  {
+    "id": "basilica-chiquinquira-maracaibo",
+    "file": "Basilica de la chiquinquira en Maracaibo.jpg",
+    "alt": "Basílica de Nuestra Señora de Chiquinquirá, Maracaibo",
+    "author": "Carlos Acosta",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basilica_de_la_chiquinquira_en_Maracaibo.jpg",
+    "output": "foto-basilica-chiquinquira-maracaibo.webp"
+  },
+  {
+    "id": "casa-de-la-capitulacion-maracaibo",
+    "file": "Casadelacapitulacion.jpg",
+    "alt": "Fachada de la Casa de la Capitulación, Maracaibo",
+    "author": "Luis Perozo Cervantes",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casadelacapitulacion.jpg",
+    "output": "foto-casa-de-la-capitulacion-maracaibo.webp"
   }
 ]
