@@ -142,6 +142,9 @@ try {
       .toBe(true);
     await page.locator('a.cinematic-hero__primary[href$="/explorar/"]').click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
+    // La navegación llega antes que los scripts diferidos en algunos móviles.
+    // Comprobar que el filtro está inicializado antes de enviar eventos.
+    await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.getByLabel("Buscar lugar").fill("");
