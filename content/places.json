@@ -7159,5 +7159,317 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "rio-caribe",
+    "name": "Río Caribe",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Población costera de la península de Paria, donde la historia del cultivo y los oficios del cacao constituyen una parte destacada de la identidad de la comunidad. No se documentan haciendas abiertas ni recorridos actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f55914f-3377-4336-a4be-1e2b4fbbc732"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f55914f-3377-4336-a4be-1e2b4fbbc732",
+    "primaryConsulted": true,
+    "region": "Sucre",
+    "locality": "Río Caribe",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "carupano",
+    "name": "Carúpano",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Ciudad del municipio Bermúdez reconocida por sus carnavales turísticos y tradiciones de comparsas. La cobertura oficial describe la edición de febrero de 2026, pero no constituye una agenda de próximas celebraciones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540",
+    "primaryConsulted": true,
+    "region": "Sucre",
+    "locality": "Carúpano",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "guiria",
+    "name": "Güiria",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad del estado Sucre cuya identidad cultural incluye el carnaval de tradición afrocaribeña, música y desfiles. La fuente documenta la temporada de 2026 y no acredita programación ni servicios turísticos actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301",
+    "primaryConsulted": true,
+    "region": "Sucre",
+    "locality": "Güiria",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "bocono",
+    "name": "Boconó",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Localidad andina del estado Trujillo conocida por sus carnavales de carrozas y personajes denominados mamarrachos, descritos por el ministerio del turismo en 2026. Los horarios y actividades vigentes requieren confirmación.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Boconó",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "el-callao",
+    "name": "El Callao",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Población del sur de Bolívar célebre por su patrimonio cultural asociado al calipso, las madamas y el carnaval. Una referencia oficial de las celebraciones de 2026 permite documentarla sin prometer una agenda de eventos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "El Callao",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "guanare",
+    "name": "Guanare",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Ciudad de Portuguesa asociada a la celebración de La Mascarada y a otras expresiones culturales del llano venezolano. Mintur documentó su presencia en la temporada de Carnaval 2026; no se anuncian horarios futuros.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301",
+    "primaryConsulted": true,
+    "region": "Portuguesa",
+    "locality": "Guanare",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "la-vela-de-coro",
+    "name": "La Vela de Coro",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Puerto histórico falconiano que forma, junto con Coro, el bien inscrito por UNESCO en 1993. Destaca por la arquitectura tradicional de tierra y su historia portuaria; su estado material y las condiciones de acceso no se comprobaron.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://whc.unesco.org/en/list/658"
+    ],
+    "sourceLabels": [
+      "UNESCO · ficha patrimonial"
+    ],
+    "primaryUrl": "https://whc.unesco.org/en/list/658",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "La Vela de Coro",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cabo-san-roman",
+    "name": "Cabo San Román",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Sector costero de la península de Paraguaná mencionado por Mintur entre los paisajes turísticos de Falcón. Las condiciones de carretera, viento, oleaje, acceso y seguridad deben verificarse antes de viajar.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Península de Paraguaná",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "haiton-del-guarataro",
+    "name": "Haitón del Guarataro",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Formación cavernaria de caliza de Falcón identificada por Mintur como atractivo de espeleología y naturaleza. El directorio no ofrece rutas de entrada ni recomienda explorar la cavidad sin permisos y guías profesionales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Sierra de San Luis",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "museo-arte-moderno-jesus-soto",
+    "name": "Museo de Arte Moderno Jesús Soto",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Museo de Ciudad Bolívar vinculado al arte abstracto y cinético, diseñado por Carlos Raúl Villanueva y concebido para exhibir obra de Jesús Soto y otros creadores. La historia del edificio y su colección están documentadas en el archivo del artista.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://jesus-soto.com/es/museo-soto/"
+    ],
+    "sourceLabels": [
+      "Archivo del artista · museo"
+    ],
+    "primaryUrl": "https://jesus-soto.com/es/museo-soto/",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Ciudad Bolívar",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-recreacional-rafael-montano",
+    "name": "Parque Recreacional Rafael Montaño",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Espacio recreacional de Carúpano mencionado en la programación oficial del carnaval de febrero de 2026. La referencia identifica el lugar sin acreditar su apertura, programación ni servicios en la fecha de consulta.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540"
+    ],
+    "sourceLabels": [
+      "Mintur · noticia institucional"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540",
+    "primaryConsulted": true,
+    "region": "Sucre",
+    "locality": "Carúpano",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "isla-de-aves-refugio",
+    "name": "Refugio de Fauna Silvestre Isla de Aves",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Isla protegida del Caribe venezolano cuyo valor para la anidación de tortugas verdes y aves marinas explica su régimen de conservación. Inparques señala que el acceso civil está estrictamente regulado; no es una excursión turística libre.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://inparques.gob.ve/Refugios/isla-aves.html"
+    ],
+    "sourceLabels": [
+      "Inparques · fuente oficial"
+    ],
+    "primaryUrl": "https://inparques.gob.ve/Refugios/isla-aves.html",
+    "primaryConsulted": true,
+    "region": "Dependencias Federales",
+    "locality": "Isla de Aves",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "parque-nacional-guaramacal",
+    "name": "Parque Nacional General Cruz Carrillo (Guaramacal)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Área montañosa protegida de Trujillo registrada como Parque Nacional Guaramacal en el inventario geográfico nacional. No se han comprobado accesos, senderos operativos ni permisos de visita.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Identificación documental obtenida mediante investigación independiente y revisada el 6 de noviembre de 2026. No acredita disponibilidad, horarios, apertura, permisos, seguridad ni servicios actuales.",
+    "sourceUrls": [
+      "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales"
+    ],
+    "sourceLabels": [
+      "OpenStreetMap Wiki · inventario"
+    ],
+    "primaryUrl": "https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales",
+    "primaryConsulted": true,
+    "region": "Trujillo",
+    "locality": "Guaramacal",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]

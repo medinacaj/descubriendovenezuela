@@ -1,21 +1,19 @@
-# Investigación independiente y ampliación editorial · 2026-11-06
+# Investigación independiente y ampliación · 2026-11-06
 
-Esta actualización identifica **21 fichas nuevas** que no proceden del listado original aportado por el usuario: fuentes ministeriales, documentación histórica y reportajes documentales. Los enlaces prueban la **identidad y el contexto** de los lugares, no los servicios actuales. No se han inventado coordenadas, precios, horarios ni vías de acceso.
+Se investigaron destinos **no proporcionados previamente por el usuario** mediante fuentes documentales públicas y se descartaron duplicados por identificador. Se incorporaron 13 registros en Sucre, Trujillo, Bolívar, Portuguesa, Falcón y Dependencias Federales.
 
-## Hallazgos por fuente
+- Río Caribe — Sucre. Fuente: https://www.mintur.gob.ve/news/9f55914f-3377-4336-a4be-1e2b4fbbc732
+- Carúpano — Sucre. Fuente: https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540
+- Güiria — Sucre. Fuente: https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301
+- Boconó — Trujillo. Fuente: https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301
+- El Callao — Bolívar. Fuente: https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301
+- Guanare — Portuguesa. Fuente: https://www.mintur.gob.ve/news/a11823b3-ba64-4e6e-9321-4dea7cfe1301
+- La Vela de Coro — Falcón. Fuente: https://whc.unesco.org/en/list/658
+- Cabo San Román — Falcón. Fuente: https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907
+- Haitón del Guarataro — Falcón. Fuente: https://www.mintur.gob.ve/news/a17f0021-6b61-4b33-9023-ee824e3c3907
+- Museo de Arte Moderno Jesús Soto — Bolívar. Fuente: https://jesus-soto.com/es/museo-soto/
+- Parque Recreacional Rafael Montaño — Sucre. Fuente: https://www.mintur.gob.ve/news/a10c3f87-56e1-4537-bd2f-aa901072a540
+- Refugio de Fauna Silvestre Isla de Aves — Dependencias Federales. Fuente: https://inparques.gob.ve/Refugios/isla-aves.html
+- Parque Nacional General Cruz Carrillo (Guaramacal) — Trujillo. Fuente: https://wiki.openstreetmap.org/wiki/ES:Venezuela/Listados/Parques_nacionales
 
-- **Ministerio de Turismo · rutas Monagas** · [fuente](https://www.mintur.gob.ve/news/9f924c89-5d70-4d4b-abdd-655659a48f14): Río Morichal Largo; El Chorrerón (Lluvia de Bendiciones); Cerro Negro (Monagas); Cascada del Nazareno.
-- **Ministerio de Turismo · playas Mochima** · [fuente](https://www.mintur.gob.ve/news/9e585096-0e92-4e33-9513-90b842c3eb85): Isla Puinare (Mochima); El Faro (sector de Mochima); Punta La Cruz (Mochima).
-- **Ministerio de Turismo · Encuentro de Dos Ciudades** · [fuente](https://www.mintur.gob.ve/news/a130cdf3-593e-48ad-ac29-f4a13f9e9c5e): Ciudad Orinoco; Puente de Angostura.
-- **Ministerio de Turismo · Colonia Tovar** · [fuente](https://www.mintur.gob.ve/news/a17f32a8-5576-4c0f-b428-be03c1ab43ec): Colonia Tovar; Iglesia San Martín de Tours (Colonia Tovar); Jardín de las Hortensias (Colonia Tovar); Monumento Natural Pico Codazzi.
-- **Ministerio de Turismo · nominaciones 2025** · [fuente](https://www.mintur.gob.ve/documents/tramites/pnt/NUEVO_FORMATO_NOMINADOS.pdf): La Victoria (Aragua); Centro histórico de La Victoria; La Grita; Ruta Páramos Mágicos de Capacho; Piedra Abuela Kueka.
-- **El Diario · destinos menos conocidos** · [fuente](https://eldiario.com/2025/03/20/redescubriendo-venezuela-10-destinos-turisticos-poco-conocidos-en-el-pais/): Cueva del Fantasma; Salto La Vaca (El Paují).
-- **Ministerio de Turismo · Hato El Cedral** · [fuente](https://www.mintur.gob.ve/news/a085653e-b012-4f43-ba24-2768b6afe014): Hato El Cedral.
-
-## Criterio de admisión y riesgos
-
-- Se separan localidades, áreas protegidas, atractivos y rutas/circuitos; ninguna mención promocional se presenta como prueba de apertura.
-- Los lugares protegidos y culturalmente sensibles carecen deliberadamente de coordenadas específicas no autorizadas.
-- Cada ficha conserva fuente, fecha, límites de verificación y advertencia de consultar a responsables antes de visitar.
-- Se registraron **6 nuevas fotografías de destinos concretos**, con autor, licencia y archivo de Wikimedia Commons para importación local auditada. Hasta que la tarea de importación complete correctamente no deben darse por publicadas.
-- El equipo editorial mantiene pendientes las fichas sin fotografía propia: se muestra referencia claramente rotulada y no se atribuye a la ubicación equivocada.
+Los nuevos registros requieren fotografías originales autorizadas: temporalmente utilizan imágenes acreditadas de referencia que **no se presentan como imágenes del lugar**. No se verificaron estado operativo, precios, horarios, permisos, seguridad ni accesibilidad. Isla de Aves es un área de acceso civil controlado, no una oferta turística libre.
