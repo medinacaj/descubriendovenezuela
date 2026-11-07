@@ -3,6 +3,8 @@ on:
   push:
     paths:
       - "content/licensed-photographs.json"
+      - "scripts/build-directories.mjs"
+      - "scripts/optimize-images.mjs"
       - ".github/workflows/importar-fotos.yml"
   workflow_dispatch:
 permissions:
@@ -23,6 +25,8 @@ jobs:
         run: npm ci
       - name: Descargar solo fotos con autor y licencia registrados
         run: node scripts/import-licensed-photos.mjs --only-missing
+      - name: Optimizar imágenes locales a 480 y 800 px
+        run: node scripts/optimize-images.mjs
       - name: Regenerar fichas y vistas estáticas
         run: npm run build:pages
       - name: Validar fuente y archivo generado

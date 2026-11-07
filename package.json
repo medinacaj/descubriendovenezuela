@@ -14,7 +14,8 @@
     "catalog:import": "tsx scripts/import-catalog.ts",
     "build:pages": "node scripts/build-pages.mjs",
     "build:maps": "node scripts/build-maps.mjs",
-    "test:pages": "node scripts/test-pages.mjs"
+    "test:pages": "node scripts/test-pages.mjs",
+    "images:optimize": "node scripts/optimize-images.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^6.16.0",

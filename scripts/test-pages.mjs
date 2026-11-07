@@ -1,6 +1,6 @@
 import { createServer } from "node:http";
 import { readFile } from "node:fs/promises";
-import { chromium, expect } from "@playwright/test";
+import { chromium, firefox, webkit, expect } from "@playwright/test";
 const prefix = "/descubriendovenezuela/";
 const allPlaces = JSON.parse(await readFile("content/places.json", "utf8"));
 const stateCount = new Set(allPlaces.map(p => p.region)).size;
@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/script-[a-z0-9]+-[0-9]+\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -25,9 +25,12 @@ let executablePath = process.env.CHROMIUM_PATH;
 if (!executablePath) {
   try { await access("/usr/bin/chromium"); executablePath = "/usr/bin/chromium"; } catch {}
 }
-const browser = await chromium.launch({
-  ...(executablePath ? { executablePath } : {}),
-  args: ["--no-sandbox"],
+const engineName=process.env.BROWSER_ENGINE||"chromium";
+if(!["chromium","firefox","webkit"].includes(engineName))throw Error("Motor no admitido");
+const engine={chromium,firefox,webkit}[engineName];
+const browser=await engine.launch({
+  ...(engineName==="chromium"&&executablePath ? { executablePath } : {}),
+  ...(engineName==="chromium" ? {args:["--no-sandbox"]} : {}),
 });
 try {
   for (const width of [320, 390, 768, 1024, 1440, 1920]) {

@@ -73,6 +73,20 @@ describe("Pages con URLs permanentes",()=>{
      if(!((p as any).photos?.length))expect(detail).toContain("NO corresponde a");
    }
  });
+ it("CSP y scripts autoalojados sin JavaScript inline",async()=>{
+  for(const path of ["docs/index.html","docs/explorar/index.html","docs/estados/index.html"]){
+    const html=await readFile(path,"utf8");
+    expect(html).toContain('http-equiv="Content-Security-Policy"');
+    expect(html).toContain("script-src 'self'");
+    expect(html).not.toContain("<script>");
+    const tags=[...html.matchAll(/src="\/descubriendovenezuela\/js\/(script-[a-z0-9]+-[0-9]+\.js)"/g)];
+    expect(tags.length).toBeGreaterThan(0);
+    for(const tag of tags)expect((await stat("docs/js/"+tag[1])).size).toBeGreaterThan(15);
+  }
+  const explore=await readFile("docs/explorar/index.html","utf8");
+  expect(explore).toContain(' srcset="/descubriendovenezuela/media/foto-');
+  expect(explore).toContain(' sizes="(max-width:');
+ });
  it("SEO estático y hojas de estilo cacheables",async()=>{
   const home=await readFile("docs/index.html","utf8");
   const explore=await readFile("docs/explorar/index.html","utf8");
