@@ -7653,7 +7653,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-basilica-chiquinquira-maracaibo.webp",
+        "alt": "Basílica de Nuestra Señora de Chiquinquirá, Maracaibo",
+        "author": "Carlos Acosta",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Basilica_de_la_chiquinquira_en_Maracaibo.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7677,7 +7688,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-casa-de-la-capitulacion-maracaibo.webp",
+        "alt": "Fachada de la Casa de la Capitulación, Maracaibo",
+        "author": "Luis Perozo Cervantes",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casadelacapitulacion.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7701,7 +7723,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-centro-de-arte-lia-bermudez.webp",
+        "alt": "Fachada del Centro de Arte Lía Bermúdez en Maracaibo",
+        "author": "Wilfredor",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Art_Center_Maracaibo_Lia_Bermudez.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -7725,7 +7758,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-plaza-baralt-maracaibo.webp",
+        "alt": "Plaza Baralt en el centro histórico de Maracaibo",
+        "author": "Miguelperez.jpg",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Baralt_Maracaibo.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
