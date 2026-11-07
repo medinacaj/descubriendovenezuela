@@ -73,6 +73,14 @@ describe("Pages con URLs permanentes",()=>{
      if(!((p as any).photos?.length))expect(detail).toContain("NO corresponde a");
    }
  });
+ it("mapa SVG con enlaces a los territorios del catálogo",async()=>{
+  const html=await readFile("docs/mapa/index.html","utf8");
+  expect(html).toContain("Mapa de Venezuela por estados");
+  expect((html.match(/class="map-area"/g)||[]).length).toBe(new Set(places.map(p=>p.region)).size);
+  expect(html).toContain("Natural Earth");
+  for(const r of new Set(places.map(p=>p.region)))expect(html).toContain('/descubriendovenezuela/regiones/'+slug(r!)+'/');
+  expect(await readFile("docs/sitemap.xml","utf8")).toContain(base+"mapa/");
+ });
  it("CSP y scripts autoalojados sin JavaScript inline",async()=>{
   for(const path of ["docs/index.html","docs/explorar/index.html","docs/estados/index.html"]){
     const html=await readFile(path,"utf8");

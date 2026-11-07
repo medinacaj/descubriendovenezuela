@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/script-[a-z0-9]+-[0-9]+\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|mapa|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/script-[a-z0-9]+-[0-9]+\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -51,6 +51,12 @@ try {
       throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
     if (box.titleLeft < -1 || box.titleRight > width + 1)
       throw Error("Título fuera del viewport a " + width + "px");
+    await page.goto(origin + "mapa/");
+    await expect(page.getByRole("heading",{name:"Mapa de Venezuela por estados"})).toBeVisible();
+    await expect(page.locator("svg .map-area")).toHaveCount(stateCount);
+    await page.getByLabel("Buscar territorio").fill("merida");
+    await expect(page.locator(".map-state-link:visible")).toHaveCount(1);
+    if(await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth+1))throw Error("Mapa desbordado a "+width+"px");
     await page.goto(origin + "estados/");
     await expect(page.getByRole("heading", {name:"Estados de Venezuela y Distrito Capital"})).toBeVisible();
     await expect(page.locator("#state-results .state-tile")).toHaveCount(stateCount);
