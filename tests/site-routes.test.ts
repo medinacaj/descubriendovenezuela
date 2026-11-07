@@ -50,7 +50,7 @@ describe("Pages con URLs permanentes",()=>{
      "parque-la-venezuela-de-antier","pueblo-museo-los-aleros"
    ];
    expect(guide).toContain("Posadas y planes para compartir");
-   expect(guide).toContain("Sin reservas"); 
+   expect(guide).toContain("sin reservas ni disponibilidad asumida"); 
    expect(guide).toContain("verificables");
    expect(home).toContain("Escapadas para compartir");
    expect(home).toContain('href="/descubriendovenezuela/posadas/"');
