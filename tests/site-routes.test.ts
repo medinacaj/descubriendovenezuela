@@ -38,6 +38,29 @@ describe("Pages con URLs permanentes",()=>{
   expect(map).toContain(base+"regiones/merida/");
   expect((await stat("docs/states.css")).size).toBeGreaterThan(5000);
  });
+ it("colección de posadas y salidas familiares tiene rutas y fuentes independientes",async()=>{
+   const guide=await readFile("docs/posadas/index.html","utf8");
+   const home=await readFile("docs/index.html","utf8");
+   const sitemap=await readFile("docs/sitemap.xml","utf8");
+   const catalog=await readFile("docs/explorar/index.html","utf8");
+   const ids=[
+     "los-ranchos-de-chano","posada-casa-sol-merida",
+     "posada-los-cocos-morrocoy","posada-playa-colorada",
+     "posada-casa-el-pozo","museo-de-los-ninos-caracas",
+     "parque-la-venezuela-de-antier","pueblo-museo-los-aleros"
+   ];
+   expect(guide).toContain("Posadas y planes para compartir");
+   expect(guide).toContain("Sin reservas"); 
+   expect(guide).toContain("verificables");
+   expect(home).toContain("Escapadas para compartir");
+   expect(home).toContain('href="/descubriendovenezuela/posadas/"');
+   expect(sitemap).toContain(base+"posadas/");
+   for(const id of ids){
+     expect(guide).toContain("/descubriendovenezuela/lugares/"+id+"/");
+     expect(catalog).toContain("/descubriendovenezuela/lugares/"+id+"/");
+     expect((await stat("docs/lugares/"+id+"/index.html")).size).toBeGreaterThan(1000);
+   }
+ });
  it("home y estados indexables y enlaces regionales a todas las fichas",async()=>{
   const html=await readFile("docs/index.html","utf8");
   expect(html).toContain('rel="canonical" href="'+base+'"');
