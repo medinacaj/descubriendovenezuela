@@ -6792,5 +6792,317 @@
       }
     ],
     "demo": false
+  },
+  {
+    "id": "playa-adicora",
+    "name": "Playa Adícora",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa de Paraguaná mencionada por Mintur entre los destinos costeros con información turística en 2025. El dato documental acredita el atractivo y su contexto geográfico, pero no permite asegurar condiciones actuales de baño, servicios, seguridad ni horarios.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Adícora",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-mata-gorda-paraguana",
+    "name": "Playa Mata Gorda",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa de la península de Paraguaná incluida en el inventario de lugares atendidos durante actividades turísticas de 2025. La mención institucional no demuestra seguridad acuática, servicios permanentes ni disponibilidad de excursiones.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Paraguaná",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-villa-marina",
+    "name": "Playa Villa Marina",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa de Paraguaná citada por Corpotulipa y Mintur entre los espacios turísticos de la costa de Los Taques. Su descripción se limita al carácter costero sin atribuir horarios, socorristas, acceso ni servicios no comprobados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Los Taques",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-amuay",
+    "name": "Playa Amuay",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa del entorno de Amuay mencionada en información turística de Paraguaná durante 2025. La ficha documenta su nombre y territorio, sin estimar afluencia, condiciones del mar ni viabilidad de actividades de navegación.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Amuay",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-bahia-grande-paraguana",
+    "name": "Playa Bahía Grande",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Destino litoral incluido en la relación de playas de Paraguaná visitadas durante la temporada de 2025. No se infiere disponibilidad actual de infraestructura, vigilancia, transporte ni condiciones para practicar deportes acuáticos.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9eb4ab4c-1846-4b89-ab0e-8b08f3160383",
+    "primaryConsulted": true,
+    "region": "Falcón",
+    "locality": "Paraguaná",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "playa-lido",
+    "name": "Playa Lido",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Playa urbana de la costa de Anzoátegui donde Mintur documentó actividades culturales y recreativas durante los carnavales de 2025. El registro de aquel evento no confirma espectáculos, condiciones de playa ni servicios presentes.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9e56b7c8-5047-49b1-b227-59f9068ddfcb"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9e56b7c8-5047-49b1-b227-59f9068ddfcb",
+    "primaryConsulted": true,
+    "region": "Anzoátegui",
+    "locality": "Lechería",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cano-grulla",
+    "name": "Comunidad de Caño Grulla",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Comunidad del estado Amazonas señalada por Inatur en su diagnóstico de rutas culturales y gastronómicas indígenas durante octubre de 2025. Su patrimonio debe abordarse con respeto y consentimiento comunitario y no como espacio de acceso irrestricto.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Amazonas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pozo-labio-grueso",
+    "name": "Pozo Labio Grueso",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Pozo natural mencionado por Inatur como atractivo del recorrido comunitario de Caño Grulla. La identificación del espacio no confirma que sea seguro bañarse, que exista ruta pública señalizada ni autorización de visita.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Caño Grulla",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "ruta-legado-del-budare-amazonas",
+    "name": "Ruta El Legado del Budare",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Recorrido cultural y gastronómico indígena documentado por Inatur en el que destacan la elaboración tradicional de casabe y mañoco. Las experiencias comunitarias están sujetas a consentimiento, guías y verificaciones actuales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Caño Grulla",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "cueva-juata-aje-amazonas",
+    "name": "Cueva Juãta Aje (Tucusito)",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Sitio de pinturas rupestres y valor espiritual para comunidades indígenas, mencionado por Inatur como escuela ancestral. Esta ficha evita coordenadas y rutas precisas para proteger el patrimonio y no equivale a permiso de acceso.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a03ed737-eeb4-4cff-bf46-b40b5c06ac4f",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Caño Grulla",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "kamarata",
+    "name": "Kamarata",
+    "category": "Localidades",
+    "country": "Venezuela",
+    "description": "Comunidad de la región del Parque Nacional Canaima donde Inatur documentó actividades de formación para turismo comunitario en septiembre de 2025. Cualquier visita debe respetar las autoridades comunitarias y las reglas ambientales.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a004c0b5-d9b6-4bcb-9162-1e792cfa41f0"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a004c0b5-d9b6-4bcb-9162-1e792cfa41f0",
+    "primaryConsulted": true,
+    "region": "Bolívar",
+    "locality": "Canaima",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "pozo-azul-amazonas",
+    "name": "Pozo Azul (Puerto Ayacucho)",
+    "category": "Naturaleza",
+    "country": "Venezuela",
+    "description": "Balneario natural descrito por Mintur en julio de 2025 como un atractivo de naturaleza cerca de Puerto Ayacucho. La descripción histórica menciona senderismo y gastronomía, pero no acredita tarifas, permisos ni servicios hoy.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/9f597e27-fe28-4600-8cc4-278f9785d0f1"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/9f597e27-fe28-4600-8cc4-278f9785d0f1",
+    "primaryConsulted": true,
+    "region": "Amazonas",
+    "locality": "Puerto Ayacucho",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
+  },
+  {
+    "id": "basilica-santa-teresa-caracas",
+    "name": "Basílica de Santa Teresa",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Templo patrimonial de Caracas citado en la cobertura institucional de las celebraciones de Semana Santa de 2026. La mención permite documentar su importancia cultural y religiosa sin publicar horarios litúrgicos no confirmados.",
+    "reviewedAt": "2026-11-06",
+    "verification": "Referencia institucional del lugar consultada el 6 de noviembre de 2026. No se verificaron horarios, seguridad, permisos, acceso o prestadores de servicio actuales.",
+    "sourceUrls": [
+      "https://www.mintur.gob.ve/news/a17b8463-4a65-402a-8745-d0859ac78557"
+    ],
+    "sourceLabels": [
+      "Ministerio del Poder Popular para el Turismo · fuente documental"
+    ],
+    "primaryUrl": "https://www.mintur.gob.ve/news/a17b8463-4a65-402a-8745-d0859ac78557",
+    "primaryConsulted": true,
+    "region": "Distrito Capital",
+    "locality": "Caracas",
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false
   }
 ]

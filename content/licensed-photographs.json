@@ -668,5 +668,55 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_La_Victoria._estado_Aragua._Venezuela.jpg",
     "output": "foto-la-victoria-aragua.webp"
+  },
+  {
+    "id": "playa-adicora",
+    "file": "Puro color Venezolano.jpg",
+    "alt": "Playa Adícora, costa de Falcón",
+    "author": "Wilfredo Torres",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puro_color_Venezolano.jpg",
+    "output": "foto-playa-adicora.webp"
+  },
+  {
+    "id": "flor-de-venezuela",
+    "file": "Flor de Venezuela.JPG",
+    "alt": "Flor de Venezuela en Barquisimeto",
+    "author": "Elcordoves",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flor_de_Venezuela.JPG",
+    "output": "foto-flor-de-venezuela.webp"
+  },
+  {
+    "id": "obelisco-de-barquisimeto",
+    "file": "OBELISCO DE BARQUISIMETO.JPG",
+    "alt": "Monumento Obelisco de Barquisimeto",
+    "author": "Ronaldy Lugo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:OBELISCO_DE_BARQUISIMETO.JPG",
+    "output": "foto-obelisco-de-barquisimeto.webp"
+  },
+  {
+    "id": "plaza-venezuela",
+    "file": "Plaza Venezuela - Caracas.jpg",
+    "alt": "Plaza Venezuela en Caracas",
+    "author": "OsmanFernandez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+    "output": "foto-plaza-venezuela.webp"
+  },
+  {
+    "id": "arco-de-taguanes",
+    "file": "Taguanes.JPG",
+    "alt": "Arco de Taguanes en Cojedes",
+    "author": "Nelsy galvis",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taguanes.JPG",
+    "output": "foto-arco-de-taguanes.webp"
   }
 ]
