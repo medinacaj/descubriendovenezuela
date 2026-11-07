@@ -4040,7 +4040,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-plaza-venezuela.webp",
+        "alt": "Plaza Venezuela en Caracas",
+        "author": "OsmanFernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4234,7 +4245,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-obelisco-de-barquisimeto.webp",
+        "alt": "Monumento Obelisco de Barquisimeto",
+        "author": "Ronaldy Lugo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:OBELISCO_DE_BARQUISIMETO.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -4257,7 +4279,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-flor-de-venezuela.webp",
+        "alt": "Flor de Venezuela en Barquisimeto",
+        "author": "Elcordoves",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Flor_de_Venezuela.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -5516,7 +5549,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-arco-de-taguanes.webp",
+        "alt": "Arco de Taguanes en Cojedes",
+        "author": "Nelsy galvis",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Taguanes.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -6814,7 +6858,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-adicora.webp",
+        "alt": "Playa Adícora, costa de Falcón",
+        "author": "Wilfredo Torres",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Puro_color_Venezolano.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
