@@ -28,9 +28,9 @@ let failures=0;
 try{
  const entries=[["portada",""],["explorar","explorar/"],["territorios","estados/"],["región","regiones/falcon/"],["ficha","lugares/colonia-tovar/"],["privacidad","privacidad/"]];
  for(const [label,url] of entries){
-  const page=await browser.newPage({viewport:{width:390,height:844}});
+  const page=await browser.newPage({viewport:{width:390,height:844},bypassCSP:true});
   // La CSP productiva se comprueba por separado; aquí axe necesita inyección temporal.
-  await page.setBypassCSP(true);
+  // CSP se omite solo en este contexto de auditoría, no en la web pública.
   const response=await page.goto(origin+url);
   if(!response?.ok())throw Error("No se cargó "+label);
   await page.addScriptTag({content:axe});
