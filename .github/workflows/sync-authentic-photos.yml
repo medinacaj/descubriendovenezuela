@@ -1,0 +1,37 @@
+name: Sincronizar dos fotografías auténticas
+on:
+  push:
+    branches:
+      - fix/fotos-autenticas-sin-referenciales
+    paths:
+      - content/licensed-photographs.json
+permissions:
+  contents: write
+jobs:
+  fotos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "24"
+          cache: npm
+      - run: npm ci
+      - name: Importar fotografías libres documentadas
+        run: node scripts/import-licensed-photos.mjs --only-missing
+      - name: Crear variantes para móviles
+        run: node scripts/optimize-images.mjs
+      - name: Regenerar páginas de todo el catálogo
+        run: npm run build:pages
+      - name: Guardar fotos y páginas en esta rama
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add content/places.json docs/
+          if ! git diff --cached --quiet; then
+            git commit -m "media: añadir fotografías auténticas de Los Aleros y Museo de los Niños"
+            git push origin HEAD:fix/fotos-autenticas-sin-referenciales
+          fi
