@@ -35,7 +35,7 @@ it("Pages incorpora lugares y fuentes, con categoría y búsqueda dinámicas", a
     expect(detail).toContain(p.sourceUrls[0]);
     expect(detail).toContain("Consultar precio");
   }
-  expect(html).toContain("Descubre Venezuela por estado");
-  expect(html).toContain("Sitios que merecen conocerse");
+  expect(html).toContain("Explora por estado");
+  expect(html).toContain("Destinos destacados");
   expect(html).not.toContain("Paisaje por descubrir · DEMO");
 });
