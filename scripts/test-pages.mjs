@@ -42,6 +42,9 @@ try {
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
     await page.getByRole("button", {name:"Siguiente destino"}).click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("CANAIMA");
+    await page.locator('.cinematic-hero__timeline button[data-index="2"]').click();
+    await expect(page.locator(".cinematic-hero h1")).toContainText("LOS ROQUES");
+    await expect(page.locator('.cinematic-hero__timeline button[data-index="2"]')).toHaveAttribute("aria-pressed","true");
     const box = await page.evaluate(() => {
       const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();
       const card = document.querySelector(".directory-grid .place-card").getBoundingClientRect();
@@ -61,6 +64,8 @@ try {
       throw Error("Título fuera del viewport a " + width + "px");
     await page.goto(origin + "mapa/");
     await expect(page.getByRole("heading",{name:"Mapa de Venezuela por estados"})).toBeVisible();
+    await expect(page.locator("body")).toHaveCSS("background-color","rgb(8, 25, 35)");
+    await expect(page.locator(".territory-map__sidebar")).toHaveCSS("background-color","rgb(16, 44, 57)");
     await expect(page.locator("svg .map-area")).toHaveCount(stateCount);
     await page.getByLabel("Buscar territorio").fill("merida");
     await expect(page.locator(".map-state-link:visible")).toHaveCount(1);
