@@ -923,3 +923,6 @@ footer > small {border-color:#8bb6c4;}
     margin:0 12px 58px;padding:20px 18px;
   }
 }
+
+/* Textos informativos pequeños sobre las tarjetas crema: contraste AA. */
+.place-visit dd { color:#3c5062; }
