@@ -11,6 +11,8 @@ const geo=JSON.parse(await readFile("content/maps/states.geojson","utf8"));
 const files = buildDirectories(places,css,layout.hero,geo);
 files["docs/layout-balance.css"] = await readFile("src/app/layout-balance.css", "utf8");
 files["docs/states.css"] = await readFile("src/app/states.css", "utf8");
+files["docs/cinematic-hero.css"] = await readFile("src/app/cinematic-hero.css", "utf8");
+files["docs/js/cinematic-hero.js"] = await readFile("scripts/hero-carousel.js", "utf8");
 files["docs/vista-demo.html"] = '<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=/descubriendovenezuela/"><link rel="canonical" href="https://medinacaj.github.io/descubriendovenezuela/"><title>Venezuela en el Mapa</title></head><body><a href="/descubriendovenezuela/">Abrir el directorio actualizado</a></body></html>';
 for (const [path,content] of Object.entries(files)) { await mkdir(dirname(path),{recursive:true}); await writeFile(path,content); }
 console.log("Catálogo generado desde una sola fuente: "+places.length+" fichas, "+Object.keys(files).length+" archivos.");

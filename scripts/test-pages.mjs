@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|mapa|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/script-[a-z0-9]+-[0-9]+\.js|layout-balance\.css|states\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|mapa|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -38,19 +38,23 @@ try {
     await page.goto(origin);
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
+    await expect(page.locator('link[href$="cinematic-hero.css"]')).toHaveCount(1);
+    await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
+    await page.getByRole("button", {name:"Siguiente destino"}).click();
+    await expect(page.locator(".cinematic-hero h1")).toContainText("CANAIMA");
     const box = await page.evaluate(() => {
-      const hero = document.querySelector(".hero").getBoundingClientRect();
+      const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();
       const card = document.querySelector(".directory-grid .place-card").getBoundingClientRect();
-      const title = document.querySelector(".hero h1").getBoundingClientRect();
+      const title = document.querySelector(".cinematic-hero h1").getBoundingClientRect();
       return { scrollWidth: document.documentElement.scrollWidth, heroWidth: hero.width,
         cardWidth: card.width, titleLeft: title.left, titleRight: title.right };
     });
     if (box.scrollWidth > width + 1) {
       const offenders=await page.evaluate(()=>[...document.querySelectorAll("body *")].map(el=>({tag:el.tagName,cls:typeof el.className==="string"?el.className.slice(0,75):"",text:el.textContent?.slice(0,35),x:Math.round(el.getBoundingClientRect().x),right:Math.round(el.getBoundingClientRect().right),sw:el.scrollWidth,cw:el.clientWidth})).filter(o=>o.right>innerWidth+1||o.x< -1||o.sw>o.cw+5).slice(0,20));
-      const cssInfo=await page.evaluate(()=>({margin:getComputedStyle(document.body).margin,heroDisplay:getComputedStyle(document.querySelector(".hero")).display,styleSheets:[...document.styleSheets].map(x=>({href:x.href,disabled:x.disabled,rules:(()=>{try{return x.cssRules.length}catch{return "not available"}})()})),resources:performance.getEntriesByType("resource").filter(x=>x.name.endsWith(".css")).map(x=>({name:x.name,duration:x.duration,size:x.transferSize}))}));
+      const cssInfo=await page.evaluate(()=>({margin:getComputedStyle(document.body).margin,heroDisplay:getComputedStyle(document.querySelector(".cinematic-hero")).display,styleSheets:[...document.styleSheets].map(x=>({href:x.href,disabled:x.disabled,rules:(()=>{try{return x.cssRules.length}catch{return "not available"}})()})),resources:performance.getEntriesByType("resource").filter(x=>x.name.endsWith(".css")).map(x=>({name:x.name,duration:x.duration,size:x.transferSize}))}));
       throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; CSS "+JSON.stringify(cssInfo)+"; "+JSON.stringify(offenders));
     }
-    if (box.heroWidth > 1320) throw Error("Portada demasiado ancha a " + width + "px");
+    if (box.heroWidth > width + 1 || box.heroWidth < width * .78) throw Error("Portada desproporcionada a " + width + "px");
     if (box.cardWidth < 220 || box.cardWidth > 470)
       throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
     if (box.titleLeft < -1 || box.titleRight > width + 1)
@@ -123,7 +127,7 @@ try {
           ),
       )
       .toBe(true);
-    await page.locator('a.button[href$="/explorar/"]').first().click();
+    await page.locator('a.cinematic-hero__primary[href$="/explorar/"]').click();
     await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
     await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");

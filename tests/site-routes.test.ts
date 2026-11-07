@@ -9,6 +9,9 @@ describe("Pages con URLs permanentes",()=>{
   const home=await readFile("docs/index.html","utf8");
   const index=await readFile("docs/estados/index.html","utf8");
   expect(home).toContain("Descubre Venezuela por estado");
+  expect(home).toContain('class="cinematic-hero"');
+  expect(home).toContain("cinematic-hero.css");
+  expect(home).toContain("js/cinematic-hero.js");
   expect(home).toContain("/descubriendovenezuela/estados/");
   expect(home).toContain("Sitios que merecen conocerse");
   expect(index).toContain("Estados de Venezuela y Distrito Capital");
@@ -119,6 +122,7 @@ describe("Pages con URLs permanentes",()=>{
   const sw=await readFile("docs/sw.js","utf8");
   expect(sw).toContain("caches.open");
   expect(sw).toContain('BASE+"states.css"');
+  expect(sw).toContain('BASE+"cinematic-hero.css"');
   expect(sw).toContain('BASE+"base.css"');
   expect(sw).toContain("Response.error()");
  });
