@@ -4564,7 +4564,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-centro-historico-de-el-hatillo.webp",
+        "alt": "Plaza Bolívar del centro histórico de El Hatillo, Miranda",
+        "author": "María Auxiliadora Ramírez Prato",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Bol%C3%ADvar_de_El_Hatillo.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
