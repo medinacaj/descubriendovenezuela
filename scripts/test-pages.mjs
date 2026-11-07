@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|mapa|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|mapa|posadas|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -97,6 +97,14 @@ try {
     await expect(page.locator(".state-more-sites")).toHaveCount(1);
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
+    await page.goto(origin + "posadas/");
+    await expect(page.getByRole("heading",{name:"Posadas y planes para compartir"})).toBeVisible();
+    await expect(page.locator(".family-guide__grid .place-card")).toHaveCount(16);
+    await expect(page.locator(".family-guide .directory-grid").last().locator(".place-card")).toHaveCount(4);
+    await expect(page.locator('a[href$="/lugares/posada-casa-sol-merida/"]')).toHaveCount(1);
+    await expect(page.locator('a[href$="/lugares/museo-de-los-ninos-caracas/"]')).toHaveCount(1);
+    if(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
+      throw Error("Guía de posadas desbordada a "+width+"px");
     await page.goto(origin + "explorar/");
     await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(255, 253, 250)");
     await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-image",/linear-gradient/);

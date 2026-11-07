@@ -7939,5 +7939,493 @@
     "price": null,
     "photos": [],
     "demo": false
+  },
+  {
+    "id": "los-ranchos-de-chano",
+    "name": "Los Ranchos de Chano",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada pequeña de identidad tropical en el entorno de Puerto Colombia y Choroní. Su presentación como proyecto de sus anfitriones la convierte en una referencia para quienes buscan una estancia de trato cercano, con el paisaje costero y la historia local como contexto.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://www.losranchosdechano.com/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://www.losranchosdechano.com/",
+      "https://cachamanegra.com/otras-posadas-en-choroni/"
+    ],
+    "sourceLabels": [
+      "Sitio del establecimiento · Los Ranchos de Chano",
+      "Directorio de otra posada de Choroní"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Aragua",
+    "locality": "Choroní"
+  },
+  {
+    "id": "posada-casa-sol-merida",
+    "name": "Posada Casa Sol",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Alojamiento urbano de estilo colonial en la ciudad de Mérida, con jardín interior y habitaciones de distintas configuraciones. Su propuesta permite combinar descanso con recorridos culturales por la ciudad, sujeto a comprobar directamente cualquier servicio antes de viajar.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://www.posadacasasol.com.ve/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://www.posadacasasol.com.ve/",
+      "https://www.posadacasasol.com.ve/rooms.html"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Posada Casa Sol",
+      "Habitaciones · Posada Casa Sol"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Mérida",
+    "locality": "Mérida"
+  },
+  {
+    "id": "posada-rafaela-y-cristobal",
+    "name": "Posada Rafaela y Cristóbal",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada ubicada en el entorno rural de Misintá, cerca de Mucuchíes, que se presenta como una casa vinculada con la historia de sus propietarios y el paisaje andino. Puede investigarse como punto de partida para conocer los pueblos de páramo y su cultura.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://www.posadarafaelaycristobal.com/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://www.posadarafaelaycristobal.com/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Posada Rafaela y Cristóbal"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Mérida",
+    "locality": "Mucuchíes"
+  },
+  {
+    "id": "posada-los-cocos-morrocoy",
+    "name": "Posada Los Cocos",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Casa de hospedaje en el sector Los Claveles, dentro del ámbito de Morrocoy. El operador destaca jardines y una propuesta de atención personal, rasgos vinculados al turismo de posadas; las visitas a cayos requieren confirmar operadores, accesos y condiciones por separado.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://www.posadaloscocos.com/la-posada",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://www.posadaloscocos.com/la-posada"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Posada Los Cocos"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Falcón",
+    "locality": "Parque Nacional Morrocoy"
+  },
+  {
+    "id": "posada-la-ardilena",
+    "name": "Posada La Ardileña",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada de arquitectura inspirada en casas costeras, asociada a los paisajes de manglares y bahías de Morrocoy. Su historia pública describe el origen familiar del proyecto. La identificación del lugar no supone comprobar actividades náuticas ni condiciones para menores.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://ardilena.com/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://ardilena.com/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · La Ardileña"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Falcón",
+    "locality": "Morrocoy"
+  },
+  {
+    "id": "posada-playa-colorada",
+    "name": "Posada Playa Colorada",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada con habitaciones y cabañas en Playa Colorada, zona del Parque Nacional Mochima. El operador presenta alternativas para familias y grupos; antes de cualquier viaje deben confirmarse directamente la oferta, los accesos a playa y las restricciones del parque.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://playacoloradaposada.com/habitaciones/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://playacoloradaposada.com/habitaciones/",
+      "https://turismosucre.com.ve/alojamiento/mochima/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Posada Playa Colorada",
+      "CEPITUR Sucre · alojamientos de Mochima"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Sucre",
+    "locality": "Playa Colorada"
+  },
+  {
+    "id": "posada-neneko-mochima",
+    "name": "Posada Neneko",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Pequeño alojamiento identificado en el poblado de Mochima por una guía turística regional. Resulta pertinente para investigar estancias de carácter local asociadas al paisaje marino, sin dar por confirmada su actividad actual ni la organización de excursiones.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://turismosucre.com.ve/alojamiento/mochima/"
+    ],
+    "sourceLabels": [
+      "CEPITUR Sucre · inventario de hospedajes en Mochima"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Sucre",
+    "locality": "Mochima"
+  },
+  {
+    "id": "posada-los-siete-delfines",
+    "name": "Posada Los 7 Delfines",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada incluida en el inventario turístico del poblado de Santa Fe, junto al corredor costero de Mochima. La ficha orienta a quienes prefieren identificar alojamientos pequeños antes de explorar el entorno; los servicios y el acceso deben consultarse con el operador.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://turismosucre.com.ve/alojamiento/mochima/"
+    ],
+    "sourceLabels": [
+      "CEPITUR Sucre · hospedajes de Santa Fe"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Sucre",
+    "locality": "Santa Fe"
+  },
+  {
+    "id": "posada-la-guarandinga",
+    "name": "Posada La Guarandinga",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Establecimiento mencionado en el corredor Cariaco–Casanay por un directorio turístico del estado Sucre. Su entorno permite estudiar iniciativas de hospedaje cercanas a balnearios y comunidades rurales, sin asumir que la operación continúe sin cambios.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://turismosucre.com.ve/alojamiento/cariaco/",
+      "https://www.destinosdesucre.com.ve/2023/04/nuevo-video-de-valentina-quientero-en.html"
+    ],
+    "sourceLabels": [
+      "CEPITUR Sucre · hospedajes de Cariaco",
+      "Reseña de recorrido turístico por Sucre · 2023"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Sucre",
+    "locality": "Cariaco"
+  },
+  {
+    "id": "posada-el-portal-de-los-suenos",
+    "name": "Posada El Portal de los Sueños",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada localizada por el directorio regional en Río Azul, carretera Cariaco–Casanay. Forma parte de la oferta histórica de hospedajes vinculados al paisaje rural y a los balnearios del área; su disponibilidad y servicios requieren verificación directa.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://turismosucre.com.ve/alojamiento/cariaco/",
+      "https://www.destinosdesucre.com.ve/2023/04/nuevo-video-de-valentina-quientero-en.html"
+    ],
+    "sourceLabels": [
+      "CEPITUR Sucre · eje Cariaco",
+      "Crónica turística sobre Cariaco · 2023"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Sucre",
+    "locality": "Cariaco"
+  },
+  {
+    "id": "posada-sol-luna-y-estrellas",
+    "name": "Posada Sol, Luna y Estrellas",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada de playa descrita en una crónica de viaje independiente en el istmo caribeño de Boca de Uchire. Es una referencia documental del hospedaje frente al mar; el contenido histórico no acredita que mantenga los mismos espacios o actividades en 2026.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://luiscastellanos.org/posada-sol-luna-estrellas-boca-uchire-venezuela/"
+    ],
+    "sourceLabels": [
+      "Crónica independiente de Boca de Uchire · fuente histórica"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Anzoátegui",
+    "locality": "Boca de Uchire"
+  },
+  {
+    "id": "estancia-altos-de-veracruz",
+    "name": "Estancia Altos de Veracruz",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Estancia en el entorno montañoso de Sanare, vinculada con el corredor hacia Yacambú. Su comunicación turística reciente destaca naturaleza y descanso; es una opción de investigación para escapadas serranas sin atribuirle tarifas ni actividades vigentes no confirmadas.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://www.findglocal.com/VE/Sanare/619866644767690/Altos-de-Veracruz"
+    ],
+    "sourceLabels": [
+      "Perfil público de la estancia · publicaciones de 2026"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Lara",
+    "locality": "Sanare"
+  },
+  {
+    "id": "finca-la-floresta-caripe",
+    "name": "Finca La Floresta",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Alojamiento de cabañas identificado en directorios de Caripe, región de montaña cercana a paisajes agrícolas y a la ruta de la Cueva del Guácharo. Es una alternativa para investigar turismo rural y de grupos; sin comprobación reciente de servicios.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad y ubicación general contrastadas en directorio turístico público o guía especializada consultada el 7 de noviembre de 2026. La fuente no equivale a confirmación directa del operador ni acredita apertura, condiciones familiares vigentes, precios, permisos, horarios o disponibilidad.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://gelvez.com.ve/caripe/posadas/",
+      "https://callejero-venezuela.openalfa.com/estado-monagas/alojamiento"
+    ],
+    "sourceLabels": [
+      "Directorio de hospedajes de Caripe",
+      "Inventario geográfico de alojamiento en Monagas"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Monagas",
+    "locality": "Caripe"
+  },
+  {
+    "id": "posada-paraiso-guisela",
+    "name": "Posada Paraíso Guisela",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada en El Yaque, isla de Margarita, que presenta una propuesta de hospedaje con ambiente familiar. Su ubicación sirve de referencia para investigar planes costeros y cultura local, sin presumir disponibilidad, seguridad de baño o servicios vigentes.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://posada-paraiso.com/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://posada-paraiso.com/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Posada Paraíso Guisela"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Nueva Esparta",
+    "locality": "El Yaque"
+  },
+  {
+    "id": "posada-casa-el-pozo",
+    "name": "Posada Casa El Pozo",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Posada cercana a Playa El Agua, en Margarita, con alternativas de habitaciones y apartamentos que el operador describe para grupos de diferentes tamaños. La ficha conserva carácter documental y no reproduce tarifas antiguas de su página.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://lacasaelpozo.com/index.php",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://lacasaelpozo.com/index.php"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Casa El Pozo"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Nueva Esparta",
+    "locality": "Playa El Agua"
+  },
+  {
+    "id": "posada-la-fuente-margarita",
+    "name": "Posada La Fuente",
+    "category": "Hospedaje",
+    "country": "Venezuela",
+    "description": "Hospedaje de pequeña escala en el sector La Fuente, isla de Margarita. En su sitio el anfitrión describe una experiencia sencilla y de orientación local, útil para investigar escapadas fuera de los hoteles grandes de playa.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Identidad, ubicación general y propuesta turística documentadas en el sitio público del establecimiento consultado el 7 de noviembre de 2026. No se realizaron visita de campo, reserva de prueba ni comprobaciones de permisos, horarios, tarifas, acceso, servicios actuales o disponibilidad.",
+    "primaryUrl": "https://posadalafuente.wixsite.com/index",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://posadalafuente.wixsite.com/index"
+    ],
+    "sourceLabels": [
+      "Sitio del alojamiento · Posada La Fuente"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Nueva Esparta",
+    "locality": "La Fuente"
+  },
+  {
+    "id": "museo-de-los-ninos-caracas",
+    "name": "Museo de los Niños de Caracas",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Museo interactivo de Caracas concebido para acercar la ciencia, la tecnología y otros conocimientos a los niños por medio del juego. Es un punto de interés para actividades educativas en familia, previa confirmación de entradas, horarios y condiciones actuales.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Existencia histórica, concepto y localización general contrastados con fuentes públicas consultadas el 7 de noviembre de 2026. No se comprobaron presencialmente accesos, boletería, programación, horarios, seguridad, actividades o condiciones actuales de visita.",
+    "primaryUrl": "https://maravillosarealidad.com/",
+    "primaryConsulted": true,
+    "sourceUrls": [
+      "https://maravillosarealidad.com/",
+      "https://www.mincultura.gob.ve/eventos/inauguracion-del-museo-de-los-ninos-de-caracas/"
+    ],
+    "sourceLabels": [
+      "Sitio oficial · Museo de los Niños",
+      "Ministerio para la Cultura · referencia institucional"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Distrito Capital",
+    "locality": "Caracas"
+  },
+  {
+    "id": "parque-la-venezuela-de-antier",
+    "name": "Parque La Venezuela de Antier",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque temático inspirado en la vida, la arquitectura y las costumbres de distintas regiones venezolanas durante las primeras décadas del siglo XX. Es una propuesta de recreación cultural y familiar en el entorno de Ejido, con actividades sujetas a programación actual.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Existencia histórica, concepto y localización general contrastados con fuentes públicas consultadas el 7 de noviembre de 2026. No se comprobaron presencialmente accesos, boletería, programación, horarios, seguridad, actividades o condiciones actuales de visita.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://www.meridachevere.com/item/la-venezuela-de-antier/",
+      "https://fedecamarasradio.com/programas/el-parque-la-venezuela-de-antier-mantiene-vivo-el-turismo-merideno/"
+    ],
+    "sourceLabels": [
+      "Mérida Chévere · ficha temática",
+      "Fedecámaras Radio · entrevista 6 de noviembre de 2026"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Mérida",
+    "locality": "Ejido"
+  },
+  {
+    "id": "parque-la-montana-de-los-suenos",
+    "name": "Parque La Montaña de los Sueños",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque temático de Chiguará dedicado a la memoria del cine, la radio y la televisión en Venezuela, con recreaciones de épocas pasadas. Su propuesta combina historia audiovisual y entretenimiento; conviene revisar calendarios y condiciones antes de visitarlo en familia.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Existencia histórica, concepto y localización general contrastados con fuentes públicas consultadas el 7 de noviembre de 2026. No se comprobaron presencialmente accesos, boletería, programación, horarios, seguridad, actividades o condiciones actuales de visita.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://www.meridachevere.com/item/la-montana-de-los-suenos/",
+      "https://viajes-indigo.com/public/tour/la-montana-de-los-suenos"
+    ],
+    "sourceLabels": [
+      "Mérida Chévere · ficha temática",
+      "Agencia de turismo regional · descripción de visita"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Mérida",
+    "locality": "Chiguará"
+  },
+  {
+    "id": "pueblo-museo-los-aleros",
+    "name": "Pueblo Museo Los Aleros",
+    "category": "Cultura",
+    "country": "Venezuela",
+    "description": "Parque temático en la vía del páramo merideño que recrea la vida cotidiana de un pueblo andino de otra época. Sus espacios de interpretación histórica ofrecen un motivo de visita familiar; la accesibilidad de senderos y el funcionamiento actual deben confirmarse.",
+    "reviewedAt": "2026-11-07",
+    "verification": "Existencia histórica, concepto y localización general contrastados con fuentes públicas consultadas el 7 de noviembre de 2026. No se comprobaron presencialmente accesos, boletería, programación, horarios, seguridad, actividades o condiciones actuales de visita.",
+    "primaryConsulted": false,
+    "sourceUrls": [
+      "https://www.meridachevere.com/item/los-aleros/"
+    ],
+    "sourceLabels": [
+      "Mérida Chévere · ficha de Pueblo Museo Los Aleros"
+    ],
+    "lat": null,
+    "lon": null,
+    "price": null,
+    "photos": [],
+    "demo": false,
+    "region": "Mérida",
+    "locality": "Cacute"
   }
 ]

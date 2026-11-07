@@ -926,3 +926,51 @@ footer > small {border-color:#8bb6c4;}
 
 /* Textos informativos pequeños sobre las tarjetas crema: contraste AA. */
 .place-visit dd { color:#3c5062; }
+
+
+/* Posadas y planes familiares: extensión del sistema visual cálido Propuesta B. */
+.family-guide {padding-top:clamp(32px,5vw,64px);}
+.family-guide .breadcrumbs {margin-bottom:22px;}
+.family-guide__intro {
+  background:
+    radial-gradient(ellipse at 90% 18%,#ffe2b4 0%,transparent 45%),
+    linear-gradient(110deg,#fff3e5,#fffaf3);
+  border:1px solid #ebd6c1;border-radius:22px;
+  padding:clamp(26px,5vw,66px);margin-bottom:clamp(35px,5vw,65px);
+}
+.family-guide__intro h1 {
+  max-width:800px;font-size:clamp(35px,5vw,65px);line-height:1.08;
+  margin:12px 0 19px;color:#143652;
+}
+.family-guide__intro p {
+  color:#4b5d70;max-width:760px;font-size:clamp(14px,1.45vw,17px);
+  line-height:1.75;margin:0 0 24px;
+}
+.family-guide__actions {display:flex;align-items:center;flex-wrap:wrap;gap:20px;}
+.family-guide__secondary {margin-top:clamp(48px,6vw,82px);}
+.family-guide__grid .card-main .card-bottom {font-size:12px;}
+.family-escapes {padding-block:clamp(50px,6vw,85px);}
+.family-escapes__grid .place-card {min-width:0;}
+.family-escapes .section-head h2 {max-width:560px;}
+.family-escapes .state-more-link {text-align:center;margin-top:30px;}
+.family-guide .source-box {
+  background:#fff1df;border:1px solid #ebd0b1;border-left:4px solid #ef7f3e;
+  border-radius:12px;color:#4b5e70;margin-top:45px;
+}
+.family-guide .source-box a {color:#a2391b;text-decoration:underline;}
+@media(max-width:740px) {
+  .family-guide__intro {padding:26px 21px;border-radius:15px;}
+  .family-guide__actions {align-items:stretch;flex-direction:column;gap:10px;}
+  .family-guide__actions .button {align-self:flex-start;}
+  .family-escapes .state-more-link .button {max-width:100%;white-space:normal;}
+}
+@media(max-width:660px) {
+  header nav {max-width:410px;gap:4px;}
+  header nav a,header nav a:first-child {
+    font-size:11px;padding:5px 6px;white-space:nowrap;
+  }
+  body:has(.cinematic-hero) header nav a,
+  body:has(.cinematic-hero) header nav a:first-child {
+    font-size:10px;padding:5px 6px;
+  }
+}
