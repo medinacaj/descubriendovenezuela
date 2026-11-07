@@ -15,3 +15,7 @@ GitHub Pages (sitio del proyecto en un subdirectorio) **no permite configurar de
 El archivo `/descubriendovenezuela/robots.txt` no equivale al `/robots.txt` de la raíz del dominio compartido `medinacaj.github.io`; indexación depende de metadatos y sitemap, más eventual control de la raíz o dominio propio.
 
 Las variantes WebP no prueban LCP/INP/CLS de usuarios reales; faltan mediciones de campo y auditoría WCAG 2.2 AA formal. El backend Next.js no está expuesto por la web estática de GitHub Pages; su revisión de autenticación y permisos debe ser independiente si se publica.
+
+## Compatibilidad WebKit y CSP
+
+Se retiró únicamente la directiva `upgrade-insecure-requests` de la política **meta**. En el servidor HTTP local de pruebas, WebKit transformaba todas las hojas CSS en peticiones HTTPS inexistentes y presentaba página sin estilos; la evidencia figura en logs de GitHub Actions. La web pública se aloja exclusivamente en HTTPS y sus activos se sirven mediante rutas relativas. Permanecen `script-src 'self'`, `style-src 'self'`, `object-src 'none'`, `base-uri 'self'` y las restricciones restantes. Una prueba multibrowser debe confirmar este cambio.
