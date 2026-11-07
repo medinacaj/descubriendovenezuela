@@ -808,5 +808,15 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hotel_Humboldt.jpg",
     "output": "foto-hotel-humboldt.webp"
+  },
+  {
+    "id": "centro-historico-de-el-hatillo",
+    "file": "Plaza Bolívar de El Hatillo.JPG",
+    "alt": "Plaza Bolívar del centro histórico de El Hatillo, Miranda",
+    "author": "María Auxiliadora Ramírez Prato",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Bol%C3%ADvar_de_El_Hatillo.JPG",
+    "output": "foto-centro-historico-de-el-hatillo.webp"
   }
 ]
