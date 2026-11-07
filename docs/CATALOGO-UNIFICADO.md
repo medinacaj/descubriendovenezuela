@@ -1,6 +1,6 @@
 # Catálogo documental compartido — noviembre de 2026
 
-## Inventario real: 234 fichas documentales (25 territorios)
+## Inventario real: 268 fichas documentales (25 territorios)
 
 Los 20 lugares incorporados el 6 de noviembre de 2026 están documentados en [RESEARCH-2026-11-06.md](../content/RESEARCH-2026-11-06.md). Las nueve entradas anteriores se conservan. Se añadieron otras ocho fichas para representar Anzoátegui, Barinas, Carabobo, Cojedes, Delta Amacuro, Lara, Portuguesa y Zulia, con [fuentes en el informe ampliado](../content/RESEARCH-COBERTURA-2026-11-06.md). Los sitios reales identificados no equivalen a inventario de establecimientos operativos ni a verificación de visitas. Las 139 fichas añadidas el 6 de noviembre de 2026 amplían parques, cayos, playas, patrimonio, gastronomía, regiones y negocios identificados en sitios propios. Se incorpora Dependencias Federales y el inventario ahora cubre 25 territorios. Los nueve hospedajes cuentan con referencias directas a sus operadores, sin comprobación independiente de disponibilidad o permisos de imagen. La importación y la vista estática usan el mismo `content/places.json`.
 
@@ -65,3 +65,17 @@ El directorio ofrece vistas **Tarjetas, Lista y Fichas**, filtros y lotes progre
 La integración continua contempla Chromium, Firefox y WebKit, además de una evaluación automatizada axe-core de páginas representativas. **No equivale a certificación WCAG 2.2 AA, cumplimiento legal definitivo ni Core Web Vitals medidos en usuarios reales**.
 
 Para una fotografía autorizada de cada destino aún faltan 183 fichas; para SEO, auditar indexación real de buscadores; para seguridad, validar cabeceras HTTP efectivas y el backend independiente si se despliega. No se requiere contratar servicios de pago para completar el catálogo estático.
+
+## Estado de ampliación y verificación · última actualización
+
+## Estado vigente verificado · 6 de noviembre de 2026
+
+El catálogo público dispone de **268 lugares documentales en 25 territorios**. **77 fichas tienen imagen propia** (72 fotografías reales con licencia y 5 mapas), mientras **191 muestran fotografías de contexto claramente rotuladas como tales**. Hay otros mapas documentales disponibles en el repositorio, pero no se atribuyen a un destino inexistente.
+
+En esta intervención se incorporaron **34 destinos investigados de forma independiente**, sumados a las 58 incorporaciones de una etapa previa, todos con enlaces documentales y advertencias de alcance. Ver [primera investigación](../content/INVESTIGACION-INDEPENDIENTE-2026-11-06.md) y [segunda investigación](../content/INVESTIGACION-INDEPENDIENTE-SEGUNDA-ETAPA-2026-11-06.md).
+
+**Funcionalidades:** 25 páginas territoriales, 268 fichas independientes, mapa SVG accesible de referencia, tres vistas (Tarjetas/Lista/Fichas), búsqueda por región y categoría, botón para cargar más resultados, imágenes WebP con tamaños responsivos, JavaScript externo y CSP limitada por meta HTML, sitemap, fuentes y licencias por ficha. No se inventan coordenadas ni tarifas.
+
+**Seguridad y calidad:** pruebas unitarias, integración, Chromium, Firefox, WebKit y axe-core están configuradas en CI. Solo se considerarán verificadas las etapas que concluyan con éxito. No equivale a conformidad WCAG 2.2 AA, auditoría OWASP final, revisión legal o Core Web Vitals p75 de usuarios reales. La versión pública de GitHub Pages no publica el backend administrativo ni la base de datos.
+
+**Pendientes principales:** sustituir 191 fotografías contextuales por imágenes del lugar exacto, medir rendimiento de campo, revisar accesibilidad manualmente y revisar condiciones actuales de viajes y negocios.

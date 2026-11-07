@@ -1,10 +1,8 @@
-# Créditos de las 67 fotografías reales
+# Créditos de las 72 fotografías reales
 
-Estas imágenes se almacenan como WebP locales, además de derivados responsivos a 480 y 800 píxeles. El manifiesto [licensed-photographs.json](licensed-photographs.json) fija archivo exacto, autor, licencia, original y ficha asociada. Se deben respetar las obligaciones de atribución y compartir igual aplicables.
+**Cobertura vigente:** 77 de 268 fichas con imagen propia (72 fotografías auditadas y cinco mapas usados en fichas sin foto); 191 con imagen visual de otro destino identificada como «IMAGEN REFERENCIAL», no de la ficha exacta. Las imágenes se conservan en `docs/media` como WebP y derivados 480/800 px.
 
-**Cobertura:** 72 de 255 fichas con imagen propia (67 fotografías y cinco mapas), 183 con imagen real de otro destino rotulada como referencia. La fotografía de referencia NO se presenta como una foto del destino exacto. Una foto no prueba condiciones ni servicios actuales.
-
-| Destino | Archivo original | Autor | Licencia |
+| Ficha | Imagen fuente en Wikimedia Commons | Autor | Licencia |
 |---|---|---|---|
 | 701 | [Salto Angel from above.jpg](https://commons.wikimedia.org/wiki/File:Salto_Angel_from_above.jpg) | Rafael Estrella | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0/) |
 | 658 | [Casa colonial Coro.jpg](https://commons.wikimedia.org/wiki/File:Casa_colonial_Coro.jpg) | Janethrodri | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
@@ -73,5 +71,10 @@ Estas imágenes se almacenan como WebP locales, además de derivados responsivos
 | puente-de-angostura | [Puente Angostura-1.jpg](https://commons.wikimedia.org/wiki/File:Puente_Angostura-1.jpg) | Luis Linero | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0/) |
 | hato-el-cedral | [Hato El Cedral Llanos de Venezuela 2015-02-06 17.16.38.jpg](https://commons.wikimedia.org/wiki/File:Hato_El_Cedral_Llanos_de_Venezuela_2015-02-06_17.16.38.jpg) | Josefito123 | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) |
 | la-victoria-aragua | [Vista aérea de La Victoria. estado Aragua. Venezuela.jpg](https://commons.wikimedia.org/wiki/File:Vista_a%C3%A9rea_de_La_Victoria._estado_Aragua._Venezuela.jpg) | Edrasaal | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| playa-adicora | [Puro color Venezolano.jpg](https://commons.wikimedia.org/wiki/File:Puro_color_Venezolano.jpg) | Wilfredo Torres | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| flor-de-venezuela | [Flor de Venezuela.JPG](https://commons.wikimedia.org/wiki/File:Flor_de_Venezuela.JPG) | Elcordoves | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| obelisco-de-barquisimeto | [OBELISCO DE BARQUISIMETO.JPG](https://commons.wikimedia.org/wiki/File:OBELISCO_DE_BARQUISIMETO.JPG) | Ronaldy Lugo | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| plaza-venezuela | [Plaza Venezuela - Caracas.jpg](https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg) | OsmanFernandez | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
+| arco-de-taguanes | [Taguanes.JPG](https://commons.wikimedia.org/wiki/File:Taguanes.JPG) | Nelsy galvis | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/) |
 
-Los originales se importan con `node scripts/import-licensed-photos.mjs --only-missing`; los derivados se generan con `npm run images:optimize`. Nunca se incorporan fotografías sin una fuente y licencia revisadas. La atribución se publica en la tarjeta y ficha correspondiente.
+Los archivos listados se importan mediante `node scripts/import-licensed-photos.mjs --only-missing` y se optimizan con `npm run images:optimize`. Las tarjetas y fichas muestran créditos e indican si la imagen es propia o una referencia de otro destino. La fotografía no verifica condiciones de acceso o servicios en la actualidad.
