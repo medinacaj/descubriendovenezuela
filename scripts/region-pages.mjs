@@ -38,24 +38,24 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
     </article>`;
   };
   const intro=`<p class="catalog-note">Una selección documental de lugares reales, organizada por estados y Distrito Capital. Las fichas no garantizan acceso ni servicios vigentes.</p>`;
-  const homeRegions=["Falcón","Bolívar","Anzoátegui","Carabobo","Delta Amacuro","Lara","Zulia","Aragua"].filter(r=>names.includes(r));
-  const spotlightIds=["isla-de-plata-mochima","parque-nacional-morrocoy","701","parque-nacional-san-esteban","parque-nacional-yacambu","relampago-del-catatumbo"];
+  const homeRegions=["Falcón","Mérida","Bolívar","Nueva Esparta","Anzoátegui","Lara","Zulia","Aragua"].filter(r=>names.includes(r));
+  const spotlightIds=["cayo-de-agua","parque-nacional-sierra-nevada","701","isla-de-plata-mochima","parque-nacional-morrocoy","relampago-del-catatumbo"];
   const spotlight=spotlightIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
   const independentIds=["rio-caribe","carupano","guiria","bocono","la-vela-de-coro","cabo-san-roman"];
   const independent=independentIds.map(id=>places.find(p=>p.id===id)).filter(Boolean);
   const homeSections=`
+    <section class="section page-width editor-picks" aria-labelledby="spotlight-title">
+      <div class="section-head"><div><span class="eyebrow">DESCUBRE TU PRÓXIMO DESTINO</span><h2 id="spotlight-title">Destinos destacados</h2></div>
+      <a class="text-link" href="${url("explorar/")}">Buscar entre los ${places.length} lugares ↗</a></div>
+      <p class="catalog-note">Fotografías auténticas con atribución y fichas documentales. Son ejemplos del inventario, no recomendaciones de viaje ni comprobación de apertura.</p>
+      <div class="directory-grid editorial-featured-grid">${spotlight.map(card).join("")}</div>
+    </section>
     <section class="section page-width editorial-states" aria-labelledby="state-home-title">
-      <div class="section-head"><div><span class="eyebrow">UN PAÍS, MUCHOS TERRITORIOS</span><h2 id="state-home-title">Descubre Venezuela por estado</h2></div>
+      <div class="section-head"><div><span class="eyebrow">CADA ESTADO TIENE SU HISTORIA</span><h2 id="state-home-title">Explora por estado</h2></div>
       <a class="text-link" href="${url("estados/")}">Ver los ${names.length} territorios documentados ↗</a></div>
       ${intro}
       <div class="state-grid state-grid--home">${homeRegions.map(stateTile).join("")}</div>
       <p class="state-more-link"><a class="button" href="${url("estados/")}">Explorar todos los estados <span aria-hidden="true">↗</span></a></p>
-    </section>
-    <section class="section page-width editor-picks" aria-labelledby="spotlight-title">
-      <div class="section-head"><div><span class="eyebrow">DESTINOS CON FUENTES E IMÁGENES REALES</span><h2 id="spotlight-title">Sitios que merecen conocerse</h2></div>
-      <a class="text-link" href="${url("explorar/")}">Buscar entre los ${places.length} lugares ↗</a></div>
-      <p class="catalog-note">Fotografías auténticas con atribución y fichas documentales. Son ejemplos del inventario, no recomendaciones de viaje ni comprobación de apertura.</p>
-      <div class="directory-grid editorial-featured-grid">${spotlight.map(card).join("")}</div>
     </section>
     <section class="section page-width editorial-independent" aria-labelledby="independent-title">
       <div class="section-head"><div><span class="eyebrow">INVESTIGACIÓN DOCUMENTAL INDEPENDIENTE</span><h2 id="independent-title">Más allá de los destinos conocidos</h2></div>
