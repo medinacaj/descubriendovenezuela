@@ -84,6 +84,9 @@ try {
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha de Mérida desbordada a " + width + "px");
     await page.goto(origin + "explorar/");
+    await page.getByLabel("Imagen").selectOption("propia");
+    if(await page.locator("#results .place-card:visible").count() > allPlaces.filter(p=>p.photos?.length).length)throw Error("No se aplicó filtro de fotos propias");
+    await page.getByLabel("Imagen").selectOption("");
     await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByRole("button",{name:"Mostrar más lugares"}).click();
     await expect(page.locator("#results .place-card:visible")).toHaveCount(60);
