@@ -43,6 +43,19 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
   const spotlight=spotlightIds.map(id=>places.find(p=>p.id===id)).filter(p=>p && hasPhoto(p)).slice(0,6);
   const independentIds=["rio-caribe","carupano","guiria","bocono","la-vela-de-coro","cabo-san-roman"];
   const independent=independentIds.map(id=>places.find(p=>p.id===id)).filter(Boolean);
+
+  const familyIds=[
+    "los-ranchos-de-chano","posada-casa-sol-merida","posada-los-cocos-morrocoy",
+    "posada-playa-colorada","posada-casa-el-pozo","posada-paraiso-guisela"
+  ];
+  const familyPlaces=familyIds.map(id=>places.find(p=>p.id===id)).filter(Boolean);
+  const familySection=`<section class="section page-width family-escapes" aria-labelledby="family-escapes-title">
+    <div class="section-head"><div><span class="eyebrow">POSADAS DE IDENTIDAD LOCAL</span><h2 id="family-escapes-title">Escapadas para compartir</h2></div>
+      <a class="text-link" href="${url("posadas/")}">Conocer posadas y planes familiares ↗</a></div>
+    <p class="catalog-note">Posadas pequeñas y espacios de descanso documentados en fuentes públicas. La ficha no confirma apertura, permisos, servicios ni disponibilidad. Las fotos que no corresponden al establecimiento están identificadas como referenciales.</p>
+    <div class="directory-grid family-escapes__grid">${familyPlaces.map(card).join("")}</div>
+    <p class="state-more-link"><a class="button" href="${url("posadas/")}">Ver guía de posadas y planes familiares ↗</a></p>
+  </section>`;
   const homeSections=`
     <section class="section page-width editor-picks" aria-labelledby="spotlight-title">
       <div class="section-head"><div><span class="eyebrow">DESCUBRE TU PRÓXIMO DESTINO</span><h2 id="spotlight-title">Destinos destacados</h2></div>
@@ -50,6 +63,7 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
       <p class="catalog-note">Fotografías auténticas con atribución y fichas documentales. Son ejemplos del inventario, no recomendaciones de viaje ni comprobación de apertura.</p>
       <div class="directory-grid editorial-featured-grid">${spotlight.map(card).join("")}</div>
     </section>
+    ${familySection}
     <section class="section page-width editorial-states" aria-labelledby="state-home-title">
       <div class="section-head"><div><span class="eyebrow">CADA ESTADO TIENE SU HISTORIA</span><h2 id="state-home-title">Explora por estado</h2></div>
       <a class="text-link" href="${url("estados/")}">Ver los ${names.length} territorios documentados ↗</a></div>
