@@ -42,7 +42,7 @@
   const creditLinks = hero.querySelectorAll(".cinematic-hero__credit a");
   const counter = $(".cinematic-hero__counter");
   const previews = Array.from(hero.querySelectorAll(".cinematic-hero__preview"));
-  const dots = Array.from(hero.querySelectorAll(".cinematic-hero__timeline span"));
+  const dots = Array.from(hero.querySelectorAll(".cinematic-hero__timeline button"));
   let index = 0;
   function render(next) {
     index = (next + slides.length) % slides.length;
@@ -63,6 +63,7 @@
     dots.forEach((dot, i) => {
       if (i === index) dot.setAttribute("aria-current", "true");
       else dot.removeAttribute("aria-current");
+      dot.setAttribute("aria-pressed", String(i === index));
     });
     previews.forEach((button, offset) => {
       const destination = (index + offset + 1) % slides.length;
@@ -74,6 +75,7 @@
       button.querySelector(".cinematic-hero__preview-name").textContent = featured.name;
     });
   }
+  dots.forEach((button, destination) => button.addEventListener("click", () => render(destination)));
   previews.forEach(button => button.addEventListener("click", () =>
     render(Number(button.dataset.index))));
   hero.querySelector('[data-direction="-1"]').addEventListener("click", () => render(index - 1));
