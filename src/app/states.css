@@ -896,3 +896,30 @@ footer > small {border-color:#8bb6c4;}
   .detail .detail-grid,.admin-grid {grid-template-columns:1fr;gap:22px;}
   .detail h1,.explorer h1 {font-size:clamp(32px,8vw,46px);}
 }
+
+
+/* Contraste verificable sobre fotografías y en textos secundarios
+   (la imagen, por sí sola, no es un fondo fiable para texto blanco). */
+.state-town small {color:#445467;}
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro {
+  background-color:#143b5b;
+  border:1px solid #ffffff38;border-radius:18px;
+  box-shadow:0 16px 36px #09223f50;
+  padding:clamp(22px,3.5vw,42px);
+  max-width:min(660px,88%);
+  pointer-events:auto;
+}
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro .eyebrow,
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro h1,
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro__summary {
+  color:#fff;
+}
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro__meta span {
+  background:#0d304b;color:#fff;border-color:#8ab5c8;
+}
+@media(max-width:620px){
+  .place-detail:has(.place-cover:not(.place-cover--pending)) .place-intro {
+    max-width:calc(100% - 24px);
+    margin:0 12px 58px;padding:20px 18px;
+  }
+}
