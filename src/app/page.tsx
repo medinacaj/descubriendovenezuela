@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CinematicHero from "../components/cinematic-hero";
 import { PlaceCard } from "../components/cards";
 import { searchPlaces } from "../lib/repository";
 import { categories } from "../lib/domain";
@@ -10,42 +11,8 @@ export default async function Home() {
   } catch {}
   return (
     <>
-      <section className="hero">
-        <div className="hero-copy">
-          <div className="eyebrow">
-            <span /> TERRITORIO DE HISTORIAS
-          </div>
-          <h1>
-            Venezuela tiene
-            <br />
-            mucho por <em>descubrir.</em>
-          </h1>
-          <p>
-            Del mar a la montaña, del pueblo a su gente.
-            <br />
-            Encuentra ese rincón que todavía no conoces.
-          </p>
-          <Link href="/explorar" className="button">
-            Explorar el mapa <span aria-hidden="true">↗</span>
-          </Link>
-          <div className="hero-note">
-            <span className="note-line" />
-            Un país extraordinario. Una mirada más cercana.
-          </div>
-        </div>
-        <div className="landscape photo-hero">
-          <img src="/media/foto-cayo-sombrero.webp" alt="Playa y palmeras de Cayo Sombrero, Morrocoy"
-            width={1200} height={800} fetchPriority="high" />
-          <div className="landscape-label">
-            <span>CAYO SOMBRERO · FALCÓN</span>
-            <b>La aventura empieza<br />con la curiosidad.</b>
-            <small>Foto: <a href="https://commons.wikimedia.org/wiki/File:Cayo_Sombrero.JPG"
-              target="_blank" rel="noopener noreferrer">AndreaC11</a> · <a href="https://creativecommons.org/licenses/by-sa/3.0/"
-              target="_blank" rel="noopener noreferrer">CC BY-SA 3.0</a></small>
-          </div>
-          <div className="vertical-label">NATURALEZA · CULTURA · GENTE</div>
-        </div>
-      </section>
+      <CinematicHero />
+
       <section className="search-section">
         <form action="/explorar" className="search-bar">
           <div>
