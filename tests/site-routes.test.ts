@@ -93,7 +93,9 @@ describe("Pages con URLs permanentes",()=>{
   expect(home).toContain('href="/descubriendovenezuela/base.css"');
   expect(home).not.toContain("<style>");
   expect(explore).toContain('id="show-more"');
-  expect(explore).toContain("batchSize=30");
+  const jsPaths=[...explore.matchAll(/src="\/descubriendovenezuela\/js\/(script-[a-z0-9]+-[0-9]+\.js)"/g)].map(m=>m[1]);
+  const contents=await Promise.all(jsPaths.map(name=>readFile("docs/js/"+name,"utf8")));
+  expect(contents.join("\n")).toContain("batchSize=30");
   expect(home).toContain("Más allá de los destinos conocidos");
   expect((await stat("docs/base.css")).size).toBeGreaterThan(10000);
   const robots=await readFile("docs/robots.txt","utf8");
