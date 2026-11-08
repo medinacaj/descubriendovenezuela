@@ -18,7 +18,7 @@
       const clone=item.cloneNode(true);
       clone.classList.add("editorial-carousel__clone");
       clone.setAttribute("aria-hidden","true");
-      clone.setAttribute("inert","");
+
       clone.querySelectorAll("a,button,[tabindex]").forEach(link=>link.setAttribute("tabindex","-1"));
       track.appendChild(clone);
     }
