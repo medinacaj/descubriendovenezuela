@@ -52,8 +52,26 @@ try {
     await expect(page.locator(".editorial-creators__card")).toHaveCount(4);
     await expect(page.locator('link[href$="editorial-highlights.css"]')).toHaveCount(1);
     const creatorNext=page.getByRole("button", {name:"Siguientes creadores"});
-    await creatorNext.click();
-    await expect(page.locator("[data-creators-counter]")).toHaveText("2 / 4");
+    const creatorTrack=page.locator("[data-creators-track]");
+    const creatorGeometry=await creatorTrack.evaluate(track=>{
+      const box=track.getBoundingClientRect();
+      return {
+        overflows: track.scrollWidth > track.clientWidth + 3,
+        allCardsVisible: [...track.children].every(child=>{
+          const card=child.getBoundingClientRect();
+          return card.left >= box.left - 3 && card.right <= box.right + 3;
+        })
+      };
+    });
+    if (creatorGeometry.overflows) {
+      await expect(creatorNext).toBeEnabled();
+      await creatorNext.click();
+      await expect(page.locator("[data-creators-counter]")).toHaveText("2 / 4");
+      await expect.poll(()=>creatorTrack.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);
+    } else {
+      if (!creatorGeometry.allCardsVisible) throw Error("Carrusel sin desplazamiento, pero con tarjetas ocultas a " + width + "px");
+      await expect(creatorNext).toBeDisabled();
+    }
     await expect(page.locator('.cinematic-hero__timeline button[data-index="2"]')).toHaveAttribute("aria-pressed","true");
     const box = await page.evaluate(() => {
       const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();
