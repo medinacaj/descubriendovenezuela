@@ -107,6 +107,12 @@ try {
         })
       };
     });
+    const headerGap = await page.evaluate(() => {
+      const header = document.querySelector("body > header").getBoundingClientRect();
+      const kicker = document.querySelector(".cinematic-hero__eyebrow").getBoundingClientRect();
+      return kicker.top - header.bottom;
+    });
+    if (headerGap < 18) throw Error("El texto del banner queda pegado al menú a " + width + "px: " + headerGap + "px");
     if (geometry.hero.height > (width <= 620 ? 540 : 465))
       throw Error("Banner demasiado alto a " + width + "px: " + geometry.hero.height);
     if (geometry.copy.bottom > geometry.bottom.top + 2)
