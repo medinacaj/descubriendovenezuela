@@ -86,6 +86,26 @@ try {
       throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; CSS "+JSON.stringify(cssInfo)+"; "+JSON.stringify(offenders));
     }
     if (box.heroWidth > width + 1 || box.heroWidth < width * .78) throw Error("Portada desproporcionada a " + width + "px");
+
+    // Una sola retícula para banner, cabecera, tarjetas, noticias y creadores.
+    const rail = await page.evaluate(() => {
+      const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();
+      const edges = element => {
+        const rect = element.getBoundingClientRect();
+        return {name:element.className||element.tagName,left:rect.left,right:rect.right};
+      };
+      return {
+        hero: {left:hero.left,right:hero.right},
+        blocks:[document.querySelector("body > header"),
+          ...document.querySelectorAll("main .section, main .editorial-contribute, main .manifesto")].filter(Boolean).map(edges)
+      };
+    });
+    for (const block of rail.blocks) {
+      if (Math.abs(block.left - rail.hero.left) > 2 || Math.abs(block.right - rail.hero.right) > 2) {
+        throw Error("Desalineación en " + engineName + " a " + width + "px: "
+          + JSON.stringify({banner:rail.hero,block}));
+      }
+    }
     if (box.cardWidth < 220 || box.cardWidth > 470)
       throw Error("Tarjeta desproporcionada a " + width + "px: " + box.cardWidth);
     if (box.titleLeft < -1 || box.titleRight > width + 1)
