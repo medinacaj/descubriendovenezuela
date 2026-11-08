@@ -72,6 +72,14 @@ try {
     await expect(page.locator(".editorial-news__body>a")).toHaveCount(0);
     const newsTrack=page.locator("[data-news-track]");
     const newsNext=page.getByRole("button", {name:"Siguientes noticias"});
+    const newsMetrics=await newsTrack.evaluate(el=>({
+      width:el.clientWidth,scrollWidth:el.scrollWidth,scrollLeft:el.scrollLeft,
+      columns:getComputedStyle(el).gridTemplateColumns,
+      autoColumns:getComputedStyle(el).gridAutoColumns,
+      cards:[...el.children].map(child=>Math.round(child.getBoundingClientRect().width))
+    }));
+    if (newsMetrics.scrollWidth <= newsMetrics.width + 3 || newsMetrics.scrollLeft > 3)
+      throw Error("Noticias sin espacio desplazable o desplazadas a " + width + "px: " + JSON.stringify(newsMetrics));
     await expect(newsNext).toBeEnabled();
     await newsNext.click();
     await expect.poll(()=>newsTrack.evaluate(el=>el.scrollLeft)).toBeGreaterThan(5);
