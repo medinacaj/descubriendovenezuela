@@ -30,6 +30,7 @@ export function renderEditorialHighlights(data) {
       <button type="button" data-news-prev disabled aria-label="Noticias anteriores">←</button>
       <span data-news-counter aria-live="polite" aria-atomic="true">1 / ${data.news.length}</span>
       <button type="button" data-news-next aria-label="Siguientes noticias">→</button>
+      <button type="button" data-news-toggle class="editorial-carousel-toggle" aria-pressed="false" aria-label="Pausar noticias">Ⅱ</button>
     </div></div></div>
     <div class="editorial-news__grid" data-news-track aria-label="Noticias de turismo" tabindex="0">${news}</div>
     <p class="editorial-highlights__note">Selección editorial revisada el ${h(dateLabel(data.reviewedOn))}. Las fotos son ilustrativas y no documentan los eventos citados. Noticias enlazadas a sus fuentes; no hay actualización automática.</p>
@@ -41,6 +42,7 @@ export function renderEditorialHighlights(data) {
         <button type="button" data-creators-prev disabled aria-label="Creadores anteriores">←</button>
         <span data-creators-counter aria-live="polite" aria-atomic="true">1 / ${data.creators.length}</span>
         <button type="button" data-creators-next aria-label="Siguientes creadores">→</button>
+      <button type="button" data-creators-toggle class="editorial-carousel-toggle" aria-pressed="false" aria-label="Pausar creadores">Ⅱ</button>
       </div>
     </div>
     <div class="editorial-creators__track" data-creators-track aria-label="Perfiles de creadores de viajes" tabindex="0">${creators}</div>
