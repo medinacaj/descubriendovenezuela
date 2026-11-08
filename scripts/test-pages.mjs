@@ -57,6 +57,7 @@ try {
     await expect(page.locator(".editorial-creators__card")).toHaveCount(4);
     await expect(page.locator(".editorial-news__art img")).toHaveCount(3);
     await expect(page.locator(".editorial-creators__portrait img")).toHaveCount(4);
+    await expect(page.locator(".editorial-image__tag").first()).toHaveCSS("font-size", "8px");
     if (width === 390 || width === 1440) {
       for (const selector of [".editorial-news__art img", ".editorial-creators__portrait img"]) {
         const img = page.locator(selector).first();
