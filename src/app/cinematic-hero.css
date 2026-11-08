@@ -430,3 +430,14 @@ body:has(.cinematic-hero) .editorial-contribute {
   .cinematic-hero__category span { font-size: 20px; }
   .cinematic-hero__category b { font-size: 10px; }
 }
+
+/* Separación cómoda bajo la navegación, sin recuperar la altura antigua del banner. */
+.cinematic-hero__copy {
+  padding-top: clamp(136px, 13svh, 150px);
+}
+@media (max-width: 800px) {
+  .cinematic-hero__copy { padding-top: 136px; }
+}
+@media (max-width: 620px) {
+  .cinematic-hero__copy { padding-top: 148px; }
+}
