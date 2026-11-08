@@ -123,7 +123,9 @@ try {
       await moving.scrollIntoViewIfNeeded();
       await autoPage.mouse.move(1,1);
       const initial=await moving.evaluate(el=>el.scrollLeft);
-      await expect.poll(()=>moving.evaluate(el=>el.scrollLeft),{timeout:4500}).toBeGreaterThan(initial+8);
+      await autoPage.waitForTimeout(2100);
+      const debug=await moving.evaluate(el=>({state:el.dataset.autoDebug,scrollWidth:el.scrollWidth,clientWidth:el.clientWidth,scrollLeft:el.scrollLeft,rect:el.getBoundingClientRect().toJSON(),active:document.activeElement?.tagName}));
+      if(debug.scrollLeft<=initial+8)throw Error("El carrusel no arrancó: "+JSON.stringify(debug));
       const rect=await moving.boundingBox();
       const fromX=rect.x+rect.width*.75, y=rect.y+Math.min(85,rect.height*.25);
       await autoPage.mouse.move(fromX,y);
