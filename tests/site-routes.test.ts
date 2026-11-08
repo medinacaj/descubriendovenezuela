@@ -216,6 +216,7 @@ describe("Pages con URLs permanentes",()=>{
   const sw=await readFile("docs/sw.js","utf8");
   expect(sw).toContain('BASE+"editorial-highlights.css"');
   expect(sw).toContain('BASE+"js/editorial-highlights.js"');
+  expect(sw).toContain('BASE+"js/trip-planner.js"');
  });
   it("SEO estático y hojas de estilo cacheables",async()=>{
   const home=await readFile("docs/index.html","utf8");
@@ -223,6 +224,19 @@ describe("Pages con URLs permanentes",()=>{
   expect(home).toContain('href="/descubriendovenezuela/base.css"');
   expect(home).not.toContain("<style>");
   expect(explore).toContain('id="show-more"');
+
+  expect(explore).toContain('id="trip-planner-toggle"');
+  expect(explore).toContain('id="trip-planner"');
+  expect(explore).toContain('src="/descubriendovenezuela/js/trip-planner.js"');
+  expect(explore).toContain("sin una ruta calculada".replace("sin una ruta calculada","no una ruta calculada"));
+  const planner=await readFile("docs/js/trip-planner.js","utf8");
+  expect(planner).toContain("venezuela-en-el-mapa.guardados.v1");
+  expect(planner).toContain("venezuela-en-el-mapa.plan.v1");
+  expect(planner).toContain("Sin asignar");
+  expect(planner).toContain("Jornadas asignadas personalmente");
+  const detailJs=await readFile("docs/js/script-ekptir-180.js","utf8");
+  expect(detailJs).toContain("Organizar mi plan");
+  expect(detailJs).toContain("guardados=1&plan=1");
   const experienceJS=await readFile("docs/js/explore-experiences.js","utf8");
   expect(experienceJS).toContain("batchSize=30");
   expect(experienceJS).toContain("experiencia");
