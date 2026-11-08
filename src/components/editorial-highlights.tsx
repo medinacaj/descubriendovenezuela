@@ -3,9 +3,10 @@
 import { useRef, useState } from "react";
 import highlights from "../../content/editorial-highlights.json";
 
-const dateLabel = (iso: string) =>
-  new Intl.DateTimeFormat("es-VE", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })
-    .format(new Date(iso + "T12:00:00Z"));
+const dateLabel = (value: string) => {
+  const [year, month, day] = value.split("-").map(Number);
+  return day + " " + ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][month - 1] + " " + year;
+};
 
 export default function EditorialHighlights() {
   const track = useRef<HTMLDivElement>(null);
