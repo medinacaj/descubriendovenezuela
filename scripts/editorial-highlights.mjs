@@ -2,9 +2,10 @@
 const h = value => String(value).replace(/[&<>"']/g, char => ({
   "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;"
 })[char]);
-const dateLabel = value => new Intl.DateTimeFormat("es-VE", {
-  day: "numeric", month: "short", year: "numeric", timeZone: "UTC"
-}).format(new Date(value + "T12:00:00Z"));
+const dateLabel = value => {
+  const [year, month, day] = value.split("-").map(Number);
+  return day + " " + ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][month - 1] + " " + year;
+};
 
 export function renderEditorialHighlights(data) {
   const news = data.news.map((n, index) => `<article class="editorial-news__card">
