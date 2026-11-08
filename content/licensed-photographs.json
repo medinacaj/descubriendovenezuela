@@ -1028,5 +1028,105 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pescadores_Cuare.jpg",
     "output": "foto-refugio-cuare.webp"
+  },
+  {
+    "id": "cayo-francisqui",
+    "file": "Los Roques, playa Franciskiy.jpg",
+    "alt": "Playa del cayo Francisquí, Parque Nacional Los Roques, Dependencias Federales",
+    "author": "Katepalitava",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Los_Roques%2C_playa_Franciskiy.jpg",
+    "output": "foto-cayo-francisqui.webp"
+  },
+  {
+    "id": "cayo-madrisqui",
+    "file": "Cayo Madrisqui calmo y tranquilo.JPG",
+    "alt": "Vista del cayo Madrisquí desde una embarcación en Los Roques",
+    "author": "M. Celeste Rabbat",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Madrisqui_calmo_y_tranquilo.JPG",
+    "output": "foto-cayo-madrisqui.webp"
+  },
+  {
+    "id": "playa-guacuco",
+    "file": "Playa Guacuco - Nva. Esparta.JPG",
+    "alt": "Playa Guacuco en la isla de Margarita, Nueva Esparta",
+    "author": "Enzo861",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Guacuco_-_Nva._Esparta.JPG",
+    "output": "foto-playa-guacuco.webp"
+  },
+  {
+    "id": "playa-punta-arenas",
+    "file": "Playa Punta Arenas. Isla de Margarita, Nueva Esparta, Venezuela..JPG",
+    "alt": "Playa Punta Arenas en la isla de Margarita, estado Nueva Esparta",
+    "author": "Eduardo Saavedra Altuve",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Punta_Arenas._Isla_de_Margarita%2C_Nueva_Esparta%2C_Venezuela..JPG",
+    "output": "foto-playa-punta-arenas.webp"
+  },
+  {
+    "id": "playa-la-punta-isla-de-coche",
+    "file": "La Punta beach, Coche, Venezuela.jpg",
+    "alt": "Playa La Punta en la isla de Coche, estado Nueva Esparta",
+    "author": "Maor X",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Punta_beach%2C_Coche%2C_Venezuela.jpg",
+    "output": "foto-playa-la-punta-isla-de-coche.webp"
+  },
+  {
+    "id": "peninsula-de-macanao",
+    "file": "Macanao.jpg",
+    "alt": "Paisaje de la península de Macanao en la isla de Margarita",
+    "author": "Jorge Esteban De Mesa Alvarez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macanao.jpg",
+    "output": "foto-peninsula-de-macanao.webp"
+  },
+  {
+    "id": "isla-de-cubagua",
+    "file": "El Faro de Isla de cubagua.jpg",
+    "alt": "Faro en la isla de Cubagua, Nueva Esparta",
+    "author": "Mcmagdalena",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Faro_de_Isla_de_cubagua.jpg",
+    "output": "foto-isla-de-cubagua.webp"
+  },
+  {
+    "id": "pampatar",
+    "file": "Playa Pampatar - Margarita.JPG",
+    "alt": "Playa Pampatar en la isla de Margarita, estado Nueva Esparta",
+    "author": "Javier Suárez",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Pampatar_-_Margarita.JPG",
+    "output": "foto-pampatar.webp"
+  },
+  {
+    "id": "playa-grande-de-choroni",
+    "file": "Playa Grande-Choroni.jpg",
+    "alt": "Playa Grande de Choroní en el estado Aragua",
+    "author": "Daniel10ortegaven",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Grande-Choroni.jpg",
+    "output": "foto-playa-grande-de-choroni.webp"
+  },
+  {
+    "id": "playa-pui-pui",
+    "file": "Playa Puy-Puy - Estado Sucre.JPG",
+    "alt": "Playa Pui Pui en el estado Sucre, Venezuela",
+    "author": "Jackson Perdomo",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Puy-Puy_-_Estado_Sucre.JPG",
+    "output": "foto-playa-pui-pui.webp"
   }
 ]
