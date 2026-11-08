@@ -329,6 +329,28 @@ try {
       throw Error("Explorador desbordado a " + width + "px");
     await page.goto(origin + "lugares/merida-ciudad/");
     await expect(page.locator(".place-facts")).toHaveCSS("background-color","rgb(255, 250, 244)");
+
+    await expect(page.getByRole("button",{name:"Guardar destino: Mérida"})).toHaveAttribute("aria-pressed","false");
+    await expect(page.getByRole("link",{name:"Ver destinos guardados"})).toHaveAttribute("href",prefix+"explorar/?guardados=1");
+    if(width===390){
+      // Escenario de continuidad: guardar desde una ficha, recargar y ver la selección.
+      await page.evaluate(()=>localStorage.removeItem("venezuela-en-el-mapa.guardados.v1"));
+      await page.reload();
+      await page.getByRole("button",{name:"Guardar destino: Mérida"}).click();
+      await expect(page.getByRole("button",{name:"Quitar de guardados: Mérida"})).toHaveAttribute("aria-pressed","true");
+      await page.reload();
+      await expect(page.getByRole("button",{name:"Quitar de guardados: Mérida"})).toHaveAttribute("aria-pressed","true");
+      await page.getByRole("link",{name:"Ver destinos guardados"}).click();
+      await expect(page.locator("#count")).toHaveText("1 lugar");
+      await expect(page.locator("#results .place-card:visible a.card-main")).toHaveAttribute("href",prefix+"lugares/merida-ciudad/");
+      await page.goBack();
+      await expect(page.getByRole("button",{name:"Quitar de guardados: Mérida"})).toHaveAttribute("aria-pressed","true");
+      await page.getByRole("button",{name:"Quitar de guardados: Mérida"}).click();
+      await expect(page.getByRole("button",{name:"Guardar destino: Mérida"})).toHaveAttribute("aria-pressed","false");
+      await page.getByRole("link",{name:"Ver destinos guardados"}).click();
+      await expect(page.locator("#count")).toHaveText("0 lugares");
+    }
+
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Ficha desbordada a " + width + "px");
     await page.close();
