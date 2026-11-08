@@ -12,7 +12,7 @@
     const items=Array.from(track.children);
     if (!prev || !next || !status || !items.length) continue;
     let visible=false,hovering=false,dragging=false,moved=false;
-    let startX=0,startLeft=0,last=0,direction=1,pauseUntil=0,suppressClickUntil=0;
+    let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressClickUntil=0;
     const sync=()=>{
       const max=Math.max(0,track.scrollWidth-track.clientWidth);
       const pos=Math.max(0,track.scrollLeft);
@@ -86,21 +86,19 @@
       const observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??false;},{threshold:.15});
       observer.observe(track);
     } else visible=true;
-    let lastDiagnostic=0;
     const frame=now=>{
       const elapsed=last?Math.min(48,now-last):0;
       last=now;
       const focused=track.contains(document.activeElement);
-      if(now-lastDiagnostic>800){
-        track.dataset.autoDebug=JSON.stringify({visible,hovering,dragging,focused,hidden:document.hidden,reduced:reduced.matches,paused:now<=pauseUntil,scrollLeft:track.scrollLeft,max:track.scrollWidth-track.clientWidth});
-        lastDiagnostic=now;
-      }
       if(visible&&!document.hidden&&!reduced.matches&&!hovering&&!dragging&&!focused&&now>pauseUntil){
         const max=Math.max(0,track.scrollWidth-track.clientWidth);
         if(max>4){
           if(track.scrollLeft>=max-1)direction=-1;
           else if(track.scrollLeft<=1)direction=1;
-          track.scrollLeft=Math.max(0,Math.min(max,track.scrollLeft+direction*speed*elapsed/1000));
+          const delta=speed*elapsed/1000+remainder;
+          const pixels=Math.floor(delta);
+          remainder=delta-pixels;
+          if(pixels)track.scrollLeft=Math.max(0,Math.min(max,track.scrollLeft+direction*pixels));
         }
       }
       requestAnimationFrame(frame);
