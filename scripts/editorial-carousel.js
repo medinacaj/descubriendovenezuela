@@ -16,15 +16,15 @@
       if (distance < shortest) { shortest = distance; nearest = index; }
     });
     active = nearest;
-    prev.disabled = active === 0;
-    next.disabled = active === items.length - 1;
+    prev.disabled = track.scrollLeft <= 2;
+    next.disabled = track.scrollLeft < track.scrollWidth - track.clientWidth - 2 ? false : true;
     status.textContent = (active + 1) + " / " + items.length;
   };
   const move = delta => {
     const index = Math.max(0, Math.min(items.length - 1, active + delta));
     track.scrollTo({
       left: items[index].offsetLeft - items[0].offsetLeft,
-      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth"
+      behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
     });
     active = index;
     sync();
