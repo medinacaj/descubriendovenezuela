@@ -18,6 +18,9 @@ function EditorialVisual({image,kind}:{image:EditorialImage;kind:"news"|"creator
 }
 function useSlidingTrack(){
  const track=useRef<HTMLDivElement>(null);
+ const pausedRef=useRef(false);
+ const [paused,setPaused]=useState(false);
+ const toggle=()=>{pausedRef.current=!pausedRef.current;setPaused(pausedRef.current);};
  const [state,setState]=useState({index:0,total:0,prev:false,next:false});
  const sync=()=>{
   const element=track.current;if(!element)return;
@@ -46,6 +49,7 @@ function useSlidingTrack(){
   const frame=requestAnimationFrame(handler);
   // Movimiento continuo a velocidad de lectura; se suspende con foco, mouse y tacto.
   const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
+  if(reduced.matches){pausedRef.current=true;setPaused(true);}
   let active=true,visible=false,hovering=false,dragging=false,moved=false;
   let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressUntil=0,animation=0;
   const pause=(duration=1700)=>{pauseUntil=performance.now()+duration;};
@@ -98,7 +102,7 @@ function useSlidingTrack(){
     if(!active||!element)return;
     const elapsed=last?Math.min(48,now-last):0;
     last=now;
-    if(visible&&!document.hidden&&!reduced.matches&&!hovering&&!dragging&&
+    if(visible&&!document.hidden&&!pausedRef.current&&!hovering&&!dragging&&
        !element.contains(document.activeElement)&&now>pauseUntil){
       const max=Math.max(0,element.scrollWidth-element.clientWidth);
       if(max>4){
@@ -132,7 +136,7 @@ function useSlidingTrack(){
     }
   };
  },[]);
- return {track,state,sync,move};
+ return {track,state,sync,move,paused,toggle};
 }
 export default function EditorialHighlights(){
  const news=useSlidingTrack(),creators=useSlidingTrack();
@@ -145,6 +149,9 @@ export default function EditorialHighlights(){
       <button type="button" onClick={()=>news.move(-1)} disabled={!news.state.prev} aria-label="Noticias anteriores">←</button>
       <span aria-live="polite" aria-atomic="true">{news.state.index+1} / {highlights.news.length}</span>
       <button type="button" onClick={()=>news.move(1)} disabled={!news.state.next} aria-label="Siguientes noticias">→</button>
+      <button type="button" className="editorial-carousel-toggle" aria-pressed={news.paused}
+       aria-label={news.paused?"Reanudar noticias":"Pausar noticias"}
+       onClick={news.toggle}>{news.paused?"▶":"Ⅱ"}</button>
      </div>
     </div>
    </div>
@@ -168,6 +175,9 @@ export default function EditorialHighlights(){
      <button type="button" onClick={()=>creators.move(-1)} disabled={!creators.state.prev} aria-label="Creadores anteriores">←</button>
      <span aria-live="polite" aria-atomic="true">{creators.state.index+1} / {highlights.creators.length}</span>
      <button type="button" onClick={()=>creators.move(1)} disabled={!creators.state.next} aria-label="Siguientes creadores">→</button>
+      <button type="button" className="editorial-carousel-toggle" aria-pressed={creators.paused}
+       aria-label={creators.paused?"Reanudar creadores":"Pausar creadores"}
+       onClick={creators.toggle}>{creators.paused?"▶":"Ⅱ"}</button>
     </div>
    </div>
    <div className="editorial-creators__track" ref={creators.track} onScroll={creators.sync} aria-label="Perfiles de creadores de viajes" tabIndex={0}
