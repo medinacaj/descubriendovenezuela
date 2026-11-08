@@ -173,6 +173,15 @@ describe("Pages con URLs permanentes",()=>{
   expect(html).toContain('data-news-counter');
   const carouselJS=await readFile("docs/js/editorial-highlights.js","utf8");
   expect(carouselJS).toContain('track.scrollBy({');
+  expect(carouselJS).toContain("requestAnimationFrame(frame)");
+  expect(carouselJS).toContain('track.addEventListener("pointerdown"');
+  expect(carouselJS).toContain("prefers-reduced-motion");
+  expect(carouselJS).toContain("IntersectionObserver");
+  expect(html).not.toContain("Ver perfil público");
+  const carouselCSS=await readFile("docs/editorial-highlights.css","utf8");
+  expect(carouselCSS).toContain("scrollbar-width:none");
+  const layoutCSS=await readFile("docs/layout-balance.css","utf8");
+  expect(layoutCSS).toContain(".place-card .card-bottom,.place-card .card-meta b{display:none}");
   expect(carouselJS).not.toContain('items[index].offsetLeft');
   expect((await stat("docs/editorial-highlights.css")).size).toBeGreaterThan(1500);
   expect((await stat("docs/js/editorial-highlights.js")).size).toBeGreaterThan(500);
