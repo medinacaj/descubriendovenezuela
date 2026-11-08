@@ -9,8 +9,17 @@
     const prev=document.querySelector("[data-"+type+"-prev]");
     const next=document.querySelector("[data-"+type+"-next]");
     const status=document.querySelector("[data-"+type+"-counter]");
+    const toggle=document.querySelector("[data-"+type+"-toggle]");
     const items=Array.from(track.children);
-    if (!prev || !next || !status || !items.length) continue;
+    if (!prev || !next || !status || !toggle || !items.length) continue;
+    let paused=reduced.matches;
+    const renderToggle=()=>{
+      toggle.setAttribute("aria-pressed",String(paused));
+      toggle.setAttribute("aria-label",(paused?"Reanudar ":"Pausar ")+(type==="news"?"noticias":"creadores"));
+      toggle.textContent=paused?"▶":"Ⅱ";
+    };
+    toggle.addEventListener("click",()=>{paused=!paused;renderToggle();});
+    renderToggle();
     let visible=false,hovering=false,dragging=false,moved=false;
     let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressClickUntil=0;
     const sync=()=>{
@@ -90,7 +99,7 @@
       const elapsed=last?Math.min(48,now-last):0;
       last=now;
       const focused=track.contains(document.activeElement);
-      if(visible&&!document.hidden&&!reduced.matches&&!hovering&&!dragging&&!focused&&now>pauseUntil){
+      if(visible&&!document.hidden&&!paused&&!hovering&&!dragging&&!focused&&now>pauseUntil){
         const max=Math.max(0,track.scrollWidth-track.clientWidth);
         if(max>4){
           if(track.scrollLeft>=max-1)direction=-1;
