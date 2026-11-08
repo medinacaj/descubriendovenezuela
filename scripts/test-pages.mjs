@@ -318,19 +318,19 @@ try {
       )
       .toBe(true);
     await page.locator('a.cinematic-hero__primary[href$="/explorar/"]').click();
-    await expect(page.getByRole("heading", {name: "Explorar destinos y localidades"})).toBeVisible();
+    await expect(page.getByRole("heading", {name: "Encuentra tu próximo destino"})).toBeVisible();
     // La navegación llega antes que los scripts diferidos en algunos móviles.
     // Comprobar que el filtro está inicializado antes de enviar eventos.
     await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
-    await expect(page.locator("#count")).toHaveText("1 lugar documentado");
+    await expect(page.locator("#count")).toHaveText("1 lugar");
     await page.getByLabel("Buscar lugar").fill("");
     await expect(page.locator("#count")).toHaveText(allPlaces.length + " lugares");
-    await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
-    await page.getByLabel("Estado o región").selectOption("Mérida");
+    await page.getByLabel("Tipo", {exact:true}).selectOption("Localidades");
+    await page.getByLabel("Estado", {exact:true}).selectOption("Mérida");
     await page.getByLabel("Buscar lugar").fill("merida");
     await page.getByRole("button", {name:"Buscar",exact:true}).click();
-    await expect(page.locator("#count")).toHaveText("1 lugar documentado");
+    await expect(page.locator("#count")).toHaveText("1 lugar");
     await page.locator('a[href$="/lugares/merida-ciudad/"]').click();
     await expect(page.getByRole("heading", {name:"Mérida",exact:true})).toBeVisible();
     await expect(page.getByText("Mapa documental:", {exact:false})).toBeVisible();
