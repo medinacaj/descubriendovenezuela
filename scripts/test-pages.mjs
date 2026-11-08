@@ -73,6 +73,8 @@ try {
     await expect(page.locator(".editorial-news__body h3 a")).toHaveCount(3);
     await expect(page.locator(".editorial-news__body>a")).toHaveCount(0);
     const newsTrack=page.locator("[data-news-track]");
+    await newsTrack.hover(); // Pausar desplazamiento autónomo para medir el layout.
+    await expect(newsTrack).toHaveCSS("scroll-behavior","auto");
     const newsNext=page.getByRole("button", {name:"Siguientes noticias"});
     const newsMetrics=await newsTrack.evaluate(el=>({
       width:el.clientWidth,scrollWidth:el.scrollWidth,scrollLeft:el.scrollLeft,
@@ -80,13 +82,19 @@ try {
       autoColumns:getComputedStyle(el).gridAutoColumns,
       cards:[...el.children].map(child=>Math.round(child.getBoundingClientRect().width))
     }));
-    if (newsMetrics.scrollWidth <= newsMetrics.width + 3 || newsMetrics.scrollLeft > 3)
+    if (newsMetrics.scrollWidth <= newsMetrics.width + 3)
       throw Error("Noticias sin espacio desplazable o desplazadas a " + width + "px: " + JSON.stringify(newsMetrics));
     await expect(newsNext).toBeEnabled();
     await newsNext.click();
     await expect.poll(()=>newsTrack.evaluate(el=>el.scrollLeft)).toBeGreaterThan(5);
     const creatorNext=page.getByRole("button", {name:"Siguientes creadores"});
     const creatorTrack=page.locator("[data-creators-track]");
+    await creatorTrack.hover();
+    await expect(creatorTrack).toHaveCSS("scroll-behavior","auto");
+    await expect(page.locator(".place-card .card-bottom").first()).toBeHidden();
+    await expect(page.locator(".place-card .card-meta b").first()).toBeHidden();
+    await expect(page.locator(".editorial-creators__body h3 a")).toHaveCount(9);
+    await expect(page.locator(".editorial-creators__body>a")).toHaveCount(0);
     const creatorGeometry=await creatorTrack.evaluate(track=>{
       const box=track.getBoundingClientRect();
       return {
@@ -105,6 +113,26 @@ try {
     } else {
       if (!creatorGeometry.allCardsVisible) throw Error("Carrusel sin desplazamiento, pero con tarjetas ocultas a " + width + "px");
       await expect(creatorNext).toBeDisabled();
+    }
+
+    // Movimiento real por sí solo y arrastre con ratón (una ejecución representativa).
+    if (engineName==="chromium" && width===390) {
+      const autoPage=await browser.newPage({viewport:{width:390,height:900}});
+      await autoPage.goto(origin);
+      const moving=autoPage.locator("[data-creators-track]");
+      await moving.scrollIntoViewIfNeeded();
+      await autoPage.mouse.move(1,1);
+      const initial=await moving.evaluate(el=>el.scrollLeft);
+      await expect.poll(()=>moving.evaluate(el=>el.scrollLeft),{timeout:4500}).toBeGreaterThan(initial+8);
+      const rect=await moving.boundingBox();
+      const fromX=rect.x+rect.width*.75, y=rect.y+Math.min(85,rect.height*.25);
+      await autoPage.mouse.move(fromX,y);
+      const dragBefore=await moving.evaluate(el=>el.scrollLeft);
+      await autoPage.mouse.down();
+      await autoPage.mouse.move(fromX-120,y,{steps:8});
+      await autoPage.mouse.up();
+      await expect.poll(()=>moving.evaluate(el=>el.scrollLeft)).toBeGreaterThan(dragBefore+75);
+      await autoPage.close();
     }
     await expect(page.locator('.cinematic-hero__timeline button[data-index="2"]')).toHaveAttribute("aria-pressed","true");
     const box = await page.evaluate(() => {
