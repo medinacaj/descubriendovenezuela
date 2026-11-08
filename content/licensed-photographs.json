@@ -928,5 +928,105 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Dinira.JPG",
     "output": "foto-parque-nacional-dinira.webp"
+  },
+  {
+    "id": "parque-nacional-laguna-de-tacarigua",
+    "file": "Laguna de Tacarigua.JPG",
+    "author": "William Applewhite",
+    "license": "CC BY-SA 3.0",
+    "alt": "Laguna de Tacarigua y manglares del parque nacional en Miranda, fotografiados en 2005",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Laguna_de_Tacarigua.JPG",
+    "output": "foto-parque-nacional-laguna-de-tacarigua.webp"
+  },
+  {
+    "id": "parque-nacional-cerro-el-copey",
+    "file": "Cerro El Copey 01.jpg",
+    "author": "Wilfredor",
+    "license": "CC0 1.0",
+    "alt": "Laderas del Cerro El Copey en la isla de Margarita, estado Nueva Esparta",
+    "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cerro_El_Copey_01.jpg",
+    "output": "foto-parque-nacional-cerro-el-copey.webp"
+  },
+  {
+    "id": "parque-nacional-yurubi",
+    "file": "Río Yurubí.jpg",
+    "author": "Stratokumulus",
+    "license": "CC BY-SA 4.0",
+    "alt": "Río Yurubí dentro del Parque Nacional Yurubí, estado Yaracuy, en abril de 2023",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:R%C3%ADo_Yurub%C3%AD.jpg",
+    "output": "foto-parque-nacional-yurubi.webp"
+  },
+  {
+    "id": "parque-nacional-chorro-el-indio",
+    "file": "Cascada Chorro El Indio..JPG",
+    "author": "Nestor Velez",
+    "license": "CC BY-SA 3.0",
+    "alt": "Cascada Chorro El Indio en el estado Táchira, Venezuela, en enero de 2011",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cascada_Chorro_El_Indio..JPG",
+    "output": "foto-parque-nacional-chorro-el-indio.webp"
+  },
+  {
+    "id": "parque-nacional-guatopo",
+    "file": "Parque Nacional Guatopo Guárico.jpg",
+    "author": "Liliana Amundarain",
+    "license": "CC BY 2.0",
+    "alt": "Camino boscoso del Parque Nacional Guatopo en el estado Guárico, Venezuela",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Guatopo_Gu%C3%A1rico.jpg",
+    "output": "foto-parque-nacional-guatopo.webp"
+  },
+  {
+    "id": "parque-nacional-peninsula-de-paria",
+    "file": "Cordillera al Mar.jpg",
+    "author": "Luis Ovalles",
+    "license": "CC BY-SA 3.0",
+    "alt": "Cordillera costera del Parque Nacional Península de Paria, estado Sucre, en 2010",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cordillera_al_Mar.jpg",
+    "output": "foto-parque-nacional-peninsula-de-paria.webp"
+  },
+  {
+    "id": "parque-nacional-sierra-de-san-luis",
+    "file": "Sierra de San Luis - Estado Falcón.JPG",
+    "author": "geolesage",
+    "license": "CC BY 2.0",
+    "alt": "Paisaje de la Sierra de San Luis en el estado Falcón, Venezuela, en 2008",
+    "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_de_San_Luis_-_Estado_Falc%C3%B3n.JPG",
+    "output": "foto-parque-nacional-sierra-de-san-luis.webp"
+  },
+  {
+    "id": "parque-nacional-cerro-saroche",
+    "file": "Parque nacional Cerro Saroche 1999 000.jpg",
+    "author": "Veronidae",
+    "license": "CC BY-SA 3.0",
+    "alt": "Paisaje del Parque Nacional Cerro Saroche, estado Lara, fotografiado en 1999",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_nacional_Cerro_Saroche_1999_000.jpg",
+    "output": "foto-parque-nacional-cerro-saroche.webp"
+  },
+  {
+    "id": "parque-nacional-el-tama",
+    "file": "Tama planicie.jpg",
+    "author": "mauricio chacon",
+    "license": "CC BY-SA 4.0",
+    "alt": "Planicie montañosa del Parque Nacional El Tamá, estado Táchira, en enero de 2013",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tama_planicie.jpg",
+    "output": "foto-parque-nacional-el-tama.webp"
+  },
+  {
+    "id": "refugio-cuare",
+    "file": "Pescadores Cuare.jpg",
+    "author": "Luisovalles",
+    "license": "CC BY-SA 3.0",
+    "alt": "Pescadores en el Refugio de Fauna Silvestre Cuare, estado Falcón, en 2011",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pescadores_Cuare.jpg",
+    "output": "foto-refugio-cuare.webp"
   }
 ]
