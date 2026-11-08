@@ -2248,7 +2248,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cayo-francisqui.webp",
+        "alt": "Playa del cayo Francisquí, Parque Nacional Los Roques, Dependencias Federales",
+        "author": "Katepalitava",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Los_Roques%2C_playa_Franciskiy.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2271,7 +2282,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-cayo-madrisqui.webp",
+        "alt": "Vista del cayo Madrisquí desde una embarcación en Los Roques",
+        "author": "M. Celeste Rabbat",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Madrisqui_calmo_y_tranquilo.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2648,7 +2670,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-punta-arenas.webp",
+        "alt": "Playa Punta Arenas en la isla de Margarita, estado Nueva Esparta",
+        "author": "Eduardo Saavedra Altuve",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Punta_Arenas._Isla_de_Margarita%2C_Nueva_Esparta%2C_Venezuela..JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2671,7 +2704,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-guacuco.webp",
+        "alt": "Playa Guacuco en la isla de Margarita, Nueva Esparta",
+        "author": "Enzo861",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Guacuco_-_Nva._Esparta.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2763,7 +2807,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-la-punta-isla-de-coche.webp",
+        "alt": "Playa La Punta en la isla de Coche, estado Nueva Esparta",
+        "author": "Maor X",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:La_Punta_beach%2C_Coche%2C_Venezuela.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2820,7 +2875,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-isla-de-cubagua.webp",
+        "alt": "Faro en la isla de Cubagua, Nueva Esparta",
+        "author": "Mcmagdalena",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:El_Faro_de_Isla_de_cubagua.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -2900,7 +2966,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-pui-pui.webp",
+        "alt": "Playa Pui Pui en el estado Sucre, Venezuela",
+        "author": "Jackson Perdomo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Puy-Puy_-_Estado_Sucre.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3026,7 +3103,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-playa-grande-de-choroni.webp",
+        "alt": "Playa Grande de Choroní en el estado Aragua",
+        "author": "Daniel10ortegaven",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Grande-Choroni.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3747,7 +3835,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-pampatar.webp",
+        "alt": "Playa Pampatar en la isla de Margarita, estado Nueva Esparta",
+        "author": "Javier Suárez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Pampatar_-_Margarita.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -3839,7 +3938,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-peninsula-de-macanao.webp",
+        "alt": "Paisaje de la península de Macanao en la isla de Margarita",
+        "author": "Jorge Esteban De Mesa Alvarez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Macanao.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
