@@ -409,3 +409,8 @@ footer > small { font-size: 11px; }
 .place-save-note{flex:1 1 100%;font-size:11px;color:#526373;line-height:1.45}
 .place-save-button:focus-visible,.place-save-link:focus-visible{outline:3px solid #a85137;outline-offset:3px}
 @media(max-width:420px){.place-intro__actions{gap:6px 12px}.place-save-button,.place-save-link{font-size:12px}}
+
+/* Fichas con imagen: controles sobre cabecera azul oscura, no sobre fondo crema. */
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-save-link,
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-save-link:hover{color:#ffffff}
+.place-detail:has(.place-cover:not(.place-cover--pending)) .place-save-note{color:#eaf4ff}
