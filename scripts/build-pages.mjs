@@ -10,6 +10,13 @@ const css = await readFile("src/app/globals.css","utf8");
 const layout = JSON.parse(await readFile("scripts/pages-layout.json","utf8"));
 const geo=JSON.parse(await readFile("content/maps/states.geojson","utf8"));
 const files = buildDirectories(places,css,layout.hero,geo);
+// El script común ya se carga en todas las fichas: extenderlo sin duplicar 314 HTML.
+// Validar la firma evita dejar de generar esta mejora si cambia el renderizador.
+const sharedCandidates = Object.keys(files).filter(path => /^docs\/js\/script-[a-z0-9]+-[0-9]+\.js$/.test(path) &&
+  files[path].includes('navigator.serviceWorker.register("/descubriendovenezuela/sw.js"'));
+if (sharedCandidates.length !== 1) throw new Error("No se encontró un único script común de fichas");
+files[sharedCandidates[0]] += "\n" + await readFile("scripts/detail-favorites.js","utf8");
+
 files["docs/layout-balance.css"] = await readFile("src/app/layout-balance.css", "utf8");
 files["docs/states.css"] = await readFile("src/app/states.css", "utf8");
 files["docs/cinematic-hero.css"] = await readFile("src/app/cinematic-hero.css", "utf8");
