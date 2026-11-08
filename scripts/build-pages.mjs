@@ -23,7 +23,7 @@ const licensedPhotos = new Map(places.flatMap(place =>
   place.photos.filter(media => media.kind === "photograph").map(media => [media.src, media])));
 for (const entry of [...editorial.news, ...editorial.creators]) {
   const image = entry.image, photo = licensedPhotos.get(image?.src);
-  if (!photo || !/^media\\/foto-[a-z0-9-]+\\.webp$/.test(image.src) ||
+  if (!photo || !image.src.startsWith("media/foto-") || !image.src.endsWith(".webp") ||
       !image.alt || !image.caption ||
       ["author", "sourceUrl", "license", "licenseUrl"].some(key => image[key] !== photo[key])) {
     throw new Error("Imagen editorial sin origen/licencia verificados: " + entry.id);
