@@ -878,5 +878,55 @@
     "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
     "sourceUrl": "https://commons.wikimedia.org/wiki/File:Museo_de_los_ni%C3%B1os_CCS.JPG",
     "output": "foto-museo-de-los-ninos-caracas.webp"
+  },
+  {
+    "id": "parque-los-chorros",
+    "file": "Parque Los Chorros 039.jpg",
+    "alt": "Vista del Parque Los Chorros junto al río Tócome, Caracas, fotografiado en 2000",
+    "author": "Veronidae",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Los_Chorros_039.jpg",
+    "output": "foto-parque-los-chorros.webp"
+  },
+  {
+    "id": "zoologico-caricuao",
+    "file": "Pache Mapache Comiendo.jpg",
+    "alt": "Mapache fotografiado en el Parque Zoológico de Caricuao, Caracas, en 2011",
+    "author": "ZuliannyGM",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pache_Mapache_Comiendo.jpg",
+    "output": "foto-zoologico-caricuao.webp"
+  },
+  {
+    "id": "hacienda-chuao",
+    "file": "Cacao en la hacienda de Cacao de Chuao.jpg",
+    "alt": "Cacao en la Hacienda Chuao, estado Aragua, fotografiado en 2013",
+    "author": "Isamarvda",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cacao_en_la_hacienda_de_Cacao_de_Chuao.jpg",
+    "output": "foto-hacienda-chuao.webp"
+  },
+  {
+    "id": "parque-nacional-sierra-de-la-culata",
+    "file": "Sierra La Culata, Mérida.JPG",
+    "alt": "Paisaje de la Sierra de La Culata, estado Mérida, fotografiado en 2012",
+    "author": "George Miquilena",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_La_Culata%2C_M%C3%A9rida.JPG",
+    "output": "foto-parque-nacional-sierra-de-la-culata.webp"
+  },
+  {
+    "id": "parque-nacional-dinira",
+    "file": "Parque Nacional Dinira.JPG",
+    "alt": "Paisaje del Parque Nacional Dinira, estado Lara, fotografiado en 2014",
+    "author": "Manvardu",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+    "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Dinira.JPG",
+    "output": "foto-parque-nacional-dinira.webp"
   }
 ]
