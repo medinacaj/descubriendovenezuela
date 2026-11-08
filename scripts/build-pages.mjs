@@ -37,7 +37,7 @@ files["docs/index.html"] = files["docs/index.html"]
   .replace("</body>", `<script defer src="/descubriendovenezuela/js/editorial-highlights.js"></script></body>`);
 if (!files["docs/index.html"].includes("id=\"editorial-creators-title\"")) throw new Error("Fallo al incorporar el carrusel");
 let editorialHash = 2166136261;
-for (const char of editorialRaw + files["docs/cinematic-hero.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
+for (const char of editorialRaw + files["docs/cinematic-hero.css"] + files["docs/editorial-highlights.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
 const edition = (editorialHash >>> 0).toString(16);
 files["docs/sw.js"] = files["docs/sw.js"]
   .replace('BASE+"js/cinematic-hero.js",', 'BASE+"js/cinematic-hero.js",BASE+"editorial-highlights.css",BASE+"js/editorial-highlights.js",')
