@@ -93,6 +93,10 @@ describe("Pages con URLs permanentes",()=>{
    expect((html.match(/class="card-photo(?: card-photo--pending)?"/g)||[]).length).toBe(places.length);
    expect(html).not.toContain('data-image-scope="referencia"');
    expect(html).toContain('<option value="pendiente">Sin fotografía propia</option>');
+   expect(html).toContain('data-experience="playas"');
+   expect(html).toContain('name="imagen"');
+   expect(html).toContain('src="/descubriendovenezuela/js/explore-experiences.js"');
+   expect((html.match(/data-experiences="/g)||[]).length).toBe(places.length);
    for(const p of places){
      const detail=await readFile("docs/lugares/"+p.id+"/index.html","utf8");
      expect(detail).toContain('class="place-cover place-cover--');
@@ -195,9 +199,10 @@ describe("Pages con URLs permanentes",()=>{
   expect(home).toContain('href="/descubriendovenezuela/base.css"');
   expect(home).not.toContain("<style>");
   expect(explore).toContain('id="show-more"');
-  const jsPaths=[...explore.matchAll(/src="\/descubriendovenezuela\/js\/(script-[a-z0-9]+-[0-9]+\.js)"/g)].map(m=>m[1]);
-  const contents=await Promise.all(jsPaths.map(name=>readFile("docs/js/"+name,"utf8")));
-  expect(contents.join("\n")).toContain("batchSize=30");
+  const experienceJS=await readFile("docs/js/explore-experiences.js","utf8");
+  expect(experienceJS).toContain("batchSize=30");
+  expect(experienceJS).toContain("experiencia");
+  expect(home).toContain('class="experience-shortcuts"');
   expect(home).toContain("Más allá de los destinos conocidos");
   expect((await stat("docs/base.css")).size).toBeGreaterThan(10000);
   const robots=await readFile("docs/robots.txt","utf8");

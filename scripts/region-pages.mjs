@@ -57,11 +57,18 @@ export function buildRegionViews(places, {url,h,slug,card,shell,site,visualFor})
     <div class="directory-grid family-escapes__grid">${familyPlaces.map(card).join("")}</div>
     <p class="state-more-link"><a class="button" href="${url("posadas/")}">Ver guía de posadas y planes familiares ↗</a></p>
   </section>`;
+  const experiences=[
+    ["playas","Playas"],["montanas","Montañas"],["parques","Parques"],
+    ["cultura","Cultura"],["sabores","Gastronomía"],["posadas","Posadas"]
+  ];
+  const experienceNav=`<nav class="experience-shortcuts" aria-label="Explorar por experiencia">
+    ${experiences.map(([id,label])=>`<a href="${url("explorar/")}?experiencia=${id}">${label}</a>`).join("")}
+  </nav>`;
   const homeSections=`
     <section class="section page-width editor-picks" aria-labelledby="spotlight-title">
       <div class="section-head"><div><span class="eyebrow">DESCUBRE TU PRÓXIMO DESTINO</span><h2 id="spotlight-title">Destinos destacados</h2></div>
-      <a class="text-link" href="${url("explorar/")}">Buscar entre los ${places.length} lugares ↗</a></div>
-      <p class="catalog-note">Fotografías auténticas con atribución y fichas documentales. Son ejemplos del inventario, no recomendaciones de viaje ni comprobación de apertura.</p>
+      <a class="text-link" href="${url("explorar/")}?imagen=foto">Ver destinos fotografiados ↗</a></div>
+      ${experienceNav}
       <div class="directory-grid editorial-featured-grid">${spotlight.map(card).join("")}</div>
     </section>
     ${familySection}
