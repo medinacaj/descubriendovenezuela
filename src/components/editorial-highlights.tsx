@@ -172,9 +172,8 @@ export default function EditorialHighlights(){
     {highlights.creators.map(item=><article className="editorial-creators__card" key={item.id}>
      <EditorialVisual image={item.image} kind="creators"/>
      <div className="editorial-creators__body">
-      <small>{item.tag}</small><h3>{item.name}</h3>
+      <small>{item.tag}</small><h3><a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={"Visitar perfil de "+item.name}>{item.name}</a></h3>
       <p className="editorial-creators__handle">{item.handle}</p><p>{item.focus}</p>
-      <a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={"Visitar perfil externo de "+item.name}>Ver perfil público <span aria-hidden="true">↗</span></a>
      </div>
     </article>)}
    </div>
