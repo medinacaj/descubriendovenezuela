@@ -47,7 +47,7 @@ function useSlidingTrack(){
   // Movimiento continuo a velocidad de lectura; se suspende con foco, mouse y tacto.
   const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
   let active=true,visible=false,hovering=false,dragging=false,moved=false;
-  let startX=0,startLeft=0,last=0,direction=1,pauseUntil=0,suppressUntil=0,animation=0;
+  let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressUntil=0,animation=0;
   const pause=(duration=1700)=>{pauseUntil=performance.now()+duration;};
   const enter=()=>{hovering=true;};
   const leave=()=>{hovering=false;pause(1200);};
@@ -104,7 +104,10 @@ function useSlidingTrack(){
       if(max>4){
         if(element.scrollLeft>=max-1)direction=-1;
         else if(element.scrollLeft<=1)direction=1;
-        element.scrollLeft=Math.max(0,Math.min(max,element.scrollLeft+direction*19*elapsed/1000));
+        const delta=19*elapsed/1000+remainder;
+        const pixels=Math.floor(delta);
+        remainder=delta-pixels;
+        if(pixels)element.scrollLeft=Math.max(0,Math.min(max,element.scrollLeft+direction*pixels));
       }
     }
     animation=requestAnimationFrame(tick);
