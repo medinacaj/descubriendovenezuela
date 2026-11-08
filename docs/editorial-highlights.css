@@ -174,3 +174,14 @@
     transition:none;
   }
 }
+
+/* Identidad editorial: las iniciales identifican al perfil, la foto ilustra el destino. */
+.editorial-creators__monogram{
+  position:absolute;right:14px;bottom:12px;display:grid;place-items:center;
+  width:48px;height:48px;border-radius:50%;background:#102746ec;
+  color:#fff;border:2px solid #fff8f1;box-shadow:0 5px 13px #10274645;
+  font:750 15px/1 "Segoe UI",Arial,sans-serif;letter-spacing:.035em;
+  pointer-events:none;
+}
+.editorial-creators__portrait{isolation:isolate}
+@media(max-width:620px){.editorial-creators__monogram{width:44px;height:44px;right:11px;bottom:11px}}
