@@ -130,3 +130,14 @@
 .editorial-creators__body h3 a:hover,.editorial-creators__body h3 a:focus-visible{
   color:#a74f35;text-decoration:underline;text-underline-offset:3px
 }
+/* Control accesible de movimiento, discreto y sin barra adicional. */
+.editorial-highlights .editorial-carousel-toggle{
+  width:30px;height:30px;font-size:12px;line-height:1;
+  border-radius:50%;border-color:#cabfb3;background:transparent;
+}
+.editorial-highlights .editorial-carousel-toggle[aria-pressed="true"]{
+  background:#102746;color:#fff;border-color:#102746;
+}
+.editorial-highlights .editorial-carousel-toggle:focus-visible{
+  outline:3px solid #a85137;outline-offset:3px;
+}
