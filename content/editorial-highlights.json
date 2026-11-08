@@ -132,6 +132,101 @@
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
       }
+    },
+    {
+      "id": "fogonix",
+      "name": "FOGONIX",
+      "handle": "@fogonix",
+      "initials": "FV",
+      "focus": "Rutas de Venezuela, gastronomía y cultura local",
+      "tag": "VIAJES Y GASTRONOMÍA",
+      "url": "https://www.instagram.com/fogonix/",
+      "reference": "https://www.analitica.com/emprendimiento/noti-tips/fogonix-el-youtuber-venezolano-que-recorre-su-pais-y-el-mundo/",
+      "image": {
+        "src": "media/foto-parque-nacional-mochima.webp",
+        "alt": "Playas del Parque Nacional Mochima en el estado Sucre, fotografía de agosto de 2026",
+        "caption": "Playas de Mochima, Sucre",
+        "author": "Warairarepano&Guaicaipuro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playas_de_Mochima%2C_Sucre%2C_Venezuela_2026.jpg",
+        "license": "CC0 1.0",
+        "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/"
+      }
+    },
+    {
+      "id": "josehmalon",
+      "name": "Joseh Malon",
+      "handle": "@josehmalon",
+      "initials": "JM",
+      "focus": "Crónicas y recorridos por la Isla de Margarita y Venezuela",
+      "tag": "CRÓNICAS DE VIAJE",
+      "url": "https://www.youtube.com/@josehmalon",
+      "reference": "https://channeldb.com/es/category/travel-outdoors/country/ve",
+      "image": {
+        "src": "media/foto-isla-de-plata-mochima.webp",
+        "alt": "Playa de Isla de Plata, sector Anzoátegui del Parque Nacional Mochima, fotografía de 2013",
+        "caption": "Isla de Plata, Mochima",
+        "author": "Dannyberro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Playa_Isla_de_Plata.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "joancamargoenmoto",
+      "name": "Joan Manuel Camargo",
+      "handle": "@joancamargoenmoto",
+      "initials": "JC",
+      "focus": "Aventuras en motocicleta y recorridos por Sudamérica",
+      "tag": "MOTOTURISMO",
+      "url": "https://www.youtube.com/@joancamargoenmoto",
+      "reference": "https://channeldb.com/es/c/%40joancamargoenmoto",
+      "image": {
+        "src": "media/foto-parque-nacional-henri-pittier.webp",
+        "alt": "Laderas del Parque Nacional Henri Pittier vistas desde El Castaño, Aragua",
+        "caption": "Henri Pittier, Aragua",
+        "author": "Roberto Galindo Deshays",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Henri_Pittier_(Maracay%2C_Venezuela).jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
+    },
+    {
+      "id": "suhailtheis",
+      "name": "Suhail Theis",
+      "handle": "@suha.theis",
+      "initials": "ST",
+      "focus": "Experiencias y viajes desde Venezuela",
+      "tag": "VIAJES Y ESTILO DE VIDA",
+      "url": "https://www.instagram.com/suha.theis/",
+      "reference": "https://hiveinfluence.io/top-influencers/instagram/travel/venezuela",
+      "image": {
+        "src": "media/foto-galipan.webp",
+        "alt": "Vista del poblado de Galipán, montaña próxima a Caracas",
+        "caption": "Galipán, La Guaira",
+        "author": "Brisa del Mar * Venezuela *",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pueblo_de_Galip%C3%A1n.jpg",
+        "license": "CC BY 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/2.0/"
+      }
+    },
+    {
+      "id": "xavierhermoso",
+      "name": "Xavier Hermoso",
+      "handle": "@xavierhermoso1",
+      "initials": "XH",
+      "focus": "Viajes por Venezuela, alojamientos y rutas locales",
+      "tag": "DESTINOS Y EXPERIENCIAS",
+      "url": "https://www.youtube.com/@xavierhermoso1",
+      "reference": "https://channeldb.com/es/category/lifestyle-vlogs/country/ve",
+      "image": {
+        "src": "media/foto-parque-nacional-morrocoy.webp",
+        "alt": "Cayo de aguas turquesas y palmeras en el Parque Nacional Morrocoy, Falcón",
+        "caption": "Parque Nacional Morrocoy, Falcón",
+        "author": "Veronidae",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Morrocoy_2005_015.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     }
   ]
 }
