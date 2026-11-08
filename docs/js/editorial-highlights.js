@@ -27,7 +27,9 @@
       behavior: matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth"
     });
     active = index;
-    sync();
+    status.textContent = (active + 1) + " / " + items.length;
+    prev.disabled = index === 0;
+    next.disabled = index === items.length - 1 || track.scrollWidth <= track.clientWidth + 2;
   };
   prev.addEventListener("click", () => move(-1));
   next.addEventListener("click", () => move(1));
