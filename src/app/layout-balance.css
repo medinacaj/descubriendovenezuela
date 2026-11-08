@@ -383,3 +383,19 @@ footer > small { font-size: 11px; }
   .experience-shortcuts a,.experience-choice{padding:7px 11px;font-size:11px}
   .explorer .filter-bar{padding:12px}
 }
+
+/* Explorar: ordenación clara y destinos guardados únicamente en el navegador. */
+.explorer .catalog-toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:12px}
+.explorer-preferences{display:flex;flex-wrap:wrap;align-items:center;gap:9px;margin-inline:auto}
+.explorer-sort{display:flex;align-items:center;gap:8px}
+.explorer-sort label{font-size:12px;font-weight:700;color:#344c5d;white-space:nowrap}
+.explorer-sort select{min-height:40px;max-width:190px;padding:8px 27px 8px 10px;font-size:12px;border-radius:9px;background:#fffdfa;border:1px solid #dacbbd;color:#173754}
+.explorer-saved-toggle{min-height:40px;padding:7px 11px;border:1px solid #d5c6b6;border-radius:999px;background:#fffdfa;color:#173754;font-size:12px;font-weight:700;white-space:nowrap;cursor:pointer}
+.explorer-saved-toggle[aria-pressed="true"]{background:#173754;color:#fff;border-color:#173754}
+.explorer #results .place-card{position:relative}
+.explorer #results .place-favorite{position:absolute;z-index:3;top:10px;right:10px;display:grid;place-items:center;width:40px;height:40px;min-width:40px;padding:0;border-radius:50%;border:1px solid #d5c6b6;background:#fffdf9f2;color:#183750;box-shadow:0 3px 11px #10274624;cursor:pointer;font:700 24px/1 Arial,sans-serif}
+.explorer #results .place-favorite[aria-pressed="true"]{color:#a63726;background:#fff4ed;border-color:#b65943}
+.explorer #results .place-favorite:hover{background:#fff0e1}
+.explorer #results .place-favorite:focus-visible,.explorer-saved-toggle:focus-visible,.explorer-sort select:focus-visible{outline:3px solid #a85137;outline-offset:3px}
+@media(max-width:700px){.explorer-preferences{width:100%;justify-content:space-between;gap:7px;margin:0}.explorer-sort{flex:1 1 165px}.explorer-sort select{min-width:0;max-width:100%;flex:1}.explorer .catalog-toolbar .view-switch{width:100%}}
+@media(max-width:380px){.explorer-preferences{align-items:stretch}.explorer-sort{flex:1 1 100%}.explorer-saved-toggle{flex:1 1 100%}}
