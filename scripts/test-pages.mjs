@@ -52,6 +52,7 @@ try {
     }
     await expect(page.locator(".cinematic-hero h1")).toContainText("LOS ROQUES");
     await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
+    await expect(page.locator(".experience-shortcuts a")).toHaveCount(6);
     await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
     await expect(page.locator(".editorial-news__card")).toHaveCount(3);
     await expect(page.locator(".editorial-creators__card")).toHaveCount(9);
@@ -258,15 +259,27 @@ try {
     if(await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Guía de posadas desbordada a "+width+"px");
     await page.goto(origin + "explorar/");
+    await expect(page.locator(".experience-choice")).toHaveCount(6);
+    await expect(page.locator("#results .place-card:visible .card-photo[data-kind=photograph]")).toHaveCount(30);
     await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(255, 253, 250)");
     await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-image",/linear-gradient/);
-    await page.getByLabel("Imagen").selectOption("propia");
+    await page.getByLabel("Fotografías").selectOption("foto");
+    const photoCount=allPlaces.filter(p=>p.photos?.some(x=>x.kind==="photograph")).length;
+    await expect(page.locator("#count")).toHaveText(photoCount+" lugares");
+    await page.getByLabel("Fotografías").selectOption("propia");
     const withOwnImages = allPlaces.filter(p=>p.photos?.length).length;
-    await expect(page.locator("#count")).toHaveText(withOwnImages + " lugares documentados");
-    await page.getByLabel("Imagen").selectOption("pendiente");
+    await expect(page.locator("#count")).toHaveText(withOwnImages + " lugares");
+    await page.getByLabel("Fotografías").selectOption("pendiente");
     const withoutOwnImages = allPlaces.filter(p=>!p.photos?.length).length;
-    await expect(page.locator("#count")).toHaveText(withoutOwnImages + " lugares documentados");
-    await page.getByLabel("Imagen").selectOption("");
+    await expect(page.locator("#count")).toHaveText(withoutOwnImages + " lugares");
+    await page.getByLabel("Fotografías").selectOption("");
+    await page.getByRole("button",{name:"Playas",exact:true}).click();
+    await expect(page.locator('[data-experience="playas"]')).toHaveAttribute("aria-pressed","true");
+    if(!(await page.locator("#count").textContent()).match(/^[1-9][0-9]* lugares?$/))
+      throw Error("La experiencia Playas no muestra resultados");
+    await expect(page).toHaveURL(/experiencia=playas/);
+    await page.getByRole("button",{name:"Playas",exact:true}).click();
+    await expect(page.locator('[data-experience="playas"]')).toHaveAttribute("aria-pressed","false");
     await expect(page.locator("#results .place-card:visible")).toHaveCount(30);
     await page.getByRole("button",{name:"Mostrar más lugares"}).click();
     await expect(page.locator("#results .place-card:visible")).toHaveCount(60);
@@ -312,7 +325,7 @@ try {
     await page.getByLabel("Buscar lugar").fill("monumento natural cueva del guacharo");
     await expect(page.locator("#count")).toHaveText("1 lugar documentado");
     await page.getByLabel("Buscar lugar").fill("");
-    await expect(page.locator("#count")).toHaveText(allPlaces.length + " lugares documentados");
+    await expect(page.locator("#count")).toHaveText(allPlaces.length + " lugares");
     await page.getByLabel("Categoría", {exact:true}).selectOption("Localidades");
     await page.getByLabel("Estado o región").selectOption("Mérida");
     await page.getByLabel("Buscar lugar").fill("merida");
