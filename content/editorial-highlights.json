@@ -8,7 +8,16 @@
       "source": "Informe Aéreo",
       "title": "Expo AVAVIT 2026 reunió a empresas y profesionales del turismo",
       "summary": "La feria celebrada en Caracas del 3 al 5 de noviembre abrió espacios de encuentro entre agencias, alojamientos, aerolíneas y operadores.",
-      "url": "https://informeaereo.com/turismo/venezuela-potencia-el-sector-turistico-mediante-alianzas-de-negocios/"
+      "url": "https://informeaereo.com/turismo/venezuela-potencia-el-sector-turistico-mediante-alianzas-de-negocios/",
+      "image": {
+        "src": "media/foto-plaza-venezuela.webp",
+        "alt": "Plaza Venezuela en Caracas",
+        "caption": "Plaza Venezuela, Caracas",
+        "author": "OsmanFernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     },
     {
       "id": "turismo-desde-regiones",
@@ -17,7 +26,16 @@
       "source": "Fedecámaras Radio",
       "title": "La identidad de las regiones, en el centro de la agenda turística",
       "summary": "Representantes gremiales conversaron sobre las posibilidades del turismo impulsado por los territorios durante Expo AVAVIT.",
-      "url": "https://fedecamarasradio.com/programas/gustavo-anzola-el-turismo-nacional-se-fortalece-desde-las-regiones/"
+      "url": "https://fedecamarasradio.com/programas/gustavo-anzola-el-turismo-nacional-se-fortalece-desde-las-regiones/",
+      "image": {
+        "src": "media/foto-658.webp",
+        "alt": "Fachada colonial en el centro histórico de Coro, estado Falcón",
+        "caption": "Arquitectura tradicional de Coro",
+        "author": "Janethrodri",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_colonial_Coro.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
     },
     {
       "id": "patrimonio-vivo",
@@ -26,7 +44,16 @@
       "source": "Ministerio de Cultura",
       "title": "Las tradiciones y los oficios mantienen vivo el patrimonio venezolano",
       "summary": "Un recorrido documental por expresiones culturales como los tejidos de curagua, las músicas tradicionales y los cantos llaneros.",
-      "url": "https://www.mincultura.gob.ve/noticias/canto-devocion-y-memoria-celebrando-el-patrimonio-inmaterial-vivo-que-define-a-venezuela/"
+      "url": "https://www.mincultura.gob.ve/noticias/canto-devocion-y-memoria-celebrando-el-patrimonio-inmaterial-vivo-que-define-a-venezuela/",
+      "image": {
+        "src": "media/foto-teatro-baralt.webp",
+        "alt": "Fachada exterior del Teatro Baralt en Maracaibo, fotografía de octubre de 2026",
+        "caption": "Teatro Baralt, Maracaibo",
+        "author": "Mgta122001vzla",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Baralt_en_Maracaibo.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
     }
   ],
   "creators": [
@@ -38,7 +65,16 @@
       "focus": "Historias, destinos y cultura de Venezuela",
       "tag": "VIAJES Y CULTURA",
       "url": "https://www.instagram.com/valendeviaje/",
-      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel"
+      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel",
+      "image": {
+        "src": "media/foto-parque-nacional-medanos-de-coro.webp",
+        "alt": "Vista de los médanos de Coro, estado Falcón",
+        "caption": "Médanos de Coro, Falcón",
+        "author": "Rjcastillo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Medanos_de_Coro.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     },
     {
       "id": "veronicaweffer",
@@ -48,7 +84,16 @@
       "focus": "Rutas, experiencias y vida viajera",
       "tag": "VIAJES",
       "url": "https://www.instagram.com/veronicaweffer/",
-      "reference": "https://zaver.one/creators/instagram/veronicaweffer"
+      "reference": "https://zaver.one/creators/instagram/veronicaweffer",
+      "image": {
+        "src": "media/foto-parque-nacional-sierra-nevada.webp",
+        "alt": "Picos de Sierra Nevada de Mérida vistos desde Sierra de La Culata",
+        "caption": "Sierra Nevada, Mérida",
+        "author": "Adolfo",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_Nevada_Merida_1.jpg",
+        "license": "CC BY-SA 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+      }
     },
     {
       "id": "doslocosdeviaje",
@@ -58,7 +103,16 @@
       "focus": "Experiencias, aventuras y guías de viaje",
       "tag": "AVENTURA",
       "url": "https://www.instagram.com/doslocosdeviaje/",
-      "reference": "https://www.doslocosdeviaje.com/pages/nosotros"
+      "reference": "https://www.doslocosdeviaje.com/pages/nosotros",
+      "image": {
+        "src": "media/foto-701.webp",
+        "alt": "Vista aérea del Salto Ángel en el Parque Nacional Canaima, Bolívar",
+        "caption": "Parque Nacional Canaima",
+        "author": "Rafael Estrella",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Salto_Angel_from_above.jpg",
+        "license": "CC BY-SA 2.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/2.0/"
+      }
     },
     {
       "id": "carlaconwifi",
@@ -68,7 +122,16 @@
       "focus": "Viajes y experiencias de vida nómada",
       "tag": "VIAJES Y ESTILO DE VIDA",
       "url": "https://www.instagram.com/carlaconwifi/",
-      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel"
+      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel",
+      "image": {
+        "src": "media/foto-cayo-sombrero.webp",
+        "alt": "Palmeras y arena clara en Cayo Sombrero, Parque Nacional Morrocoy",
+        "caption": "Cayo Sombrero, Falcón",
+        "author": "AndreaC11",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cayo_Sombrero.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     }
   ]
 }

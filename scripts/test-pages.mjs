@@ -55,6 +55,15 @@ try {
     await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
     await expect(page.locator(".editorial-news__card")).toHaveCount(3);
     await expect(page.locator(".editorial-creators__card")).toHaveCount(4);
+    await expect(page.locator(".editorial-news__art img")).toHaveCount(3);
+    await expect(page.locator(".editorial-creators__portrait img")).toHaveCount(4);
+    if (width === 390 || width === 1440) {
+      for (const selector of [".editorial-news__art img", ".editorial-creators__portrait img"]) {
+        const img = page.locator(selector).first();
+        await img.scrollIntoViewIfNeeded();
+        await expect.poll(() => img.evaluate(element => element.complete && element.naturalWidth > 0)).toBe(true);
+      }
+    }
     await expect(page.locator('link[href$="editorial-highlights.css"]')).toHaveCount(1);
     const creatorNext=page.getByRole("button", {name:"Siguientes creadores"});
     const creatorTrack=page.locator("[data-creators-track]");

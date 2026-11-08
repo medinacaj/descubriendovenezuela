@@ -8,6 +8,27 @@ const dateLabel = (value: string) => {
   return day + " " + ["ene", "feb", "mar", "abr", "may", "jun", "jul", "ago", "sep", "oct", "nov", "dic"][month - 1] + " " + year;
 };
 
+type EditorialImage = {
+  src: string; alt: string; caption: string; author: string;
+  sourceUrl: string; license: string; licenseUrl: string;
+};
+function EditorialVisual({ image, kind }: { image: EditorialImage; kind: "news" | "creators" }) {
+  const prefix = kind === "news" ? "editorial-news" : "editorial-creators";
+  return (
+    <figure className={prefix + "__visual"}>
+      <div className={prefix === "editorial-news" ? "editorial-news__art" : "editorial-creators__portrait"}>
+        <img src={"/" + image.src} alt={image.alt} loading="lazy" decoding="async" width={900} height={600} />
+        <span className="editorial-image__tag">{kind === "news" ? "IMAGEN DE CONTEXTO" : "DESTINO ILUSTRATIVO"}</span>
+      </div>
+      <figcaption className="editorial-image__credit">
+        {image.caption} · Foto: <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a>
+        {" · "}<a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a>
+        {" · Encuadre adaptado"}
+      </figcaption>
+    </figure>
+  );
+}
+
 export default function EditorialHighlights() {
   const track = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
@@ -54,12 +75,9 @@ export default function EditorialHighlights() {
           <p>Turismo, cultura y comunidades, con fuentes y fecha de publicación.</p>
         </div>
         <div className="editorial-news__grid">
-          {highlights.news.map((news, i) => (
+          {highlights.news.map((news) => (
             <article className="editorial-news__card" key={news.id}>
-              <div className="editorial-news__art" aria-hidden="true">
-                <span>{String(i + 1).padStart(2, "0")}</span>
-                <small>{news.category}</small>
-              </div>
+              <EditorialVisual image={news.image} kind="news" />
               <div className="editorial-news__body">
                 <p className="editorial-news__meta"><time dateTime={news.date}>{dateLabel(news.date)}</time><span>· {news.source}</span></p>
                 <h3>{news.title}</h3>
@@ -71,7 +89,7 @@ export default function EditorialHighlights() {
             </article>
           ))}
         </div>
-        <p className="editorial-highlights__note">Selección editorial revisada el {dateLabel(highlights.reviewedOn)}. Son noticias enlazadas a sus fuentes; no constituyen un servicio de actualización automática.</p>
+        <p className="editorial-highlights__note">Selección editorial revisada el {dateLabel(highlights.reviewedOn)}. Las fotos son ilustrativas y no documentan los eventos citados. Noticias enlazadas a sus fuentes; no hay actualización automática.</p>
       </section>
 
       <section className="editorial-creators section page-width" id="creadores" aria-labelledby="editorial-creators-title">
@@ -87,11 +105,9 @@ export default function EditorialHighlights() {
           </div>
         </div>
         <div className="editorial-creators__track" ref={track} onScroll={sync} aria-label="Perfiles de creadores de viajes" tabIndex={0}>
-          {highlights.creators.map((creator, index) => (
+          {highlights.creators.map((creator) => (
             <article className="editorial-creators__card" key={creator.id}>
-              <div className={"editorial-creators__portrait editorial-creators__portrait--" + (index % 4 + 1)} aria-hidden="true">
-                <span>{creator.initials}</span>
-              </div>
+              <EditorialVisual image={creator.image} kind="creators" />
               <div className="editorial-creators__body">
                 <small>{creator.tag}</small>
                 <h3>{creator.name}</h3>
@@ -104,7 +120,7 @@ export default function EditorialHighlights() {
             </article>
           ))}
         </div>
-        <p className="editorial-highlights__note">Selección independiente de perfiles públicos. No implica colaboración, respaldo ni afiliación. Las iniciales son elementos gráficos; no se reutilizan fotos ni videos ajenos.</p>
+        <p className="editorial-highlights__note">Selección independiente de perfiles públicos. No implica colaboración, respaldo ni afiliación. Las imágenes ilustran destinos y no son retratos de las personas mencionadas. Fotografías con fuente y licencia, sin reutilizar contenido ajeno no autorizado.</p>
       </section>
     </div>
   );

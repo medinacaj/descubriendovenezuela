@@ -19,6 +19,16 @@ const editorial = JSON.parse(editorialRaw);
 if (!Array.isArray(editorial.news) || !Array.isArray(editorial.creators) || !editorial.news.length || !editorial.creators.length) {
   throw new Error("Sección editorial sin noticias o creadores");
 }
+const licensedPhotos = new Map(places.flatMap(place =>
+  place.photos.filter(media => media.kind === "photograph").map(media => [media.src, media])));
+for (const entry of [...editorial.news, ...editorial.creators]) {
+  const image = entry.image, photo = licensedPhotos.get(image?.src);
+  if (!photo || !image.src.startsWith("media/foto-") || !image.src.endsWith(".webp") ||
+      !image.alt || !image.caption ||
+      ["author", "sourceUrl", "license", "licenseUrl"].some(key => image[key] !== photo[key])) {
+    throw new Error("Imagen editorial sin origen/licencia verificados: " + entry.id);
+  }
+}
 files["docs/editorial-highlights.css"] = await readFile("src/app/editorial-highlights.css", "utf8");
 files["docs/js/editorial-highlights.js"] = await readFile("scripts/editorial-carousel.js", "utf8");
 files["docs/index.html"] = files["docs/index.html"]
