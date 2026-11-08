@@ -227,6 +227,63 @@
         "license": "CC BY-SA 3.0",
         "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
       }
+    },
+    {
+      "id": "venezuelaenrutas",
+      "name": "Venezuela en Rutas",
+      "handle": "@venezuelaenrutas",
+      "initials": "VR",
+      "focus": "Recorridos por ciudades, carreteras y destinos de Venezuela",
+      "tag": "RUTAS Y TERRITORIOS",
+      "url": "https://www.youtube.com/@venezuelaenrutas",
+      "reference": "https://channeldb.com/es/c/%40venezuelaenrutas",
+      "image": {
+        "src": "media/foto-cabo-san-roman.webp",
+        "alt": "Cabo San Román en la península de Paraguaná, Falcón",
+        "caption": "Cabo San Román, Falcón",
+        "author": "Josequevedo26",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cabo_San_Roman.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "unsabiochino",
+      "name": "UN SABIO CHINO",
+      "handle": "@unsabiochino_",
+      "initials": "SC",
+      "focus": "Recorridos urbanos, curiosidades y rincones de Caracas",
+      "tag": "EXPLORACIÓN URBANA",
+      "url": "https://www.youtube.com/@unsabiochino_",
+      "reference": "https://channeldb.com/es/category/travel-outdoors/country/ve",
+      "image": {
+        "src": "media/foto-casa-natal-del-libertador-simon-bolivar.webp",
+        "alt": "Casa natal del Libertador Simón Bolívar en el centro de Caracas",
+        "caption": "Centro histórico de Caracas",
+        "author": "Fhaidel Domínguez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_natal_de_Sim%C3%B3n_Bol%C3%ADvar.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
+    },
+    {
+      "id": "augustomochila",
+      "name": "Augusto Vilera",
+      "handle": "@augusto_mochila",
+      "initials": "AV",
+      "focus": "Viajes de larga distancia en bicicleta por Venezuela",
+      "tag": "CICLOTURISMO",
+      "url": "https://www.instagram.com/augusto_mochila/",
+      "reference": "https://demo.fedecamarasradio.com/trending/augusto-vilera-recorre-los-paisajes-de-venezuela-viajando-en-bicicleta/",
+      "image": {
+        "src": "media/foto-bahia-de-cata.webp",
+        "alt": "Fotografía real de la playa Bahía de Cata, municipio Costa de Oro, Aragua; imagen tomada en 2010",
+        "caption": "Bahía de Cata, Aragua",
+        "author": "Kuainabaida",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bah%C3%ADa_de_Cata.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+      }
     }
   ]
 }
