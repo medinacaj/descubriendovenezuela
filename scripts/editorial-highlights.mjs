@@ -6,7 +6,7 @@ function visual(item,kind){
  const img=item.image;
  return `<figure class="${prefix}__visual"><div class="${prefix==="editorial-news"?"editorial-news__art":"editorial-creators__portrait"}">
     <img src="/descubriendovenezuela/${h(img.src)}" alt="${h(img.alt)}" loading="lazy" decoding="async" width="900" height="600">
-    </div><figcaption class="editorial-image__credit">${h(img.caption)} · Foto: <a href="${h(img.sourceUrl)}" target="_blank" rel="noopener noreferrer">${h(img.author)}</a> · <a href="${h(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(img.license)}</a> · Encuadre adaptado</figcaption></figure>`;
+    ${kind==="creators"?`<span class="editorial-creators__monogram" aria-hidden="true">${h(item.initials)}</span>`:""}</div><figcaption class="editorial-image__credit">${h(img.caption)} · Foto: <a href="${h(img.sourceUrl)}" target="_blank" rel="noopener noreferrer">${h(img.author)}</a> · <a href="${h(img.licenseUrl)}" target="_blank" rel="noopener noreferrer">${h(img.license)}</a> · Encuadre adaptado</figcaption></figure>`;
 }
 export function renderEditorialHighlights(data) {
  const news=data.news.map(n=>`<article class="editorial-news__card">
