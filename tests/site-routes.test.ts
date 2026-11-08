@@ -175,9 +175,15 @@ describe("Pages con URLs permanentes",()=>{
   expect(html).toContain('data-news-next');
   expect(html).toContain('data-news-prev');
   expect(html).toContain('data-news-counter');
+  expect(html).toContain('data-news-toggle');
+  expect(html).toContain('data-creators-toggle');
+  expect(html).toContain('aria-label="Pausar noticias"');
+  expect(html).toContain('aria-label="Pausar creadores"');
   const carouselJS=await readFile("docs/js/editorial-highlights.js","utf8");
   expect(carouselJS).toContain('track.scrollBy({');
   expect(carouselJS).toContain("requestAnimationFrame(frame)");
+  expect(carouselJS).toContain('toggle.setAttribute("aria-pressed"');
+  expect(carouselJS).toContain('let paused=reduced.matches;');
   expect(carouselJS).toContain('track.addEventListener("pointerdown"');
   expect(carouselJS).toContain("prefers-reduced-motion");
   expect(carouselJS).toContain("IntersectionObserver");
