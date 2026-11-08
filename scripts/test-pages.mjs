@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|mapa|posadas|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|mapa|posadas|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero|editorial-highlights)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|editorial-highlights\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -47,6 +47,31 @@ try {
     await page.locator('.cinematic-hero__timeline button[data-index="2"]').click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("LOS ROQUES");
     await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
+    await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
+    await expect(page.locator(".editorial-news__card")).toHaveCount(3);
+    await expect(page.locator(".editorial-creators__card")).toHaveCount(4);
+    await expect(page.locator('link[href$="editorial-highlights.css"]')).toHaveCount(1);
+    const creatorNext=page.getByRole("button", {name:"Siguientes creadores"});
+    const creatorTrack=page.locator("[data-creators-track]");
+    const creatorGeometry=await creatorTrack.evaluate(track=>{
+      const box=track.getBoundingClientRect();
+      return {
+        overflows: track.scrollWidth > track.clientWidth + 3,
+        allCardsVisible: [...track.children].every(child=>{
+          const card=child.getBoundingClientRect();
+          return card.left >= box.left - 3 && card.right <= box.right + 3;
+        })
+      };
+    });
+    if (creatorGeometry.overflows) {
+      await expect(creatorNext).toBeEnabled();
+      await creatorNext.click();
+      await expect(page.locator("[data-creators-counter]")).toHaveText("2 / 4");
+      await expect.poll(()=>creatorTrack.evaluate(el=>el.scrollLeft)).toBeGreaterThan(0);
+    } else {
+      if (!creatorGeometry.allCardsVisible) throw Error("Carrusel sin desplazamiento, pero con tarjetas ocultas a " + width + "px");
+      await expect(creatorNext).toBeDisabled();
+    }
     await expect(page.locator('.cinematic-hero__timeline button[data-index="2"]')).toHaveAttribute("aria-pressed","true");
     const box = await page.evaluate(() => {
       const hero = document.querySelector(".cinematic-hero").getBoundingClientRect();

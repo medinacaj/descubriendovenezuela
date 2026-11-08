@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CinematicHero from "../components/cinematic-hero";
+import EditorialHighlights from "../components/editorial-highlights";
 import { PlaceCard } from "../components/cards";
 import { searchPlaces } from "../lib/repository";
 import { categories } from "../lib/domain";
@@ -101,6 +102,7 @@ export default async function Home() {
           Ver la guía de posadas y familias ↗
         </Link>
       </section>
+      <EditorialHighlights />
       <section className="manifesto">
         <span className="eyebrow">MÁS QUE UN PUNTO EN EL MAPA</span>
         <h2>

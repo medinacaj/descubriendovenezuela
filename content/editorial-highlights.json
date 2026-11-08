@@ -1,0 +1,74 @@
+{
+  "reviewedOn": "2026-11-08",
+  "news": [
+    {
+      "id": "avavit-2026-balance",
+      "category": "INDUSTRIA TURÍSTICA",
+      "date": "2026-11-06",
+      "source": "Informe Aéreo",
+      "title": "Expo AVAVIT 2026 reunió a empresas y profesionales del turismo",
+      "summary": "La feria celebrada en Caracas del 3 al 5 de noviembre abrió espacios de encuentro entre agencias, alojamientos, aerolíneas y operadores.",
+      "url": "https://informeaereo.com/turismo/venezuela-potencia-el-sector-turistico-mediante-alianzas-de-negocios/"
+    },
+    {
+      "id": "turismo-desde-regiones",
+      "category": "TURISMO REGIONAL",
+      "date": "2026-11-05",
+      "source": "Fedecámaras Radio",
+      "title": "La identidad de las regiones, en el centro de la agenda turística",
+      "summary": "Representantes gremiales conversaron sobre las posibilidades del turismo impulsado por los territorios durante Expo AVAVIT.",
+      "url": "https://fedecamarasradio.com/programas/gustavo-anzola-el-turismo-nacional-se-fortalece-desde-las-regiones/"
+    },
+    {
+      "id": "patrimonio-vivo",
+      "category": "CULTURA Y TRADICIONES",
+      "date": "2026-10-17",
+      "source": "Ministerio de Cultura",
+      "title": "Las tradiciones y los oficios mantienen vivo el patrimonio venezolano",
+      "summary": "Un recorrido documental por expresiones culturales como los tejidos de curagua, las músicas tradicionales y los cantos llaneros.",
+      "url": "https://www.mincultura.gob.ve/noticias/canto-devocion-y-memoria-celebrando-el-patrimonio-inmaterial-vivo-que-define-a-venezuela/"
+    }
+  ],
+  "creators": [
+    {
+      "id": "valendeviaje",
+      "name": "Valentina Quintero",
+      "handle": "@valendeviaje",
+      "initials": "VQ",
+      "focus": "Historias, destinos y cultura de Venezuela",
+      "tag": "VIAJES Y CULTURA",
+      "url": "https://www.instagram.com/valendeviaje/",
+      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel"
+    },
+    {
+      "id": "veronicaweffer",
+      "name": "Viajando con Vero",
+      "handle": "@veronicaweffer",
+      "initials": "VW",
+      "focus": "Rutas, experiencias y vida viajera",
+      "tag": "VIAJES",
+      "url": "https://www.instagram.com/veronicaweffer/",
+      "reference": "https://zaver.one/creators/instagram/veronicaweffer"
+    },
+    {
+      "id": "doslocosdeviaje",
+      "name": "Dos Locos de Viaje",
+      "handle": "@doslocosdeviaje",
+      "initials": "DL",
+      "focus": "Experiencias, aventuras y guías de viaje",
+      "tag": "AVENTURA",
+      "url": "https://www.instagram.com/doslocosdeviaje/",
+      "reference": "https://www.doslocosdeviaje.com/pages/nosotros"
+    },
+    {
+      "id": "carlaconwifi",
+      "name": "Carla con WiFi",
+      "handle": "@carlaconwifi",
+      "initials": "CW",
+      "focus": "Viajes y experiencias de vida nómada",
+      "tag": "VIAJES Y ESTILO DE VIDA",
+      "url": "https://www.instagram.com/carlaconwifi/",
+      "reference": "https://starngage.com/plus/en-us/influencer/ranking/instagram/venezuela/travel"
+    }
+  ]
+}
