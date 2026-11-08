@@ -134,8 +134,8 @@ describe("Pages con URLs permanentes",()=>{
  it("noticias y carrusel de creadores mantienen enlaces, fechas, CSS y controles locales",async()=>{
   const html=await readFile("docs/index.html","utf8");
   const editorial=JSON.parse(await readFile("content/editorial-highlights.json","utf8")) as {
-    news:Array<{id:string;date:string;url:string;title:string}>;
-    creators:Array<{id:string;url:string;name:string}>;
+    news:Array<{id:string;date:string;url:string;title:string;image:{src:string;author:string;license:string;sourceUrl:string;licenseUrl:string}}>;
+    creators:Array<{id:string;url:string;name:string;image:{src:string;author:string;license:string;sourceUrl:string;licenseUrl:string}}>;
     reviewedOn:string;
   };
   expect(html).toContain('id="noticias"');
@@ -151,13 +151,20 @@ describe("Pages con URLs permanentes",()=>{
     expect(item.date).toMatch(/^20\d\d-\d\d-\d\d$/);
     expect(html).toContain(item.title);
     expect(html).toContain(item.url);
+    expect(html).toContain(`src="/descubriendovenezuela/${item.image.src}"`);
+    expect(html).toContain(item.image.sourceUrl);
+    expect((await stat("docs/"+item.image.src)).size).toBeGreaterThan(1000);
   }
   for(const person of editorial.creators) {
     expect(html).toContain(person.name);
     expect(html).toContain(person.url);
+    expect(html).toContain(`src="/descubriendovenezuela/${person.image.src}"`);
+    expect(html).toContain(person.image.licenseUrl);
+    expect((await stat("docs/"+person.image.src)).size).toBeGreaterThan(1000);
   }
   expect(html).toContain("No implica colaboración, respaldo ni afiliación");
   expect(html).not.toContain("<iframe");
+  expect((html.match(/class="editorial-image__tag"/g)||[]).length).toBe(7);
   expect((await stat("docs/editorial-highlights.css")).size).toBeGreaterThan(1500);
   expect((await stat("docs/js/editorial-highlights.js")).size).toBeGreaterThan(500);
   const sw=await readFile("docs/sw.js","utf8");
