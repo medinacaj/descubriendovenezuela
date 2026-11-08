@@ -17,9 +17,9 @@ export function renderEditorialHighlights(data) {
     </div></article>`).join("");
  const creators=data.creators.map(c=>`<article class="editorial-creators__card">
     ${visual(c,"creators")}
-    <div class="editorial-creators__body"><small>${h(c.tag)}</small><h3>${h(c.name)}</h3>
+    <div class="editorial-creators__body"><small>${h(c.tag)}</small><h3><a href="${h(c.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil de ${h(c.name)}">${h(c.name)}</a></h3>
       <p class="editorial-creators__handle">${h(c.handle)}</p><p>${h(c.focus)}</p>
-      <a href="${h(c.url)}" target="_blank" rel="noopener noreferrer" aria-label="Visitar perfil externo de ${h(c.name)}">Ver perfil público <span aria-hidden="true">↗</span></a>
+      
     </div></article>`).join("");
  return `<div class="editorial-highlights">
   <section class="editorial-news section page-width" id="noticias" aria-labelledby="editorial-news-title">
