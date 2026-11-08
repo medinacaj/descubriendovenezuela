@@ -816,7 +816,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-los-chorros.webp",
+        "alt": "Vista del Parque Los Chorros junto al río Tócome, Caracas, fotografiado en 2000",
+        "author": "Veronidae",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Los_Chorros_039.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -864,7 +875,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-zoologico-caricuao.webp",
+        "alt": "Mapache fotografiado en el Parque Zoológico de Caricuao, Caracas, en 2011",
+        "author": "ZuliannyGM",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pache_Mapache_Comiendo.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -911,7 +933,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-hacienda-chuao.webp",
+        "alt": "Cacao en la Hacienda Chuao, estado Aragua, fotografiado en 2013",
+        "author": "Isamarvda",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Cacao_en_la_hacienda_de_Cacao_de_Chuao.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1372,7 +1405,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-dinira.webp",
+        "alt": "Paisaje del Parque Nacional Dinira, estado Lara, fotografiado en 2014",
+        "author": "Manvardu",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Parque_Nacional_Dinira.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
@@ -1533,7 +1577,18 @@
     "lat": null,
     "lon": null,
     "price": null,
-    "photos": [],
+    "photos": [
+      {
+        "kind": "photograph",
+        "src": "media/foto-parque-nacional-sierra-de-la-culata.webp",
+        "alt": "Paisaje de la Sierra de La Culata, estado Mérida, fotografiado en 2012",
+        "author": "George Miquilena",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sierra_La_Culata%2C_M%C3%A9rida.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "changes": "Copia técnica convertida a WebP y redimensionada (máximo 1200 px); sin retoques de contenido."
+      }
+    ],
     "demo": false
   },
   {
