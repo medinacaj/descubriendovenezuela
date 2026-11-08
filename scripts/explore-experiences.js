@@ -125,6 +125,7 @@
    if(view!=="tarjetas")queryParams.set("vista",view);
    if(order!=="destacados")queryParams.set("orden",order);
    if(onlySaved)queryParams.set("guardados","1");
+   if(document.getElementById("trip-planner-toggle")?.getAttribute("aria-expanded")==="true")queryParams.set("plan","1");
    history.replaceState(null,"",location.pathname+(queryParams.size?"?"+queryParams.toString():""));
   }
  };
