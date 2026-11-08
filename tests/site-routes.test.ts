@@ -212,6 +212,13 @@ describe("Pages con URLs permanentes",()=>{
   const experienceJS=await readFile("docs/js/explore-experiences.js","utf8");
   expect(experienceJS).toContain("batchSize=30");
   expect(experienceJS).toContain("experiencia");
+  expect(experienceJS).toContain("localStorage.setItem");
+  expect(experienceJS).toContain("place-favorite");
+  expect(experienceJS).toContain("Ordenar por");
+  expect(experienceJS).toContain('queryParams.set("guardados","1")');
+  expect(experienceJS).toContain('queryParams.set("orden",order)');
+  const balance=await readFile("docs/layout-balance.css","utf8");
+  expect(balance).toContain(".explorer-saved-toggle");
   expect(home).toContain('class="experience-shortcuts"');
   expect(home).toContain("Más allá de los destinos conocidos");
   expect((await stat("docs/base.css")).size).toBeGreaterThan(10000);
