@@ -91,3 +91,16 @@
 @media(prefers-reduced-motion:reduce){
  .editorial-news__grid,.editorial-creators__track{scroll-behavior:auto}
 }
+
+/* Flex evita que el navegador vuelva a distribuir noticias en columnas fijas. */
+.editorial-news__grid,.editorial-creators__track{display:flex;flex-wrap:nowrap}
+.editorial-news__grid>.editorial-news__card{flex:0 0 41%;min-width:255px}
+.editorial-creators__track>.editorial-creators__card{flex:0 0 33%;min-width:255px}
+@media(max-width:920px){
+ .editorial-news__grid>.editorial-news__card{flex-basis:61%}
+ .editorial-creators__track>.editorial-creators__card{flex-basis:49%}
+}
+@media(max-width:620px){
+ .editorial-news__grid>.editorial-news__card{flex-basis:88%;min-width:245px}
+ .editorial-creators__track>.editorial-creators__card{flex-basis:88%;min-width:245px}
+}
