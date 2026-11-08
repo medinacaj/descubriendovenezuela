@@ -76,6 +76,12 @@ try {
     const newsTrack=page.locator("[data-news-track]");
     await newsTrack.hover(); // Pausar desplazamiento autónomo para medir el layout.
     await expect(newsTrack).toHaveCSS("scroll-behavior","auto");
+    const pauseNews=page.getByRole("button",{name:"Pausar noticias"});
+    await expect(pauseNews).toHaveAttribute("aria-pressed","false");
+    await pauseNews.click();
+    await expect(page.getByRole("button",{name:"Reanudar noticias"})).toHaveAttribute("aria-pressed","true");
+    await page.getByRole("button",{name:"Reanudar noticias"}).click();
+    await expect(page.getByRole("button",{name:"Pausar noticias"})).toHaveAttribute("aria-pressed","false");
     const newsNext=page.getByRole("button", {name:"Siguientes noticias"});
     const newsMetrics=await newsTrack.evaluate(el=>({
       width:el.clientWidth,scrollWidth:el.scrollWidth,scrollLeft:el.scrollLeft,
@@ -88,6 +94,9 @@ try {
     await expect(newsNext).toBeEnabled();
     await newsNext.click();
     await expect.poll(()=>newsTrack.evaluate(el=>el.scrollLeft)).toBeGreaterThan(5);
+    await page.getByRole("button",{name:"Pausar creadores"}).click();
+    await expect(page.getByRole("button",{name:"Reanudar creadores"})).toHaveAttribute("aria-pressed","true");
+    await page.getByRole("button",{name:"Reanudar creadores"}).click();
     const creatorNext=page.getByRole("button", {name:"Siguientes creadores"});
     const creatorTrack=page.locator("[data-creators-track]");
     await creatorTrack.hover();
