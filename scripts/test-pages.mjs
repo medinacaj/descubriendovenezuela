@@ -66,6 +66,8 @@ try {
     }
     await expect(page.locator('link[href$="editorial-highlights.css"]')).toHaveCount(1);
     await expect(page.locator(".editorial-news__grid")).toHaveCSS("scroll-snap-type","none");
+    await expect(page.locator(".editorial-news__grid")).toHaveCSS("display","flex");
+    await expect(page.locator(".editorial-creators__track")).toHaveCSS("display","flex");
     await expect(page.locator(".editorial-creators__track")).toHaveCSS("scroll-snap-type","none");
     await expect(page.locator(".editorial-image__tag")).toHaveCount(0);
     await expect(page.locator(".editorial-news__body h3 a")).toHaveCount(3);
