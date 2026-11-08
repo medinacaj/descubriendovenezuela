@@ -149,7 +149,11 @@ describe("Pages con URLs permanentes",()=>{
   expect(html).toContain('editorial-highlights.css');
   expect(html).toContain('js/editorial-highlights.js');
   expect(editorial.news).toHaveLength(3);
-  expect(editorial.creators).toHaveLength(9);
+  expect(editorial.creators).toHaveLength(12);
+  expect(editorial.creators.some(person => person.id === "venezuelaenrutas")).toBe(true);
+  expect(editorial.creators.some(person => person.id === "unsabiochino")).toBe(true);
+  expect(editorial.creators.some(person => person.id === "augustomochila")).toBe(true);
+  expect(html.match(/class="editorial-creators__monogram"/g)?.length).toBe(12);
   for(const item of editorial.news) {
     expect(item.url).toMatch(/^https:\/\//);
     expect(item.date).toMatch(/^20\d\d-\d\d-\d\d$/);
