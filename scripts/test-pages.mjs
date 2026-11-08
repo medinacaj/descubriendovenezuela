@@ -54,12 +54,15 @@ try {
     await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
     await expect(page.locator(".experience-shortcuts a")).toHaveCount(6);
     await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
-    await expect(page.locator(".editorial-news__card")).toHaveCount(3);
-    await expect(page.locator(".editorial-creators__card")).toHaveCount(9);
-    await expect(page.locator(".editorial-news__art img")).toHaveCount(3);
-    await expect(page.locator(".editorial-creators__portrait img")).toHaveCount(9);
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone)")).toHaveCount(3);
+    await expect(page.locator(".editorial-creators__card:not(.editorial-carousel__clone)")).toHaveCount(9);
+    await expect(page.locator(".editorial-news__card.editorial-carousel__clone")).toHaveCount(3);
+    await expect(page.locator(".editorial-creators__card.editorial-carousel__clone")).toHaveCount(9);
+    await expect(page.locator(".editorial-news__card.editorial-carousel__clone").first()).toHaveAttribute("aria-hidden","true");
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__art img")).toHaveCount(3);
+    await expect(page.locator(".editorial-creators__card:not(.editorial-carousel__clone) .editorial-creators__portrait img")).toHaveCount(9);
     if (width === 390 || width === 1440) {
-      for (const selector of [".editorial-news__art img", ".editorial-creators__portrait img"]) {
+      for (const selector of [".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__art img", ".editorial-creators__card:not(.editorial-carousel__clone) .editorial-creators__portrait img"]) {
         const img = page.locator(selector).first();
         await img.scrollIntoViewIfNeeded();
         await expect.poll(() => img.evaluate(element => element.complete && element.naturalWidth > 0)).toBe(true);
@@ -71,7 +74,7 @@ try {
     await expect(page.locator(".editorial-creators__track")).toHaveCSS("display","flex");
     await expect(page.locator(".editorial-creators__track")).toHaveCSS("scroll-snap-type","none");
     await expect(page.locator(".editorial-image__tag")).toHaveCount(0);
-    await expect(page.locator(".editorial-news__body h3 a")).toHaveCount(3);
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__body h3 a")).toHaveCount(3);
     await expect(page.locator(".editorial-news__body>a")).toHaveCount(0);
     const newsTrack=page.locator("[data-news-track]");
     await newsTrack.hover(); // Pausar desplazamiento autónomo para medir el layout.
@@ -103,7 +106,7 @@ try {
     await expect(creatorTrack).toHaveCSS("scroll-behavior","auto");
     await expect(page.locator(".place-card .card-bottom").first()).toBeHidden();
     await expect(page.locator(".place-card .card-meta b").first()).toBeHidden();
-    await expect(page.locator(".editorial-creators__body h3 a")).toHaveCount(9);
+    await expect(page.locator(".editorial-creators__card:not(.editorial-carousel__clone) .editorial-creators__body h3 a")).toHaveCount(9);
     await expect(page.locator(".editorial-creators__body>a")).toHaveCount(0);
     const creatorGeometry=await creatorTrack.evaluate(track=>{
       const box=track.getBoundingClientRect();
