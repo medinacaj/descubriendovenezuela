@@ -7,11 +7,12 @@ const dateLabel=(value:string)=>{
  return day+" "+["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][month-1]+" "+year;
 };
 type EditorialImage={src:string;alt:string;caption:string;author:string;sourceUrl:string;license:string;licenseUrl:string};
-function EditorialVisual({image,kind}:{image:EditorialImage;kind:"news"|"creators"}){
+function EditorialVisual({image,kind,initials}:{image:EditorialImage;kind:"news"|"creators";initials?:string}){
  const prefix=kind==="news"?"editorial-news":"editorial-creators";
  return <figure className={prefix+"__visual"}>
   <div className={kind==="news"?"editorial-news__art":"editorial-creators__portrait"}>
    <img src={"/"+image.src} alt={image.alt} loading="lazy" decoding="async" width={900} height={600}/>
+   {kind==="creators"&&initials?<span className="editorial-creators__monogram" aria-hidden="true">{initials}</span>:null}
   </div>
   <figcaption className="editorial-image__credit">{image.caption} · Foto: <a href={image.sourceUrl} target="_blank" rel="noopener noreferrer">{image.author}</a>{" · "}<a href={image.licenseUrl} target="_blank" rel="noopener noreferrer">{image.license}</a>{" · Encuadre adaptado"}</figcaption>
  </figure>;
@@ -213,7 +214,7 @@ export default function EditorialHighlights(){
    <div className="editorial-creators__track" ref={creators.track} onScroll={creators.sync} aria-label="Perfiles de creadores de viajes" tabIndex={0}
     onKeyDown={event=>{if(event.key==="ArrowRight"){event.preventDefault();creators.move(1);}if(event.key==="ArrowLeft"){event.preventDefault();creators.move(-1);}}}>
     {highlights.creators.map(item=><article className="editorial-creators__card" key={item.id}>
-     <EditorialVisual image={item.image} kind="creators"/>
+     <EditorialVisual image={item.image} kind="creators" initials={item.initials}/>
      <div className="editorial-creators__body">
       <small>{item.tag}</small><h3><a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={"Visitar perfil de "+item.name}>{item.name}</a></h3>
       <p className="editorial-creators__handle">{item.handle}</p><p>{item.focus}</p>
