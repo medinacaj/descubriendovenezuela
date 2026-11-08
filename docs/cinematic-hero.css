@@ -395,6 +395,7 @@ body:has(.cinematic-hero) .editorial-contribute {
   .cinematic-hero__counter { font-size: 10px; margin-right: 2px; }
   .cinematic-hero__step { width: 29px; min-width: 29px; height: 29px; min-height: 29px; }
   .cinematic-hero__timeline {
+    display: none;
     top: 93px;
     left: 50%;
     bottom: auto;
