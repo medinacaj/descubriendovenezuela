@@ -45,5 +45,5 @@ export function renderExplorer({places,card,url,h,regionNames,experiencesFor,exp
    <div class="load-more-wrap"><p id="showing" role="status" aria-live="polite">Mostrando hasta 30 lugares</p><button id="show-more" type="button" class="button">Mostrar más lugares</button></div>
    <p id="empty" class="empty" hidden>No hay lugares con estos filtros. Prueba otra opción.</p>
    <p class="catalog-note">Las fotos corresponden al lugar indicado. Antes de viajar, consulta información actualizada sobre accesos y servicios.</p>
- </section><script defer src="${url("js/explore-experiences.js")}"></script>`;
+ </section><script defer src="${url("js/explore-experiences.js")}"></script><script defer src="${url("js/trip-planner.js")}"></script>`;
 }
