@@ -85,7 +85,10 @@ try {
       const cssInfo=await page.evaluate(()=>({margin:getComputedStyle(document.body).margin,heroDisplay:getComputedStyle(document.querySelector(".cinematic-hero")).display,styleSheets:[...document.styleSheets].map(x=>({href:x.href,disabled:x.disabled,rules:(()=>{try{return x.cssRules.length}catch{return "not available"}})()})),resources:performance.getEntriesByType("resource").filter(x=>x.name.endsWith(".css")).map(x=>({name:x.name,duration:x.duration,size:x.transferSize}))}));
       throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; CSS "+JSON.stringify(cssInfo)+"; "+JSON.stringify(offenders));
     }
-    if (box.heroWidth > width + 1 || box.heroWidth < width * .78) throw Error("Portada desproporcionada a " + width + "px");
+    const gutter = Math.max(20, Math.min(width * .035, 48));
+    const expectedHeroWidth = Math.min(1220, width - gutter * 2);
+    if (Math.abs(box.heroWidth - expectedHeroWidth) > 2)
+      throw Error("Portada fuera de la retícula a " + width + "px: actual=" + box.heroWidth + ", esperado=" + expectedHeroWidth);
 
     // Una sola retícula para banner, cabecera, tarjetas, noticias y creadores.
     const rail = await page.evaluate(() => {
