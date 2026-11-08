@@ -10,6 +10,8 @@ const dateLabel = (iso: string) =>
 export default function EditorialHighlights() {
   const track = useRef<HTMLDivElement>(null);
   const [active, setActive] = useState(0);
+  const [canPrev, setCanPrev] = useState(false);
+  const [canNext, setCanNext] = useState(true);
 
   const moveTo = (next: number) => {
     const list = track.current;
@@ -20,7 +22,7 @@ export default function EditorialHighlights() {
     if (!first || !child) return;
     list.scrollTo({
       left: child.offsetLeft - first.offsetLeft,
-      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "instant" : "smooth",
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
     });
     setActive(index);
   };
@@ -36,6 +38,8 @@ export default function EditorialHighlights() {
       if (delta < distance) { distance = delta; nearest = i; }
     });
     setActive(nearest);
+    setCanPrev(list.scrollLeft > 2);
+    setCanNext(list.scrollLeft < list.scrollWidth - list.clientWidth - 2);
   };
 
   return (
@@ -76,9 +80,9 @@ export default function EditorialHighlights() {
             <h2 id="editorial-creators-title">Venezuela a través de sus creadores.</h2>
           </div>
           <div className="editorial-creators__controls" aria-label="Controles del carrusel">
-            <button type="button" onClick={() => moveTo(active - 1)} disabled={active === 0} aria-label="Creadores anteriores">←</button>
+            <button type="button" onClick={() => moveTo(active - 1)} disabled={!canPrev} aria-label="Creadores anteriores">←</button>
             <span aria-live="polite" aria-atomic="true">{active + 1} / {highlights.creators.length}</span>
-            <button type="button" onClick={() => moveTo(active + 1)} disabled={active === highlights.creators.length - 1} aria-label="Siguientes creadores">→</button>
+            <button type="button" onClick={() => moveTo(active + 1)} disabled={!canNext} aria-label="Siguientes creadores">→</button>
           </div>
         </div>
         <div className="editorial-creators__track" ref={track} onScroll={sync} aria-label="Perfiles de creadores de viajes" tabIndex={0}>
