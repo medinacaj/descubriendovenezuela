@@ -145,12 +145,13 @@ describe("Pages con URLs permanentes",()=>{
   expect(html).toContain('editorial-highlights.css');
   expect(html).toContain('js/editorial-highlights.js');
   expect(editorial.news).toHaveLength(3);
-  expect(editorial.creators).toHaveLength(4);
+  expect(editorial.creators).toHaveLength(9);
   for(const item of editorial.news) {
     expect(item.url).toMatch(/^https:\/\//);
     expect(item.date).toMatch(/^20\d\d-\d\d-\d\d$/);
     expect(html).toContain(item.title);
     expect(html).toContain(item.url);
+    expect(html).toContain(`href="${item.url}" target="_blank" rel="noopener noreferrer" aria-label="Leer noticia original: ${item.title}"`);
     expect(html).toContain(`src="/descubriendovenezuela/${item.image.src}"`);
     expect(html).toContain(item.image.sourceUrl);
     expect((await stat("docs/"+item.image.src)).size).toBeGreaterThan(1000);
@@ -164,7 +165,15 @@ describe("Pages con URLs permanentes",()=>{
   }
   expect(html).toContain("No implica colaboración, respaldo ni afiliación");
   expect(html).not.toContain("<iframe");
-  expect((html.match(/class="editorial-image__tag"/g)||[]).length).toBe(7);
+  expect(html).not.toContain('class="editorial-image__tag"');
+  expect(html).not.toContain("Leer fuente original <span");
+  expect(html).toContain('data-news-track');
+  expect(html).toContain('data-news-next');
+  expect(html).toContain('data-news-prev');
+  expect(html).toContain('data-news-counter');
+  const carouselJS=await readFile("docs/js/editorial-highlights.js","utf8");
+  expect(carouselJS).toContain('track.scrollBy({');
+  expect(carouselJS).not.toContain('items[index].offsetLeft');
   expect((await stat("docs/editorial-highlights.css")).size).toBeGreaterThan(1500);
   expect((await stat("docs/js/editorial-highlights.js")).size).toBeGreaterThan(500);
   const sw=await readFile("docs/sw.js","utf8");
