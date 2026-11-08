@@ -141,3 +141,36 @@
 .editorial-highlights .editorial-carousel-toggle:focus-visible{
   outline:3px solid #a85137;outline-offset:3px;
 }
+
+/* Refinamiento visual: lectura más clara, foco visible y gestos cómodos en móvil. */
+.editorial-news__card,.editorial-creators__card{
+  transition:box-shadow .22s ease,border-color .22s ease,transform .22s ease;
+}
+.editorial-news__art img,.editorial-creators__portrait img{
+  transition:transform .5s ease;
+}
+@media(hover:hover) and (prefers-reduced-motion:no-preference){
+  .editorial-news__card:hover,.editorial-creators__card:hover{
+    transform:translateY(-3px);box-shadow:0 14px 32px #10274617;border-color:#d4c8bd;
+  }
+  .editorial-news__card:hover img,.editorial-creators__card:hover img{transform:scale(1.025)}
+}
+.editorial-news__grid:focus-visible,.editorial-creators__track:focus-visible{
+  outline:2px solid #a85137;outline-offset:3px;border-radius:12px;
+}
+.editorial-creators__body h3 a:focus-visible{
+  outline:3px solid #a85137;outline-offset:4px;border-radius:3px;
+}
+@media(max-width:620px){
+  .editorial-news__body{padding:18px}
+  .editorial-creators__body{padding:18px;min-height:0}
+  .editorial-news__controls,.editorial-creators__controls{gap:8px}
+  .editorial-news__controls>button,.editorial-creators__controls>button,
+  .editorial-highlights .editorial-carousel-toggle{width:44px;height:44px}
+  .editorial-image__credit{min-height:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .editorial-news__card,.editorial-creators__card,.editorial-news__art img,.editorial-creators__portrait img{
+    transition:none;
+  }
+}
