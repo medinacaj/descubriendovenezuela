@@ -1,4 +1,4 @@
-// Carruseles de lectura automática lenta, arrastrables con mouse y accesibles al teclado.
+// Carruseles continuos de lectura lenta, arrastrables y accesibles al teclado.
 // Las tarjetas conservan sus enlaces; nunca se mueve contenido con movimiento reducido.
 (() => {
   const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -12,6 +12,18 @@
     const toggle=document.querySelector("[data-"+type+"-toggle]");
     const items=Array.from(track.children);
     if (!prev || !next || !status || !toggle || !items.length) continue;
+    // Se duplican visualmente las tarjetas para que el carrusel avance sin saltar al inicio.
+    // Las copias son inertes: no añaden enlaces ni anuncios repetidos para lectores de pantalla.
+    for(const item of items){
+      const clone=item.cloneNode(true);
+      clone.classList.add("editorial-carousel__clone");
+      clone.setAttribute("aria-hidden","true");
+      clone.setAttribute("inert","");
+      clone.querySelectorAll("a,button,[tabindex]").forEach(link=>link.setAttribute("tabindex","-1"));
+      track.appendChild(clone);
+    }
+    const cycleWidth=()=>track.children[items.length].offsetLeft-items[0].offsetLeft;
+    const canLoop=()=>cycleWidth()>track.clientWidth+3;
     let paused=reduced.matches;
     const renderToggle=()=>{
       toggle.setAttribute("aria-pressed",String(paused));
@@ -21,9 +33,10 @@
     toggle.addEventListener("click",()=>{paused=!paused;renderToggle();});
     renderToggle();
     let visible=false,hovering=false,dragging=false,moved=false;
-    let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressClickUntil=0;
+    let startX=0,startLeft=0,last=0,remainder=0,pauseUntil=0,suppressClickUntil=0;
     const sync=()=>{
-      const max=Math.max(0,track.scrollWidth-track.clientWidth);
+      const period=cycleWidth();
+      if(canLoop() && track.scrollLeft>=period)track.scrollLeft-=period;
       const pos=Math.max(0,track.scrollLeft);
       let nearest=0,shortest=Infinity;
       const first=items[0];
@@ -31,13 +44,14 @@
         const delta=Math.abs(item.offsetLeft-first.offsetLeft-pos);
         if(delta<shortest){shortest=delta;nearest=i;}
       });
-      prev.disabled=pos<=2;
-      next.disabled=pos>=max-2;
+      prev.disabled=!canLoop();
+      next.disabled=!canLoop();
       status.textContent=(nearest+1)+" / "+items.length;
     };
     const pause=(ms=1600)=>{pauseUntil=performance.now()+ms;};
     const move=dir=>{
       pause(3500);
+      if(dir<0 && canLoop() && track.scrollLeft<=2)track.scrollLeft=cycleWidth()-2;
       track.scrollBy({
         left:dir*Math.max(145,Math.round(track.clientWidth*.68)),
         behavior:reduced.matches?"auto":"smooth"
@@ -62,7 +76,13 @@
         moved=true;track.classList.add("is-dragging");
         if(!track.hasPointerCapture(event.pointerId))track.setPointerCapture(event.pointerId);
       }
-      if(moved)track.scrollLeft=startLeft-delta;
+      if(moved){
+        let target=startLeft-delta;
+        const period=cycleWidth();
+        if(canLoop() && target<0){startLeft+=period;target+=period;}
+        if(canLoop() && target>=period){startLeft-=period;target-=period;}
+        track.scrollLeft=target;
+      }
     });
     const stopDrag=event=>{
       if(!dragging)return;
@@ -100,14 +120,14 @@
       last=now;
       const focused=track.contains(document.activeElement);
       if(visible&&!document.hidden&&!paused&&!hovering&&!dragging&&!focused&&now>pauseUntil){
-        const max=Math.max(0,track.scrollWidth-track.clientWidth);
-        if(max>4){
-          if(track.scrollLeft>=max-1)direction=-1;
-          else if(track.scrollLeft<=1)direction=1;
+        if(canLoop()){
           const delta=speed*elapsed/1000+remainder;
           const pixels=Math.floor(delta);
           remainder=delta-pixels;
-          if(pixels)track.scrollLeft=Math.max(0,Math.min(max,track.scrollLeft+direction*pixels));
+          if(pixels){
+            const nextPosition=track.scrollLeft+pixels;
+            track.scrollLeft=nextPosition>=cycleWidth()?nextPosition-cycleWidth():nextPosition;
+          }
         }
       }
       requestAnimationFrame(frame);
