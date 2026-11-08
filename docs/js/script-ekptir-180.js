@@ -21,6 +21,10 @@ if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.ser
   link.className="place-save-link";
   link.href="/descubriendovenezuela/explorar/?guardados=1";
   link.textContent="Ver destinos guardados";
+  const planLink=document.createElement("a");
+  planLink.className="place-plan-link";
+  planLink.href="/descubriendovenezuela/explorar/?guardados=1&plan=1";
+  planLink.textContent="Organizar mi plan";
   const message=document.createElement("span");
   message.className="place-save-note";message.setAttribute("role","status");
   message.textContent="Se guardan solamente en este navegador.";
@@ -42,7 +46,7 @@ if("serviceWorker" in navigator)window.addEventListener("load",()=>navigator.ser
       message.textContent="No se pudo guardar: revisa los permisos de almacenamiento del navegador.";
     }
   });
-  actions.append(button,link,message);
+  actions.append(button,link,planLink,message);
   intro.appendChild(actions);
   window.addEventListener("pageshow",update);
   window.addEventListener("storage",event=>{if(event.key===storageKey)update();});
