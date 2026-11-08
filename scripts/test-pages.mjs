@@ -274,6 +274,30 @@ try {
     await expect(page.locator(".experience-choice")).toHaveCount(6);
     await expect(page.locator("#results .place-card:visible .card-photo[data-kind=photograph]")).toHaveCount(30);
     await expect(page.locator(".filter-bar")).toHaveCSS("background-color","rgb(255, 253, 250)");
+
+    await expect(page.getByLabel("Ordenar por")).toHaveValue("destacados");
+    await expect(page.locator("#results .place-favorite")).toHaveCount(allPlaces.length);
+    const savedToggle=page.locator(".explorer-saved-toggle");
+    await expect(savedToggle).toHaveAttribute("aria-pressed","false");
+    if(engineName==="chromium"&&width===390){
+      const first=page.locator("#results .place-card").first();
+      const savedHref=await first.locator("a.card-main").getAttribute("href");
+      await first.locator("button.place-favorite").click();
+      await expect(savedToggle).toContainText("Solo guardados (1)");
+      await savedToggle.click();
+      await expect(page.locator("#count")).toHaveText("1 lugar");
+      await expect(page.locator("#results .place-card:visible a.card-main")).toHaveAttribute("href",savedHref);
+      await page.reload();
+      await expect(page.locator("#count")).toHaveText("1 lugar");
+      await expect(page.locator(".explorer-saved-toggle")).toHaveAttribute("aria-pressed","true");
+      await page.locator(".explorer-saved-toggle").click();
+      await page.getByLabel("Ordenar por").selectOption("nombre");
+      const names=await page.locator("#results .place-card:visible h3").allTextContents();
+      if(names.some((name,i)=>i>0&&names[i-1].localeCompare(name,"es",{sensitivity:"base",numeric:true})>0))
+        throw Error("La ordenación alfabética no coincide con los nombres visibles");
+      await expect(page).toHaveURL(/orden=nombre/);
+      await page.getByLabel("Ordenar por").selectOption("destacados");
+    }
     await expect(page.getByRole("button",{name:"Buscar",exact:true})).toHaveCSS("background-image",/linear-gradient/);
     await page.getByLabel("Fotografías").selectOption("foto");
     const photoCount=allPlaces.filter(p=>p.photos?.some(x=>x.kind==="photograph")).length;
