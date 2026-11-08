@@ -111,7 +111,8 @@ try {
       const header = document.querySelector("body > header").getBoundingClientRect();
       const banner = document.querySelector(".cinematic-hero").getBoundingClientRect();
       const main = document.querySelector("main#contenido").getBoundingClientRect();
-      return {headerTop:header.top,bannerTop:banner.top,mainTop:main.top};
+      const scrollY = window.scrollY;
+      return {headerTop:header.top + scrollY,bannerTop:banner.top + scrollY,mainTop:main.top + scrollY};
     });
     const expectedTop = Math.max(18, Math.min(width * .02, 30));
     if (Math.abs(topLayout.bannerTop - expectedTop) > 2 ||
