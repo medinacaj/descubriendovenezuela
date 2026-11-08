@@ -131,7 +131,40 @@ describe("Pages con URLs permanentes",()=>{
   expect(explore).toContain(' srcset="/descubriendovenezuela/media/foto-');
   expect(explore).toContain(' sizes="(max-width:');
  });
- it("SEO estático y hojas de estilo cacheables",async()=>{
+ it("noticias y carrusel de creadores mantienen enlaces, fechas, CSS y controles locales",async()=>{
+  const html=await readFile("docs/index.html","utf8");
+  const editorial=JSON.parse(await readFile("content/editorial-highlights.json","utf8")) as {
+    news:Array<{id:string;date:string;url:string;title:string}>;
+    creators:Array<{id:string;url:string;name:string}>;
+    reviewedOn:string;
+  };
+  expect(html).toContain('id="noticias"');
+  expect(html).toContain('id="creadores"');
+  expect(html).toContain('data-creators-track');
+  expect(html).toContain('data-creators-next');
+  expect(html).toContain('editorial-highlights.css');
+  expect(html).toContain('js/editorial-highlights.js');
+  expect(editorial.news).toHaveLength(3);
+  expect(editorial.creators).toHaveLength(4);
+  for(const item of editorial.news) {
+    expect(item.url).toMatch(/^https:\/\//);
+    expect(item.date).toMatch(/^20\d\d-\d\d-\d\d$/);
+    expect(html).toContain(item.title);
+    expect(html).toContain(item.url);
+  }
+  for(const person of editorial.creators) {
+    expect(html).toContain(person.name);
+    expect(html).toContain(person.url);
+  }
+  expect(html).toContain("No implica colaboración, respaldo ni afiliación");
+  expect(html).not.toContain("<iframe");
+  expect((await stat("docs/editorial-highlights.css")).size).toBeGreaterThan(1500);
+  expect((await stat("docs/js/editorial-highlights.js")).size).toBeGreaterThan(500);
+  const sw=await readFile("docs/sw.js","utf8");
+  expect(sw).toContain('BASE+"editorial-highlights.css"');
+  expect(sw).toContain('BASE+"js/editorial-highlights.js"');
+ });
+  it("SEO estático y hojas de estilo cacheables",async()=>{
   const home=await readFile("docs/index.html","utf8");
   const explore=await readFile("docs/explorar/index.html","utf8");
   expect(home).toContain('href="/descubriendovenezuela/base.css"');
