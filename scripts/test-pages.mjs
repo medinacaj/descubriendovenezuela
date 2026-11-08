@@ -44,7 +44,12 @@ try {
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
     await page.getByRole("button", {name:"Siguiente destino"}).click();
     await expect(page.locator(".cinematic-hero h1")).toContainText("CANAIMA");
-    await page.locator('.cinematic-hero__timeline button[data-index="2"]').click();
+    if (width <= 620) {
+      await expect(page.locator(".cinematic-hero__timeline")).toBeHidden();
+      await page.getByRole("button", {name:"Siguiente destino"}).click();
+    } else {
+      await page.locator('.cinematic-hero__timeline button[data-index="2"]').click();
+    }
     await expect(page.locator(".cinematic-hero h1")).toContainText("LOS ROQUES");
     await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
     await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
