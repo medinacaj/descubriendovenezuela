@@ -24,24 +24,47 @@ function useSlidingTrack(){
  const [state,setState]=useState({index:0,total:0,prev:false,next:false});
  const sync=()=>{
   const element=track.current;if(!element)return;
-  const nodes=Array.from(element.children) as HTMLElement[];
+  const nodes=(Array.from(element.children) as HTMLElement[]).filter(node=>!node.classList.contains("editorial-carousel__clone"));
   if(!nodes.length)return;
-  const pos=Math.max(0,element.scrollLeft),first=nodes[0];
+  const first=nodes[0],clone=element.querySelector<HTMLElement>(".editorial-carousel__clone");
+  const period=clone?clone.offsetLeft-first.offsetLeft:0;
+  const canLoop=period>element.clientWidth+3;
+  if(canLoop&&element.scrollLeft>=period)element.scrollLeft-=period;
+  const pos=Math.max(0,element.scrollLeft);
   let index=0,distance=Infinity;
   nodes.forEach((node,i)=>{
    const delta=Math.abs(node.offsetLeft-first.offsetLeft-pos);
    if(delta<distance){distance=delta;index=i;}
   });
-  const max=Math.max(0,element.scrollWidth-element.clientWidth);
-  const newState={index,total:nodes.length,prev:pos>2,next:pos<max-2};
+  const newState={index,total:nodes.length,prev:canLoop,next:canLoop};
   setState(current=>current.index===newState.index&&current.total===newState.total&&current.prev===newState.prev&&current.next===newState.next?current:newState);
  };
  const move=(direction:number)=>{
   const element=track.current;if(!element)return;
+  const first=element.firstElementChild as HTMLElement|null;
+  const clone=element.querySelector<HTMLElement>(".editorial-carousel__clone");
+  const period=first&&clone?clone.offsetLeft-first.offsetLeft:0;
+  if(direction<0&&period>element.clientWidth+3&&element.scrollLeft<=2)element.scrollLeft=period-2;
   element.scrollBy({left:direction*Math.max(145,Math.round(element.clientWidth*.68)),behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
  };
  useEffect(()=>{
   const handler=()=>sync(),element=track.current;
+  const originals=element?(Array.from(element.children) as HTMLElement[]):[];
+  // La copia visual permite el avance continuo sin duplicar contenidos accesibles.
+  const clones=originals.map(original=>{
+    const clone=original.cloneNode(true) as HTMLElement;
+    clone.classList.add("editorial-carousel__clone");
+    clone.setAttribute("aria-hidden","true");
+    clone.setAttribute("inert","");
+    clone.querySelectorAll<HTMLElement>("a,button,[tabindex]").forEach(link=>link.setAttribute("tabindex","-1"));
+    element?.appendChild(clone);
+    return clone;
+  });
+  const cycleWidth=()=>{
+    const clone=clones[0];
+    return element&&originals[0]&&clone?clone.offsetLeft-originals[0].offsetLeft:0;
+  };
+  const canLoop=()=>Boolean(element&&cycleWidth()>element.clientWidth+3);
   const observer=typeof ResizeObserver==="function"?new ResizeObserver(handler):null;
   if(element&&observer){observer.observe(element);Array.from(element.children).forEach(child=>observer.observe(child));}
   window.addEventListener("resize",handler);
@@ -51,7 +74,7 @@ function useSlidingTrack(){
   const reduced=window.matchMedia("(prefers-reduced-motion: reduce)");
   if(reduced.matches){pausedRef.current=true;setPaused(true);}
   let active=true,visible=false,hovering=false,dragging=false,moved=false;
-  let startX=0,startLeft=0,last=0,direction=1,remainder=0,pauseUntil=0,suppressUntil=0,animation=0;
+  let startX=0,startLeft=0,last=0,remainder=0,pauseUntil=0,suppressUntil=0,animation=0;
   const pause=(duration=1700)=>{pauseUntil=performance.now()+duration;};
   const enter=()=>{hovering=true;};
   const leave=()=>{hovering=false;pause(1200);};
@@ -69,7 +92,13 @@ function useSlidingTrack(){
       moved=true;element.classList.add("is-dragging");
       if(!element.hasPointerCapture(event.pointerId))element.setPointerCapture(event.pointerId);
     }
-    if(moved)element.scrollLeft=startLeft-dx;
+    if(moved){
+      let target=startLeft-dx;
+      const period=cycleWidth();
+      if(canLoop()&&target<0){startLeft+=period;target+=period;}
+      if(canLoop()&&target>=period){startLeft-=period;target-=period;}
+      element.scrollLeft=target;
+    }
   };
   const up=(event:PointerEvent)=>{
     if(!dragging||!element)return;
@@ -104,14 +133,14 @@ function useSlidingTrack(){
     last=now;
     if(visible&&!document.hidden&&!pausedRef.current&&!hovering&&!dragging&&
        !element.contains(document.activeElement)&&now>pauseUntil){
-      const max=Math.max(0,element.scrollWidth-element.clientWidth);
-      if(max>4){
-        if(element.scrollLeft>=max-1)direction=-1;
-        else if(element.scrollLeft<=1)direction=1;
+      if(canLoop()){
         const delta=19*elapsed/1000+remainder;
         const pixels=Math.floor(delta);
         remainder=delta-pixels;
-        if(pixels)element.scrollLeft=Math.max(0,Math.min(max,element.scrollLeft+direction*pixels));
+        if(pixels){
+          const nextPosition=element.scrollLeft+pixels;
+          element.scrollLeft=nextPosition>=cycleWidth()?nextPosition-cycleWidth():nextPosition;
+        }
       }
     }
     animation=requestAnimationFrame(tick);
@@ -120,6 +149,7 @@ function useSlidingTrack(){
   handler();
   return()=>{
     active=false;observer?.disconnect();io?.disconnect();
+    clones.forEach(clone=>clone.remove());
     cancelAnimationFrame(frame);cancelAnimationFrame(animation);
     window.removeEventListener("resize",handler);
     window.removeEventListener("load",handler);
