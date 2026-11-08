@@ -37,7 +37,16 @@ function useSlidingTrack(){
   const element=track.current;if(!element)return;
   element.scrollBy({left:direction*Math.max(145,Math.round(element.clientWidth*.68)),behavior:window.matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});
  };
- useEffect(()=>{const handler=()=>sync();window.addEventListener("resize",handler);sync();return()=>window.removeEventListener("resize",handler);},[]);
+ useEffect(()=>{
+  const handler=()=>sync(),element=track.current;
+  const observer=typeof ResizeObserver==="function"?new ResizeObserver(handler):null;
+  if(element&&observer){observer.observe(element);Array.from(element.children).forEach(child=>observer.observe(child));}
+  window.addEventListener("resize",handler);
+  window.addEventListener("load",handler);
+  const frame=requestAnimationFrame(handler);
+  handler();
+  return()=>{observer?.disconnect();cancelAnimationFrame(frame);window.removeEventListener("resize",handler);window.removeEventListener("load",handler);};
+ },[]);
  return {track,state,sync,move};
 }
 export default function EditorialHighlights(){
