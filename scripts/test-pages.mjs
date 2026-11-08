@@ -85,6 +85,35 @@ try {
       const cssInfo=await page.evaluate(()=>({margin:getComputedStyle(document.body).margin,heroDisplay:getComputedStyle(document.querySelector(".cinematic-hero")).display,styleSheets:[...document.styleSheets].map(x=>({href:x.href,disabled:x.disabled,rules:(()=>{try{return x.cssRules.length}catch{return "not available"}})()})),resources:performance.getEntriesByType("resource").filter(x=>x.name.endsWith(".css")).map(x=>({name:x.name,duration:x.duration,size:x.transferSize}))}));
       throw Error("Portada desbordada en "+engineName+" a "+width+"px: scrollWidth "+box.scrollWidth+"; CSS "+JSON.stringify(cssInfo)+"; "+JSON.stringify(offenders));
     }
+    const geometry = await page.evaluate(() => {
+      const bounds = selector => {
+        const b = document.querySelector(selector).getBoundingClientRect();
+        return { top:b.top, bottom:b.bottom, left:b.left, right:b.right, height:b.height };
+      };
+      return {
+        hero:bounds(".cinematic-hero"),
+        copy:bounds(".cinematic-hero__copy"),
+        bottom:bounds(".cinematic-hero__bottom"),
+        categories:bounds(".cinematic-hero__categories"),
+        firstSection:bounds("main .editor-picks"),
+        shortcuts:[...document.querySelectorAll(".cinematic-hero__category")].map(el=>{
+          const b=el.getBoundingClientRect();
+          return {left:b.left,right:b.right,top:b.top,bottom:b.bottom};
+        })
+      };
+    });
+    if (geometry.hero.height > (width <= 620 ? 540 : 465))
+      throw Error("Banner demasiado alto a " + width + "px: " + geometry.hero.height);
+    if (geometry.copy.bottom > geometry.bottom.top + 2)
+      throw Error("Texto superpuesto a los créditos del banner a " + width + "px");
+    if (geometry.categories.top < geometry.hero.bottom + 7)
+      throw Error("Categorías superpuestas a la fotografía a " + width + "px");
+    if (geometry.categories.bottom > geometry.firstSection.top + 2)
+      throw Error("Categorías superpuestas a las tarjetas a " + width + "px");
+    for (const category of geometry.shortcuts) {
+      if (category.left < geometry.hero.left - 1 || category.right > geometry.hero.right + 1)
+        throw Error("Categoría fuera de la retícula a " + width + "px");
+    }
     const gutter = Math.max(20, Math.min(width * .035, 48));
     const expectedHeroWidth = Math.min(1220, width - gutter * 2);
     if (Math.abs(box.heroWidth - expectedHeroWidth) > 2)
