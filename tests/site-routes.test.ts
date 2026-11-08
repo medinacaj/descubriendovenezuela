@@ -100,6 +100,7 @@ describe("Pages con URLs permanentes",()=>{
    for(const p of places){
      const detail=await readFile("docs/lugares/"+p.id+"/index.html","utf8");
      expect(detail).toContain('class="place-cover place-cover--');
+     expect(detail).toContain('src="/descubriendovenezuela/js/script-ekptir-180.js"');
      expect(detail).not.toContain('data-image-scope="referencia"');
      const sources=(p as any).photos as Array<{src:string;kind:string}>;
      if(sources.length){
@@ -112,6 +113,19 @@ describe("Pages con URLs permanentes",()=>{
        expect(hero).not.toContain('<img');
      }
    }
+ });
+ it("botón de guardar usa el mismo almacenamiento local que el explorador",async()=>{
+  const shared=await readFile("docs/js/script-ekptir-180.js","utf8");
+  const explorer=await readFile("docs/js/explore-experiences.js","utf8");
+  const generator=await readFile("scripts/build-pages.mjs","utf8");
+  expect(shared).toContain("place-save-button");
+  expect(shared).toContain("Ver destinos guardados");
+  expect(shared).toContain("venezuela-en-el-mapa.guardados.v1");
+  expect(explorer).toContain("venezuela-en-el-mapa.guardados.v1");
+  expect(explorer).toContain('window.addEventListener("pageshow"');
+  expect(generator).toContain('scripts/detail-favorites.js');
+  const styles=await readFile("docs/layout-balance.css","utf8");
+  expect(styles).toContain(".place-intro__actions");
  });
  it("mapa SVG con enlaces a los territorios del catálogo",async()=>{
   const html=await readFile("docs/mapa/index.html","utf8");

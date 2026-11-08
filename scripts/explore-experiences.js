@@ -147,5 +147,15 @@
  q.addEventListener("input",()=>{limit=batchSize;render();});
  [category,region,image].forEach(el=>el.addEventListener("change",()=>{limit=batchSize;render();}));
  window.addEventListener("popstate",()=>location.reload());
+ // Al volver desde una ficha (incluido bfcache), reflejar guardados nuevos sin recargar.
+ const refreshSaved=()=>{
+  try{
+   const stored=JSON.parse(localStorage.getItem(storageKey)||"[]");
+   if(Array.isArray(stored))saved=new Set(stored.filter(id=>typeof id==="string"&&validIds.has(id)));
+  }catch{}
+  render(false);
+ };
+ window.addEventListener("pageshow",event=>{if(event.persisted)refreshSaved();});
+ window.addEventListener("storage",event=>{if(event.key===storageKey)refreshSaved();});
  render(false);
 })();
