@@ -37,6 +37,13 @@
       if(event.key==="ArrowLeft"){event.preventDefault();move(-1);}
     });
     window.addEventListener("resize",sync,{passive:true});
+    window.addEventListener("load",sync,{once:true});
+    if(typeof ResizeObserver==="function"){
+      const observer=new ResizeObserver(sync);
+      observer.observe(track);
+      for(const item of items)observer.observe(item);
+    }
+    requestAnimationFrame(sync);
     sync();
   }
 })();
