@@ -107,12 +107,17 @@ try {
         })
       };
     });
-    const headerGap = await page.evaluate(() => {
+    const topLayout = await page.evaluate(() => {
       const header = document.querySelector("body > header").getBoundingClientRect();
-      const kicker = document.querySelector(".cinematic-hero__eyebrow").getBoundingClientRect();
-      return kicker.top - header.bottom;
+      const banner = document.querySelector(".cinematic-hero").getBoundingClientRect();
+      const main = document.querySelector("main#contenido").getBoundingClientRect();
+      const scrollY = window.scrollY;
+      return {headerTop:header.top + scrollY,bannerTop:banner.top + scrollY,mainTop:main.top + scrollY};
     });
-    if (headerGap < 18) throw Error("El texto del banner queda pegado al menú a " + width + "px: " + headerGap + "px");
+    const expectedTop = Math.max(18, Math.min(width * .02, 30));
+    if (Math.abs(topLayout.bannerTop - expectedTop) > 2 ||
+        Math.abs(topLayout.headerTop - topLayout.bannerTop) > 2)
+      throw Error("Margen exterior o cabecera desalineados a " + width + "px: " + JSON.stringify(topLayout));
     if (geometry.hero.height > (width <= 620 ? 540 : 465))
       throw Error("Banner demasiado alto a " + width + "px: " + geometry.hero.height);
     if (geometry.copy.bottom > geometry.bottom.top + 2)

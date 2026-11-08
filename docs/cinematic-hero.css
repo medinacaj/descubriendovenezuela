@@ -430,14 +430,13 @@ body:has(.cinematic-hero) .editorial-contribute {
   .cinematic-hero__category span { font-size: 20px; }
   .cinematic-hero__category b { font-size: 10px; }
 }
-
-/* Separación cómoda bajo la navegación, sin recuperar la altura antigua del banner. */
-.cinematic-hero__copy {
-  padding-top: clamp(136px, 13svh, 150px);
+/* Espacio EXTERIOR: la foto y la cabecera comparten el margen con el borde superior. */
+body:has(.cinematic-hero) {
+  --homepage-top-gap: clamp(18px, 2vw, 30px);
 }
-@media (max-width: 800px) {
-  .cinematic-hero__copy { padding-top: 136px; }
+body:has(.cinematic-hero) main#contenido {
+  padding-top: var(--homepage-top-gap);
 }
-@media (max-width: 620px) {
-  .cinematic-hero__copy { padding-top: 148px; }
+body:has(.cinematic-hero) > header {
+  top: var(--homepage-top-gap);
 }
