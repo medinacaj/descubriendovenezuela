@@ -26,7 +26,7 @@
       if(max<=2)return;
       track.scrollBy({
         left:direction*Math.max(145,Math.round(track.clientWidth*.68)),
-        behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"instant":"smooth"
+        behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"
       });
     };
     prev.addEventListener("click",()=>move(-1));
