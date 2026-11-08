@@ -10,7 +10,7 @@ const server = createServer(async (req, res) => {
     if (!path.startsWith(prefix) || path.includes("..")) { res.writeHead(404); res.end(); return; }
     let name = path.slice(prefix.length);
     if (!name || name.endsWith("/")) name += "index.html";
-    if (!/^(index\.html|(explorar|mapa|posadas|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero|editorial-highlights|explore-experiences)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|editorial-highlights\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
+    if (!/^(index\.html|(explorar|mapa|posadas|contribuir|privacidad|politica-editorial|estados)\/index\.html|lugares\/[a-z0-9-]+\/index\.html|regiones\/[a-z0-9-]+\/index\.html|media\/[a-z0-9-]+\.webp|sw\.js|base\.css|js\/(?:script-[a-z0-9]+-[0-9]+|cinematic-hero|editorial-highlights|explore-experiences|trip-planner)\.js|layout-balance\.css|states\.css|cinematic-hero\.css|editorial-highlights\.css|icon\.svg|manifest\.webmanifest|sitemap\.xml|robots\.txt)$/.test(name)) {
       res.writeHead(404); res.end(); return;
     }
     const bytes = await readFile("docs/" + name);
@@ -284,6 +284,18 @@ try {
       const savedHref=await first.locator("a.card-main").getAttribute("href");
       await first.locator("button.place-favorite").click();
       await expect(savedToggle).toContainText("Solo guardados (1)");
+
+      await page.getByRole("button",{name:"Mi plan de visitas"}).click();
+      await expect(page.locator("#trip-planner")).toBeVisible();
+      await expect(page.locator("#trip-planner .trip-planner__place")).toHaveCount(1);
+      await expect(page.getByRole("button",{name:"Copiar resumen del plan"})).toBeEnabled();
+      await page.locator(".trip-planner__day-control select").selectOption("2");
+      await expect(page.locator("#trip-planner .trip-planner__group h3")).toHaveText("Jornada 2");
+      await expect(page).toHaveURL(/plan=1/);
+      await page.reload();
+      await expect(page.locator("#trip-planner")).toBeVisible();
+      await expect(page.locator(".trip-planner__day-control select")).toHaveValue("2");
+      await page.getByRole("button",{name:"Cerrar mi plan"}).click();
       await savedToggle.click();
       await expect(page.locator("#count")).toHaveText("1 lugar");
       await expect(page.locator("#results .place-card:visible a.card-main")).toHaveAttribute("href",savedHref);
@@ -332,6 +344,7 @@ try {
 
     await expect(page.getByRole("button",{name:"Guardar destino: Mérida"})).toHaveAttribute("aria-pressed","false");
     await expect(page.getByRole("link",{name:"Ver destinos guardados"})).toHaveAttribute("href",prefix+"explorar/?guardados=1");
+    await expect(page.getByRole("link",{name:"Organizar mi plan"})).toHaveAttribute("href",prefix+"explorar/?guardados=1&plan=1");
     if(width===390){
       // Escenario de continuidad: guardar desde una ficha, recargar y ver la selección.
       await page.evaluate(()=>localStorage.removeItem("venezuela-en-el-mapa.guardados.v1"));
