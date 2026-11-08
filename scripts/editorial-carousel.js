@@ -86,10 +86,15 @@
       const observer=new IntersectionObserver(entries=>{visible=entries[0]?.isIntersecting??false;},{threshold:.15});
       observer.observe(track);
     } else visible=true;
+    let lastDiagnostic=0;
     const frame=now=>{
       const elapsed=last?Math.min(48,now-last):0;
       last=now;
       const focused=track.contains(document.activeElement);
+      if(now-lastDiagnostic>800){
+        track.dataset.autoDebug=JSON.stringify({visible,hovering,dragging,focused,hidden:document.hidden,reduced:reduced.matches,paused:now<=pauseUntil,scrollLeft:track.scrollLeft,max:track.scrollWidth-track.clientWidth});
+        lastDiagnostic=now;
+      }
       if(visible&&!document.hidden&&!reduced.matches&&!hovering&&!dragging&&!focused&&now>pauseUntil){
         const max=Math.max(0,track.scrollWidth-track.clientWidth);
         if(max>4){
