@@ -54,8 +54,11 @@ files["docs/index.html"] = files["docs/index.html"]
   .replace("</main>", renderEditorialHighlights(editorial) + "</main>")
   .replace("</body>", `<script defer src="/descubriendovenezuela/js/editorial-highlights.js"></script></body>`);
 if (!files["docs/index.html"].includes("id=\"editorial-creators-title\"")) throw new Error("Fallo al incorporar el carrusel");
+const cardsCss = await readFile("src/app/cards.css", "utf8");
+files["docs/states.css"] += "\n" + cardsCss;
+files["docs/editorial-highlights.css"] += "\n" + cardsCss;
 let editorialHash = 2166136261;
-for (const char of editorialRaw + files["docs/cinematic-hero.css"] + files["docs/editorial-highlights.css"] + files["docs/js/editorial-highlights.js"] + files["docs/layout-balance.css"] + files["docs/js/explore-experiences.js"] + files["docs/js/trip-planner.js"] + files["docs/index.html"] + files["docs/explorar/index.html"] + files["docs/base.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
+for (const char of cardsCss + editorialRaw + files["docs/cinematic-hero.css"] + files["docs/editorial-highlights.css"] + files["docs/js/editorial-highlights.js"] + files["docs/layout-balance.css"] + files["docs/js/explore-experiences.js"] + files["docs/js/trip-planner.js"] + files["docs/index.html"] + files["docs/explorar/index.html"] + files["docs/base.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
 const edition = (editorialHash >>> 0).toString(16);
 files["docs/sw.js"] = files["docs/sw.js"]
   .replace('BASE+"js/cinematic-hero.js",', 'BASE+"js/cinematic-hero.js",BASE+"js/explore-experiences.js",BASE+"js/trip-planner.js",BASE+"editorial-highlights.css",BASE+"js/editorial-highlights.js",')

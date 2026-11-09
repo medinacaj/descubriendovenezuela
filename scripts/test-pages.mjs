@@ -39,6 +39,17 @@ try {
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="cinematic-hero.css"]')).toHaveCount(1);
+    // Titles must remain readable, images cannot sit behind text, and licenses cannot clip.
+    const cardProblems = await page.locator('.editor-picks .place-card').evaluateAll(cards => cards.flatMap(card => {
+      const image = card.querySelector('.card-photo'), body = card.querySelector('.card-body');
+      const title = card.querySelector('h3'), credit = card.querySelector('.card-credit');
+      return [
+        image && body && image.getBoundingClientRect().bottom > body.getBoundingClientRect().top + 1 ? 'overlap' : '',
+        title && title.scrollHeight > title.clientHeight + 1 ? 'clipped title' : '',
+        credit && credit.scrollHeight > credit.clientHeight + 1 ? 'clipped license' : '',
+      ].filter(Boolean);
+    }));
+    expect(cardProblems).toEqual([]);
     await expect(page.locator("body")).toHaveCSS("background-color","rgb(255, 248, 241)");
     await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(16, 39, 70)");
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();

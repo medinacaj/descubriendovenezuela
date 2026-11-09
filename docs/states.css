@@ -1032,3 +1032,175 @@ footer > small {border-color:#8bb6c4;}
 @media(prefers-reduced-motion:reduce) {
   .card-photo--pending,.card-photo--pending * {transition:none;}
 }
+
+/* Tarjetas: una familia visual, con jerarquía propia para cada sección.
+   Fotografía, mapas y créditos conservan su significado y sus fuentes. */
+:root {
+  --card-radius: 16px;
+  --card-border: #e9dbcc;
+  --card-shadow: 0 5px 18px #5b402410;
+  --card-padding: clamp(16px, 1.6vw, 22px);
+}
+.place-card,
+.state-tile,
+.state-feature,
+.editorial-news__card,
+.editorial-creators__card {
+  border-radius: var(--card-radius);
+  border-color: var(--card-border);
+  box-shadow: var(--card-shadow);
+  min-width: 0;
+}
+.place-card .card-main { min-width: 0; }
+.place-card .card-body {
+  gap: 9px;
+  padding: var(--card-padding);
+}
+.place-card .card-body h3 {
+  min-block-size: 2.6em;
+  font-size: clamp(19px, 1.6vw, 23px);
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+  margin: 0;
+}
+.place-card .card-meta {
+  font-size: 11px;
+  line-height: 1.45;
+  letter-spacing: .02em;
+}
+.place-card .card-body .location {
+  font-size: 12px;
+  line-height: 1.5;
+  margin: 0;
+}
+.place-card .card-description { font-size: 13px; line-height: 1.6; max-height: none; }
+.place-card .card-credit,
+.state-tile__credit {
+  margin-top: auto;
+  padding: 10px var(--card-padding) 13px;
+  border-top: 1px solid #f0e4d8;
+  font-size: 11px;
+  line-height: 1.55;
+  overflow-wrap: anywhere;
+}
+.place-card .card-credit a,
+.state-tile__credit a { text-underline-offset: 3px; }
+/* Destacados: la imagen respira y el título se lee sobre una superficie sólida. */
+.editor-picks .editorial-featured-grid { gap: 22px; align-items: stretch; }
+.editor-picks .editorial-featured-grid .place-card { border-radius: var(--card-radius); }
+.editor-picks .editorial-featured-grid .card-main {
+  display: flex;
+  flex-direction: column;
+  grid-template-rows: none;
+  isolation: auto;
+}
+.editor-picks .editorial-featured-grid .card-photo {
+  position: relative;
+  z-index: auto;
+  height: auto;
+  min-height: 0;
+  aspect-ratio: 16 / 10;
+  flex: 0 0 auto;
+}
+.editor-picks .editorial-featured-grid .card-body {
+  background: #fffdf9;
+  color: #102746;
+  justify-content: flex-start;
+  padding: var(--card-padding);
+  gap: 9px;
+}
+.editor-picks .editorial-featured-grid .card-body .card-meta { margin-top: 0; }
+.editor-picks .editorial-featured-grid .card-body .card-meta span { color: #bc4622; }
+.editor-picks .editorial-featured-grid .card-body h3 {
+  color: #102746;
+  min-block-size: 2.5em;
+  font-size: clamp(21px, 1.9vw, 26px);
+  line-height: 1.25;
+  margin: 0;
+  text-shadow: none;
+}
+.editor-picks .editorial-featured-grid .card-body .location {
+  color: #5c6978;
+  font-size: 12px;
+  margin: 0;
+}
+.editor-picks .editorial-featured-grid .card-description {
+  color: #5c6978;
+  font-size: 13px;
+  line-height: 1.6;
+  margin: 0;
+  max-height: none;
+}
+.editor-picks .editorial-featured-grid .card-credit {
+  padding: 10px var(--card-padding) 13px;
+  font-size: 11px;
+  line-height: 1.55;
+  margin-top: auto;
+}
+/* Estados: compactos, con etiquetas legibles en lugar de texto diminuto. */
+.editorial-states .state-grid--home .state-tile__body {
+  padding: 16px 14px;
+  gap: 5px;
+}
+.editorial-states .state-grid--home .state-tile__body > span {
+  font-size: 10px;
+  line-height: 1.4;
+  letter-spacing: .04em;
+}
+.editorial-states .state-grid--home .state-tile__body h3 {
+  font-size: clamp(18px, 1.45vw, 21px);
+  line-height: 1.25;
+  text-wrap: balance;
+}
+.editorial-states .state-grid--home .state-tile__body p,
+.editorial-states .state-grid--home .state-tile__body b { font-size: 11px; line-height: 1.5; }
+.editorial-states .state-grid--home .state-tile__credit {
+  font-size: 10px;
+  line-height: 1.5;
+  padding: 9px 14px 11px;
+}
+/* Noticias y perfiles conservan su carrusel; comparten ritmo y jerarquía. */
+.editorial-news__body,
+.editorial-creators__body { padding: var(--card-padding); gap: 10px; }
+.editorial-news__body h3,
+.editorial-creators__body h3 {
+  font-size: clamp(20px, 1.7vw, 24px);
+  line-height: 1.3;
+  letter-spacing: -.025em;
+  margin: 0;
+  text-wrap: balance;
+  overflow-wrap: break-word;
+}
+.editorial-news__meta { margin-bottom: 0; line-height: 1.5; }
+.editorial-news__body > p:not(.editorial-news__meta),
+.editorial-creators__body p { font-size: 13px; line-height: 1.65; margin: 0; }
+.editorial-creators__body { min-height: 0; }
+.editorial-image__credit { font-size: 11px; line-height: 1.55; overflow-wrap: anywhere; }
+/* Movimiento discreto; los mapas se muestran enteros y no se amplían. */
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .place-card:hover, .state-tile:hover,
+  .editorial-news__card:hover, .editorial-creators__card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 24px #5b40241a;
+  }
+  .place-card:hover .card-photo img,
+  .state-tile:hover .state-tile__visual img { transform: scale(1.025); }
+  .place-card:hover .card-photo[data-kind="map"] img,
+  .state-tile--map:hover .state-tile__visual img { transform: none; }
+}
+@media (max-width: 620px) {
+  .place-card .card-body h3,
+  .editor-picks .editorial-featured-grid .card-body h3 { min-block-size: 0; }
+  .editor-picks .editorial-featured-grid { gap: 18px; }
+  .editor-picks .editorial-featured-grid .card-photo { aspect-ratio: 16 / 10; }
+  .editorial-news__body, .editorial-creators__body { padding: 18px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .place-card, .state-tile,
+  .editorial-news__card, .editorial-creators__card,
+  .card-photo img, .state-tile__visual img { transition: none; }
+  .place-card:hover .card-photo img,
+  .state-tile:hover .state-tile__visual img { transform: none; }
+}
