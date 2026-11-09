@@ -291,10 +291,21 @@ try {
       await expect(page.getByRole("button",{name:"Copiar resumen del plan"})).toBeEnabled();
       await page.locator(".trip-planner__day-control select").selectOption("2");
       await expect(page.locator("#trip-planner .trip-planner__group h3")).toHaveText("Jornada 2");
+
+      const review=page.locator(".trip-planner__review").first();
+      await review.locator("summary").click();
+      await expect(review.locator("input[type=checkbox]")).toHaveCount(4);
+      await expect(review.getByRole("link",{name:"Consultar fuente documental"})).toHaveAttribute("href",/^https:\/\//);
+      await review.getByRole("checkbox",{name:/Acceso y permisos/}).check();
+      await expect(review.getByRole("checkbox",{name:/Acceso y permisos/})).toBeChecked();
       await expect(page).toHaveURL(/plan=1/);
       await page.reload();
       await expect(page.locator("#trip-planner")).toBeVisible();
       await expect(page.locator(".trip-planner__day-control select")).toHaveValue("2");
+
+      await page.locator(".trip-planner__review summary").first().click();
+      await expect(page.getByRole("checkbox",{name:/Acceso y permisos/})).toBeChecked();
+      await expect(page.getByRole("checkbox",{name:/Transporte y llegada/})).not.toBeChecked();
       await page.getByRole("button",{name:"Cerrar mi plan"}).click();
       await savedToggle.click();
       await expect(page.locator("#count")).toHaveText("1 lugar");
