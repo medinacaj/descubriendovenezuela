@@ -12,6 +12,15 @@
  const base="/descubriendovenezuela/";
  const savedKey="venezuela-en-el-mapa.guardados.v1";
  const planKey="venezuela-en-el-mapa.plan.v1";
+ const checklistKey="venezuela-en-el-mapa.verificaciones.v1";
+ // El generador reemplaza esta constante por URLs documentales del catálogo.
+ const EVIDENCE=Object.create(null);
+ const reviewOptions=[
+  ["access","Acceso y permisos"],
+  ["transport","Transporte y llegada"],
+  ["services","Horarios y servicios"],
+  ["safety","Seguridad y condiciones"]
+ ];
  const catalog=new Map();
  for(const card of results.querySelectorAll(".place-card")){
   const link=card.querySelector("a.card-main");
@@ -36,6 +45,33 @@
    }
   }catch{}
   return data;
+ };
+ const readChecks=()=>{
+  const data=Object.create(null);
+  try{
+   const parsed=JSON.parse(localStorage.getItem(checklistKey)||"{}");
+   if(parsed&&typeof parsed==="object"&&!Array.isArray(parsed)){
+    for(const [id,flags] of Object.entries(parsed)){
+     if(!catalog.has(id)||!flags||typeof flags!=="object"||Array.isArray(flags))continue;
+     const selected=Object.create(null);
+     for(const [key] of reviewOptions)if(flags[key]===true)selected[key]=true;
+     if(Object.keys(selected).length)data[id]=selected;
+    }
+   }
+  }catch{}
+  return data;
+ };
+ let checks=readChecks();
+ const saveChecks=()=>{
+  const selected=new Set(readSaved());
+  const clean=Object.create(null);
+  for(const [id,flags] of Object.entries(checks))if(selected.has(id)&&Object.keys(flags).length)clean[id]=flags;
+  checks=clean;
+  try{localStorage.setItem(checklistKey,JSON.stringify(clean));return true;}
+  catch{
+   message.textContent="No se pudo guardar la revisión personal. Revisa los permisos de almacenamiento.";
+   return false;
+  }
  };
  let assignments=readAssignments();
  let open=new URLSearchParams(location.search).get("plan")==="1";
@@ -96,6 +132,43 @@
   });
   wrapper.append(label,select);
   li.append(destination,wrapper);
+  const details=document.createElement("details");
+  details.className="trip-planner__review";
+  const summary=document.createElement("summary");
+  summary.textContent="Preparar visita";
+  details.append(summary);
+  const help=document.createElement("p");
+  help.textContent="Marca solo lo que hayas revisado personalmente; no certifica que el lugar esté operativo.";
+  details.append(help);
+  const checksWrap=document.createElement("div");checksWrap.className="trip-planner__checks";
+  for(const [key,label] of reviewOptions){
+   const itemLabel=document.createElement("label");
+   const checkbox=document.createElement("input");
+   checkbox.type="checkbox";
+   checkbox.checked=checks[item.id]?.[key]===true;
+   checkbox.setAttribute("aria-label",label+" de "+item.name+": revisado por mí");
+   const text=document.createElement("span");text.textContent=label;
+   checkbox.addEventListener("change",()=>{
+    if(!checks[item.id])checks[item.id]=Object.create(null);
+    if(checkbox.checked)checks[item.id][key]=true;else delete checks[item.id][key];
+    if(!Object.keys(checks[item.id]).length)delete checks[item.id];
+    if(saveChecks())message.textContent="Revisión personal actualizada en este navegador.";
+   });
+   itemLabel.append(checkbox,text);checksWrap.append(itemLabel);
+  }
+  details.append(checksWrap);
+  const source=EVIDENCE[item.id];
+  if(typeof source==="string"&&/^https:\/\//.test(source)){
+   const link=document.createElement("a");
+   link.href=source;link.target="_blank";link.rel="noopener noreferrer";
+   link.className="trip-planner__source";
+   link.textContent="Consultar fuente documental";
+   details.append(link);
+   const note=document.createElement("p");note.className="trip-planner__source-note";
+   note.textContent="La fuente describe el destino; no verifica accesos, transporte ni servicios actuales.";
+   details.append(note);
+  }
+  li.append(details);
   return li;
  };
  const render=()=>{
@@ -129,7 +202,12 @@
   for(const group of savedGroups()){
    if(!group.items.length)continue;
    lines.push(dayLabel(group.day));
-   for(const item of group.items)lines.push("- "+item.name+" ("+item.region+") — "+base+"lugares/"+item.id+"/");
+   for(const item of group.items){
+    lines.push("- "+item.name+" ("+item.region+") — "+base+"lugares/"+item.id+"/");
+    for(const [key,label] of reviewOptions)
+     lines.push("  "+label+": "+(checks[item.id]?.[key]?"Revisado por mí":"Pendiente"));
+    if(EVIDENCE[item.id])lines.push("  Fuente documental: "+EVIDENCE[item.id]);
+   }
    lines.push("");
   }
   lines.push("Antes de viajar: confirma acceso, permisos, transporte, seguridad y condiciones actuales.");
@@ -157,12 +235,12 @@
   }
  });
  window.addEventListener("storage",event=>{
-  if(event.key===savedKey||event.key===planKey){
-   assignments=readAssignments();if(open)render();
+  if(event.key===savedKey||event.key===planKey||event.key===checklistKey){
+   assignments=readAssignments();checks=readChecks();if(open)render();
   }
  });
  window.addEventListener("pageshow",event=>{
-  if(event.persisted){assignments=readAssignments();if(open)render();}
+  if(event.persisted){assignments=readAssignments();checks=readChecks();if(open)render();}
  });
  updateOpen();
 })();
