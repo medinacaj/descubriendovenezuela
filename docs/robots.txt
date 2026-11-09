@@ -1,1 +1,4 @@
-User-agent: *\nAllow: /descubriendovenezuela/\nDisallow: /descubriendovenezuela/404.html\nSitemap: https://medinacaj.github.io/descubriendovenezuela/sitemap.xml\n
+User-agent: *
+Allow: /descubriendovenezuela/
+Disallow: /descubriendovenezuela/404.html
+Sitemap: https://medinacaj.github.io/descubriendovenezuela/sitemap.xml

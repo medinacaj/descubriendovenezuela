@@ -10,8 +10,14 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: catalog-${{ github.ref }}
+  cancel-in-progress: true
+
 jobs:
   validar:
+    # Repositorio público: runners estándar y Pages sin servicios de pago.
+    if: github.event.repository.private == false
     runs-on: ubuntu-latest
     timeout-minutes: 45
     services:
@@ -53,6 +59,11 @@ jobs:
         run: npm run typecheck
       - name: Test application and generated site
         run: DATABASE_URL=postgresql://venezuela:ci-local-only-password@127.0.0.1:5432/venezuela_test npm test
+      - name: Preparar demo editorial en la base desechable de CI
+        run: |
+          mkdir -p .data
+          ALLOW_DEMO_IMPORT=yes npx tsx scripts/demo.ts
+          npx tsx scripts/demo-admin.ts
       - name: Import sourced catalog twice to prove idempotence
         run: |
           npm run catalog:import
@@ -84,3 +95,28 @@ jobs:
         run: npm install --no-save --no-package-lock --ignore-scripts axe-core@4.10.3
       - name: Analizar accesibilidad estática (WCAG 2.2 A/AA)
         run: node scripts/audit-accessibility.mjs
+
+      - name: Flujo Next · rutas públicas y publicar/retirar con sesión
+        run: npm run test:e2e
+      - name: Crear artefacto con solo páginas y recursos públicos
+        run: node scripts/stage-pages.mjs
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: work/pages
+
+  publicar:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: validar
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deploy.outputs.page_url }}
+    steps:
+      - uses: actions/configure-pages@v5
+      - name: Publicar catálogo validado
+        id: deploy
+        uses: actions/deploy-pages@v4

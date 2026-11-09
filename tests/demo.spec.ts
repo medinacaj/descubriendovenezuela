@@ -2,10 +2,10 @@ import { test, expect } from "@playwright/test";
 test("explorador accesible y filtros reales", async ({ page }) => {
   await page.goto("/");
   await expect(
-    page.getByRole("heading", { name: /Venezuela tiene/ }),
+    page.getByRole("heading", { name: /Venezuela.*natural/ }),
   ).toBeVisible();
   await page
-    .getByRole("link", { name: "Explorar el mapa", exact: true })
+    .getByRole("link", { name: "Explorar destinos", exact: true })
     .click();
   await expect(
     page.getByRole("heading", { name: "Encuentra tu próximo lugar" }),
@@ -54,7 +54,7 @@ test("flujo editorial publica y retira con sesión", async ({
   await page
     .getByLabel("Descripción", { exact: true })
     .fill("Prueba automatizada sintética. No representa un sitio real.");
-  await page.getByLabel("Fuente HTTPS").fill("https://example.org/prueba");
+  await page.getByLabel("Fuente HTTPS", {exact:true}).fill("https://example.org/prueba");
   await page.getByLabel("Fecha de revisión").fill("2026-11-04");
   await page.getByLabel("Estado de verificación").selectOption("verified");
   await page.getByLabel("Publicar ficha").check();
@@ -84,4 +84,21 @@ test("flujo editorial publica y retira con sesión", async ({
   await expect(
     page.getByRole("heading", { name: "Acceso editorial" }),
   ).toBeVisible();
+});
+test('fichas importadas comparten URL con Pages y conservan el enlace UUID',async({page,request})=>{
+  const response=await request.get('/api/places?q='+encodeURIComponent('Coro y su Puerto'));
+  expect(response.ok()).toBe(true);
+  const data=await response.json();
+  const place=data.items.find((p:{catalogId?:string})=>p.catalogId==='658');
+  expect(place).toBeTruthy();
+  const legacy=await request.get('/lugares/'+place.id,{maxRedirects:0});
+  expect(legacy.status()).toBe(308);
+  expect(legacy.headers().location).toBe('/lugares/658');
+  await page.goto('/explorar?q='+encodeURIComponent('Coro y su Puerto'));
+  await page.locator('a.place-card[href="/lugares/658"]').click();
+  await expect(page.getByRole('heading',{name:'Coro y su Puerto',exact:true})).toBeVisible();
+  await expect(page.locator('meta[name=robots]')).toHaveAttribute('content',/noindex/);
+  await expect(page.locator('title')).not.toContainText('Venezuela en el Mapa — Venezuela en el Mapa');
+  await page.reload();
+  await expect(page.getByRole('heading',{name:'Coro y su Puerto',exact:true})).toBeVisible();
 });

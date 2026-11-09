@@ -8,3 +8,5 @@ playwright-report/
 .data/
 public/maplibre-worker.js
 public/maplibre-gl-*.mjs
+
+work/

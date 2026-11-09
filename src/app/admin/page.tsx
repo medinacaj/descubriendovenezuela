@@ -3,6 +3,7 @@ import { currentUser } from "../../lib/auth";
 import { getPlace, searchPlaces, territories } from "../../lib/repository";
 import { pool } from "../../lib/db";
 import { categories } from "../../lib/domain";
+export const metadata = {title:"Acceso editorial",robots:{index:false,follow:false}};
 export const dynamic = "force-dynamic";
 export default async function Admin({
   searchParams,

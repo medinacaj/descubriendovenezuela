@@ -1,5 +1,6 @@
+import {placePath, publicMetadata} from "../../../lib/public-urls";
 import type { Metadata } from "next";
-import { notFound } from "next/navigation";
+import { notFound, permanentRedirect } from "next/navigation";
 import Link from "next/link";
 import { getPlace } from "../../../lib/repository";
 
@@ -11,22 +12,14 @@ export async function generateMetadata({ params }: Route): Promise<Metadata> {
   const { id } = await params;
   const place = await getPlace(id).catch(() => null);
   if (!place) return { title: "Lugar no disponible", robots: { index: false } };
-  const published = process.env.SITE_PUBLIC_READY === "true" && !place.demo;
-  return {
-    title: place.name + " — Venezuela en el Mapa",
-    description: place.description.slice(0, 155),
-    robots: { index: published, follow: published },
-    alternates: process.env.APP_ORIGIN
-      ? { canonical: process.env.APP_ORIGIN + "/lugares/" + encodeURIComponent(id) }
-      : undefined,
-    openGraph: { title: place.name, description: place.description.slice(0, 180), type: "article" },
-  };
+  return publicMetadata(placePath(place), place.name, place.description.slice(0, 180), !place.demo);
 }
 
 export default async function Detail({ params }: Route) {
   const { id } = await params;
   const p = await getPlace(id);
   if (!p) notFound();
+  if (p.catalogId && id !== p.catalogId) permanentRedirect(placePath(p));
   const credits = Array.isArray(p.mediaCredits) ? p.mediaCredits as Credit[] : [];
   const hasOwnMedia = credits.some(credit =>
     (credit.src.startsWith("media/foto-") || credit.src.startsWith("media/mapa-")) &&

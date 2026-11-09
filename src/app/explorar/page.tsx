@@ -1,8 +1,13 @@
+import {publicMetadata} from "../../lib/public-urls";
 import Link from "next/link";
 import { categories } from "../../lib/domain";
 import { searchPlaces, territories } from "../../lib/repository";
 import { PlaceCard } from "../../components/cards";
 import PlaceMap from "../../components/place-map";
+export async function generateMetadata({searchParams}:{searchParams:Promise<Record<string,string>>}) {
+  const filters = await searchParams;
+  return publicMetadata('/explorar','Explorar lugares de Venezuela','Destinos, localidades y servicios con fuentes documentadas.',!Object.values(filters).some(Boolean));
+}
 export const dynamic = "force-dynamic";
 export default async function Explorer({
   searchParams,

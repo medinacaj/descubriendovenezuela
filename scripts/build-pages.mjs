@@ -61,5 +61,9 @@ files["docs/sw.js"] = files["docs/sw.js"]
   .replace('BASE+"js/cinematic-hero.js",', 'BASE+"js/cinematic-hero.js",BASE+"js/explore-experiences.js",BASE+"js/trip-planner.js",BASE+"editorial-highlights.css",BASE+"js/editorial-highlights.js",')
   .replace(/CACHE="([^"]+)"/, (_full, name) => `CACHE="${name}-ed${edition}"`);
 files["docs/vista-demo.html"] = '<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=/descubriendovenezuela/"><link rel="canonical" href="https://medinacaj.github.io/descubriendovenezuela/"><title>Venezuela en el Mapa</title></head><body><a href="/descubriendovenezuela/">Abrir el directorio actualizado</a></body></html>';
-for (const [path,content] of Object.entries(files)) { await mkdir(dirname(path),{recursive:true}); await writeFile(path,content); }
+const outputRoot = process.env.PAGES_OUTPUT_DIR || "docs";
+for (const [path,content] of Object.entries(files)) {
+  const destination = path.replace(/^docs(?=\/)/, outputRoot);
+  await mkdir(dirname(destination),{recursive:true}); await writeFile(destination,content);
+}
 console.log("Catálogo generado desde una sola fuente: "+places.length+" fichas, "+Object.keys(files).length+" archivos.");

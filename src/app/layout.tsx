@@ -1,3 +1,4 @@
+import {publicBase} from "../lib/public-urls";
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
@@ -11,9 +12,9 @@ export const metadata: Metadata = {
     template: "%s | Venezuela en el Mapa",
   },
   description:
-    "Explora la Venezuela natural, cultural y cotidiana. Demo local de una guía construida con información verificable.",
-  robots: { index: process.env.SITE_PUBLIC_READY === "true" && process.env.APP_ORIGIN?.startsWith("https://") === true, follow: process.env.SITE_PUBLIC_READY === "true" && process.env.APP_ORIGIN?.startsWith("https://") === true },
-  metadataBase: process.env.APP_ORIGIN?.startsWith("https://") ? new URL(process.env.APP_ORIGIN) : undefined,
+    "Explora la Venezuela natural, cultural y cotidiana. Lugares documentados con fuentes y licencias visibles.",
+  robots: { index: process.env.SITE_PUBLIC_READY === "true" && !!publicBase(), follow: process.env.SITE_PUBLIC_READY === "true" && !!publicBase() },
+  metadataBase: publicBase() ? new URL(publicBase()!) : undefined,
 };
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
@@ -23,8 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           Saltar al contenido
         </a>
         <div className="demo-bar">
-          DEMO EN DESARROLLO <span>·</span> Las fichas de ejemplo no representan
-          lugares reales.
+          CATÁLOGO DOCUMENTAL <span>·</span> Información con fuentes. Los ejemplos sintéticos se identifican como DEMO.
         </div>
         <header>
           <Link href="/" className="brand">

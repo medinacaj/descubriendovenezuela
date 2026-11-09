@@ -1,9 +1,11 @@
+import {publicMetadata} from "../lib/public-urls";
 import Link from "next/link";
 import CinematicHero from "../components/cinematic-hero";
 import EditorialHighlights from "../components/editorial-highlights";
 import { PlaceCard } from "../components/cards";
 import { searchPlaces } from "../lib/repository";
 import { categories } from "../lib/domain";
+export const metadata = publicMetadata("/", "Venezuela en el Mapa", "Descubre lugares de Venezuela con fuentes documentadas e imágenes con licencia.");
 export const dynamic = "force-dynamic";
 export default async function Home() {
   let data;
