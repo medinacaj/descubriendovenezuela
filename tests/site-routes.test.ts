@@ -234,6 +234,16 @@ describe("Pages con URLs permanentes",()=>{
   expect(planner).toContain("venezuela-en-el-mapa.plan.v1");
   expect(planner).toContain("Sin asignar");
   expect(planner).toContain("Jornadas asignadas personalmente");
+
+  expect(planner).toContain("venezuela-en-el-mapa.verificaciones.v1");
+  expect(planner).toContain("Consultar fuente documental");
+  expect(planner).toContain("no certifica que el lugar esté operativo");
+  expect(planner).toContain('"merida-ciudad":');
+  expect(planner).toContain("Acceso y permisos");
+  const plannerGenerator=await readFile("scripts/build-pages.mjs","utf8");
+  expect(plannerGenerator).toContain("const tripEvidence =");
+  const privacy=await readFile("docs/privacidad/index.html","utf8");
+  expect(privacy).toContain("comprobaciones personales de preparación");
   const detailJs=await readFile("docs/js/script-ekptir-180.js","utf8");
   expect(detailJs).toContain("Organizar mi plan");
   expect(detailJs).toContain("guardados=1&plan=1");
@@ -247,6 +257,7 @@ describe("Pages con URLs permanentes",()=>{
   expect(experienceJS).toContain('queryParams.set("orden",order)');
   const balance=await readFile("docs/layout-balance.css","utf8");
   expect(balance).toContain(".explorer-saved-toggle");
+  expect(balance).toContain(".trip-planner__checks");
   expect(home).toContain('class="experience-shortcuts"');
   expect(home).toContain("Más allá de los destinos conocidos");
   expect((await stat("docs/base.css")).size).toBeGreaterThan(10000);

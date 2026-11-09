@@ -22,7 +22,16 @@ files["docs/states.css"] = await readFile("src/app/states.css", "utf8");
 files["docs/cinematic-hero.css"] = await readFile("src/app/cinematic-hero.css", "utf8");
 files["docs/js/cinematic-hero.js"] = await readFile("scripts/hero-carousel.js", "utf8");
 files["docs/js/explore-experiences.js"] = await readFile("scripts/explore-experiences.js", "utf8");
-files["docs/js/trip-planner.js"] = await readFile("scripts/trip-planner.js", "utf8");
+// Utilizar únicamente fuentes HTTPS ya documentadas por el catálogo; no afirmar vigencia operativa.
+const tripEvidence = Object.fromEntries(places.flatMap(p => {
+  const source=(p.sourceUrls||[]).find(link => typeof link === "string" && /^https:\/\//.test(link));
+  return source ? [[p.id,source]] : [];
+}));
+const plannerTemplate = await readFile("scripts/trip-planner.js", "utf8");
+const evidenceMarker = "const EVIDENCE=Object.create(null);";
+if (!plannerTemplate.includes(evidenceMarker)) throw new Error("No se encontró el punto de inserción de fuentes del planificador");
+files["docs/js/trip-planner.js"] = plannerTemplate.replace(evidenceMarker,
+  "const EVIDENCE=" + JSON.stringify(tripEvidence).replace(/</g,"\\u003c") + ";");
 const editorialRaw = await readFile("content/editorial-highlights.json", "utf8");
 const editorial = JSON.parse(editorialRaw);
 if (!Array.isArray(editorial.news) || !Array.isArray(editorial.creators) || !editorial.news.length || !editorial.creators.length) {

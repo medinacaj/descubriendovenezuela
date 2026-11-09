@@ -448,3 +448,16 @@ footer > small { font-size: 11px; }
 @media(max-width:900px){.trip-planner__groups{grid-template-columns:1fr}}
 @media(max-width:700px){.trip-planner-trigger{width:100%;order:2}.explorer .catalog-toolbar .view-switch{order:3}}
 @media(max-width:400px){.trip-planner__place{flex-wrap:wrap}.trip-planner__day-control{flex:1 1 100%}.place-plan-link{font-size:12px}}
+
+/* Preparación por destino: fuente documental y lista de revisión personal. */
+.trip-planner__place{flex-wrap:wrap}
+.trip-planner__review{flex:1 1 100%;min-width:0;padding-top:10px;border-top:1px solid #e2d7cc}
+.trip-planner__review summary{width:fit-content;min-height:36px;display:list-item;cursor:pointer;color:#173754;font-size:12px;font-weight:750;line-height:1.5;padding:7px 6px 5px 2px}
+.trip-planner__review>p{font-size:11px;line-height:1.55;color:#3c5062;margin:5px 0 9px}
+.trip-planner__checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.trip-planner__checks label{display:flex;align-items:flex-start;gap:9px;padding:9px;border:1px solid #e2d6c9;border-radius:8px;background:#fffdf9;color:#243e53;font-size:12px;line-height:1.4;cursor:pointer}
+.trip-planner__checks input{flex:0 0 auto;width:18px;height:18px;margin:0;accent-color:#173754}
+.trip-planner__source{display:inline-flex;min-height:40px;align-items:center;margin-top:9px;color:#173754;font-weight:750;font-size:12px;text-decoration:underline;text-underline-offset:3px}
+.trip-planner__source-note{margin:0 0 3px!important;color:#43576a!important}
+.trip-planner__review summary:focus-visible,.trip-planner__checks input:focus-visible,.trip-planner__source:focus-visible{outline:3px solid #a85137;outline-offset:3px}
+@media(max-width:540px){.trip-planner__checks{grid-template-columns:1fr}}
