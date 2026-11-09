@@ -1,0 +1,19 @@
+{
+  "scope": "Laboratorio local, sin limitación de CPU o red. No son métricas de campo ni INP.",
+  "measurements": [
+    {
+      "width": 390,
+      "lcp": 624,
+      "cls": 0,
+      "longTasks": 0,
+      "domContentLoaded": 596
+    },
+    {
+      "width": 1440,
+      "lcp": 796,
+      "cls": 0,
+      "longTasks": 1,
+      "domContentLoaded": 680.3000000007451
+    }
+  ]
+}

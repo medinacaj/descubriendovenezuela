@@ -15,7 +15,8 @@
     "build:pages": "node scripts/build-pages.mjs",
     "build:maps": "node scripts/build-maps.mjs",
     "test:pages": "node scripts/test-pages.mjs",
-    "images:optimize": "node scripts/optimize-images.mjs"
+    "images:optimize": "node scripts/optimize-images.mjs",
+    "editorial:check": "node scripts/check-editorial.mjs"
   },
   "dependencies": {
     "maplibre-gl": "^6.16.0",

@@ -1,59 +1,138 @@
 {
-  "reviewedOn": "2026-11-08",
+  "reviewedOn": "2026-11-09",
   "news": [
+    {
+      "id": "filven-caracas-2026",
+      "category": "LIBROS Y FAMILIAS",
+      "date": "2026-11-09",
+      "source": "Ministerio de Cultura",
+      "title": "Filven anuncia su edición de noviembre en Caracas",
+      "summary": "La convocatoria oficial sitúa la feria del 13 al 23 de noviembre en la Galería de Arte Nacional y la Plaza de la Juventud, con libros, talleres y actividades para familias. Consulta la programación del organizador antes de asistir.",
+      "url": "https://www.mincultura.gob.ve/noticias/con-el-lema-leer-es-renacer-la-22-a-filven-se-celebrara-en-caracas-del-13-al-23-de-noviembre/",
+      "image": {
+        "src": "media/foto-plaza-venezuela.webp",
+        "alt": "Plaza Venezuela en Caracas",
+        "author": "OsmanFernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "caption": "Caracas · imagen ilustrativa de la ciudad"
+      },
+      "kind": "agenda",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Anuncio oficial consultado: fechas, sedes y actividades; no confirma que la programación futura se mantenga.",
+      "startsOn": "2026-11-13",
+      "endsOn": "2026-11-23"
+    },
+    {
+      "id": "patrimonio-emergencias-2026",
+      "category": "PATRIMONIO",
+      "date": "2026-11-07",
+      "source": "Ministerio de Cultura",
+      "title": "Museos y especialistas intercambian experiencias para proteger el patrimonio",
+      "summary": "Una charla en el Museo de Arte Contemporáneo de Caracas abordó la respuesta ante emergencias y el resguardo de colecciones. El encuentro reunió experiencias de Italia y Venezuela; la nota no certifica la apertura ni las condiciones de visita de los museos.",
+      "url": "https://www.mincultura.gob.ve/noticias/expertos-de-italia-y-venezuela-definen-estrategias-para-proteger-el-patrimonio-cultural-ante-desastres-naturales/",
+      "image": {
+        "src": "media/foto-plaza-venezuela.webp",
+        "alt": "Plaza Venezuela en Caracas",
+        "author": "OsmanFernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "caption": "Caracas · imagen ilustrativa de la ciudad"
+      },
+      "kind": "news",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Nota oficial del 7 de noviembre: encuentro y temas tratados; sin verificación operativa de museos."
+    },
+    {
+      "id": "semtur-tachira-2026",
+      "category": "TURISMO REGIONAL",
+      "date": "2026-11-07",
+      "source": "Diario La Nación",
+      "title": "SEMTUR reunió moda, arte y turismo en San Cristóbal",
+      "summary": "La crónica regional informa que la edición de 2026 comenzó el 5 de noviembre y tenía su cierre previsto para el día 7. La programación vinculó creación artística, exhibiciones y turismo en Táchira; no se anuncia como una actividad todavía abierta.",
+      "url": "https://lanacionweb.com/regional/semtur-2026-moda-arte-y-mucha-creatividad/",
+      "image": {
+        "src": "media/foto-san-cristobal.webp",
+        "alt": "Paisaje urbano de San Cristóbal en el estado Táchira",
+        "author": "Monicacorrea",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Crist%C3%B3bal_estado_T%C3%A1chira.JPG",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "caption": "San Cristóbal · imagen ilustrativa de la ciudad"
+      },
+      "kind": "news",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Crónica regional consultada; diferencia inicio informado de cierre previsto, cuya realización no se verificó."
+    },
     {
       "id": "avavit-2026-balance",
       "category": "INDUSTRIA TURÍSTICA",
       "date": "2026-11-06",
       "source": "Informe Aéreo",
-      "title": "Expo AVAVIT 2026 reunió a empresas y profesionales del turismo",
-      "summary": "La feria celebrada en Caracas del 3 al 5 de noviembre abrió espacios de encuentro entre agencias, alojamientos, aerolíneas y operadores.",
+      "title": "Expo AVAVIT conectó a operadores turísticos de Venezuela y Colombia",
+      "summary": "El balance de la feria celebrada en Caracas del 3 al 5 de noviembre describe encuentros entre agencias, aerolíneas y alojamientos, con Colombia como país invitado. Los anuncios comerciales no equivalen a disponibilidad o reservas confirmadas.",
       "url": "https://informeaereo.com/turismo/venezuela-potencia-el-sector-turistico-mediante-alianzas-de-negocios/",
       "image": {
         "src": "media/foto-plaza-venezuela.webp",
         "alt": "Plaza Venezuela en Caracas",
-        "caption": "Plaza Venezuela, Caracas",
         "author": "OsmanFernandez",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
         "license": "CC BY-SA 3.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
-      }
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "caption": "Caracas · imagen ilustrativa de la ciudad"
+      },
+      "kind": "news",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Balance de Informe Aéreo contrastado con la nota de Mintur del 5 de noviembre.",
+      "corroborationUrls": [
+        "https://www.mintur.gob.ve/news/a327c18a-7d51-439c-bb2a-9a662532615b"
+      ]
     },
     {
-      "id": "turismo-desde-regiones",
-      "category": "TURISMO REGIONAL",
-      "date": "2026-11-05",
-      "source": "Fedecámaras Radio",
-      "title": "La identidad de las regiones, en el centro de la agenda turística",
-      "summary": "Representantes gremiales conversaron sobre las posibilidades del turismo impulsado por los territorios durante Expo AVAVIT.",
-      "url": "https://fedecamarasradio.com/programas/gustavo-anzola-el-turismo-nacional-se-fortalece-desde-las-regiones/",
+      "id": "valencia-exposicion-socorro-2026",
+      "category": "ARTE EN LAS REGIONES",
+      "date": "2026-11-03",
+      "source": "Radio América",
+      "title": "Valencia abre una exposición sobre arte y tradición local",
+      "summary": "Radio América recoge información de la Alcaldía sobre una exposición en el Centro de Artes Vivas Alexis Mujica. La nota anuncia obras de Pedro Márquez y otras colecciones durante noviembre; verifica las condiciones actuales con la institución.",
+      "url": "https://radioamerica.com.ve/inaugurada-exposicion-valencia-a-los-pies-de-su-patrona/",
       "image": {
-        "src": "media/foto-658.webp",
-        "alt": "Fachada colonial en el centro histórico de Coro, estado Falcón",
-        "caption": "Arquitectura tradicional de Coro",
-        "author": "Janethrodri",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_colonial_Coro.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-      }
+        "src": "media/foto-parque-nacional-san-esteban.webp",
+        "alt": "Entrada al Parque Nacional San Esteban en el sector Loma Linda, Carabobo, fotografía de marzo de 2026",
+        "author": "SunsetRetro",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:San_Esteban_Loma_Linda.jpg",
+        "license": "CC BY 4.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+        "caption": "Carabobo · paisaje ilustrativo del estado, no de la exposición"
+      },
+      "kind": "news",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Nota de prensa municipal reproducida por Radio América; fotografía contextual de Carabobo, no del recinto ni de las obras."
     },
     {
-      "id": "patrimonio-vivo",
-      "category": "CULTURA Y TRADICIONES",
-      "date": "2026-10-17",
-      "source": "Ministerio de Cultura",
-      "title": "Las tradiciones y los oficios mantienen vivo el patrimonio venezolano",
-      "summary": "Un recorrido documental por expresiones culturales como los tejidos de curagua, las músicas tradicionales y los cantos llaneros.",
-      "url": "https://www.mincultura.gob.ve/noticias/canto-devocion-y-memoria-celebrando-el-patrimonio-inmaterial-vivo-que-define-a-venezuela/",
+      "id": "diverfest-2026-agenda",
+      "category": "ARTES E INCLUSIÓN",
+      "date": "2026-10-27",
+      "source": "Delegación de la Unión Europea en Venezuela",
+      "title": "DiverFest anuncia actividades de artes e inclusión en Caracas",
+      "summary": "La programación anunciada abarca del 2 al 21 de noviembre y contempla una fase presencial del 11 al 15, además de actividades híbridas. El festival propone danza, teatro y formación vinculados con discapacidad; consulta al organizador sobre accesibilidad y asistencia.",
+      "url": "https://www.eeas.europa.eu/delegations/venezuela/el-diverfest-2026-el-festival-internacional-de-artes-y-discapacidad-de-venezuela-regresa-con-un_und_sq",
       "image": {
-        "src": "media/foto-teatro-baralt.webp",
-        "alt": "Fachada exterior del Teatro Baralt en Maracaibo, fotografía de octubre de 2026",
-        "caption": "Teatro Baralt, Maracaibo",
-        "author": "Mgta122001vzla",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Baralt_en_Maracaibo.jpg",
-        "license": "CC BY-SA 4.0",
-        "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
-      }
+        "src": "media/foto-plaza-venezuela.webp",
+        "alt": "Plaza Venezuela en Caracas",
+        "author": "OsmanFernandez",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+        "license": "CC BY-SA 3.0",
+        "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/",
+        "caption": "Caracas · imagen ilustrativa de la ciudad"
+      },
+      "kind": "agenda",
+      "checkedOn": "2026-11-09",
+      "evidenceNote": "Comunicado institucional del 27 de octubre; agenda anunciada, sin inspección de accesibilidad ni confirmación de cada actividad.",
+      "startsOn": "2026-11-02",
+      "endsOn": "2026-11-21"
     }
   ],
   "creators": [

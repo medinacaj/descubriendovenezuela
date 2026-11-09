@@ -51,6 +51,8 @@ jobs:
             'APP_ORIGIN=http://localhost:3000' > .env
           npm run db:migrate
           npx tsx scripts/prepare-tests.ts
+      - name: Validate editorial evidence and licensing
+        run: npm run editorial:check
       - name: Generate public site
         run: npm run build:pages
       - name: Check generated files are committed

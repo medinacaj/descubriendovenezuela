@@ -1,3 +1,4 @@
+import { validateEditorial } from "../content/editorial-schema.mjs";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { dirname } from "node:path";
 import { catalogSchema } from "../content/schema.mjs";
@@ -33,7 +34,7 @@ if (!plannerTemplate.includes(evidenceMarker)) throw new Error("No se encontró 
 files["docs/js/trip-planner.js"] = plannerTemplate.replace(evidenceMarker,
   "const EVIDENCE=" + JSON.stringify(tripEvidence).replace(/</g,"\\u003c") + ";");
 const editorialRaw = await readFile("content/editorial-highlights.json", "utf8");
-const editorial = JSON.parse(editorialRaw);
+const editorial = validateEditorial(JSON.parse(editorialRaw), places);
 if (!Array.isArray(editorial.news) || !Array.isArray(editorial.creators) || !editorial.news.length || !editorial.creators.length) {
   throw new Error("Sección editorial sin noticias o creadores");
 }

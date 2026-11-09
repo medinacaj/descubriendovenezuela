@@ -1,3 +1,4 @@
+import {newsKindLabel} from "../content/editorial-labels.mjs";
 /* Noticias y creadores comparten fotografías licenciadas, fuente y crédito. */
 const h = value=>String(value).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const dateLabel = value=>{const [year,month,day]=value.split("-").map(Number);return day+" "+["ene","feb","mar","abr","may","jun","jul","ago","sep","oct","nov","dic"][month-1]+" "+year;};
@@ -13,7 +14,7 @@ export function renderEditorialHighlights(data) {
     ${visual(n,"news")}
     <div class="editorial-news__body">
       <p class="editorial-news__meta"><time datetime="${h(n.date)}">${h(dateLabel(n.date))}</time><span>· ${h(n.source)}</span></p>
-      <h3><a href="${h(n.url)}" target="_blank" rel="noopener noreferrer" aria-label="Leer noticia original: ${h(n.title)}">${h(n.title)}</a></h3><p>${h(n.summary)}</p>
+      <p class="editorial-news__kind">${h(newsKindLabel(n.kind))}</p><h3><a href="${h(n.url)}" target="_blank" rel="noopener noreferrer" aria-label="Leer noticia original: ${h(n.title)}">${h(n.title)}</a></h3><p>${h(n.summary)}</p>
     </div></article>`).join("");
  const creators=data.creators.map(c=>`<article class="editorial-creators__card">
     ${visual(c,"creators")}
@@ -33,7 +34,7 @@ export function renderEditorialHighlights(data) {
       <button type="button" data-news-toggle class="editorial-carousel-toggle" aria-pressed="false" aria-label="Pausar noticias">Ⅱ</button>
     </div></div></div>
     <div class="editorial-news__grid" data-news-track aria-label="Noticias de turismo" tabindex="0">${news}</div>
-    <p class="editorial-highlights__note">Selección editorial revisada el ${h(dateLabel(data.reviewedOn))}. Las fotos son ilustrativas y no documentan los eventos citados. Noticias enlazadas a sus fuentes; no hay actualización automática.</p>
+    <p class="editorial-highlights__note">Selección editorial revisada el ${h(dateLabel(data.reviewedOn))}. Las fotos son ilustrativas y no documentan los eventos citados. Los resúmenes son propios y enlazan a las publicaciones consultadas. Las agendas requieren confirmar programación y acceso con el organizador.</p>
   </section>
   <section class="editorial-creators section page-width" id="creadores" aria-labelledby="editorial-creators-title">
     <div class="section-head editorial-highlight-head"><div><span class="eyebrow">VOCES QUE NOS HACEN VIAJAR</span>
