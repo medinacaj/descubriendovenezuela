@@ -18,7 +18,7 @@ jobs:
   validar:
     # Repositorio público: runners estándar y Pages sin servicios de pago.
     if: github.event.repository.private == false
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     timeout-minutes: 45
     services:
       db:
@@ -88,6 +88,7 @@ jobs:
         run: npm run test:pages
 
       - name: Instalar motores Firefox y WebKit para pruebas de compatibilidad
+        timeout-minutes: 8
         run: npx playwright install --with-deps firefox webkit
       - name: Comprobar navegación en Firefox
         run: BROWSER_ENGINE=firefox npm run test:pages
