@@ -50,10 +50,11 @@ export async function searchPlaces(
   return { items: rows, total: count, page, pages: Math.ceil(count / 12) };
 }
 export async function getPlace(id: string, admin = false) {
-  if (!/^[0-9a-f-]{36}$/i.test(id)) return null;
+  const uuid = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i.test(id);
+  if ((!uuid && admin) || (!uuid && !/^[a-z0-9-]{1,160}$/.test(id))) return null;
   const row = (
     await pool.query(
-      `SELECT ${admin ? adminProjection : projection} ${join} WHERE p.id=$1 ${admin ? "" : "AND p.published=true"}`,
+      `SELECT ${admin ? adminProjection : projection} ${join} WHERE ${uuid ? "p.id" : "p.catalog_id"}=$1 ${admin ? "" : "AND p.published=true"}`,
       [id],
     )
   ).rows[0] as Place;

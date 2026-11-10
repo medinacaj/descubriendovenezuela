@@ -1,0 +1,23 @@
+name: Vigencia editorial
+on:
+  schedule:
+    - cron: '30 11 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  revisar:
+    if: github.event.repository.private == false
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      - name: Validar noticias, créditos y antigüedad de revisión
+        run: npm run editorial:check -- --freshness

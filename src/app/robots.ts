@@ -1,10 +1,12 @@
+import { publicBase } from "../lib/public-urls";
 import type { MetadataRoute } from "next";
 export default function robots(): MetadataRoute.Robots {
-  const base = process.env.APP_ORIGIN;
-  const ready = process.env.SITE_PUBLIC_READY === "true" && !!base?.startsWith("https://");
+  const base = publicBase();
+  const ready =
+    process.env.SITE_PUBLIC_READY === "true" && !!base?.startsWith("https://");
   return {
     rules: ready
-      ? [{ userAgent: "*", allow: "/", disallow: "/admin" }]
+      ? [{ userAgent: "*", allow: "/", disallow: ["/admin", "/api/"] }]
       : [{ userAgent: "*", disallow: "/" }],
     ...(ready ? { sitemap: base + "/sitemap.xml" } : {}),
   };

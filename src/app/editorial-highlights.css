@@ -185,3 +185,5 @@
 }
 .editorial-creators__portrait{isolation:isolate}
 @media(max-width:620px){.editorial-creators__monogram{width:44px;height:44px;right:11px;bottom:11px}}
+
+.editorial-news__body>.editorial-news__kind {font-size:11px;font-weight:700;color:#a6401d;line-height:1.4;margin:0;}

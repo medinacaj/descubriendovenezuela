@@ -107,6 +107,24 @@ describe("persistencia y publicación reales", () => {
     await pool.query("UPDATE places SET catalog_id=$1, verification_note=$2 WHERE id=$3", [
       "catalog-test", "Identificación documental de prueba", id,
     ]);
+    expect((await getPlace("catalog-test"))?.id).toBe(id);
+    const oldOrigin=process.env.APP_ORIGIN, oldReady=process.env.SITE_PUBLIC_READY;
+    try {
+      process.env.APP_ORIGIN='https://ejemplo.org';process.env.SITE_PUBLIC_READY='true';
+      await pool.query("UPDATE places SET demo=false WHERE id=$1",[id]);
+      const {default:sitemap}=await import('../src/app/sitemap');
+      const urls=(await sitemap()).map(p=>p.url);
+      expect(urls).toContain('https://ejemplo.org/lugares/catalog-test');
+      expect(urls).not.toContain('https://ejemplo.org/lugares/'+id);
+    } finally {
+      if(oldOrigin===undefined)delete process.env.APP_ORIGIN;else process.env.APP_ORIGIN=oldOrigin;
+      if(oldReady===undefined)delete process.env.SITE_PUBLIC_READY;else process.env.SITE_PUBLIC_READY=oldReady;
+      await pool.query("UPDATE places SET demo=true WHERE id=$1",[id]);
+    }
+    expect(await getPlace("catalog-test", true)).toBeNull();
+    await pool.query("UPDATE places SET published=false WHERE id=$1", [id]);
+    expect(await getPlace("catalog-test")).toBeNull();
+    await pool.query("UPDATE places SET published=true WHERE id=$1", [id]);
     await expect(savePlace({ ...input, name: "Cambio bloqueado" }, actor, id)).rejects.toThrow("Ficha versionada");
     expect((await getPlace(id))?.name).not.toBe("Cambio bloqueado");
     await pool.query("UPDATE places SET catalog_id=NULL, verification_note='' WHERE id=$1", [id]);

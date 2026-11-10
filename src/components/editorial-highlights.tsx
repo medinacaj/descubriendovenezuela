@@ -1,5 +1,6 @@
 "use client";
 import { useEffect, useRef, useState } from "react";
+import {newsKindLabel} from "../../content/editorial-labels.mjs";
 import highlights from "../../content/editorial-highlights.json";
 
 const dateLabel=(value:string)=>{
@@ -192,12 +193,13 @@ export default function EditorialHighlights(){
      <EditorialVisual image={item.image} kind="news"/>
      <div className="editorial-news__body">
       <p className="editorial-news__meta"><time dateTime={item.date}>{dateLabel(item.date)}</time><span>· {item.source}</span></p>
+      <p className="editorial-news__kind">{newsKindLabel(item.kind)}</p>
       <h3><a href={item.url} target="_blank" rel="noopener noreferrer" aria-label={"Leer noticia original: "+item.title}>{item.title}</a></h3>
       <p>{item.summary}</p>
      </div>
     </article>)}
    </div>
-   <p className="editorial-highlights__note">Selección editorial revisada el {dateLabel(highlights.reviewedOn)}. Las fotos son ilustrativas y no documentan los eventos citados. Noticias enlazadas a sus fuentes; no hay actualización automática.</p>
+   <p className="editorial-highlights__note">Selección editorial revisada el {dateLabel(highlights.reviewedOn)}. Las fotos son ilustrativas y no documentan los eventos citados. Los resúmenes son propios y enlazan a las publicaciones consultadas. Las agendas requieren confirmar programación y acceso con el organizador.</p>
   </section>
   <section className="editorial-creators section page-width" id="creadores" aria-labelledby="editorial-creators-title">
    <div className="section-head editorial-highlight-head">

@@ -1,0 +1,63 @@
+[
+  {
+    "reviewedOn": "2026-11-08",
+    "news": [
+      {
+        "id": "avavit-2026-balance",
+        "category": "INDUSTRIA TURÍSTICA",
+        "date": "2026-11-06",
+        "source": "Informe Aéreo",
+        "title": "Expo AVAVIT 2026 reunió a empresas y profesionales del turismo",
+        "summary": "La feria celebrada en Caracas del 3 al 5 de noviembre abrió espacios de encuentro entre agencias, alojamientos, aerolíneas y operadores.",
+        "url": "https://informeaereo.com/turismo/venezuela-potencia-el-sector-turistico-mediante-alianzas-de-negocios/",
+        "image": {
+          "src": "media/foto-plaza-venezuela.webp",
+          "alt": "Plaza Venezuela en Caracas",
+          "caption": "Plaza Venezuela, Caracas",
+          "author": "OsmanFernandez",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Plaza_Venezuela_-_Caracas.jpg",
+          "license": "CC BY-SA 3.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0/"
+        }
+      },
+      {
+        "id": "turismo-desde-regiones",
+        "category": "TURISMO REGIONAL",
+        "date": "2026-11-05",
+        "source": "Fedecámaras Radio",
+        "title": "La identidad de las regiones, en el centro de la agenda turística",
+        "summary": "Representantes gremiales conversaron sobre las posibilidades del turismo impulsado por los territorios durante Expo AVAVIT.",
+        "url": "https://fedecamarasradio.com/programas/gustavo-anzola-el-turismo-nacional-se-fortalece-desde-las-regiones/",
+        "image": {
+          "src": "media/foto-658.webp",
+          "alt": "Fachada colonial en el centro histórico de Coro, estado Falcón",
+          "caption": "Arquitectura tradicional de Coro",
+          "author": "Janethrodri",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Casa_colonial_Coro.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      },
+      {
+        "id": "patrimonio-vivo",
+        "category": "CULTURA Y TRADICIONES",
+        "date": "2026-10-17",
+        "source": "Ministerio de Cultura",
+        "title": "Las tradiciones y los oficios mantienen vivo el patrimonio venezolano",
+        "summary": "Un recorrido documental por expresiones culturales como los tejidos de curagua, las músicas tradicionales y los cantos llaneros.",
+        "url": "https://www.mincultura.gob.ve/noticias/canto-devocion-y-memoria-celebrando-el-patrimonio-inmaterial-vivo-que-define-a-venezuela/",
+        "image": {
+          "src": "media/foto-teatro-baralt.webp",
+          "alt": "Fachada exterior del Teatro Baralt en Maracaibo, fotografía de octubre de 2026",
+          "caption": "Teatro Baralt, Maracaibo",
+          "author": "Mgta122001vzla",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teatro_Baralt_en_Maracaibo.jpg",
+          "license": "CC BY-SA 4.0",
+          "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0/"
+        }
+      }
+    ],
+    "archivedOn": "2026-11-09",
+    "reason": "Selección anterior conservada; sustituida por noticias con evidencia revisada."
+  }
+]

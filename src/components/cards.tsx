@@ -1,3 +1,4 @@
+import {placePath} from "../lib/public-urls";
 import Link from "next/link";
 import { Place } from "../lib/domain";
 const icons: Record<string, string> = {
@@ -10,7 +11,7 @@ export function PlaceCard({ place: p }: { place: Place }) {
     || p.mediaCredits?.find(asset => asset.kind === "map" &&
     asset.src.startsWith("media/mapa-") && asset.src.endsWith(".webp"));
   return (
-    <Link href={"/lugares/" + p.id} className="place-card">
+    <Link href={placePath(p)} className="place-card">
       {visual ? <div className="card-photo" data-kind={visual.kind}>
         <img src={"/" + visual.src} alt={visual.alt} loading="lazy" width={900} height={600}/>
       </div> : <div className={"card-art art-" + p.category.toLowerCase()} aria-hidden="true">

@@ -1,3 +1,4 @@
+import { validateEditorial } from "../content/editorial-schema.mjs";
 import { readFile, writeFile, mkdir, stat } from "node:fs/promises";
 import { dirname } from "node:path";
 import { catalogSchema } from "../content/schema.mjs";
@@ -33,7 +34,7 @@ if (!plannerTemplate.includes(evidenceMarker)) throw new Error("No se encontró 
 files["docs/js/trip-planner.js"] = plannerTemplate.replace(evidenceMarker,
   "const EVIDENCE=" + JSON.stringify(tripEvidence).replace(/</g,"\\u003c") + ";");
 const editorialRaw = await readFile("content/editorial-highlights.json", "utf8");
-const editorial = JSON.parse(editorialRaw);
+const editorial = validateEditorial(JSON.parse(editorialRaw), places);
 if (!Array.isArray(editorial.news) || !Array.isArray(editorial.creators) || !editorial.news.length || !editorial.creators.length) {
   throw new Error("Sección editorial sin noticias o creadores");
 }
@@ -54,12 +55,19 @@ files["docs/index.html"] = files["docs/index.html"]
   .replace("</main>", renderEditorialHighlights(editorial) + "</main>")
   .replace("</body>", `<script defer src="/descubriendovenezuela/js/editorial-highlights.js"></script></body>`);
 if (!files["docs/index.html"].includes("id=\"editorial-creators-title\"")) throw new Error("Fallo al incorporar el carrusel");
+const cardsCss = await readFile("src/app/cards.css", "utf8");
+files["docs/states.css"] += "\n" + cardsCss;
+files["docs/editorial-highlights.css"] += "\n" + cardsCss;
 let editorialHash = 2166136261;
-for (const char of editorialRaw + files["docs/cinematic-hero.css"] + files["docs/editorial-highlights.css"] + files["docs/js/editorial-highlights.js"] + files["docs/layout-balance.css"] + files["docs/js/explore-experiences.js"] + files["docs/js/trip-planner.js"] + files["docs/index.html"] + files["docs/explorar/index.html"] + files["docs/base.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
+for (const char of cardsCss + editorialRaw + files["docs/cinematic-hero.css"] + files["docs/editorial-highlights.css"] + files["docs/js/editorial-highlights.js"] + files["docs/layout-balance.css"] + files["docs/js/explore-experiences.js"] + files["docs/js/trip-planner.js"] + files["docs/index.html"] + files["docs/explorar/index.html"] + files["docs/base.css"]) editorialHash = Math.imul(editorialHash ^ char.charCodeAt(0), 16777619);
 const edition = (editorialHash >>> 0).toString(16);
 files["docs/sw.js"] = files["docs/sw.js"]
   .replace('BASE+"js/cinematic-hero.js",', 'BASE+"js/cinematic-hero.js",BASE+"js/explore-experiences.js",BASE+"js/trip-planner.js",BASE+"editorial-highlights.css",BASE+"js/editorial-highlights.js",')
   .replace(/CACHE="([^"]+)"/, (_full, name) => `CACHE="${name}-ed${edition}"`);
 files["docs/vista-demo.html"] = '<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><meta http-equiv="refresh" content="0;url=/descubriendovenezuela/"><link rel="canonical" href="https://medinacaj.github.io/descubriendovenezuela/"><title>Venezuela en el Mapa</title></head><body><a href="/descubriendovenezuela/">Abrir el directorio actualizado</a></body></html>';
-for (const [path,content] of Object.entries(files)) { await mkdir(dirname(path),{recursive:true}); await writeFile(path,content); }
+const outputRoot = process.env.PAGES_OUTPUT_DIR || "docs";
+for (const [path,content] of Object.entries(files)) {
+  const destination = path.replace(/^docs(?=\/)/, outputRoot);
+  await mkdir(dirname(destination),{recursive:true}); await writeFile(destination,content);
+}
 console.log("Catálogo generado desde una sola fuente: "+places.length+" fichas, "+Object.keys(files).length+" archivos.");

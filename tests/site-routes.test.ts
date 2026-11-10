@@ -162,7 +162,7 @@ describe("Pages con URLs permanentes",()=>{
   expect(html).toContain('data-creators-next');
   expect(html).toContain('editorial-highlights.css');
   expect(html).toContain('js/editorial-highlights.js');
-  expect(editorial.news).toHaveLength(3);
+  expect(editorial.news.length).toBeGreaterThanOrEqual(6);
   expect(editorial.creators).toHaveLength(12);
   expect(editorial.creators.some(person => person.id === "venezuelaenrutas")).toBe(true);
   expect(editorial.creators.some(person => person.id === "unsabiochino")).toBe(true);

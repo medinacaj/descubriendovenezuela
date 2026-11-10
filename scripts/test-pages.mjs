@@ -3,6 +3,7 @@ import { readFile } from "node:fs/promises";
 import { chromium, firefox, webkit, expect } from "@playwright/test";
 const prefix = "/descubriendovenezuela/";
 const allPlaces = JSON.parse(await readFile("content/places.json", "utf8"));
+const newsCount=JSON.parse(await readFile("content/editorial-highlights.json","utf8")).news.length;
 const stateCount = new Set(allPlaces.map(p => p.region)).size;
 const server = createServer(async (req, res) => {
   try {
@@ -39,6 +40,17 @@ try {
     await expect(page.locator('link[href$="layout-balance.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="base.css"]')).toHaveCount(1);
     await expect(page.locator('link[href$="cinematic-hero.css"]')).toHaveCount(1);
+    // Titles must remain readable, images cannot sit behind text, and licenses cannot clip.
+    const cardProblems = await page.locator('.editor-picks .place-card').evaluateAll(cards => cards.flatMap(card => {
+      const image = card.querySelector('.card-photo'), body = card.querySelector('.card-body');
+      const title = card.querySelector('h3'), credit = card.querySelector('.card-credit');
+      return [
+        image && body && image.getBoundingClientRect().bottom > body.getBoundingClientRect().top + 1 ? 'overlap' : '',
+        title && title.scrollHeight > title.clientHeight + 1 ? 'clipped title' : '',
+        credit && credit.scrollHeight > credit.clientHeight + 1 ? 'clipped license' : '',
+      ].filter(Boolean);
+    }));
+    expect(cardProblems).toEqual([]);
     await expect(page.locator("body")).toHaveCSS("background-color","rgb(255, 248, 241)");
     await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(16, 39, 70)");
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
@@ -54,12 +66,12 @@ try {
     await expect(page.locator(".cinematic-hero__category")).toHaveCount(5);
     await expect(page.locator(".experience-shortcuts a")).toHaveCount(6);
     await expect(page.getByRole("heading", { name: "Noticias de nuestra Venezuela." })).toBeVisible();
-    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone)")).toHaveCount(3);
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone)")).toHaveCount(newsCount);
     await expect(page.locator(".editorial-creators__card:not(.editorial-carousel__clone)")).toHaveCount(12);
-    await expect(page.locator(".editorial-news__card.editorial-carousel__clone")).toHaveCount(3);
+    await expect(page.locator(".editorial-news__card.editorial-carousel__clone")).toHaveCount(newsCount);
     await expect(page.locator(".editorial-creators__card.editorial-carousel__clone")).toHaveCount(12);
     await expect(page.locator(".editorial-news__card.editorial-carousel__clone").first()).toHaveAttribute("aria-hidden","true");
-    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__art img")).toHaveCount(3);
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__art img")).toHaveCount(newsCount);
     await expect(page.locator(".editorial-creators__card:not(.editorial-carousel__clone) .editorial-creators__portrait img")).toHaveCount(12);
     if (width === 390 || width === 1440) {
       for (const selector of [".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__art img", ".editorial-creators__card:not(.editorial-carousel__clone) .editorial-creators__portrait img"]) {
@@ -74,7 +86,7 @@ try {
     await expect(page.locator(".editorial-creators__track")).toHaveCSS("display","flex");
     await expect(page.locator(".editorial-creators__track")).toHaveCSS("scroll-snap-type","none");
     await expect(page.locator(".editorial-image__tag")).toHaveCount(0);
-    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__body h3 a")).toHaveCount(3);
+    await expect(page.locator(".editorial-news__card:not(.editorial-carousel__clone) .editorial-news__body h3 a")).toHaveCount(newsCount);
     await expect(page.locator(".editorial-news__body>a")).toHaveCount(0);
     const newsTrack=page.locator("[data-news-track]");
     await newsTrack.hover(); // Pausar desplazamiento autónomo para medir el layout.
