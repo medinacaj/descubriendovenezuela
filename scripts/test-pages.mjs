@@ -51,6 +51,10 @@ try {
       ].filter(Boolean);
     }));
     expect(cardProblems).toEqual([]);
+    for (const selector of ['.editor-picks .place-card', '.editorial-states .state-tile']) {
+      const heights = await page.locator(selector).evaluateAll(cards=>cards.map(card=>card.getBoundingClientRect().height));
+      expect(Math.max(...heights)-Math.min(...heights), 'Alturas uniformes: '+selector+' a '+width+'px').toBeLessThan(2);
+    }
     await expect(page.locator("body")).toHaveCSS("background-color","rgb(255, 248, 241)");
     await expect(page.locator(".editorial-states .section-head h2")).toHaveCSS("color","rgb(16, 39, 70)");
     await expect(page.getByRole("button", {name:"Siguiente destino"})).toBeVisible();
@@ -356,10 +360,16 @@ try {
     await expect(page.locator("#results .place-card:visible")).toHaveCount(60);
     await page.getByRole("button",{name:"Lista",exact:true}).click();
     await expect(page.locator("#results")).toHaveAttribute("data-view","lista");
+    const listHeights=await page.locator('#results .place-card:visible').evaluateAll(cards=>cards.map(card=>card.getBoundingClientRect().height));
+    expect(Math.max(...listHeights)-Math.min(...listHeights)).toBeLessThan(2);
     await page.getByRole("button",{name:"Fichas",exact:true}).click();
     await expect(page.locator("#results")).toHaveAttribute("data-view","fichas");
+    const detailHeights=await page.locator('#results .place-card:visible').evaluateAll(cards=>cards.map(card=>card.getBoundingClientRect().height));
+    expect(Math.max(...detailHeights)-Math.min(...detailHeights)).toBeLessThan(2);
     await page.getByRole("button",{name:"Tarjetas",exact:true}).click();
     await expect(page.locator("#results")).toHaveAttribute("data-view","tarjetas");
+    const gridHeights=await page.locator('#results .place-card:visible').evaluateAll(cards=>cards.map(card=>card.getBoundingClientRect().height));
+    expect(Math.max(...gridHeights)-Math.min(...gridHeights)).toBeLessThan(2);
     if (await page.evaluate(() => document.documentElement.scrollWidth > innerWidth + 1))
       throw Error("Explorador desbordado a " + width + "px");
     await page.goto(origin + "lugares/merida-ciudad/");

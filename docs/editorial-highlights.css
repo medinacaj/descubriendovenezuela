@@ -359,3 +359,21 @@
   .place-card:hover .card-photo img,
   .state-tile:hover .state-tile__visual img { transform: none; }
 }
+
+/* Misma altura en todas las filas de cada grupo, no solo dentro de una fila.
+   El contenido más largo determina el espacio; títulos y créditos no se recortan. */
+.cards,
+.directory-grid,
+.editorial-featured-grid,
+.state-grid {
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+#results[data-view="lista"] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-auto-rows: 1fr;
+  align-items: stretch;
+}
+.editorial-news__grid,
+.editorial-creators__track { align-items: stretch; }
