@@ -1,4 +1,13 @@
 import { z } from "zod";
+
+// Date.parse can silently normalize impossible days (e.g. 2027-02-30).
+// Editorial review and public price expiry require actual calendar dates.
+export function validCalendarDate(value: string): boolean {
+  if (!/^\\d{4}-\\d{2}-\\d{2}$/.test(value)) return false;
+  const timestamp = Date.parse(value + "T12:00:00Z");
+  return Number.isFinite(timestamp) && new Date(timestamp).toISOString().slice(0, 10) === value;
+}
+
 const https = z
   .string()
   .url()
@@ -20,10 +29,7 @@ export const placeSchema = z
     source: z.union([z.literal(""), https]),
     reviewedAt: z
       .string()
-      .refine(
-        (s) =>
-          s === "" || (/^\d{4}-\d{2}-\d{2}$/.test(s) && !isNaN(Date.parse(s))),
-      ),
+      .refine((s) => s === "" || validCalendarDate(s), "Fecha de revisión inválida"),
     status: z.enum(["proposed", "verified", "outdated", "closed"]),
     published: z.boolean(),
     sensitive: z.boolean(),
@@ -40,7 +46,7 @@ export const placeSchema = z
     priceAmount: z.number().finite().nonnegative().nullable().optional(),
     priceCurrency: z.union([z.literal(""), z.enum(["VES", "USD", "EUR"])]).optional(),
     priceUnit: z.union([z.literal(""), z.enum(["persona", "noche", "entrada", "servicio"])]).optional(),
-    priceValidUntil: z.union([z.literal(""), z.string().regex(/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/)]).nullable().optional(),
+    priceValidUntil: z.union([z.literal(""), z.string().refine(validCalendarDate, "Fecha de tarifa inválida")]).nullable().optional(),
     priceSource: z.union([z.literal(""), https]).optional(),
   })
   .superRefine((p, c) => {
@@ -88,7 +94,8 @@ export type Price = {
   validUntil: string;
 };
 export function priceLabel(p: Price | null, now = new Date()) {
-  return !p || !p.source || new Date(p.validUntil + "T23:59:59Z") < now
+  return !p || !p.source || !validCalendarDate(p.validUntil) ||
+    !Number.isFinite(p.amount) || new Date(p.validUntil + "T23:59:59Z") < now
     ? "Consultar precio"
     : `${p.amount} ${p.currency} / ${p.unit}`;
 }
