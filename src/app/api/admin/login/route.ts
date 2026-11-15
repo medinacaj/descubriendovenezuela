@@ -1,9 +1,16 @@
 import { login, validOrigin } from "../../../../lib/auth";
 import { NextResponse } from "next/server";
+import { FormBodyError, readLimitedFormData } from "../../../../lib/limited-form-data";
 export async function POST(req: Request) {
   if (!validOrigin(req))
     return NextResponse.json({ error: "Origen no permitido" }, { status: 403 });
-  const f = await req.formData();
+  let f: FormData;
+  try {
+    f = await readLimitedFormData(req, 4 * 1024);
+  } catch (error) {
+    const status = error instanceof FormBodyError ? error.status : 400;
+    return new Response("Formulario de acceso inválido o demasiado grande", { status });
+  }
   try {
     const email = String(f.get("email") || "").slice(0, 200),
       password = String(f.get("password") || "").slice(0, 200);

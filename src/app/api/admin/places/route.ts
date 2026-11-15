@@ -1,12 +1,19 @@
 import { currentUser, validOrigin } from "../../../../lib/auth";
 import { savePlace } from "../../../../lib/repository";
 import { NextResponse } from "next/server";
+import { FormBodyError, readLimitedFormData } from "../../../../lib/limited-form-data";
 export async function POST(req: Request) {
   if (!validOrigin(req))
     return new Response("Origen no permitido", { status: 403 });
   const user = await currentUser();
   if (!user) return new Response("Sesión requerida", { status: 401 });
-  const f = await req.formData();
+  let f: FormData;
+  try {
+    f = await readLimitedFormData(req, 24 * 1024);
+  } catch (error) {
+    const status = error instanceof FormBodyError ? error.status : 400;
+    return new Response("Formulario editorial inválido o demasiado grande", { status });
+  }
   const id = String(f.get("id") || "");
   if (id && !/^[0-9a-f-]{36}$/i.test(id))
     return new Response("ID inválido", { status: 400 });
