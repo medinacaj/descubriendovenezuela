@@ -38,6 +38,31 @@ describe("reglas editoriales", () => {
       }),
     ).toBe("Consultar precio");
   });
+  it("rechaza fechas imposibles de revisión y acepta años bisiestos", () => {
+    for (const reviewedAt of ["2027-02-29", "2027-02-30", "2027-04-31", "2027-13-01", "no-es-fecha"]) {
+      expect(() => validatePlace({ ...base, reviewedAt })).toThrow();
+    }
+    expect(() => validatePlace({ ...base, reviewedAt: "2028-02-29" })).not.toThrow();
+  });
+
+  it("impide publicar precios con vigencia de calendario inválida", () => {
+    const priced = {
+      ...base,
+      priceAmount: 25,
+      priceCurrency: "USD",
+      priceUnit: "persona",
+      priceValidUntil: "2028-02-29",
+      priceSource: "https://example.org/tarifa",
+    };
+    expect(() => validatePlace(priced)).not.toThrow();
+    for (const priceValidUntil of ["2027-02-29", "2027-02-30", "2027-04-31", "2027-13-01"]) {
+      expect(() => validatePlace({ ...priced, priceValidUntil })).toThrow();
+      expect(priceLabel({
+        amount: 25, currency: "USD", unit: "persona",
+        source: "https://example.org/tarifa", validUntil: priceValidUntil,
+      }, new Date("2027-01-01T00:00:00Z"))).toBe("Consultar precio");
+    }
+  });
   it("valida coordenadas y enlaces", () => {
     expect(() => validatePlace({ ...base, lat: 200 })).toThrow();
     expect(() =>
