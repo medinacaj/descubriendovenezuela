@@ -56,3 +56,17 @@ Las 196 fotografías que faltan requieren imágenes auténticas y licencia compa
 - [API](docs/api.md), [política editorial](docs/editorial-policy.md) y [privacidad de la demo](docs/demo-status.md).
 - [Arquitectura](docs/architecture.md), [respaldos y operación](docs/operations.md), [procedencia cartográfica](public/maps/README.md).
 - [Estado consolidado y pendientes con evidencia](docs/ESTADO-2026-11-09.md).
+
+## Continuidad y estado verificable · 21/11/2026
+
+**Propósito:** Guía documental de destinos con catálogo estático y aplicación editorial.
+
+**Límite:** No gestiona reservas ni garantiza disponibilidad o precios de terceros.
+
+- **Código:** consultar la rama principal efectiva, PR y commits recientes; mantener el alcance propio del producto.
+- **Validación:** revisar CI vinculada al SHA; esta edición documental no prueba funcionalidades.
+- **Entorno:** una demo, el código fusionado o un CI verde no demuestran producción. Verificar el sitio real cuando corresponda.
+- **Siguiente paso:** resolver el último bloqueo de los issues y registrar rama, PR, SHA, pruebas, entorno realmente verificado y pendientes.
+- **Privacidad:** no exponer secretos ni datos personales; conservar datos ficticios de prueba.
+
+**Fuente oficial:** decisiones y documentación de este repositorio.
