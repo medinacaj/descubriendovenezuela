@@ -56,3 +56,27 @@ Las 196 fotografías que faltan requieren imágenes auténticas y licencia compa
 - [API](docs/api.md), [política editorial](docs/editorial-policy.md) y [privacidad de la demo](docs/demo-status.md).
 - [Arquitectura](docs/architecture.md), [respaldos y operación](docs/operations.md), [procedencia cartográfica](public/maps/README.md).
 - [Estado consolidado y pendientes con evidencia](docs/ESTADO-2026-11-09.md).
+
+## Continuidad y estado verificable · 21/11/2026
+
+**Propósito:** Guía documental de destinos con catálogo estático y aplicación editorial.
+
+**Límite:** No gestiona reservas ni garantiza disponibilidad o precios de terceros.
+
+- **Código:** consultar la rama principal efectiva, PR y commits recientes; mantener el alcance propio del producto.
+- **Validación:** revisar CI vinculada al SHA; esta edición documental no prueba funcionalidades.
+- **Entorno:** una demo, el código fusionado o un CI verde no demuestran producción. Verificar el sitio real cuando corresponda.
+- **Siguiente paso:** resolver el último bloqueo de los issues y registrar rama, PR, SHA, pruebas, entorno realmente verificado y pendientes.
+- **Privacidad:** no exponer secretos ni datos personales; conservar datos ficticios de prueba.
+
+**Fuente oficial:** decisiones y documentación de este repositorio.
+
+## Respaldo y continuidad · 26/11/2026
+
+Repositorio oficial renombrado: **[medinacaj/descubriendo-vzla](https://github.com/medinacaj/descubriendo-vzla)** (ID 1445188413, mismo producto). Principal `main`; paquete `venezuela-en-el-mapa` versión `0.1.0`. La rama `docs/readme-continuidad-20261121` y [PR #40](https://github.com/medinacaj/descubriendo-vzla/pull/40) conservan este respaldo sin fusionar ni desplegar.
+
+Leer [memoria operativa](docs/MEMORIA_OPERATIVA.md), [decisiones](docs/DECISIONES.md), [reglas de agentes](AGENTS.md), [historial](CHANGELOG.md) e [instrucción lista para nueva sesión](docs/CONTINUIDAD_NUEVA_SESION.md).
+
+El estado del 09/11 anterior es histórico: las tarjetas uniformes y los controles de fechas, tamaño de formularios e indexación ya están integrados (PR #35, #37–39). La CI de main f41c6ac… terminó success, pero el control de vigencia editorial del 23/11 falló; las noticias requieren revisión y las agendas vencidas deben archivarse. Las URLs estáticas aún usan el nombre antiguo: verificar Pages y reconciliar rutas antes de otra publicación. El log de Pages declara https://medinacaj.github.io/descubriendo-vzla/, distinto de la base antigua generada; su respuesta HTTP y navegación, staging y operación del backend en producción no se han comprobado. Ver memoria para límites del inventario local y resultados exactos de verificación.
+
+El entorno Cloud falló al arrancar durante el respaldo: posibles avances exclusivos del disco no pudieron inventariarse. Las validaciones nuevas se ejecutaron en GitHub Actions con bases desechables; resultados y SHA específicos en la memoria y el PR #40.
