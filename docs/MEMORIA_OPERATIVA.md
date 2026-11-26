@@ -29,7 +29,7 @@ Next.js App Router 16, React 19, TypeScript 7, pg 8, Zod 4, MapLibre 6 y sharp; 
 
 GitHub Actions valida con PostGIS desechable, importación doble, generación sin deriva, tipos, tests, build, Chromium/Firefox/WebKit, axe y E2E Next. scripts/stage-pages.mjs construye work/pages con recursos públicos; no copia documentación operativa. La publicación personalizada depende de validar y de main; un PR no despliega mediante este flujo. Vigencia editorial semanal independiente.
 
-**Dominios/entornos:** las URLs generadas siguen apuntando a https://medinacaj.github.io/descubriendovenezuela/ y base /descubriendovenezuela/. GitHub renombró el repositorio; la URL efectiva, redirecciones y configuración Pages actual NO están verificadas. No asumir que basta cambiar el remoto ni reemplazar globalmente URLs históricas. No se verificó dominio propio, staging público ni hosting público Next/PostGIS. El entorno Cloud de desarrollo no equivale a staging o producción.
+**Dominios/entornos:** las URLs generadas siguen apuntando a https://medinacaj.github.io/descubriendovenezuela/ y base /descubriendovenezuela/. GitHub renombró el repositorio; el log del job deploy 139973393990 (run 45838395200, 26/11) informa como environment URL https://medinacaj.github.io/descubriendo-vzla/. Esto confirma el destino declarado por GitHub, no su respuesta HTTP ni redirecciones. Existe discrepancia entre ese destino y las rutas antiguas generadas; la configuración administrativa Pages no está verificada. No asumir que basta cambiar el remoto ni reemplazar globalmente URLs históricas. No se verificó dominio propio, staging público ni hosting público Next/PostGIS. El entorno Cloud de desarrollo no equivale a staging o producción.
 
 Variables (solo nombres): DATABASE_URL, POSTGRES_PASSWORD, APP_ORIGIN, NEXT_PUBLIC_MAP_STYLE, SITE_PUBLIC_READY; para Compose de despliegue DEPLOY_DATABASE_URL y DEMO_PORT. Ejemplos en .env.example y deploy/environment.example. No publicar valores privados ni .data.
 
@@ -46,6 +46,12 @@ Consultas directas de GitHub: identidad/ID, principal/SHA, árbol, ramas, PR rec
 | Rama principal | protected: false en endpoint de rama; rulesets alternativos no verificados |
 
 El contenido mantiene reviewedOn 2026-11-09: al 26/11 transcurrieron 17 días; Filven terminó el 23/11 y DiverFest el 21/11 según las agendas documentadas. **No se han vuelto a consultar sus fuentes ni renovado las noticias en este respaldo.**
+
+### Validación nueva ejecutada por la CI del respaldo
+
+[Run 45851296875](https://github.com/medinacaj/descubriendo-vzla/actions/runs/45851296875), commit documental intermedio 23183d189932f786f21ff8c39523d8f04d519be3: **completed / success**, logs consultados directamente. npm ci; editorial:check; build:pages (314 fichas, 366 archivos); git diff --exit-code -- docs/; typecheck; npm test (**59 pruebas, 11 archivos**); importación doble idempotente; build; test:pages en Chromium/Firefox/WebKit; auditoría axe; test:e2e (**8 pruebas**); staging del artefacto y subida completados. Job publicar omitido por ser PR: no se desplegó.
+
+editorial:check advierte 17 días y agendas vencidas filven-caracas-2026 y diverfest-2026-agenda; ese comando comprueba estructura pero no falla por frescura sin --freshness. El fallo de frescura histórico sigue sin resolver. Los tests pasaron sobre bases desechables de CI; no acreditan datos reales ni producción. Los cambios documentales posteriores a ese SHA deben contrastarse con su propia CI.
 
 No hay script lint independiente. Comandos aplicables: npm ci; npm run editorial:check; npm run editorial:check -- --freshness; npm run build:pages; npm run typecheck; npm test; npm run build; npm run test:pages; npm run test:e2e. tests/setup.ts utiliza venezuela_test, por lo que hay que comprobar host/aislamiento antes de ejecutar cualquier suite con truncados.
 
